@@ -145,7 +145,52 @@ body {
 	z-index:1;
 }
 
+a.nav {
+	color: #FFA599;
+	text-decoration: none;
+}
+
+a.nav:hover {
+	color: #824C71;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+.container {
+  position: relative;
+  width: 50%;
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+}
+
+.container .btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #00000090;
+  font-family: 'DM Mono';
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.container .btn:hover {
+  background-color: black;
+}
+
 </style>
+
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>Ryan Peng</title>
 </head>
 <body>
 
@@ -158,17 +203,19 @@ body {
 	<div class="flex-container">
 		<div class="divider"></div>
 		<div class="spacer"></div>
-		<div style="color:#FFA599; font-size:40px; line-height:160%">ryan peng</div>
+		<div class="spacer"></div>
+		<div style="color:#FFA599; font-size:40px; line-height:150%">ryan peng</div>
+		<div class="spacer"></div>
 		<div class="spacer"></div>
 		<div class="divider"></div>
 		<div class="flex-child"></div>
-		<div style="color:#FFA599; font-size:30px; line-height:220%;">about</div>
+		<div style="color:#FFA599; font-size:30px; line-height:220%;"><a href="#about" class="nav">about</a></div>
 		<div class="flex-child"></div>
-		<div style="color:#FFA599; font-size:30px; line-height:220%">projects</div>
+		<div style="color:#FFA599; font-size:30px; line-height:220%"><a href="#projects" class="nav">projects</a></div>
 		<div class="flex-child"></div>
-		<div style="color:#FFA599; font-size:30px; line-height:220%">resume</div>
+		<div style="color:#FFA599; font-size:30px; line-height:220%"><a href="#resume" class="nav">resume</a></div>
 		<div class="flex-child"></div>
-		<div style="color:#FFA599; font-size:30px; line-height:220%">misc</div>
+		<div style="color:#FFA599; font-size:30px; line-height:220%"><a href="#misc" class="nav">misc</a></div>
 		<div class="flex-child"></div>
 		<div class="divider"></div>
 	</div>
@@ -199,20 +246,51 @@ body {
 	</div>
 </div>
 
+<div class="textrow" style="padding-left:8px" id="about">
+	<div style="color:#FFA599; font-size:30px; line-height:160%;">about me</div>
+	<div class="flex-container">
+		<img src="ryan.png" height="250" style="vertical-align:middle; margin-top:12px; margin-left:2px;">
+		<div class="spacer" style="width: 32px"></div>
+		<div style="color:#FFA599; font-size:20px; margin-top:30px; margin-left:12px;">
+		i'm ryan.<br><br>
+			i'm a first-year student at brown university concentrating in design engineering.<br><br>
+			i'm from atlanta,ga and have lived in memphis, tn and now providence, ri.<br><br>
+			on the side, i learn for passion projects (like this website), work as a theatre tech, explore cities, hike, swim, and play the violin.
+			</div>
+		<div class="spacer" style="width: 70px"></div>
+	</div>
+</div>
+
+<div class="textrow" style="padding-left:8px" id="projects">
+	<div style="color:#FFA599; font-size:30px; line-height:160%;">projects [WIP]</div>
+</div>
+
+<div class="textrow" style="padding-left:8px" id="resume">
+	<div style="color:#FFA599; font-size:30px; line-height:160%;">resume [WIP]</div>
+</div>
+
+<div class="textrow" style="padding-left:8px" id="misc">
+	<div style="color:#FFA599; font-size:30px; line-height:160%;">miscellaneous [WIP]</div>
+	</div>
+</div>
+
+
+	
+	
+</div>
+
+
+
+
+
+
+
+
+
+
 
 </div>
 <div class="footer"></div>
 <div class="footer-box"></div>
-
-
-
-
-
-
-
-
-
-
-
 </body>
 </html>
