@@ -30,6 +30,8 @@ body {
 	font-family: 'DM Mono';
 	color: #FFA599;
 	background-color: #000000;
+	max-width: 100%;
+	overflow-x: hidden;
 }
 	
 .wrap {
@@ -357,7 +359,10 @@ table {
 	}
 }
 
-@media (pointer:none), (pointer:coarse) {
+@media screen and (max-width: 850px),
+	screen and (max-height: 500px),
+	(pointer:none),
+	(pointer:coarse){
 	.modal{
 		display: block;
 	}
