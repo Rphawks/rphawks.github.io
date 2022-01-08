@@ -4,6 +4,7 @@
 <link rel="stylesheet" href="style2.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>ryan peng</title>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
 
@@ -99,15 +100,22 @@
 		</div>
 		<div class="flex-child"></div>
 	</div>
+	<div class="stackflex-container" style="width:100%;align-items: center;">
+		<div class="flex-child"></div>
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="portitem">
+			<div style="position:relative;text-align:center;">
+			<img src="dlights/dailights.jpeg" onclick="document.location.href='dailights'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
+			<div onclick="document.location.href='dailights'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">DAILIGHTS</div>
+			</div>
+		</div>
+		<div class="flex-child"></div>
+	</div>
 </div>
 
 <div class="textrow" style="padding-left:8px" id="contact">
 	<div style="font-size:30px; line-height:160%;"><b>> CONTACT</b></div>
-	<div style="font-size:20px; margin-top:20px;">
-		get in touch! find me at <a class="nav" style="text-decoration: underline;" href="mailto:ryanzengpeng@gmail.com">ryanzengpeng@gmail.com</a></div>
-	<div style="font-size:16px; margin-top:20px;">
-		(for brown or risd folk, use <a class="nav" style="text-decoration: underline;" href="mailto:ryan_peng@brown.edu">ryan_peng@brown.edu</a>)</div>
-
 </div>
 
 <div class="textrow" style="padding-left:8px" id="misc">
@@ -122,5 +130,15 @@
 <div class="bottomrightcut"></div>
 <div class="footer"></div>
 <div class="footer-box"></div>
+
+<script>
+//modal
+var captchabtn = document.getElementById("captchabtn");
+var captcha = document.getElementById("captcha");
+
+captchabtn.onclick = function() {
+  captcha.style.display = "block";
+}
+</script>
 </body>
 </html>
