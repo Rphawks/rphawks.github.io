@@ -134,6 +134,7 @@ body {
 .stackflex-container {
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .flex-child {
@@ -267,6 +268,10 @@ span.peach {
 	color: #824C71;
 }
 
+.domain::before {
+    content: "\0040";    /* Unicode character for @ symbol */
+}
+ 
 @media screen and (max-width: 1200px){
 	.stackflex-container{
 		flex-direction: column;
