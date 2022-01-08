@@ -25,17 +25,17 @@
 	<div class="flex-container">
 		<div class="spacer"></div>
 		<div class="spacer"></div>
-		<div style="font-size:40px; line-height:150%; padding-top:4px"><a href="index.html" class="nav">RYAN PENG</a></div>
+		<div style="font-size:40px; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
 		<div class="spacer"></div>
 		<div class="spacer"></div>
 		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%;"><a href="index.html#about" class="nav">ABOUT</a></div>
+		<div style="font-size:30px; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
 		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="index.html#projects" class="nav">PROJECTS</a></div>
+		<div style="font-size:30px; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
 		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="index.html#contact" class="nav">CONTACT</a></div>
+		<div style="font-size:30px; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
 		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="index.html#misc" class="nav">MISC</a></div>
+		<div style="font-size:30px; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
 		<div class="flex-child"></div>
 	</div>
 </div>
@@ -204,21 +204,21 @@
 	<div style="height:12px;"></div>
 	<div class="flex-container" style="align-items:center;flex-wrap:wrap;">
 		<div class="flex-child"></div>
-		<img src="archair/boxclosed.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/boxclosed.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="spacer"></div>
-		<img src="archair/boxopen.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/boxopen.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="spacer"></div>
-		<img src="archair/metalbrace.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/metalbrace.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="flex-child"></div>
 	</div>
 	<div style="height:18px;"></div>
 	<div class="flex-container" style="align-items:center;flex-wrap:wrap;">
 		<div class="flex-child"></div>
-		<img src="archair/backbraceside.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/backbraceside.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="spacer"></div>
-		<img src="archair/bench.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/bench.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="spacer"></div>
-		<img src="archair/paperbrace.jpg" class="imgborder" style="height:200px;width:auto;padding:8px;">
+		<img src="archair/paperbrace.jpg" class="imgborder" style="height:175px;width:auto;padding:8px;">
 		<div class="flex-child"></div>
 	</div>
 	<div style="height:24px;"></div>
@@ -286,13 +286,14 @@
 	<div style="height:24px;"></div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="archair/chairanimation.gif" class="imgborder" style="height:250px;">
 		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">SKETCH VISUALIZATION</span><br><br>on the left, a quick animation of the chair unfolding.<br>
-		on the right, a sketch of a person sitting in the chair.<br><br>
+		<span class="headline">SKETCH VISUALIZATION</span><br><br>
 		<span class="headline">> both visualizations by addie clark </span>
 		</div>
-		<img src="archair/sitting.png" class="imgborder" style="padding-left:100px;height:250px;">
+		<div class="flex-container" style="align-items:center;flex-direction:column;">
+			<img src="archair/sitting.png" class="imgborder" style="padding-left:5px;height:245px;">
+			<img src="archair/chairanimation.gif" class="imgborder" style="height:250px;">
+		</div>
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div style="height:18px;"></div>
@@ -410,45 +411,7 @@
 <div class="footer"></div>
 <div class="footer-box"></div>
 
-<div id="vmodal" class="vmodal">
-  <div class="vmodal-content">
-    <span class="vmodalclose">&times;</span>
-    <iframe id="vmodalv" frameBorder="0" style="width:80%;aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.youtube.com/embed/4Uav--0U_dg?controls=0&rel=0">
-	</iframe>
-  </div>
-</div>
-
 <script>
-// Get the modal
-var vmodal = document.getElementById("vmodal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("vmodalb");
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("vmodalclose")[0];
-
-// When the user clicks the button, open the modal 
-btn.onclick = function() {
-  vmodal.style.display = "block";
-}
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  vmodal.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == vmodal) {
-    vmodal.style.display = "none";
-	var iframe = document.getElementById("vmodalv");
-	var url = iframe.getAttribute('src');
-      iframe.setAttribute('src', '');
-      iframe.setAttribute('src', url);
-  }
-}
-
 //topbtn
 mybutton = document.getElementById("topbtn");
 
