@@ -258,7 +258,7 @@ span.peach {
 	padding-bottom: 40px;
 	font-size: 24px;
 	height:48px;
-	width: 288px;
+	width: 216px;
 	display:block;
 	margin-left:auto;
 	margin-right:auto;
@@ -272,6 +272,39 @@ span.peach {
     content: "\0040";    /* Unicode character for @ symbol */
 }
  
+.collapsible {
+	background-color: #000000;
+	cursor: pointer;
+	width: 100%;
+	border: none;
+	text-align: left;
+	outline: none;
+	font-family: 'DM Mono';
+	color: #FFA599;
+	padding-left: 8px;
+}
+
+.active:hover, .collapsible:hover {
+  color: #824C71;
+}
+
+.content {
+  display: none;
+  overflow: hidden;
+}
+
+.collapsible:before {
+	content: "+";
+}
+
+.active:before {
+	content: "-";
+}
+
+span.rotated{
+	transform: rotate(90deg);
+}
+
 @media screen and (max-width: 1200px){
 	.stackflex-container{
 		flex-direction: column;
