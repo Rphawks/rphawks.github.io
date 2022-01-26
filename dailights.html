@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>dailights | ryan peng</title>
+</head>
+<body>
+
+<div class="modal">
+  <div class="modal-content">
+		<div style="font-size:30px; line-height:160%; text-align: center;">it's a little cramped in here...</div>
+		<div style="height:30px"></div>
+		<div style="font-size:20px; line-height:160%; text-align: center;">view on a bigger screen!</div>
+  </div>
+</div>
+
+<div class="topleftcut"></div>
+<div class="header"></div>
+<div class="header-spacer"></div>
+<div class="header-box"></div>
+<div class="wrap">
+
+<div class="flex-container" style="flex-direction:column;height:calc(100vh - 60px);">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:40px; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:30px; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:30px; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:30px; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:30px; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+
+	<div class="textrow">
+		<div style="height:20px"></div>
+	</div>
+
+	<div class="textrowb" style="padding-left:8px">
+			<div style="color:#69BADD; font-size:18px; line-height:160%;">FALL 2021</div>
+			<div style="font-size:45px; line-height:160%;"><b>DAILIGHTS</b></div>
+	</div>
+
+	<div class="textrow" style="padding-left:8px">
+		<div style="color:#69BADD; font-size:20px; line-height:160%;">working proof of concept for a customizable habit calendar</div>
+	</div>
+
+	<div class="textrowb" style="padding-left:8px">
+		<div class="summary"><span class="info">WORK TYPE</span>&nbsp; team</div>
+		<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> electronics, engineering & cad</div>
+		<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> jenny yu, alex burt, luis gomez, julia granato</div>
+		<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn32, brown university</div>
+		<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 7 weeks, ~10 hours/week</div>
+		<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> electronics, laser cutting, cad</div>
+	</div>
+
+	<div class="flex-child"></div>	
+	<div style="font-size:20px; line-height:160%; text-align: center;"><a href="#jump" class="nav">preview &amp; process</a></div>
+	<div style="font-size:20px; line-height:160%; text-align: center;">↓</div>
+</div>
+
+<div class="anchor" id="jump"></div>
+<div style="height:12px;"></div>
+<img src="dlights/dailightsthumb.jpeg" class="imgborder" style="max-height:500px;display:block;margin-left:auto;margin-right:auto;">
+<div style="font-size:16px; line-height:160%; text-align: center;">(forgive the buttons - we'll get to that)</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> WHAT IS IT?</button>
+<div class="textrow portrow content">
+	<div class="porttext" style="margin:auto;">
+		<span class="headline" style="font-size:18px"><b>dailights is a modular edge-lit tracking calendar.</b></span><br><br>habit-tracking apps are common, but we sought to keep the satisfying tactility of a physical interaction.<br><br>
+		inspired by <a href="https://www.simonegiertz.com/every-day-calendar"style="color: #FFA599;">simone giertz's every day calendar</a>, which uses a binary on-off scale, we made a system which supports multiple levels of grading.
+		<br><br>	
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> IDEATION</button>
+<div class="textrow portrow content">
+	<div class="porttext" style="margin:auto;">
+		<span class="headline">TAKEAWAYS</span><br><br>> <b>monthly</b> calendar<br><br>> number scale of colors<br><br>
+		> <b>edge-lit</b> tiles<br><br>> <b>manual</b> tile rearrangement<br><br>> storage of monthly data (reach idea)
+	</div>
+	<div style="height:12px;"></div>
+</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> SKETCHING</button>
+<div class="textrow portrow content">
+	<img src="dlights/dailightssketches.jpg" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
+	<div style="height:18px;"></div>
+	<div class="porttext" style="text-indent:0px;margin-left:auto;margin-right:auto;text-align:center;">
+		<span class="headline">INITIAL SKETCHING OF BASIC FUNCTIONS</span>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> CAD/STRUCTURE DESIGN</button>
+<div class="textrow portrow content">
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div class="porttext" style="padding-right:24px;padding-left:4px;">
+		<span class="headline">1<sup>st</sup> and 2<sup>nd</sup> DIMENSION RENDERINGS
+		</div>
+		<div class="flex-container" style="align-items:center;flex-direction:column;">
+			<img src="dlights/acrylictest1.png" class="imgborder" style="height:250px;">
+			<img src="dlights/acrylictest2.png" class="imgborder" style="height:250px;">
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="dlights/matrix.png" class="imgborder" style="width:50%;max-width:500px;height:auto;">
+		<div class="porttext" style="padding-left:24px;padding-right:4px;">
+		<span class="headline">FULL MATRIX RENDER</span></div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div class="porttext" style="padding-right:24px">
+			<span class="headline">THREE-LAYER CELL DESIGN</span>
+		</div>
+		<img src="dlights/threelayer.png" class="imgborder" style="width:50%;max-width:500px;height:auto;">
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+</div>	
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> ELECTRONICS</button>
+<div class="textrow portrow content">
+	<img src="dlights/pinout.png" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
+	<div style="height:18px;"></div>
+	<div class="porttext" style="margin:auto;">
+		<span class="headline">PINOUT</span><br><br>before buying any parts, we diagrammed how they would connect.
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="dlights/cardboard2.jpg" class="imgborder" style="height:calc(2 * 100vw);max-height:500px;width:auto;">
+		<div class="porttext" style="padding-left:24px;padding-right:4px;">
+		<span class="headline">ELECTRONICS CHANNELS</span></div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> FINAL ASSEMBLY</button>
+<div class="textrow portrow content">
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div class="porttext" style="padding-right:24px;padding-left:4px;">
+		<span class="headline">PLYWOOD CUT WITH CHANNELS & COVER LAYER</span><br><br>at this stage, the last row of LEDs was removed because of electronics malfunctions.
+		triaging electronics problems allowed for more code testing.
+		</div>
+		<img src="dlights/plywood.jpg" class="imgborder" style="height:40vw;max-height:500px;width:auto;">
+		<img src="dlights/plywoodcovered.jpg" class="imgborder" style="height:40vw;max-height:500px;width:auto;">
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="dlights/alllit.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
+		<div class="porttext" style="padding-left:24px;padding-right:4px;">
+		<span class="headline">ALL LIT (BACK VIEW)</span><br><br>acrylic tiles are added to the grid, as well as a masonite base housing for electronics.</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div class="porttext" style="padding-right:24px">
+			<span class="headline">COLOR CUSTOMIZATION</span><br><br>using three buttons for <br><span class="headline">NEXT</span> (shift tile by one day), <br><span class="headline">MODE</span>, <br>and <span class="headline">COLOR</span>,<br>each tile can be set to a range of colors. 
+			</div>
+		<img src="dlights/dailights.jpeg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="dlights/dailightsthumb.jpeg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
+		<div class="porttext" style="padding-left:24px;padding-right:4px;">
+		<span class="headline">FINAL</span><br><br>against the deadline, we prioritized functionality over aesthetics, so a bracket for the buttons was never made.</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+</div>	
+
+<div style="height:48px;"></div>
+
+<div style="font-size:35px; line-height:160%; font-weight: bold;">ADDITIONAL INFO</div>
+
+<div style="height:12px;"></div>
+<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> RESEARCH</button>
+<div class="textrow portrow content">
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div class="porttext" style="padding-right:24px">
+			<span class="headline">USER RESEARCH</span>
+		</div>
+		<table style = "border: 4px solid #006494;">
+		  <tr>
+			<th>questions</ths>
+			<th>insights</th>
+		  </tr>
+		  <tr>
+			<td>current methods for tracking habits?</td>
+			<td>planners, calendars, memory</td>
+		  </tr>
+		  <tr>
+			<td>portable, desk, or wall size?</td>
+			<td>desk item - more accessible and omnipresent</td>
+		  </tr>
+		  <tr>
+			<td>qualitative or quantitative?</td>
+			<td>qualitative 1-5 scale</td>
+		  </tr>
+		  <tr>
+			<td>degree of customization</td>
+			<td>minor customizations with many presets</td>
+		  </tr>
+		</table>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:18px;"></div>
+	<div style="height:24px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<table style = "border: 4px solid #006494;">
+		  <tr>
+			<td></td>
+			<th>electronics</th>
+			<th>engineering</th>
+			<th>computer science</th>
+		  </tr>
+		  <tr>
+			<th>USE:</th>
+			<td>Arduino Nano Every</td>
+			<td>1/4" acrylic</td>
+			<td></td>
+		  </tr>
+		  <tr>
+			<td style = "border-bottom-color:#FFA599;"></td>
+			<td style = "border-bottom-color:#FFA599;">Adafruit NeoPixels</td>
+			<td style = "border-bottom-color:#FFA599;">masonite</td>
+			<td style = "border-bottom-color:#FFA599;" ></td>
+		  </tr>
+		  <tr>
+			<th>EXPLORE:</th>
+			<td>pinout details</td>
+			<td>laser raster depth</td>
+			<td>NeoPixel libraries</td>
+		  </tr>
+		  <tr>
+			<td></td>
+			<td>power specifications</td>
+			<td>electronic channels</td>
+			<td>increment using buttons</td>
+		  </tr>
+		   <tr>
+			<td></td>
+			<td>wire gauge</td>
+			<td></td>
+			<td>id'ing tiles using rows & columns</td>
+		  </tr>
+		</table>
+		<div class="porttext" style="padding-left:24px;padding-right:4px;">
+		<span class="headline">INITIAL TECHNOLOGY RESEARCH</span></div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+</div>
+
+</div>
+
+<div class="bottomrightcut"></div>
+<div class="footer"></div>
+<div class="footer-box"></div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+</script>
+</body>
+</html>
