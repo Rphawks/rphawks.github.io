@@ -174,8 +174,8 @@ a.link {
 	color: #FFA599;
 }
 
-a.link:visited {
-	color: #FFA599;
+a:visited, a:active {
+  color: inherit;
 }
 
 a.link:hover {
