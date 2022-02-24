@@ -170,6 +170,14 @@ a.nav:hover {
 	color: #824C71;
 }
 
+a.link {
+	color: #FFA599;
+}
+
+a.link:hover {
+	color: #824C71;
+}
+
 html {
 	scroll-behavior: smooth;
 }
@@ -196,6 +204,10 @@ html {
   box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
 }
 
+span.white {
+	color:#FFFFFF;
+}
+
 span.info {
 	color:#69BADD;
 }
@@ -207,6 +219,10 @@ span.info {
 
 span.headline {
 	color:#FFA599;
+	font-family: 'DM Mono';	
+}
+
+span.mono {
 	font-family: 'DM Mono';	
 }
 
