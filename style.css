@@ -430,6 +430,13 @@ table {
 	.modal{
 		display: block;
 	}
+	.flex-container {
+		flex-direction:column;
+	}
+	.porttext {
+    text-indent: 0px;
+}
 	body{
+		font-size: 80%;
 	}
 }
