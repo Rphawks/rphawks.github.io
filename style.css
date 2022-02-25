@@ -304,7 +304,11 @@ span.peach {
 	padding-left: 8px;
 }
 
-.active:hover, .collapsible:hover {
+.collapsible:hover {
+  color: #824C71;
+}
+
+.active:hover {
   color: #824C71;
 }
 
@@ -319,6 +323,28 @@ span.peach {
 
 .active:before {
 	content: "-";
+}
+
+.hamburger{
+	position: fixed;
+	top: 50px;
+	left: 85%;
+	background-color: rgba(0, 0, 0, 0.4);
+	cursor: pointer;
+	width: 60px;
+	border: none;
+	text-align: center;
+	outline: none;
+	font-family: 'DM Mono';
+	color: #FFA599;
+}
+
+.hamburger:before {
+	content: "\2630";
+}
+
+.hamactive:before {
+	content: "\00D7";
 }
 
 span.rotated{
@@ -345,8 +371,7 @@ span.rotated{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-	background-color: rgb(0,0,0);
-	background-color: rgba(0,0,0,0.4);
+	overflow: hidden;
 }
 
 .modal-content {
