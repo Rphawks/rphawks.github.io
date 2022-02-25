@@ -192,7 +192,7 @@ html {
 
 .portitem{
 	max-height:auto;
-	max-width:532px;
+	max-width:33.25em;
 }
 
 .portitem:hover + .hide {
@@ -359,7 +359,7 @@ span.rotated{
 	}
 	.portitem{
 		height:auto;
-		max-width:400px;
+		max-width:25em;
 	}
 
 }
