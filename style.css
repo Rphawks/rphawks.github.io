@@ -373,16 +373,10 @@ span.rotated{
 	width: 100%;
 	height: 100%;
 	overflow: hidden;
-}
-
-.modal-content {
-  background-color: #000000;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+	background-color: #000000;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .hmodal {
