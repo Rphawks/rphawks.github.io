@@ -8,21 +8,37 @@
 </head>
 <body>
 
-<div class="modal">
-  <div class="modal-content">
-		<div style="font-size:30px; line-height:160%; text-align: center;">it's a little cramped in here...</div>
-		<div style="height:30px"></div>
-		<div style="font-size:20px; line-height:160%; text-align: center;">view on a bigger screen!</div>
-  </div>
-</div>
-
 <div class="topleftcut"></div>
 <div class="header"></div>
 <div class="header-spacer"></div>
 <div class="header-box"></div>
 <div class="wrap">
-<div class="flex-container" style="flex-direction:column;height:calc(100vh - 60px);">
+
+<button class="hamburger" id="hamburger" style="font-size:2em; line-height:140%; font-weight: bold;"></button>
+
+<div class="modal" id ="modal-content" style="display:none;">
 	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="flex-container" style="flex-direction:column;height:calc(100vh - 60px);">
+	<div class="titlerow barnav">
 		<div class="flex-container">
 			<div class="spacer"></div>
 			<div class="spacer"></div>
@@ -42,27 +58,27 @@
 	</div>
 	<div class="flex-child"></div>
 	<div class="textrow">
-			<img src="logomark.png" height="25" style="display: block;margin-top:10px;margin-left: auto;margin-right: auto;">
-			<div style="height: 40px"></div>
-			<div style="font-size:40px; line-height:160%; text-align: center;">hi, i'm ryan.</div>
-			<div style="height: 40px"></div>
-			<div style="font-size:20px; line-height:160%; text-align: center;padding-left:8px;padding-right:8px;">i'm a student interested in making the everyday more purposeful.</div>
+			<img src="logomark.png" style="height:1.5625em; display: block;margin-top:10px;margin-left: auto;margin-right: auto;">
+			<div style="height: 2.5em"></div>
+			<div style="font-size:2.5em; line-height:160%; text-align: center;">hi, i'm ryan.</div>
+			<div style="height: 2.5em"></div>
+			<div style="font-size: 1.25em; line-height:160%; text-align: center;padding-left:8px;padding-right:8px;">i'm a student interested in making the everyday more purposeful.</div>
 	</div>
 	<div class="flex-child"></div>
 	<div class="textrow">
-			<div style="font-size:20px; line-height:160%; text-align: center;"><a href="#about" class="nav">more</a></div>
-			<div style="font-size:20px; line-height:160%; text-align: center;">&#8595;</div>
+			<div style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#about" class="nav">more</a></div>
+			<div style="font-size:1.25em; line-height:160%; text-align: center;">&#8595;</div>
 			<div style="height: 10px"></div>
 	</div>
 </div>
 
 <div class="anchor" id="about"></div>
 <div class="textrow" style="padding-left:8px;">
-	<div style="font-size:30px; line-height:160%;"><b>> ABOUT ME</b></div>
+	<div style="font-size:2.25em; line-height:160%;"><b>> ABOUT ME</b></div>
 	<div class="flex-container" style="max-width:1050px;margin:auto;">
-		<img src="ryan.png" height="250" style="vertical-align:middle; margin-top:12px; margin-left:2px;">
+		<img src="ryan.png" style="height:250px;width:auto;object-fit: contain;vertical-align:middle; margin-top:12px; margin-left:2px;">
 		<div class="spacer" style="width: 32px"></div>
-		<div style="font-size:20px; margin-top:20px; margin-left:12px;">
+		<div style="font-size:1.25em; margin-top:20px; margin-left:12px;">
 		i'm ryan.<br><br>
 			i'm a first-year student at brown university concentrating in design engineering.<br><br>
 			i'm from atlanta, ga and have lived in memphis, tn and now providence, ri.<br><br>
@@ -74,7 +90,7 @@
 
 <div class="anchor" id="projects"></div>
 <div class="textrow" style="padding-left:8px">
-	<div style="font-size:30px; line-height:160%;"><b>> PROJECTS</b></div>
+	<div style="font-size:2.25em; line-height:160%;"><b>> PROJECTS</b></div>
 	<div class="stackflex-container" style="width:100%;padding-top:12px;align-items: center;">
 		<div class="flex-child"></div>
 		<div class="spacer"></div>
@@ -82,14 +98,14 @@
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="midsummerstage.jpg" onclick="document.location.href='theatre'" style="position: relative;z-index:0;aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='theatre'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">THEATRE</div>
+			<div onclick="document.location.href='theatre'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">THEATRE</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="archair.png" onclick="document.location.href='archair'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='archair'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">AR<sup style="font-size:25px;">2</sup> CHAIR</div>
+			<div onclick="document.location.href='archair'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">AR<sup style="font-size:25px;">2</sup> CHAIR</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
@@ -101,14 +117,14 @@
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="ic/icnotext.png" onclick="document.location.href='identitycrisis'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='identitycrisis'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">IDENTITY CRISIS</div>
+			<div onclick="document.location.href='identitycrisis'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">IDENTITY CRISIS</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="dlights/dailights.jpeg" onclick="document.location.href='dailights'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='dailights'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">DAILIGHTS</div>
+			<div onclick="document.location.href='dailights'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">DAILIGHTS</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
@@ -120,14 +136,14 @@
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="flyover/flyoverthumb.jpg" onclick="document.location.href='flyover'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='flyover'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">FLYOVERv2</div>
+			<div onclick="document.location.href='flyover'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">FLYOVERv2</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="2be/2bethumb.png" onclick="document.location.href='2be'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='2be'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">2BE</div>
+			<div onclick="document.location.href='2be'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">2BE</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
@@ -135,22 +151,22 @@
 </div>
 
 <div class="textrow" style="padding-left:8px" id="contact">
-	<div style="font-size:30px; line-height:160%;"><b>> CONTACT</b></div>
+	<div style="font-size:2.25em; line-height:160%;"><b>> CONTACT</b></div>
 </div>
 
 <div style="margin-left:72px">
-<div style="font-size:20px;">get in touch!</div>
-<div style="height:18px;"></div>
-<div style="font-size:20px;">&#9993; ryanzengpeng<span class="domain">gmail.com</span></div>
-<div style="font-size:16px; margin-top:12px;margin-bottom:6px;">(for brown or risd folk, use ryan_peng<span class="domain">brown.edu</span>)</div>
-<div style="height:18px;"></div>
-<div style="font-size:20px;">
+<div style="font-size:1.25em;">get in touch!</div>
+<div style="height:1.125em;"></div>
+<div style="font-size:1.25em;">&#9993; ryanzengpeng<span class="domain">gmail.com</span></div>
+<div style="font-size:1em; margin-top:12px;margin-bottom:6px;">(for brown or risd folk, use ryan_peng<span class="domain">brown.edu</span>)</div>
+<div style="height:1.125em;"></div>
+<div style="font-size:1.25em;">
 		&#128462; <a class="link" href="https://www.linkedin.com/in/ryan-peng-083454222/">linkedin</a></span></div>
-<div style="height:18px;"></div>
+<div style="height:1.125em;"></div>
 </div>
 
 <div class="textrow" style="padding-left:8px" id="misc">
-	<div style="font-size:30px; line-height:160%;"><b>> MISCELLANEOUS</b></div>
+	<div style="font-size:2.25em; line-height:160%;"><b>> MISCELLANEOUS</b></div>
 	<div class="stackflex-container" style="width:100%;align-items: center;">
 		<div class="flex-child"></div>
 		<div class="spacer"></div>
@@ -158,7 +174,7 @@
 		<div class="portitem">
 			<div style="position:relative;text-align:center;">
 			<img src="blue.png" onclick="document.location.href='identity'" style="aspect-ratio:4/3;width:100%;max-width:500px;max-height:380px;padding:4px;object-fit: cover;cursor:pointer;">
-			<div onclick="document.location.href='identity'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:40px;background-color: rgba(0,0,0,0.5);cursor:pointer;">WEBSITE<br>& <br>IDENTITY</div>
+			<div onclick="document.location.href='identity'" style="position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);font-size:2.5em;background-color: rgba(0,0,0,0.5);cursor:pointer;">WEBSITE<br>& <br>IDENTITY</div>
 			</div>
 		</div>
 		<div class="flex-child"></div>
@@ -172,6 +188,26 @@
 <div class="bottomrightcut"></div>
 <div class="footer"></div>
 <div class="footer-box"></div>
-	 
+<script>
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+</script>
 </body>
 </html>
