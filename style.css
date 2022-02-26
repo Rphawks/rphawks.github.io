@@ -471,6 +471,22 @@ table {
   margin-right:auto;
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #FFA599;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #99635C;
+}
+
 @media screen and (max-width: 850px){
 	.hamburger{
 		display: block;
