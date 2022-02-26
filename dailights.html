@@ -7,68 +7,81 @@
 </head>
 <body>
 
-<div class="modal">
-  <div class="modal-content">
-		<div style="font-size:30px; line-height:160%; text-align: center;">it's a little cramped in here...</div>
-		<div style="height:30px"></div>
-		<div style="font-size:20px; line-height:160%; text-align: center;">view on a bigger screen!</div>
-  </div>
-</div>
-
 <div class="topleftcut"></div>
 <div class="header"></div>
 <div class="header-spacer"></div>
 <div class="header-box"></div>
 <div class="wrap">
 
-	<div class="titlerow">
+<button class="hamburger" id="hamburger"></button>
+
+<div class="titlerow barnav">
 		<div class="flex-container">
 			<div class="spacer"></div>
 			<div class="spacer"></div>
-			<div style="font-size:40px; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
 			<div class="spacer"></div>
 			<div class="spacer"></div>
 			<div class="flex-child"></div>
-			<div style="font-size:30px; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:30px; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:30px; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:30px; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
 			<div class="flex-child"></div>
 		</div>
 	</div>
 
-	<div class="textrow">
-		<div style="height:20px"></div>
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
 	</div>
+</div>
 
-	<div class="textrowb" style="padding-left:8px">
-			<div style="color:#69BADD; font-size:18px; line-height:160%;">FALL 2021</div>
-			<div style="font-size:45px; line-height:160%;"><b>DAILIGHTS</b></div>
-	</div>
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
 
-	<div class="textrow" style="padding-left:8px">
-		<div style="color:#69BADD; font-size:20px; line-height:160%;">working proof of concept for a customizable habit calendar</div>
-	</div>
-	
-	<div class="textrow" style="padding-top:0px;">
-	<img src="dlights/full.jpg" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
-	</div>
-	
-	<div style="font-size:16px; line-height:160%; text-align: center;padding-bottom:10px;">(forgive the buttons - we'll get to that)</div>
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">FALL 2021</div>
+		<div class="title"><b>DAILIGHTS</b></div>
+</div>
 
-	<div class="textrowb" style="padding-left:8px">
-		<div class="summary"><span class="info">WORK TYPE</span>&nbsp; team</div>
-		<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> electronics, engineering & cad</div>
-		<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> jenny yu, alex burt, luis gomez, julia granato</div>
-		<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn32, brown university</div>
-		<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 7 weeks, ~10 hours/week</div>
-		<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> electronics, laser cutting, cad</div>
-	</div>
+<div class="textrow" style="padding-left:8px">
+	<div class="blip">working proof of concept for a customizable habit calendar</div>
+</div>
 
+<div class="textrow" style="padding-top:0px;">
+<img src="dlights/full.jpg" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+</div>
 
+<div style="font-size:16px; line-height:160%; text-align: center;padding-bottom:10px;">(forgive the buttons - we'll get to that)</div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; team</div>
+	<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> electronics, engineering & cad</div>
+	<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> jenny yu, alex burt, luis gomez, julia granato</div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn32, brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 7 weeks, ~10 hours/week</div>
+	<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> electronics, laser cutting, cad</div>
+</div>
 
 <div style="height:24px;"></div>
 <div class="textrow portrow">
@@ -80,7 +93,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> IDEATION</button>
+<button type="button" class="collapsible stitle"> IDEATION</button>
 <div class="textrow portrow content">
 	<div class="porttext" style="margin:auto;">
 		<span class="headline">TAKEAWAYS</span><br><br>> <b>monthly</b> calendar<br><br>> number scale of colors<br><br>
@@ -90,7 +103,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> SKETCHING</button>
+<button type="button" class="collapsible stitle"> SKETCHING</button>
 <div class="textrow portrow content">
 	<img src="dlights/dailightssketches.jpg" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
 	<div style="height:18px;"></div>
@@ -100,7 +113,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> CAD/STRUCTURE DESIGN</button>
+<button type="button" class="collapsible stitle"> CAD/STRUCTURE DESIGN</button>
 <div class="textrow portrow content">
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
@@ -141,7 +154,7 @@
 </div>	
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> ELECTRONICS</button>
+<button type="button" class="collapsible stitle"> ELECTRONICS</button>
 <div class="textrow portrow content">
 	<img src="dlights/pinout.png" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
 	<div style="height:18px;"></div>
@@ -159,7 +172,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> FINAL ASSEMBLY</button>
+<button type="button" class="collapsible stitle"> FINAL ASSEMBLY</button>
 <div class="textrow portrow content">
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
@@ -200,10 +213,10 @@
 
 <div style="height:48px;"></div>
 
-<div style="font-size:35px; line-height:160%; font-weight: bold;">ADDITIONAL INFO</div>
+<div class="stitle">ADDITIONAL INFO</div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> RESEARCH</button>
+<button type="button" class="collapsible stitle"> RESEARCH</button>
 <div class="textrow portrow content">
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
@@ -314,6 +327,26 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
 }
 </script>
 </body>

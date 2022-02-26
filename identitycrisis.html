@@ -21,36 +21,59 @@
 <div class="header-box"></div>
 <div class="wrap">
 
-<div class="titlerow">
-	<div class="flex-container">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div style="font-size:40px; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
-		<div class="flex-child"></div>
+<button class="hamburger" id="hamburger"></button>
+
+<div class="titlerow barnav">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
 	</div>
 </div>
 
-<div class="textrow">
-	<div style="height:20px"></div>
+<div class="textrow barnav">
+	<div style="height:10px"></div>
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-		<div style="color:#69BADD; font-size:18px; line-height:160%;">FALL 2019 - SPRING 2020</div>
-		<div style="font-size:45px; line-height:160%;"><b>IDENTITY CRISIS</b></div>
+		<div class="date">FALL 2019 - SPRING 2020</div>
+		<div class="title"><b>IDENTITY CRISIS</b></div>
 </div>
 
 <div class="textrow" style="padding-left:8px">
-	<div style="color:#69BADD; font-size:20px; line-height:160%;">a podcast episode on the architectural identity of memphis</div>
+	<div class="blip">a podcast episode on the architectural identity of memphis</div>
 </div>
 
 <div class="textrowb" style="padding-left:8px">
@@ -62,10 +85,10 @@
 
 <div style="height:12px;"></div>
 
-<img src="ic/identitycrisis.png" class="imgborder" style="max-height:calc(100vh - 587px);display:block;margin-left:auto;margin-right:auto;">
+<img src="ic/identitycrisis.png" class="imgborder" style="max-height:calc(100vh - 36.6875em);display:block;margin-left:auto;margin-right:auto;">
 		
-<div style="font-size:20px; line-height:160%; text-align: center;"><a href="#jump" class="nav">about</a></div>
-<div style="font-size:20px; line-height:160%; text-align: center;">↓</div>
+<div style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#jump" class="nav">about</a></div>
+<div style="font-size:1.25em; line-height:160%; text-align: center;">↓</div>
 
 <div class="anchor" id="jump"></div>
 <div class="textrow portrow">
@@ -78,7 +101,7 @@
 
 <div style="height:12px;"></div>
 
-<div style="font-size:20px; line-height:160%; text-align: center;"><a href="https://www.tinyurl.com/IdCrisisPodcast" class="nav" style="text-decoration: underline">DOWNLOAD LINK</a></div>
+<div style="font-size:1.25em; line-height:160%; text-align: center;"><a href="https://www.tinyurl.com/IdCrisisPodcast" class="nav" style="text-decoration: underline">DOWNLOAD LINK</a></div>
 
 <div style="height:24px;"></div>
 
@@ -97,6 +120,26 @@ mybutton = document.getElementById("topbtn");
 function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
 }
 </script>
 </body>
