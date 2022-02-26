@@ -1,41 +1,58 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 <title>theatre | ryan peng</title>
 </head>
 <body>
 
-<div class="modal">
-  <div class="modal-content">
-		<div style="font-size:30px; line-height:160%; text-align: center;">it's a little cramped in here...</div>
-		<div style="height:30px"></div>
-		<div style="font-size:20px; line-height:160%; text-align: center;">view on a bigger screen!</div>
-  </div>
-</div>
-
 <div class="topleftcut"></div>
 <div class="header"></div>
 <div class="header-spacer"></div>
 <div class="header-box"></div>
 <div class="wrap">
-<div class="titlerow">
-	<div class="flex-container">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div style="font-size:40px; line-height:150%; padding-top:4px;"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
-		<div class="flex-child"></div>
-		<div style="font-size:30px; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
-		<div class="flex-child"></div>
+
+<button class="hamburger" id="hamburger" style="font-size:2em; line-height:140%; font-weight: bold;"></button>
+
+<div class="titlerow barnav">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
 	</div>
 </div>
 
@@ -44,12 +61,12 @@
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-		<div style="color:#69BADD; font-size:18px; line-height:160%;">SPRING 2017 - SPRING 2021</div>
-		<div style="font-size:45px; line-height:160%;"><b>THEATRE & STAGECRAFT</b></div>
+		<div class="date">SPRING 2017 - SPRING 2021</div>
+		<div class="title"><b>THEATRE & STAGECRAFT</b></div>
 </div>
 
 <div class="textrow" style="padding-left:8px">
-	<div style="color:#69BADD; font-size:20px; line-height:160%;">semesterly shows that translate scripts into complete worlds</div>
+	<div class="blip">semesterly shows that translate scripts into complete worlds</div>
 </div>
 
 <div class="textrow" style="padding-top:0px;">
@@ -64,7 +81,7 @@
 </div>
 
 <div class="textrow" style="padding-left:8px;padding-right:8px">
-	<div style="font-size:35px; line-height:160%;padding-bottom:8px"><b>> OVERVIEW</b></div>
+	<div style="font-size:2.25em; line-height:160%;padding-bottom:8px"><b>> OVERVIEW</b></div>
 	<div class="summary">SELECTED WORKS (LINKS!):</div>
 	<div style="height:12px;"></div>
 	<div class="summary"><span class="info">SOUND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#acl" class="nav"><i>A Chorus Line</i></a>, <a href="#gnd" class="nav"><i>Guys and Dolls</i></a>, <a href="#nf" class="nav"><i>Noises Off</i></a></div>
@@ -72,7 +89,7 @@
 	<div class="summary"><span class="info">PROJECTION&nbsp;</span> <a href="#gnd" class="nav"><i>Guys and Dolls</i></a>, <a href="#fortune" class="nav"><i>The Fortune</i></a></div>
 </div>
 	
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> ALL ROLES</button>
+<button type="button" class="collapsible stitle"> ALL ROLES</button>
 <div class="textrow portrow content">	
 	<table style = "border: 4px solid #006494;">
 	  <tr>
@@ -191,7 +208,7 @@
 
 <div class="anchor" id="acl"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>A Chorus Line</i> - SPRING 2021</button>
+<button type="button" class="collapsible stitle"> <i>A Chorus Line</i> - SPRING 2021</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">sound engineer/board operator (A1)</div>
 	<div style="height:12px;"></div>
@@ -240,7 +257,7 @@
 
 <div class="anchor" id="gnd"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>Guys and Dolls</i> - SPRING 2020</button>
+<button type="button" class="collapsible stitle"> <i>Guys and Dolls</i> - SPRING 2020</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">sound and projection designer, mic wrangler (A2), house manager</div>
 	<div style="height:12px;"></div>
@@ -274,7 +291,7 @@
 
 <div class="anchor" id="nf"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>Noises Off</i> - FALL 2019</button>
+<button type="button" class="collapsible stitle"> <i>Noises Off</i> - FALL 2019</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">sound designer</div>
 	<div style="height:12px;"></div>
@@ -301,7 +318,7 @@
 
 <div class="anchor" id="fortune"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>The Fortune</i> - SPRING 2019</button>
+<button type="button" class="collapsible stitle"> <i>The Fortune</i> - SPRING 2019</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">(student-produced)<br><br>projection designer</div>
 	<div style="height:12px;"></div>
@@ -328,7 +345,7 @@
 
 <div class="anchor" id="amnd"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>A Midsummer Night's Dream</b></i> - SPRING 2019</button>
+<button type="button" class="collapsible stitle"> <i>A Midsummer Night's Dream</b></i> - SPRING 2019</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">lighting tech/programmer</div>
 	<div style="height:12px;"></div>
@@ -347,7 +364,7 @@
 
 <div class="anchor" id="1776"></div>
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>1776</i> - FALL 2018</button>
+<button type="button" class="collapsible stitle"> <i>1776</i> - FALL 2018</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">lighting tech/programmer</div>
 	<div style="height:12px;"></div>
@@ -364,7 +381,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>Little Shop of Horrors</i> - SPRING 2018</button>
+<button type="button" class="collapsible stitle"> <i>Little Shop of Horrors</i> - SPRING 2018</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">lighting tech/programmer</div>
 	<div style="height:12px;"></div>
@@ -380,7 +397,7 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible" style="font-size:35px; line-height:160%; font-weight: bold;"> <i>Witness for the Prosecution</i> - SPRING 2017</button>
+<button type="button" class="collapsible stitle"> <i>Witness for the Prosecution</i> - SPRING 2017</button>
 <div class="textrow portrow content">
 	<div style="font-size:20px; line-height:100%;">carpenter</div>
 	<div style="height:12px;"></div>
@@ -457,6 +474,26 @@ for (i = 0; i < coll.length; i++) {
       content.style.display = "block";
     }
   });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
 }
 </script>
 </body>

@@ -339,6 +339,9 @@ span.peach {
 	color: #FFA599;
 	display:none;
 	z-index:5;
+	font-size:2em;
+	line-height:140%;
+	font-weight: bold;
 }
 
 .hamburger:before {
@@ -347,6 +350,29 @@ span.peach {
 
 .hamactive:before {
 	content: "\00D7";
+}
+
+.date{
+	color:#69BADD;
+	font-size:1.125em;
+	line-height:160%;
+}
+
+.title{
+	font-size:2.8125em;
+	line-height:160%;
+}
+
+.blip{
+	color:#69BADD;
+	font-size:1.25em;
+	line-height:160%;
+}
+
+.stitle{
+	font-size:2.25em;
+	line-height:160%;
+	font-weight: bold;
 }
 
 span.rotated{
