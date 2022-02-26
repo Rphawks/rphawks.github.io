@@ -261,7 +261,8 @@ span.peach {
 
 .tablechecks {
 	text-align:center;
-	font-size: 1.25px;
+	font-size: 1em;
+	color:#FFA599;
 }
 
 #topbtn {
@@ -375,6 +376,10 @@ span.peach {
 	font-weight: bold;
 }
 
+.fortuneswap {
+height: 808px;
+}
+	
 span.rotated{
 	transform: rotate(90deg);
 }
@@ -500,6 +505,9 @@ table {
 	.porttext {
     text-indent: 0px;
 	}
+	.fortuneswap {
+    height: auto;
+	}
 	#topbtn {
     display: none;
 	}
@@ -523,6 +531,9 @@ table {
 	}
 	.porttext {
     text-indent: 0px;
+	}
+	.fortuneswap {
+    height: auto;
 	}
 	#topbtn {
     display: none;
