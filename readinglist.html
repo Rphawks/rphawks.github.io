@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>style & identity | ryan peng</title>
+</head>
+<body>
+
+<div class="topleftcut"></div>
+<div class="header"></div>
+<div class="header-spacer"></div>
+<div class="header-box"></div>
+<div class="wrap">
+
+<button class="hamburger" id="hamburger"></button>
+
+<div class="titlerow barnav">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/#about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#projects" class="nav">PROJECTS</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#contact" class="nav">CONTACT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="title"><b>READING LIST</b></div>
+</div>
+
+<div style="height:1.125em;"></div>
+
+<div class="textrowb" style="padding-left:8px">
+<div style="font-size:1.25em;">got a book to suggest? let me know!<br><br>&#9993; ryanzengpeng<span class="domain">gmail.com</span></div>
+</div>
+
+<div class="textrow portrow">
+	<div class="stitle">> READING</div>
+	<div class="porttext" style="margin:auto;">
+		<br>
+		<span class="peach" style="font-size:18px;font-style:italic;">The 99% Invisible City</span>
+		<br>Roman Mars & Kurt Kohlstedt<br></span>
+	</div>
+</div>
+
+<div class="textrow portrow">
+	<div class="stitle">> TO READ</div>
+	<div class="porttext" style="margin:auto;">
+		<br>
+		<span class="peach" style="font-size:18px;font-style:italic;">Accidentally Wes Anderson</span>
+		<br>Wally Koval<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">The Design of Everyday Things</span>
+		<br>Don Norman<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">Logo Design Love</span>
+		<br>David Airey<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">What Can a Body Do?</span>
+		<br>Sara Hendren<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">Design for the Real World</span>
+		<br>Victor Papanek<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">The Jungle</span>
+		<br>Upton Sinclair<br></span>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="textrow portrow">
+	<div class="stitle">> READ</div>
+	<div class="porttext" style="margin:auto;">
+		<br>
+		<span class="peach" style="font-size:18px;font-style:italic;">Ruined by Design</span>
+		<br>Mike Monteiro<br></span>
+		<span class="peach" style="font-size:18px;font-style:italic;">The Secret Lives of Color</span>
+		<br>Kassia St. Clair<br></span>
+	</div>
+</div>
+<div style="height:36px;"></div>
+
+<div class="bottomrightcut"></div>
+<div class="footer"></div>
+<div class="footer-box"></div>
+
+<script>
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+</script>
+</body>
+</html>
