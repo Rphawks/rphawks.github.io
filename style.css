@@ -377,9 +377,13 @@ span.peach {
 }
 
 .fortuneswap {
-height: 808px;
+	height: 808px;
 }
-	
+
+.smallgif{
+	width:60%;
+}	
+
 span.rotated{
 	transform: rotate(90deg);
 }
@@ -508,6 +512,9 @@ table {
 	.fortuneswap {
     height: auto;
 	}
+	.smallgif{
+	width:100%;
+	}	
 	#topbtn {
     display: none;
 	}
@@ -535,6 +542,9 @@ table {
 	.fortuneswap {
     height: auto;
 	}
+	.smallgif{
+	width:100%;
+	}	
 	#topbtn {
     display: none;
 	}
