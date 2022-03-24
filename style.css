@@ -186,17 +186,38 @@ html {
 	scroll-behavior: smooth;
 }
 
-.hide {
-	display: none;
-}
-
 .portitem{
 	max-height:auto;
 	max-width:33.25em;
 }
 
-.portitem:hover + .hide {
-	display: block;
+.portimg{
+	position: relative;
+	z-index:0;
+	aspect-ratio:4/3;
+	width:100%;
+	max-width:31.25em;
+	max-height:23.75em;
+	padding:4px;
+	object-fit: cover;
+	cursor:pointer;
+}
+
+.porttitle{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size:2.5em;
+	background-color: rgba(0,0,0,0.5);
+	cursor:pointer;
+}
+
+.porthighlight{
+	color: #000000;
+	-webkit-text-stroke: 0.03em #FFA599;
+	font-size:2em;
+	text-align:center;
 }
 
 .vignette {
@@ -387,6 +408,71 @@ span.peach {
 span.rotated{
 	transform: rotate(90deg);
 }
+
+#theatreh:hover > .theatrehide {
+  display: block;
+}
+
+.theatrehide {
+  display: none;
+}
+
+#daih:hover > .daihide {
+  display: block;
+}
+
+.daihide {
+  display: none;
+}
+
+#arh:hover > .arhide {
+  display: block;
+}
+
+.arhide {
+  display: none;
+}
+
+#flyh:hover > .flyhide {
+  display: block;
+}
+
+.flyhide {
+  display: none;
+}
+
+#starh:hover > .starhide {
+  display: block;
+}
+
+.starhide {
+  display: none;
+}
+
+#sraveh:hover > .sravehide {
+  display: block;
+}
+
+.sravehide {
+  display: none;
+}
+
+#tubeh:hover > .tubehide {
+  display: block;
+}
+
+.tubehide {
+  display: none;
+}
+
+#ich:hover > .ichide {
+  display: block;
+}
+
+.ichide {
+  display: none;
+}
+
 
 @media screen and (max-width: 1200px){
 	.stackflex-container{
