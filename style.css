@@ -213,13 +213,6 @@ html {
 	cursor:pointer;
 }
 
-.porthighlight{
-	color: #000000;
-	-webkit-text-stroke: 0.03em #FFA599;
-	font-size:2em;
-	text-align:center;
-}
-
 .vignette {
   position: fixed;
   top: 0;
