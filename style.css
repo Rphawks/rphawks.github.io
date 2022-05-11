@@ -127,6 +127,12 @@ body {
 	margin: 0;
 }
 
+.hspacer {
+	width: 8px;
+	height: 8px;
+	margin: 0;
+}
+
 .flex-container {
 	display: flex;
 }
@@ -135,6 +141,17 @@ body {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+}
+
+.archstackflex-container {
+	display: flex;
+	justify-content: center;
+}
+
+.archflex {
+	display: flex;
+	justify-content: center;
+	align-items:center;
 }
 
 .flex-child {
@@ -191,6 +208,11 @@ html {
 	max-width:33.25em;
 }
 
+.architem{
+	height:auto;
+	width:48.975%;
+}
+
 .portimg{
 	position: relative;
 	z-index:0;
@@ -201,6 +223,16 @@ html {
 	padding:4px;
 	object-fit: cover;
 	cursor:pointer;
+}
+
+.archimg{
+	position: relative;
+	z-index:0;
+	aspect-ratio:4/3;
+	width:25vw;
+	max-width:31.25em;
+	padding:4px;
+	object-fit: cover;
 }
 
 .porttitle{
@@ -367,6 +399,10 @@ span.peach {
 	content: "\00D7";
 }
 
+.mobile{
+	display:none;
+}
+
 .date{
 	color:#69BADD;
 	font-size:1.125em;
@@ -466,18 +502,6 @@ span.rotated{
   display: none;
 }
 
-
-@media screen and (max-width: 1200px){
-	.stackflex-container{
-		flex-direction: column;
-	}
-	.portitem{
-		height:auto;
-		max-width:25em;
-	}
-
-}
-
 .modal {
 	display: none;
 	position: fixed;
@@ -575,8 +599,30 @@ table {
   background: #99635C;
 }
 
+@media screen and (max-width: 1200px){
+	.stackflex-container{
+		flex-direction: column;
+	}
+	.archstackflex-container{
+		flex-direction: column;
+	}
+	.portitem{
+		height:auto;
+		max-width:25em;
+	}
+	.architem{
+		width:100%;
+	}
+	.archimg{
+		width:100%;
+	}
+}
+
 @media screen and (max-width: 850px){
 	.hamburger{
+		display: block;
+	}
+	.mobile{
 		display: block;
 	}
 	.barnav{
@@ -594,6 +640,9 @@ table {
 	.smallgif{
 	width:100%;
 	}	
+	.architem{
+	width:100%;
+	}
 	#topbtn {
     display: none;
 	}
@@ -609,6 +658,9 @@ table {
 	.hamburger{
 		display: block;
 	}
+	.mobile{
+		display: block;
+	}
 	.barnav{
 		display: none;
 	}
@@ -624,6 +676,12 @@ table {
 	.smallgif{
 	width:100%;
 	}	
+	.archflex {
+	flex-wrap:wrap;
+	}
+	.architem{
+	width:100%;
+	}
 	#topbtn {
     display: none;
 	}
