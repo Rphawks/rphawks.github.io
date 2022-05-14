@@ -73,9 +73,7 @@
 		<div class="title"><b>DAILIGHTS</b></div>
 </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div class="blip">working proof of concept for a customizable habit calendar</div>
-</div>
+<div style="height:12px;"></div>
 
 <div class="textrow" style="padding-top:0px;">
 <img src="dlights/full.jpg" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
@@ -84,12 +82,11 @@
 <div style="font-size:16px; line-height:160%; text-align: center;padding-bottom:10px;">(forgive the buttons - we'll get to that)</div>
 
 <div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; team</div>
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp;<button id="thbutton" onclick="teamfunction()">team<div id="teamhide" style="display: none;float:right;">: jenny yu, alex burt, luis gomez, julia granato</div></button>
+	</div>
 	<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> electronics, engineering & cad</div>
-	<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> jenny yu, alex burt, luis gomez, julia granato</div>
 	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn32, brown university</div>
 	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 7 weeks, ~10 hours/week</div>
-	<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> electronics, laser cutting, cad</div>
 </div>
 
 <div style="height:24px;"></div>
@@ -356,6 +353,16 @@ hbtn.onclick = function() {
     } else {
       hmodal.style.display = "flex";
     }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
 }
 </script>
 </body>

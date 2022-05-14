@@ -533,6 +533,20 @@ span.rotated{
   display: none;
 }
 
+#thbutton {
+	cursor: pointer;
+	border: none;
+	text-align: center;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+	font-family: 'DM Mono';
+	color: #FFA599;
+	font-size:1em;
+	line-height:140%;
+	text-decoration: underline;
+	margin-left:4px;
+}
+
 .modal {
 	display: none;
 	position: fixed;

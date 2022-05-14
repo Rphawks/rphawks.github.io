@@ -73,9 +73,7 @@
 		<div class="title"><b>FLYOVER v2</b></div>
 </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div class="blip">tracking the outside during the pandemic</div>
-</div>
+<div style="height:12px;"></div>
 
 <div class="textrow" style="padding-top:0px;">
 	<img src="flyover/flyovervideo.gif" style="width:100%;display:block;margin-left:auto;margin-right:auto;">
@@ -92,8 +90,8 @@
 <div style="height:12px;"></div>
 <div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>Flyover v2 is a LED matrix display that gives route data about planes directly overhead.</b></span><br><br>
-		this project was inspired by <a href="http://jeremybmerrill.com/blog/2016/01/flyover.html"style="color: #FFA599;">Jeremy Merrill's Flyover</a> (hence the v2), a local dump1090 program that displays the destination or origin of a flight.<br><br>
+	<span class="headline" style="font-size:1.125em"><b>stuck at home, I wanted to stay connected with the ever-active world around me.</b></span><br><br>
+		 Flyover v2 is an LED matrix display inspired by <a href="http://jeremybmerrill.com/blog/2016/01/flyover.html"style="color: #FFA599;">Jeremy Merrill's Flyover</a> that tells you where planes that fly overhead are going. <br><br>
 		<span class="headline" style="font-size:1.125em">v2 uses more powerful hardware and displays <i>more</i> data with <i>nearly 100%</i> accuracy.</span>
 	</div>
 </div>
@@ -105,7 +103,7 @@
 			<div class="flex-child" style="height:70px"></div>	
 			<img src="flyover/hardware.png" class="imgborder" style="width:50%;max-width:350px;height:auto;">
 			<div class="porttext" style="padding-left:24px;padding-right:4px;">
-			<br>automatic dependent surveillance-broadcast (ADS-B) signals are picked up by the antenna and translated into data stored on the Raspberry Pi.
+			<br>first, automatic dependent surveillance-broadcast (ADS-B) signals are picked up by the antenna and translated into data stored on the Raspberry Pi.
 			after data processing, a message is displayed on the Pixie displays.<br><br>
 			special thanks to the maker of the Pixies, <a href="https://github.com/connornishijima"style="color: #FFA599;">Connor @ Lixie Labs</a>, who troubleshot the Raspberry Pi driver for this.</div>
 			<div class="flex-child" style="height:70px"></div>
@@ -122,7 +120,7 @@
 	<img src="flyover/flightno.jpg" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
 	<div style="height:12px;"></div>
 	<div class="porttext" style="margin:auto;">
-		<span class="headline">WORKAROUND</span><br><br>instead, my desktop copies the flight data from the Pi every 30s via SSH. 
+		<span class="headline">ENGINEERING WORKAROUND</span><br><br>instead, my desktop copies the flight data from the Pi every 30s via SSH. 
 		a Python script then searches for planes within 5mi and checks against a route database.
 		if the data is a match, the desktop sends a text file to the Pi for display.
 	</div>
