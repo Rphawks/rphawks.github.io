@@ -543,8 +543,13 @@ span.rotated{
 	color: #FFA599;
 	font-size:1em;
 	line-height:140%;
-	text-decoration: underline;
 	margin-left:4px;
+	text-decoration: underline;
+}
+
+span.uhov:hover{
+	text-decoration: underline;
+	color: #824C71;
 }
 
 .modal {

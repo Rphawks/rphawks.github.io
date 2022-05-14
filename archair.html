@@ -80,12 +80,10 @@
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; team</div>
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp;<button id="thbutton" onclick="teamfunction()"><span class="uhov">team</span><div id="teamhide" style="display: none;float:right;">: addie clark, alex burt, rebecca bowers</div></button></div>
 	<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> design & cad</div>
-	<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> addie clark, alex burt, rebecca bowers</div>
 	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn32, brown university</div>
 	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 4 weeks, ~6 hours/week</div>
-	<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> ideation, simple prototyping, cad</div>
 </div>
 
 <div style="height:12px;"></div>
@@ -487,6 +485,16 @@ hbtn.onclick = function() {
     } else {
       hmodal.style.display = "flex";
     }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
 }
 </script>
 </body>

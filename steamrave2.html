@@ -80,12 +80,10 @@
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; group</div>
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp;<button id="thbutton" onclick="teamfunction()"><span class="uhov">team</span><div id="teamhide" style="display: none;float:right;">: david han, erica song</div></button></div>
 	<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> hardware</div>
-	<div class="summary"><span class="info">MEMBERS &nbsp;&nbsp;</span> david han, erica song</div>
 	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> brown/risd STEAM</div>
 	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 6 months, ~3 hours/week</div>
-	<div class="summary"><span class="info">SKILLS &nbsp;&nbsp;&nbsp;</span> projection design, rigging</div>
 </div>
 <div class="flex-child"></div>	
 
@@ -176,6 +174,15 @@ hbtn.onclick = function() {
     }
 }
 
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
 </script>
 </body>
 </html>
