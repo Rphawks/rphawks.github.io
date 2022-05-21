@@ -52,39 +52,40 @@
 		<div class="flex-container">
 			<div class="spacer"></div>
 			<div class="spacer"></div>
-			<div style="font-size:2.5em; line-height:150%; padding-top:4px">RYAN PENG</a></div>
+			<div class="loadfade lfdelay" style="font-size:2.5em; line-height:150%; padding-top:4px">RYAN PENG</a></div>
 			<div class="spacer"></div>
 			<div class="spacer"></div>
 			<div class="flex-child"></div>
-			<div style="font-size:1.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
+			<div class="loadfade lfdelay" style="font-size:1.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:1.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
+			<div class="loadfade lfdelay" style="font-size:1.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:1.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
+			<div class="loadfade lfdelay" style="font-size:1.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:1.875em; line-height:220%"><a href="/misc" class="nav">MISC</a></div>
+			<div class="loadfade lfdelay" style="font-size:1.875em; line-height:220%"><a href="/misc" class="nav">MISC</a></div>
 			<div class="flex-child"></div>
 		</div>
 	</div>
 	<div class="flex-child"></div>
 	<div class="textrow">
-			<img src="logomark.png" style="height:1.5625em; display: block;margin-top:10px;margin-left: auto;margin-right: auto;">
+			<img src="logomark.png" class="loadfade" style="height:1.5625em; display: block;margin-top:10px;margin-left: auto;margin-right: auto;">
 			<div style="height: 2.5em"></div>
-			<div style="font-size:2.5em; line-height:160%; text-align: center;">hi, i'm ryan.</div>
+			<div class="loadfade" style="font-size:2.5em; line-height:160%; text-align: center;">hi, i'm ryan.</div>
 			<div style="height: 2.5em"></div>
-			<div style="font-size: 1.25em; line-height:160%; text-align: center;padding-left:8px;padding-right:8px;">i design delightful experiences that attune us to our everyday.</div>
+			<div class="loadfade" style="font-size: 1.25em; line-height:160%; text-align: center;padding-left:8px;padding-right:8px;">i design delightful experiences that attune us to our everyday.</div>
 	</div>
 	<div class="flex-child"></div>
 	<div class="barnav" style="height:10%"></div>
 	<div class="textrow">
-			<div style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#work" class="nav">more</a></div>
-			<div style="font-size:1.25em; line-height:160%; text-align: center;">&#8595;</div>
+			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#work" class="nav">more</a></div>
+			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;">&#8595;</div>
 			<div style="height: 10px"></div>
 	</div>
 </div>
 
 <div class="anchor" id="work"></div>
 <div class="textrow" style="padding-left:8px;padding-right:16px;">
+	<div class="fadeanchor"></div>
 	<div class="stackflex-container" onclick="document.location.href='dailights'">
 		<div class="flex-child"></div>
 		<div class="portitem">
@@ -104,6 +105,7 @@
 		<div class="hspacer"></div>
 	</div>
 	<div style="height: 10px"></div>
+	<div class="fadeanchor"></div>
 	<div class="stackflex-container" onclick="document.location.href='archair'">
 		<div class="flex-child"></div>
 		<div class="portitem">
@@ -123,6 +125,7 @@
 		<div class="hspacer"></div>
 	</div>
 	<div style="height: 10px"></div>
+	<div class="fadeanchor"></div>
 	<div class="stackflex-container" onclick="document.location.href='flyover'">
 		<div class="flex-child"></div>
 		<div class="portitem">
@@ -142,6 +145,7 @@
 		<div class="hspacer"></div>
 	</div>
 	<div style="height: 10px"></div>
+	<div class="fadeanchor"></div>
 	<div class="stackflex-container" onclick="document.location.href='thestars'">
 		<div class="flex-child"></div>
 		<div class="portitem">
@@ -161,6 +165,7 @@
 		<div class="hspacer"></div>
 	</div>
 	<div style="height: 10px"></div>
+	<div class="fadeanchor"></div>
 	<div class="stackflex-container" onclick="document.location.href='theatre'">
 		<div class="flex-child"></div>
 		<div class="portitem">
@@ -210,6 +215,28 @@ hbtn.onclick = function() {
       hmodal.style.display = "flex";
     }
 }
+
+//imagefade
+function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+const fadebox = document.getElementsByClassName("stackflex-container");
+const fadeanchors = document.getElementsByClassName("fadeanchor");
+
+document.addEventListener("scroll", function() {
+	for (i = 0; i < fadeanchors.length; i++) {
+	if (isInViewport(fadeanchors[i])) {
+        fadebox[i].classList.add("loadfade2")
+		}
+  }});
+
 </script>
 </body>
 </html>
