@@ -429,6 +429,10 @@ span.peach {
 	font-weight: bold;
 }
 
+.hamburger:hover {
+  color: #824C71;
+}
+
 .hamburger:before {
 	content: "\2630";
 }
