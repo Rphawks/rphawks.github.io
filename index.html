@@ -237,6 +237,18 @@ document.addEventListener("scroll", function() {
 		}
   }});
 
+//fadecookie
+document.cookie = "indexvisit=false; SameSite=Lax; Secure";
+let indexvisit = document.cookie;
+var loadfades = document.getElementsByClassName("loadfade");
+var j;
+if (indexvisit === "indexvisit=true") {
+	for (j = 0; j < loadfades.length; j++) {
+	  loadfades[j].classList.remove("loadfade")
+	  }};
+document.cookie = "indexvisit=true; SameSite=Lax; Secure";
+console.log(document.cookie)
+
 </script>
 </body>
 </html>
