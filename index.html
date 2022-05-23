@@ -261,6 +261,7 @@ if (getCookie("indexvisit") === "true") {
 	console.log("test")
 	for (j = 0; j < loadfades.length; j++) {
 	  loadfades[j].classList.remove("loadfade")
+	  loadfades[j].classList.add("loadfadepersist")
 	  }};
 document.cookie = "indexvisit=true; SameSite=Lax; Secure";
 
