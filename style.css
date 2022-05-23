@@ -649,10 +649,6 @@ table {
   animation-fill-mode: forwards;
 }
 
-.loadfadepersist{
-  opacity:1;
-}
-
 .loadfade2{
   animation: fadeIn linear 1s;
   animation-fill-mode: forwards;
