@@ -238,11 +238,27 @@ document.addEventListener("scroll", function() {
   }});
 
 //fadecookie
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let i = 0; i <ca.length; i++) {
+    let c = ca[i];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
 document.cookie = "indexvisit=false; SameSite=Lax; Secure";
 let indexvisit = document.cookie;
 var loadfades = document.getElementsByClassName("loadfade");
 var j;
-if (indexvisit === "indexvisit=true") {
+if (getCookie(indexvisit) === "true") {
 	console.log("test")
 	for (j = 0; j < loadfades.length; j++) {
 	  loadfades[j].classList.remove("loadfade")
