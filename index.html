@@ -259,8 +259,7 @@ var loadfades = document.getElementsByClassName("loadfade");
 var lfdelays = document.getElementsByClassName("lfdelay");
 var j;
 var ij;
-//getCookie("indexvisit") === "true"
-if (1) {
+if (getCookie("indexvisit") === "true") {
 	for (j = loadfades.length-1; j < loadfades.length && j >= 0; j--) {
 	 loadfades[j].classList.remove("loadfade")
 	 };
