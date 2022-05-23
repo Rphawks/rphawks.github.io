@@ -259,12 +259,12 @@ var loadfades = document.getElementsByClassName("loadfade");
 var lfdelays = document.getElementsByClassName("lfdelay");
 var j;
 var ij;
-if (getCookie("indexvisit") === "true") {
-	console.log("test")
-	for (j = 0; j < loadfades.length; j++) {
-	  loadfades[j].classList.remove("loadfade")
+//getCookie("indexvisit") === "true"
+if (1) {
+	for (j = loadfades.length-1; j < loadfades.length && j >= 0; j--) {
+	 loadfades[j].classList.remove("loadfade")
 	 };
-	 for (ij = 0; ij < lfdelays.length; ij++) {
+	 for (ij = lfdelays.length-1; ij < lfdelays.length && ij >= 0; ij--) {
 	 lfdelays[ij].classList.remove("lfdelay")
 	 }};
 document.cookie = "indexvisit=true; SameSite=Lax; Secure";
