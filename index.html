@@ -256,13 +256,17 @@ function getCookie(cname) {
 
 let indexvisit = document.cookie;
 var loadfades = document.getElementsByClassName("loadfade");
+var lfdelays = document.getElementsByClassName("lfdelays");
 var j;
+var ij;
 if (getCookie("indexvisit") === "true") {
 	console.log("test")
 	for (j = 0; j < loadfades.length; j++) {
 	  loadfades[j].classList.remove("loadfade")
-	  loadfades[j].classList.remove("lfdelay")
 	  }};
+	 for (ij = 0; ij < lfdelays.length; ij++) {
+	 lfdelays[ij].classList.remove("lfdelay")
+	 }};
 document.cookie = "indexvisit=true; SameSite=Lax; Secure";
 
 </script>
