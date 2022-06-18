@@ -82,7 +82,7 @@
 <div class="textrowb" style="padding-left:8px">
 	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; solo</div>
 	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> passion project</div>
-	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 1.5 weeks, ~50 hours/week</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> ~80 hours</div>
 </div>
 <div class="flex-child"></div>	
 
@@ -96,38 +96,48 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> HARDWARE</button>
-<div class="textrow portrow content">
+<div class="nstitle"> CONCEPT</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		 my home sits under <span class="peach">four air traffic patterns for Memphis International Aiport (MEM), the busiest cargo airport in the western hemisphere</span>. 
+		 planespotting from my window became escapist for me during the pandemic, 
+		 and I wanted to make a live stock ticker-style display to show where the planes were going.
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> HARDWARE</div>
+<div class="textrow portrow">
 	<div class="flex-container" style="align-items:center;">
 			<div class="flex-child" style="height:70px"></div>	
 			<img src="flyover/hardware.png" class="imgborder" style="width:50%;max-width:350px;height:auto;">
 			<div class="porttext" style="padding-left:24px;padding-right:4px;">
-			<br>first, automatic dependent surveillance-broadcast (ADS-B) signals are picked up by the antenna and translated into data stored on the Raspberry Pi.
+			<br>first, aircraft-emitted <span class="peach">automatic dependent surveillance-broadcast (ADS-B) signals</span> are picked up by the antenna and translated into data stored on a Raspberry Pi.
 			after data processing, a message is displayed on the Pixie displays.<br><br>
-			special thanks to the maker of the Pixies, <a href="https://github.com/connornishijima"style="color: #FFA599;">Connor @ Lixie Labs</a>, who troubleshot the Raspberry Pi driver for this.</div>
+			special thanks to the maker of the Pixies, <a href="https://github.com/connornishijima"style="color: #FFA599;">Connor @ Lixie Labs</a>, who helped troubleshoot the Raspberry Pi driver for this.</div>
 			<div class="flex-child" style="height:70px"></div>
 		</div>
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> SOFTWARE</button>
-<div class="textrow portrow content">
+<div class="nstitle"> SOFTWARE</div>
+<div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
-		<span class="headline">PROCESSING LIMITATIONS</span><br><br>I originally intended to run everything independently on the Raspberry Pi, but it did not have the processing power.
+		I originally intended to run everything independently on the Raspberry Pi, but it did not have the processing power.
 	</div>
 	<div style="height:12px;"></div>
 	<img src="flyover/flightno.jpg" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
 	<div style="height:12px;"></div>
 	<div class="porttext" style="margin:auto;">
-		<span class="headline">ENGINEERING WORKAROUND</span><br><br>instead, my desktop copies the flight data from the Pi every 30s via SSH. 
-		a Python script then searches for planes within 5mi and checks against a route database.
+		instead, <span class="peach">my desktop copies the flight data</span> from the Pi every 30s via SSH. 
+		a Python script <span class="peach">then searches for planes within 5mi</span> and checks against a route database.
 		if the data is a match, the desktop sends a text file to the Pi for display.
 	</div>
 	<div style="height:12px;"></div>
 	<img src="flyover/flyover.jpg" class="imgborder" style="width:70%;max-width:500px;height:auto;display: block;margin-left: auto;margin-right: auto;">
 	<div style="height:12px;"></div>
 	<div class="porttext" style="margin:auto;">
-		<span class="headline">DISPLAY</span><br><br>the text file is parsed on the Pi with the Pixie driver. the display shows the maximum 6-digit flight number (IATA airline code + flight number), followed by route information in three possible formats:<br><br>
+		the text file is parsed on the Pi with the Pixie driver. <span class="peach">the display shows the maximum 6-digit flight number</span> (IATA airline code + flight number), <span class="peach">followed by route information</span> in three possible formats:<br><br>
 		<b><span class="headline">ATL&#8600; &nbsp;&nbsp;&nbsp;&nbsp;(arriving at MEM)<br><br>
 		&#8599;ATL &nbsp;&nbsp;&nbsp;&nbsp;(departing from MEM)<br><br>
 		ATL-DEN &nbsp;(passing)</span></b>
@@ -136,11 +146,12 @@
 </div>
 
 <div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> 2021 ADDITION</button>
-<div class="textrow portrow content">
+<div class="nstitle"> 2021 API ADDITION</div>
+<div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
-		<span class="headline">API DATA</span><br><br>the open source excel database originally used only had roughly 70% accuracy on regular routes, missing irregular routes entirely.
-		the database also required frequent updates to stay up to date. in 2021, v2 shifted to a Google Search API-based route checking system with over 95% accuracy. 
+		the original open source excel database only had <span class="peach">roughly 70% accuracy on regular routes, missing irregular routes entirely</span>.
+		the database also required frequent updates to stay up to date. in 2021, v2 shifted to a Google Search API-based route checking system with <span class="peach">over 95% accuracy</span>.<br><br>
+		after all, it has to be reliable!
 	</div>
 </div>	
 
