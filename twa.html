@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>twa model | ryan peng</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT7J4N3722');
+</script>
+</head>
+<body>
+
+<div class="topleftcut"></div>
+<div class="header"></div>
+<div class="header-spacer"></div>
+<div class="header-box"></div>
+<div class="wrap">
+
+<button class="hamburger" id="hamburger"></button>
+
+<div class="titlerow barnav">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:2.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:1.875em; line-height:220%"><a href="/misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/misc" class="nav">MISC</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">SPRING 2022</div>
+		<div class="title"><b>TWA MODEL</b></div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrow" style="padding-top:0px;">
+    <iframe frameBorder="0" style="width:100%;aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.youtube.com/embed/yTrXct9TJrU?controls=0&rel=0"></iframe>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; solo</div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> hiaa 860 (contemporary architecture), brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> ~80 hours</div>
+</div>
+<div class="flex-child"></div>	
+
+<div style="height:12px;"></div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+	<span class="headline" style="font-size:1.125em"><b>I modeled the exterior of eero saarinen's iconic terminal, learning rhino along the way.</b></span>
+	</div>
+</div>
+
+<div style="height:24px;"></div>
+
+</div>
+
+<div class="bottomrightcut"></div>
+<div class="footer"></div>
+<div class="footer-box"></div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+</script>
+</body>
+</html>

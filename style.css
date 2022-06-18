@@ -239,6 +239,11 @@ html {
 	max-width:33.25em;
 }
 
+.portitem2{
+	max-height:auto;
+	width:33.25em;
+}
+
 .architem{
 	height:auto;
 	width:48.975%;
@@ -517,62 +522,6 @@ span.nowrap {
 
 span.rotated{
 	transform: rotate(90deg);
-}
-
-#theatreh:hover > .theatrehide {
-  display: block;
-}
-
-.theatrehide {
-  display: none;
-}
-
-#daih:hover > .daihide {
-  display: block;
-}
-
-.daihide {
-  display: none;
-}
-
-#arh:hover > .arhide {
-  display: block;
-}
-
-.arhide {
-  display: none;
-}
-
-#flyh:hover > .flyhide {
-  display: block;
-}
-
-.flyhide {
-  display: none;
-}
-
-#starh:hover > .starhide {
-  display: block;
-}
-
-.starhide {
-  display: none;
-}
-
-#sraveh:hover > .sravehide {
-  display: block;
-}
-
-.sravehide {
-  display: none;
-}
-
-#tubeh:hover > .tubehide {
-  display: block;
-}
-
-.tubehide {
-  display: none;
 }
 
 #thbutton {
