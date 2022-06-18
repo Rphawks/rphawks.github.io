@@ -74,9 +74,9 @@
 
 <div class="textrow" style="padding-left:8px;">
 	<div class="flex-container" style="max-width:1050px;margin:auto;align-items:center;">
-		<img src="ryan.png" style="height:325px;width:auto;object-fit: contain; margin-top:12px; margin-left:2px;">
+		<img src="ryan.png" class="loadfade" style="height:325px;width:auto;object-fit: contain; margin-top:12px; margin-left:2px;">
 		<div class="spacer" style="width: 32px"></div>
-		<div style="font-size:1.25em; margin-top:20px; margin-left:12px;">
+		<div class="loadfade" style="font-size:1.25em; margin-top:20px; margin-left:12px;">
 		hi!<br><br>
 		i'm ryan.<br><br>
 			i'm a rising sophomore at brown university concentrating in design engineering.<br><br>
@@ -92,15 +92,15 @@
 <div style="height:72px;"></div>
 
 <div style="text-align:center;">
-<div style="font-size:1.25em;">get in touch!</div>
+<div class="loadfade" style="font-size:1.25em;">get in touch!</div>
 <div style="height:1.125em;"></div>
-<div style="font-size:1.25em;">&#9993; ryanzengpeng<span class="domain">gmail.com</span></div>
-<div style="font-size:1em; margin-top:12px;margin-bottom:6px;">(for brown or risd folk, use ryan_peng<span class="domain">brown.edu</span>)</div>
+<div class="loadfade" style="font-size:1.25em;">&#9993; ryanzengpeng<span class="domain">gmail.com</span></div>
+<div class="loadfade" style="font-size:1em; margin-top:12px;margin-bottom:6px;">(for brown or risd folk, use ryan_peng<span class="domain">brown.edu</span>)</div>
 <div style="height:1.125em;"></div>
-<div style="font-size:1.25em;">
+<div class="loadfade" style="font-size:1.25em;">
 		&#10697; <a class="link" href="https://www.linkedin.com/in/ryan-peng">linkedin</a></span></div>
 <div style="height:1.125em;"></div>
-<div style="font-size:1.25em;">
+<div class="loadfade" style="font-size:1.25em;">
 		&#x270E; <a class="link" href="RyanPengResume.pdf">resume</a></span></div>
 <div style="height:1.125em;"></div>
 </div>
@@ -131,6 +131,37 @@ hbtn.onclick = function() {
       hmodal.style.display = "flex";
     }
 }
+
+//fadecookie
+function getCookie(cname) {
+  let name = cname + "=";
+  let decodedCookie = decodeURIComponent(document.cookie);
+  let ca = decodedCookie.split(';');
+  for(let jj = 0; jj <ca.length; jj++) {
+    let c = ca[jj];
+    while (c.charAt(0) == ' ') {
+      c = c.substring(1);
+    }
+    if (c.indexOf(name) == 0) {
+      return c.substring(name.length, c.length);
+    }
+  }
+  return "";
+}
+
+let aboutvisit = document.cookie;
+var loadfades = document.getElementsByClassName("loadfade");
+var lfdelays = document.getElementsByClassName("lfdelay");
+var j;
+var ij;
+if (getCookie("aboutvisit") === "true") {
+	for (j = loadfades.length-1; j < loadfades.length && j >= 0; j--) {
+	 loadfades[j].classList.remove("loadfade")
+	 };
+	 for (ij = lfdelays.length-1; ij < lfdelays.length && ij >= 0; ij--) {
+	 lfdelays[ij].classList.remove("lfdelay")
+	 }};
+document.cookie = "aboutvisit=true; SameSite=Lax; Secure";
 </script>
 </body>
 </html>
