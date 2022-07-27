@@ -19,13 +19,10 @@
 </head>
 <body>
 
-<div class="topleftcut"></div>
-<div class="header"></div>
-<div class="header-spacer"></div>
-<div class="header-box"></div>
-<div class="wrap">
+<div class="indexwrap">
 
 <button class="hamburger" id="hamburger"></button>
+<div style="height: 30px"></div>
 
 <div class="modal" id ="modal-content" style="display:none;">
 	<div class="titlerow">
@@ -78,20 +75,25 @@
 	<div class="flex-child"></div>
 	<div class="barnav" style="height:10%"></div>
 	<div class="textrow">
-			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#work" class="nav">more</a></div>
-			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;"><span class="blue">&#8595;</span></div>
+			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;"><a href="#work" class="nav"><div class="dark" style="width:2.5em;height:1em;"><span class="dark">more</span></div></a></div>
+			<div style="height: 6px"></div>
+			<div class="loadfade lfdelay" style="font-size:0.3em; line-height:160%; text-align: center;">
+				<div style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
+					<div class="dark" style="width:5em;height:5em;"><span class="dark" style="border-top:4em solid #000000;top: 0%;"><span class="material-symbols-outlined" style="font-size: 5em;">south</span></span></div>
+				</div>
+			</div>
 			<div style="height: 10px"></div>
 	</div>
 </div>
 
 <div class="anchor" id="work"></div>
-<div class="textrow">
+<div class="textrow" style="color:#69BADD;">
 	<div class="fadeanchor"></div>
 	<div class="scrollfade">
 		<div style="height: 1.5em"></div>
-		<div style="font-size: 3em;text-align:center;line-height:130%"> A THREE-FOLD APPROACH<span class="blue"><span style="text-align:top;position: relative; top: -0.5em;">**</span></span> TO EXPERIENCE</div>
+		<div style="font-size: 3em;text-align:center;line-height:130%;">A THREE-FOLD APPROACH<span class="peach" style="text-align:top;position: relative; top: -0.5em;">**</span> TO EXPERIENCE</div>
 		<div style="height: 0.25em"></div>
-		<div style="font-size: 1em;text-align:center;"><span class="blue"><sup>**</sup></span>heavily simplified</div>
+		<div style="font-size: 1em;text-align:center;"><span class="peach"><sup>**</sup></span>heavily simplified</div>
 		<div style="height: 2.5em"></div>
 	</div>
 	<div class="fadeanchor"></div>
@@ -106,7 +108,7 @@
 			<div style="font-size: 1em;"><span class="nowrap">construction and manipulation</span> <span class="nowrap">of the physical world</span></div>
 			<div class="barnav" style="height: 6em"></div>
 		</div>
-		<div style="width: 10px;background-color:#69BADD"></div>
+		<div style="width: 10px;background-color:#FFA599"></div>
 		<div class="approachitem">
 			<div class="barnav" style="height: 4em"></div>
 			<div style="font-variation-settings: 'FILL' 0, 'wght' 250, 'GRAD' 0, 'opsz' 48;">
@@ -117,7 +119,7 @@
 			<div style="font-size: 1em;"><span class="nowrap">computational, <span class="nowrap">data-driven</span></span> <span class="nowrap">communication or operation</span></div>
 			<div class="barnav" style="height: 6em"></div>
 		</div>
-		<div style="width: 10px;background-color:#69BADD"></div>
+		<div style="width: 10px;background-color:#FFA599"></div>
 		<div class="approachitem">
 			<div class="barnav" style="height: 4em"></div>
 			<div style="font-variation-settings: 'FILL' 0, 'wght' 250, 'GRAD' 0, 'opsz' 48;">
@@ -216,17 +218,19 @@
 <div class="fadeanchor"></div>
 <div class="textrow scrollfade">
 	<div style="height: 1.5em"></div>
-	<div style="font-size:1.25em; line-height:160%; text-align: center;">&#8595;</div>	
+	<div style="font-size:0.3em;">
+		<div style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;text-align:center;">
+			<span class="material-symbols-outlined" style="font-size: 5em;color:#69BADD;">south</span>
+		</div>
+	</div>
 	<div style="height: 1.5em"></div>
-	<div style="font-size:1.25em; line-height:160%; text-align: center;">see more in</div>
+	<div style="font-size:1.25em; line-height:160%; text-align: center;color:#69BADD;">see more in</div>
 	<div style="height: .25em"></div>
-	<div style="font-size:2.5em;text-align: center;"><a href="archive" class="nav"><u>THE ARCHIVE</u></a></div>
+	<div style="font-size:2.5em;text-align: center;color:#69BADD;"><a href="archive" class="archnav"><u>THE ARCHIVE</u></a></div>
 	<div style="height: 10px"></div>
 </div>
 </div>
-<div class="bottomrightcut"></div>
-<div class="footer"></div>
-<div class="footer-box"></div>
+
 <script>
 //hamburger
 var hcoll = document.getElementsByClassName("hamburger");
@@ -300,6 +304,29 @@ if (getCookie("indexvisit") === "true") {
 	 }};
 document.cookie = "indexvisit=true; SameSite=Lax; Secure";
 
+//scrollcolor
+const debounce = (fn) => {
+  let frame;
+  return (...params) => {
+    if (frame) { 
+      cancelAnimationFrame(frame);
+    }
+    frame = requestAnimationFrame(() => {
+      fn(...params);
+    });
+  } 
+};
+
+const storeScroll = () => {
+  let perc = window.scrollY / (document.body.clientHeight - window.innerHeight) * 100;
+  document.documentElement.setAttribute('style', `--scrollpos: ${perc}`);
+}
+
+document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+
+storeScroll();
+
+var jsscrollpos = getComputedStyle(document.documentElement).getPropertyValue('--scrollpos');
 </script>
 </body>
 </html>
