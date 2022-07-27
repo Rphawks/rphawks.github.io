@@ -59,68 +59,28 @@ body::-webkit-scrollbar {
 .aboutwrap {
 	padding-left:30px;
 	padding-right:30px;
-	padding-bottom:30px;
 	background-color: #000000;
 	background-clip: content-box;
 	border:.5em solid #FFA599;
-	height:calc(100vh - 3em);
+	height:calc(100vh - 1em);
 }
 
-.wrap {
+.workwrap {
 	padding-left:30px;
 	padding-right:30px;
-	padding-bottom:30px;
 	background-color: #000000;
 	background-clip: content-box;
+	border:.5em solid #69BADD;
+	min-height:calc(100vh - 1em);
 }
 
-.header {
-	width: calc(100% - 64px);
-	height: 30px;
-	position: fixed;	
-	top: 0;
-	margin-left: 34px;
-	margin-right: 26px;
+.miscwrap {
+	padding-left:30px;
+	padding-right:30px;
 	background-color: #000000;
-	z-index:1;
-}
-
-.header-spacer {
-	width: calc(100% - 64px);
-	height: 30px;
-	position: static;	
-	top: 0;
-	margin-left: 34px;
-	margin-right: 26px;
-}
-
-.header-box {
-	width: calc(100%);
-	height: 30px;
-	position: fixed;	
-	top: 0;
-	background-color: #000000;
-	z-index:2;
-}
-
-.footer {
-	width: calc(100% - 64px);
-	height: 30px;
-	position: fixed;	
-	bottom: 0;
-	margin-left: 30px;
-	margin-right: 38px;
-	background-color: #000000;
-	z-index:1;
-}	
-
-.footer-box {
-	width: calc(100%);
-	height: 30px;
-	position: fixed;	
-	bottom: 0;
-	background-color: #000000;
-	z-index:2;
+	background-clip: content-box;
+	border:.5em solid #824C71;
+	min-height:calc(100vh - 1em);
 }
 
 .textrow {
@@ -219,26 +179,6 @@ body::-webkit-scrollbar {
 
 .flex-child {
 	flex: 1;
-}
-
-.topleftcut:before {
-    content: '';
-    position: fixed;
-    top: 20px; left: 20px;
-    border-top: 8px solid #000000;
-    border-right: 8px solid #FFA599;
-    width: 0;
-	z-index:3;
-}
-
-.bottomrightcut:before {
-    content: '';
-    position: fixed;
-    bottom: 20px; right: 20px;
-    border-bottom: 8px solid #000000;
-    border-left: 8px solid #69BADD;
-    width: 0;
-	z-index:3;
 }
 
 a.nav {
