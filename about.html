@@ -51,7 +51,7 @@
 			<div class="flex-child"></div>
 			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">WORK</a></div>
 			<div class="flex-child"></div>
 			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
 			<div class="flex-child"></div>
@@ -76,7 +76,7 @@
 		<div class="loadfade" style="font-size:1.25em; margin-top:20px; margin-left:12px;">
 		hi!<br><br>
 		i'm ryan.<br><br>
-			i'm a rising sophomore at brown university concentrating in design engineering.<br><br>
+			i'm a junior ('25) at brown university concentrating in design engineering, sc.b. and computer science, a.b..<br><br>
 			for me, design is both creation and interaction with intent - why we make and why we move. 
 			how visceral experiences, however transient, can make lasting changes to our daily lives.<br><br>
 			i'm from atlanta, ga and memphis, tn, but currently based in providence, ri.<br><br>
@@ -120,6 +120,16 @@ var hbtn = document.getElementById("hamburger");
 hbtn.onclick = function() {
   if (hmodal.style.display === "flex") {
       hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
     } else {
       hmodal.style.display = "flex";
     }

@@ -51,7 +51,7 @@
 			<div class="flex-child"></div>
 			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">ABOUT</a></div>
 			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/#work" class="nav">WORK</a></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">WORK</a></div>
 			<div class="flex-child"></div>
 			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">ARCHIVE</a></div>
 			<div class="flex-child"></div>
@@ -70,8 +70,55 @@
 </div>
 
 <div class="textrow" style="padding-left:8px">
+	<div style="font-size:2.25em; line-height:160%;"><b>> 2023</b></div>
+	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
+		<div class="architem archflex" onclick="document.location.href='clearcare'">
+			<div class="portitem">
+				<div id="ccch" style="position:relative;text-align:center;">
+					<img src="ccc/snapshot.jpg" class="archimg">
+				</div>
+			</div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="portitem2">
+				<div style="font-size:2.5em;">CLEAR CARE CASE</div>
+				<div style="margin-left:4px;">solidworks</div>
+				<div style="height: 20px"></div>
+				<div style="margin-left:4px;">recreating an everyday object</div>
+				<div class="mobile" style="height:20px;"></div>
+			</div>
+			<div class="hspacer barnav"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow" style="padding-left:8px">
 	<div style="font-size:2.25em; line-height:160%;"><b>> 2022</b></div>
 	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
+		<div class="architem archflex" onclick="document.location.href='brasslamp'">
+			<div class="portitem">
+				<div id="blamph" style="position:relative;text-align:center;">
+					<img src="blamp/IMG_9517crop2.jpg" class="archimg">
+				</div>
+			</div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="hspacer barnav"></div>
+			<div class="portitem2">
+				<div style="font-size:2.5em;">BRASS LAMP</div>
+				<div style="margin-left:4px;">metalwork | electronics</div>
+				<div style="height: 20px"></div>
+				<div style="margin-left:4px;">a seamless light form</div>
+				<div class="mobile" style="height:20px;"></div>
+			</div>
+			<div class="hspacer barnav"></div>
+		</div>
+		<div class="hspacer"></div>
 		<div class="architem archflex" onclick="document.location.href='twa'">
 			<div class="portitem">
 				<img src="twa/twathumb.jpg" class="archimg">
@@ -90,7 +137,8 @@
 			</div>
 			<div class="hspacer barnav"></div>
 		</div>
-		<div class="hspacer"></div>
+	</div>
+	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
 		<div class="architem archflex" onclick="document.location.href='steamrave2'">
 			<div class="portitem">
 			<div id="sraveh" style="position:relative;text-align:center;">
@@ -111,8 +159,7 @@
 			</div>
 			<div class="hspacer barnav"></div>
 		</div>
-	</div>
-	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
+		<div class="hspacer"></div>
 		<div class="architem archflex" onclick="document.location.href='hiddenthreads'">
 			<div class="portitem">
 			<div id="sraveh" style="position:relative;text-align:center;">
@@ -132,7 +179,7 @@
 				<div class="mobile" style="height:20px;"></div>
 			</div>
 			<div class="hspacer barnav"></div>
-		</div>
+		</div>		
 	</div>
 </div>
 
@@ -238,6 +285,17 @@ hbtn.onclick = function() {
       hmodal.style.display = "flex";
     }
 }
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
 </script>
 </body>
 </html>
