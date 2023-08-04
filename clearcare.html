@@ -4,7 +4,7 @@
 <link rel="stylesheet" href="reset.css">
 <link rel="stylesheet" href="style.css">
 <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>the stars | ryan peng</title>
+<title>clear care case | ryan peng</title>
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -17,9 +17,9 @@
 <body>
 
 <div class="workwrap">
+<div style="height:30px;"></div>
 
 <button class="hamburger" id="hamburger"></button>
-<div style="height:30px;"></div>
 
 <div class="titlerow barnav">
 		<div class="flex-container">
@@ -66,38 +66,57 @@
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2021</div>
-		<div class="title"><b>THE STARS <span style="font-size:0.5em;display:inline-block;">(we won’t be here anymore)</span></b></div>
+		<div class="date">SPRING 2023</div>
+		<div class="title"><b>CLEAR CARE CASE</b></div>
 </div>
 
 <div style="height:12px;"></div>
 
 <div class="textrow" style="padding-top:0px;">
-	<img src="stars/starsvideo.gif" class="smallgif" style="display:block;margin-left:auto;margin-right:auto;">
+	<img src="ccc/snapshot.jpg" style="width:80%;display:block;margin-left:auto;margin-right:auto;">
 </div>
 
 <div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; assist</div>
-	<div class="summary"><span class="info">ARTIST &nbsp;&nbsp;&nbsp;&nbsp;</</span><a href="http://www.andrewjs.com/"style="color: #FFA599;"><span class="uhov">andrew schneider</span></a></div>
-	<div class="summary"><span class="info">ROLE &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> hardware fabrication</div>
-	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> brown arts institute</div>
-	<div class="summary"><span class="info">LOCATION &nbsp;&nbsp;</span>fishman studio, granoff center for the creative arts</div>
-	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 3 months, ~20 hours/week</div>
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; solo</div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> engn1740, brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 4 weeks, ~8 hours/week</div>
 </div>
 <div class="flex-child"></div>	
 
 <div style="height:12px;"></div>
 <div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
-		<span class="headline" style="font-size:1.125em"><b>update: this project premiered in late 2022 - a summary video can be found <a href="https://vimeo.com/758367624" class="nav" style="text-decoration: underline">here</a></b></span><br><br>
-		<span class="headline" style="font-size:1.125em"><b>given the non-public nature of the work, documentation is limited.</b></span><br><br>
-		 The Stars is the second prototype version of Andrew Schneider's installation commissioned by The Onassis Foundation and The Brown Arts Institute that deals with grief, loss, and presentness.<br>
-		 it is set to premiere in New York City in 2023.<br>the in-development title is NOWISWHENWEARE.<br><br>
-		<span class="headline" style="font-size:1.25em; line-height:160%; text-align: center;"><a href="http://www.andrewjs.com/thestars/" class="nav" style="text-decoration: underline">more info on the artist's website</a></span>
+	<span class="headline" style="font-size:1.125em"><b>modeling a complex existing product in solidworks (assembly)</b></span><br><br>
+		this case for contacts has been a mainstay of my life for more than ten years - what better to do?<br><br>
 	</div>
+	<img src="ccc/closed.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
+	<div style="height:12px;"></div>
+	<img src="ccc/open.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
+	<div style="height:12px;"></div>
+	<img src="ccc/ajar.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
+	<div style="height:12px;"></div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="ccc/assembly-1.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
+		<img src="ccc/assembly-2.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
+		<div class="flex-child" style="height:70px"></div>	
+	</div>
+	<img src="ccc/core.jpg" style="width:92%;display:block;margin-left:auto;margin-right:auto;">
+	<div style="height:12px;"></div>
+	<img src="ccc/left.jpg" style="width:92%;display:block;margin-left:auto;margin-right:auto;">
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>	
+		<img src="ccc/right.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
+		<img src="ccc/bubbler.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
+		<div class="flex-child" style="height:70px"></div>	
+	</div>
+	<img src="ccc/clear.jpg" style="width:92%;display:block;margin-left:auto;margin-right:auto;">
 </div>
 
 <div style="height:24px;"></div>
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+<div style="height:24px;"></div>
+
 </div>
 
 <script>
@@ -155,6 +174,15 @@ hworkbtn.onclick = function() {
     }
 }
 
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
 </script>
 </body>
 </html>
