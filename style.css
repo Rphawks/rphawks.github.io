@@ -62,7 +62,7 @@ body::-webkit-scrollbar {
 	background-color: #000000;
 	background-clip: content-box;
 	border:.5em solid #FFA599;
-	min-height:calc(100vh - 1em);
+	height:calc(100vh - 1em);
 }
 
 .workwrap {
