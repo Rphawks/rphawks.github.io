@@ -19,6 +19,9 @@
 </head>
 <body>
 
+<div class="indexbar"></div>
+<div class="navback-1"></div>
+<div class="navback-2"></div>
 <div class="indexwrap">
 
 <button class="hamburger" id="hamburger"></button>
@@ -46,8 +49,8 @@
 </div>
 
 <div class="flex-container" style="flex-direction:column;height:calc(100vh - 3.5em);">
-	<div class="titlerow barnav">
-		<div class="flex-container">
+	<div class="titlerow barnav fixed-top" style="z-index:4;">
+		<div class="flex-container" style="width: 100vw">
 			<div class="spacer"></div>
 			<div class="spacer"></div>
 			<div class="loadfade lfdelay" style="font-size:2.5em; line-height:150%; padding-top:4px">RYAN PENG</a></div>
@@ -64,8 +67,9 @@
 			<div class="flex-child"></div>
 		</div>
 	</div>
+	<div class="barnav" style="height: 66px"></div>
 	<div class="flex-child"></div>
-	<div class="textrow">
+	<div class="textrow" style="padding-top: .5em;">
 			<img src="logomark.png" class="loadfade" style="height:1.5625em; display: block;margin-top:10px;margin-left: auto;margin-right: auto;">
 			<div style="height: 2.5em"></div>
 			<div class="loadfade" style="font-size:2.5em; line-height:160%; text-align: center;">hi, i'm ryan</div>
@@ -75,11 +79,13 @@
 	<div class="flex-child"></div>
 	<div class="barnav" style="height:10%"></div>
 	<div class="textrow">
-			<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;z-index:3;"><a href="#approach" class="nav"><div class="dark" style="width:2.5em;height:1em;"><span class="dark">more</span></div></a></div>
+			<!--<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;z-index:3;"><a href="#approach" class="nav"><div class="dark" style="width:2.5em;height:1em;"><span class="dark">more</span></div></a></div>-->
 			<div style="height: 6px"></div>
 			<div class="loadfade lfdelay" style="font-size:0.3em; line-height:160%; text-align: center;">
 				<div style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
+					<a href="#approach" class="nav">
 					<div class="dark" style="width:5em;height:5em;"><span class="dark" style="border-top:4em solid #000000;top: 0%;"><span class="material-symbols-outlined" style="font-size: 5em;">south</span></span></div>
+					</a>
 				</div>
 			</div>
 			<div style="height: 10px"></div>
@@ -139,11 +145,10 @@
 <div style="height: 1.5em"></div>
 <div class="anchor" id="approach"></div>
 <div class="anchor" id="work"></div>
-<div class="textrow">
+<div class="textrow" style="padding-bottom:0px;">
 	<div class="fadeanchor"></div>
 	<div class="flex-container scrollfade">
 		<div class="approachitemport">
-			<div style="height: 2em; margin-left: 1.5em">the world out there</div>
 			<div class="fadeanchor"></div>
 			<div class="stackflex-container scrollfade" onclick="document.location.href='flyover'" style="height:32em; flex-direction: column;">
 				
@@ -166,7 +171,6 @@
 			</div>
 		</div>
 		<div class="approachitemport">
-			<div style="height: 2em; margin-left: 1.5em">the world everywhere</div>
 			<div class="fadeanchor"></div>
 			<div class="stackflex-container scrollfade" onclick="document.location.href='brasslamp'" style="height:32em; flex-direction: column;">
 				<div class="flex-child"></div>
@@ -188,7 +192,6 @@
 			</div>
 		</div>
 		<div class="approachitemport">
-			<div style="height: 2em; margin-left: 1.5em">the world right here</div>
 			<div class="fadeanchor"></div>
 			<div class="stackflex-container scrollfade" onclick="document.location.href='clearcare'" style="height:32em; flex-direction: column;">
 				<div class="flex-child"></div>
@@ -210,16 +213,79 @@
 			</div>
 		</div>
 	</div>
-	<div style="height: 1.5em"></div>
 </div>
 
-<div style="height: 4em;"></div>
-<div style="font-size: 1.25em; line-height:160%; text-align: center;padding-left:8px;padding-right:8px;">currently: design engineering & cs double major at brown university</div>
-<div style="height: 1.5em;"></div>
-<div style="height: 4px; width: 75%; margin:auto; background-color: #FFA599;"></div>
-<div style="height: 7em;"></div>
+<div class="textrow" style="padding-top:0px;">
+	<div class="fadeanchor"></div>
+	<div class="flex-container scrollfade">
+		<div class="approachitemport">
+			<div class="fadeanchor"></div>
+			<div class="stackflex-container scrollfade" onclick="document.location.href='thestars'" style="height:32em; flex-direction: column;">
+				<div class="flex-child"></div>
+				<div class="portitem">
+					<div id="starh" style="position:relative;text-align:center;">
+					<img src="stars/thumb.jpg" class="tripleportimg">
+					</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+				<div class="portitem">
+					<div style="font-size:2.5em;">THE STARS</div>
+					<div style="margin-left:4px;">electronics | rigging</div>
+					<div style="height: 20px"></div>
+					<div style="margin-left:4px;">a time-based light, sound, and choral music installation</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+			</div>
+		</div>
+		<div class="approachitemport">
+			<div class="fadeanchor"></div>
+			<div class="stackflex-container scrollfade" onclick="document.location.href='dailights'" style="height:32em; flex-direction: column;">
+				<div class="flex-child"></div>
+				<div class="portitem">
+					<div id="daih" style="position:relative;text-align:center;">
+					<img src="dlights/dailights.jpeg" class="tripleportimg">
+					</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+				<div class="portitem">
+					<div style="font-size:2.5em;">DAILIGHTS</div>
+					<div style="margin-left:4px;">electronics | laser cutting | fusion 360</div>
+					<div style="height: 20px"></div>
+					<div style="margin-left:4px;">working proof of concept for a customizable habit calendar</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+			</div>
+		</div>
+		<div class="approachitemport">
+			<div class="fadeanchor"></div> 
+			<div class="stackflex-container scrollfade" onclick="document.location.href='archair'" style="height:32em; flex-direction: column;">
+				<div class="flex-child"></div>
+				<div class="portitem">
+					<div id="arh" style="position:relative;text-align:center;">
+					<img src="archair.png" class="tripleportimg">
+					</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+				<div class="portitem">
+					<div style="font-size:2.5em;">AR<sup style="font-size:25px;">2</sup> CHAIR</div>
+					<div style="margin-left:4px;">ideation | prototyping | fusion 360</div>
+					<div style="height: 20px"></div>
+					<div style="margin-left:4px;">design challenge to prototype a compact chair for a minimalist</div>
+				</div>
+				<div class="flex-child"></div>
+				<div class="hspacer"></div>
+			</div>
+		</div>
+	</div>
+</div>
 
-<div class="textrow" style="padding-left:8px;padding-right:16px;">
+<!--
+<div class="textrow" style="padding-left:8px;padding-right:16px;padding-top:0px;">
 	<div class="fadeanchor"></div>
 	<div class="stackflex-container scrollfade" onclick="document.location.href='thestars'">
 		<div class="flex-child"></div>
@@ -280,6 +346,8 @@
 		<div class="hspacer"></div>
 	</div>
 </div>
+-->
+
 <div class="fadeanchor"></div>
 <div class="textrow scrollfade">
 	<div style="height: 1.5em"></div>

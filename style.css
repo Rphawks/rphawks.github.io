@@ -53,8 +53,33 @@ body::-webkit-scrollbar {
 	padding-bottom:30px;
 	background-color: #000000;
 	background-clip: content-box;
-	border:.5em solid var(--scrollcolor);
 }
+
+.indexbar {
+	width:100vw;
+	height: .5em;
+	background-color: var(--scrollcolor);
+	position: fixed;
+	z-index: 3;
+}
+
+.navback-1 {
+	width:100vw;
+	height: 6.5em;
+	background-color: #000000;
+	position: fixed;
+	z-index: 2;
+}
+
+.navback-2 {
+	top: 6.5em;
+	width:100vw;
+	height: 2em;
+	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
+	position: fixed;
+	z-index: 2;
+}
+
 
 .aboutwrap {
 	padding-left:30px;
@@ -138,16 +163,17 @@ body::-webkit-scrollbar {
 	padding-top:8px;
 	padding-bottom:8px;
 	align-items: center;
-	border: 4px solid #FFA599;
+	border: 4px solid #33211f;
 	opacity:0;
 	cursor:pointer;
 	--all:0px;
-	--b:#FFA599;
+	/*
+	--b:#33211f;
 	background:
-     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all)) + 4px) ,transparent 0) bottom left /50% 50%,
+     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all))) ,transparent 0) bottom left /50% 50%,
      linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 4px),transparent 0) bottom right/50% 50%,
      linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 4px)    ,transparent 0) top left    /50% 50%,
-     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)) + 4px)   ,transparent 0) top right   /50% 50%;
+     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)))   ,transparent 0) top right   /50% 50%;
 	background-origin:border-box;
 	background-repeat:no-repeat;
 	-webkit-mask:
@@ -159,11 +185,12 @@ body::-webkit-scrollbar {
 	-webkit-mask-repeat:no-repeat;
 	--top-left:20px;
 	--bottom-right:20px;
+	*/
 }
 
 .stackflex-container:hover {
-	border: 4px solid #824C71;
-	--b:#824C71;
+	border: 4px solid #FFA599;
+	--b: #FFA599;
 }
 
 .stackflex-approach-text {
@@ -681,6 +708,11 @@ span.dark{
 	border-left:0.1em solid #000000;
 	border-right:0.1em solid #000000;
 	overflow:visible;
+}
+
+.fixed-top {
+  display: flex;
+  position: fixed;
 }
 
 ::-webkit-scrollbar {
