@@ -63,6 +63,30 @@ body::-webkit-scrollbar {
 	z-index: 3;
 }
 
+.workbar {
+	width:100vw;
+	height: .5em;
+	background-color: #69BADD;
+	position: fixed;
+	z-index: 3;
+}
+
+.aboutbar {
+	width:100vw;
+	height: .5em;
+	background-color: #FFA599;
+	position: fixed;
+	z-index: 3;
+}
+
+.miscbar {
+	width:100vw;
+	height: .5em;
+	background-color: #824C71;
+	position: fixed;
+	z-index: 3;
+}
+
 .navback-1 {
 	width:100vw;
 	height: 6.5em;
@@ -86,7 +110,6 @@ body::-webkit-scrollbar {
 	padding-right:30px;
 	background-color: #000000;
 	background-clip: content-box;
-	border:.5em solid #FFA599;
 	min-height:calc(100vh - 1em);
 }
 
@@ -95,7 +118,6 @@ body::-webkit-scrollbar {
 	padding-right:30px;
 	background-color: #000000;
 	background-clip: content-box;
-	border:.5em solid #69BADD;
 	min-height:calc(100vh - 1em);
 }
 
@@ -104,7 +126,6 @@ body::-webkit-scrollbar {
 	padding-right:30px;
 	background-color: #000000;
 	background-clip: content-box;
-	border:.5em solid #824C71;
 	min-height:calc(100vh - 1em);
 }
 
@@ -116,7 +137,10 @@ body::-webkit-scrollbar {
 .textrowb {
 	padding-top: 10px;
 	padding-bottom: 10px;
-	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2378c0e0' fill-opacity='0.48' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+	background-color: #000000;
+	opacity: 1;
+	background-size: 8px 8px;
+	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
 }
 
 .titlerow {
@@ -226,7 +250,7 @@ a.nav {
 }
 
 a.nav:hover {
-	color: #824C71;
+	color: #99635d;
 }
 
 a.archnav {
@@ -235,7 +259,7 @@ a.archnav {
 }
 
 a.archnav:hover {
-	color: #824C71;
+	color: #99635d;
 }
 
 
@@ -248,7 +272,7 @@ a:visited, a:active {
 }
 
 a.link:hover {
-	color: #824C71;
+	color: #33211f;
 }
 
 html {
@@ -268,13 +292,12 @@ html {
 .architem{
 	height:auto;
 	width:48.975%;
-	border: 4px solid #FFA599;
+	border: 4px solid #33211f;
 	cursor:pointer;
 }
 
 .architem:hover{
-	color: #824C71;
-	border: 4px solid #824C71;
+	border: 4px solid #FFA599;
 }
 
 .approachitem{
@@ -449,7 +472,7 @@ span.nowrap {
 }
 
 #topbtn:hover {
-	color: #824C71;
+	color: #33211f;
 }
 
 .domain::before {
@@ -469,11 +492,11 @@ span.nowrap {
 }
 
 .collapsible:hover {
-  color: #824C71;
+  color: #33211f;
 }
 
 .active:hover {
-  color: #824C71;
+  color: #33211f;
 }
 
 .content {
@@ -509,7 +532,7 @@ span.nowrap {
 }
 
 .hamburger:hover {
-  color: #824C71;
+  color: #33211f;
 }
 
 .hamburger:before {
@@ -586,7 +609,7 @@ span.rotated{
 
 span.uhov:hover{
 	text-decoration: underline;
-	color: #824C71;
+	color: #33211f;
 }
 
 .modal {
@@ -653,7 +676,7 @@ display: none;
 
 .vmodalclose:hover,
 .vmodalclose:focus {
-  color: #824C71;
+  color: #33211f;
   text-decoration: none;
   cursor: pointer;
 }
@@ -713,6 +736,7 @@ span.dark{
 .fixed-top {
   display: flex;
   position: fixed;
+  z-index: 4;
 }
 
 ::-webkit-scrollbar {
