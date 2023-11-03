@@ -472,7 +472,7 @@ span.nowrap {
 }
 
 #topbtn:hover {
-	color: #33211f;
+	color: #99635d;
 }
 
 .domain::before {
@@ -492,11 +492,11 @@ span.nowrap {
 }
 
 .collapsible:hover {
-  color: #33211f;
+  color: #99635d;
 }
 
 .active:hover {
-  color: #33211f;
+  color: #99635d;
 }
 
 .content {
