@@ -89,14 +89,14 @@ body::-webkit-scrollbar {
 
 .navback-1 {
 	width:100vw;
-	height: 6.5em;
+	height: 6em;
 	background-color: #000000;
 	position: fixed;
 	z-index: 2;
 }
 
 .navback-2 {
-	top: 6.5em;
+	top: 6em;
 	width:100vw;
 	height: 2em;
 	background-image: linear-gradient(rgba(0,0,0,1), rgba(0,0,0,0));
@@ -739,8 +739,20 @@ span.dark{
   z-index: 4;
 }
 
+.headername {
+	font-size:2em;
+	line-height:150%;
+	padding-top: .1em;
+}
+
+.headernav {
+	font-size:1.5em;
+	line-height:220%;
+}
+
+
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
@@ -748,7 +760,7 @@ span.dark{
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--scrollcolor);
+  background: #FFA599;
 }
 
 ::-webkit-scrollbar-thumb:hover {
