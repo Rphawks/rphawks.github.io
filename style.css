@@ -215,6 +215,7 @@ body::-webkit-scrollbar {
 .stackflex-container:hover {
 	border: 4px solid #FFA599;
 	--b: #FFA599;
+	box-shadow: 0 0 8px 2px #FFA599;
 }
 
 .stackflex-approach-text {
