@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>a/b testing | ryan peng</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT7J4N3722');
+</script>
+</head>
+<body>
+
+<div class="workbar"></div>
+<div class="navback-1"></div>
+<div class="navback-2"></div>
+<div class="workwrap">
+
+<button class="hamburger" id="hamburger"></button>
+<div class="barnav" style="height: 30px"></div>
+
+<div class="titlerow barnav fixed-top">
+	<div class="flex-container" style="width: calc(100vw - 60px)">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+		<div class="spacer" style="width: 6vw"></div>
+		<div class="flex-child"></div>
+		<div class="headernav"><a href="/#work" class="nav">work</a></div>
+		<div class="spacer" style="width:6vw"></div>
+		<div class="headernav"><a href="/about" class="nav">about</a></div>
+		<div style="width:2em" class="spacer"></div>
+		<div class="spacer"></div>
+	</div>
+</div>
+	
+<div class="barnav" style="height:60px;"></div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">SPRING 2024</div>
+		<div class="title"><b>A/B TESTING</b></div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="nowrap"><span class="info">WORK TYPE</span>&nbsp;&nbsp;solo</div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> csci1300, brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 8 hours</div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="nstitle"> OVERVIEW</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<br> the a/b testing done here seeks to work with a very basic data set and extrapolate whether interface changes,
+		including logical arrangement and contrast improvement, reduce user interaction workload and error. though the scale for this dataset is incredibly small,
+		in theory the statistical analyses applied here would apply to any scale, allowing for a designer to make more concrete conclusions about the effects of interface changes.<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> WEBSITE CHANGES</div>
+<div class="textrow portrow">
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<img src="ab-testing/a.png" class="imgborder" style="max-width:min(516px,51.6%);height:auto;">
+		<img src="ab-testing/b.png" class="imgborder" style="max-width:min(500px,50%);height:auto;">
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:12px;"></div>
+	<div class="porttext" style="margin:auto;">
+		<br>the appointment scheduling interface above was changed to group appointments visually by location and ordered by first appointment
+		available for each location. the scheduling buttons were arranged to allow for distinction by type and the backgrounds darkened for contrast.<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> METRIC & HYPOTHESES</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<br>the additional chosen metric is mouse movement distance.<br><br>
+		<span class="headline">misclick rate:</span><br>
+			<b>null:</b> users will have a higher misclick rate if interface elements are high contrast.<br><br>
+			<b>alternative:</b> users will have a lower misclick rate if interface elements are high contrast.<br><br>
+			<b>prediction:</b> users should have a lower misclick rate if interface elements are high contrast, though it may not be significant.<br>
+			<br><br>
+		<span class="headline">time on page:</span><br>
+			<b>null:</b> time on page is lower if the user interface elements are organized logically.<br><br>
+			<b>alternative:</b> time on page is unaffected if the user interface elements are organized logically.<br><br>
+			<b>prediction:</b> time on page should be lower if the user interface elements are organized logically.<br>
+			<br><br>
+		<span class="headline">mouse movement distance:</span><br>
+			<b>null:</b> misclicking leads to significantly increased mouse movement distance.<br><br>
+			<b>alternative:</b> misclicking does not significantly affect mouse movement distance.<br><br>
+			<b>prediction:</b> misclicking may not significantly affect mouse movement distance at all.<br>
+			<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> STATISTICAL ANALYSIS</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<span class="headline"><br>misclick rate:</span><br>
+			<b>test used:</b> a two-tailed t-test was used, with group a having higher contrast than group b. this is because the two hypotheses are on both sides of a standard (higher and lower).<br><br>
+			<b>results:</b> avg(a) = .20, var(a) = .16, avg(b) = .10, var(b) = .09, dof = 60.17, t-score = -1.12, p-value = .26<br><br>
+			<b>conclusion:</b> the p-score is too high to indicate any conclusive result, even though the average misclick rate of group b was lower. it fails to reject the null hypothesis.<br>
+			<br><br>
+		<span class="headline">time on page:</span><br>
+			<b>test used:</b> a one-tailed t-test was used, with baseline group a having randomized order, relative group b having logical organization.<br><br>
+			<b>results:</b> avg(a) = 12860, avg(b) = 20230, dof = 31.30, t-score = -0.855, p-value = .19<br><br>
+			<b>conclusion:</b> the p-score is too high to indicate any conclusive result, even though the time with organization (group b) was higher. it fails to reject the null hypothesis.<br>
+			this could be due to the fact that the button was further down the page in the organized version.
+			<br><br>
+		<span class="headline">mouse movement distance:</span><br>
+			<b>test used:</b> a one-tailed t-test was used, with baseline group a being non-misclicking, relative group b misclicking.<br><br>
+			<b>results:</b> avg(a) = 5946, avg(b) = 3028, dof = 10.39, t-score = 2.76, p-value = 0.99<br><br>
+			<b>conclusion:</b> the p-score is far too high to indicate any conclusive result. it fails to reject the null hypothesis.<br>
+			<br><br>
+	</div>
+</div>
+
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+<div style="height:24px;"></div>
+
+</div>
+
+</div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
+</script>
+</body>
+</html>

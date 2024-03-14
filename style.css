@@ -251,7 +251,7 @@ a.nav {
 }
 
 a.nav:hover {
-	color: #99635d;
+	text-shadow: 0px 0px 8px #FFA599;
 }
 
 a.archnav {
