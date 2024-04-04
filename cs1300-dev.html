@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>development | ryan peng</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT7J4N3722');
+</script>
+</head>
+<body>
+
+<div class="workbar"></div>
+<div class="navback-1"></div>
+<div class="navback-2"></div>
+<div class="workwrap">
+
+<button class="hamburger" id="hamburger"></button>
+<div class="barnav" style="height: 30px"></div>
+
+<div class="titlerow barnav fixed-top">
+	<div class="flex-container" style="width: calc(100vw - 60px)">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+		<div class="spacer" style="width: 6vw"></div>
+		<div class="flex-child"></div>
+		<div class="headernav"><a href="/#work" class="nav">work</a></div>
+		<div class="spacer" style="width:6vw"></div>
+		<div class="headernav"><a href="/about" class="nav">about</a></div>
+		<div style="width:2em" class="spacer"></div>
+		<div class="spacer"></div>
+	</div>
+</div>
+	
+<div class="barnav" style="height:60px;"></div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">SPRING 2024</div>
+		<div class="title"><b>AIRLINE LOYALTY CALCULATOR</b></div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrow" style="padding-top:0px;">
+	<img src="cs1300-dev/main.png" style="max-width:100%;display:block;margin-left:auto;margin-right:auto;">
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="nowrap"><span class="info">WORK TYPE</span>&nbsp;&nbsp;solo</div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> csci1300, brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 12 hours</div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<span class="headline" style="font-size:1.125em"><b>live mockup can be found at<br><a href="https://cs1300-dev.vercel.app" class="nav" style="text-decoration: underline">cs1300-dev.vercel.app</a></b></span><br>
+		
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="nstitle"> OVERVIEW</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<br> this project sought to use react development to create a simple filterable and sortable interface with mix-and-match components.
+		in this case, an airline loyalty points calculator was made, which allows one to calculate the estimated cash equivalent of their loyalty points.<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> COMPETITIVE ANALYSIS</div>
+<div class="textrow portrow">
+	<table style = "border: 4px solid #006494;font-size:1em;">
+		  <tr>
+			<td></td>
+			<th>spotify</th>
+			<th>goodreads</th>
+			<th>google flights</th>
+		  </tr>
+		  <tr>
+			<th>favorites page</th>
+			<td>Y</td>
+			<td>Y</td>
+			<td>Y</td>
+		  </tr>
+		  <tr>
+			<th>favoriting mechanic</th>
+			<td>add button defaults to favorites</td>
+			<td>button with dropdown to add to lists</td>
+			<td>toggle to save entire search or specific selection</td>
+		  </tr>
+		  <tr>
+			<th>remove favorite</th>
+			<td>right click menu, remove from playlist, multiple clicks</td>
+			<td>“x” button</td>
+			<td>trash can button</td>
+		  </tr>
+		  <tr>
+			<th>sorting</th>
+			<td>N, automatically sorted by date added</td>
+			<td>Y, by any attribute</td>
+			<td>N, automatically sorted by travel date</td>
+		  </tr>
+		  <tr>
+			<th>"step in" to view more information</th>
+			<td>right click menu</td>
+			<td>click on element title</td>
+			<td>button on element</td>
+		  </tr>
+		</table>
+	<div style="height:12px;"></div>
+	<div class="porttext" style="margin:auto;">
+		<br>NOTE: I did not realize Spotify and Goodreads were used as examples in the handout until after doing the analysis…! Sorry!<br><br>
+		For Spotify, they have one of the fastest ways to add a song to a favorites playlist by the simple click of a button, but they have the most convoluted removal process, as you cannot immediately undo the add action by clicking the same button or even another button on the same UI. Instead, navigation is required to move to the playlist page, where you can right click or hold to bring up a menu with a removal option. Similarly, finding more information about a song requires a right click to the same menu. Google Flights, in contrast to Spotify, has the easiest UI to navigate, allowing for a toggle to save or unsave a selection, a trash can to remove from the favorites list, and a button to step in for more information. It sorts searches by travel date, which makes sense for its use case, as users likely use travel date as part of their mental model of planning future travel. Goodreads shares many of these positives, but also has filtering, which can be useful for longer lists, and Goodreads allows for multiple favorites lists, all of which can be filtered. Goodreads uses “bookshelves,” which is an additional positive conceptual model.
+<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> TARGET FEATURES</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+		<br>favorites area<br>toggle favoriting mechanic<br>remove favorite button<br>attribute filtering<br>button to step in to more information<br><br>
+	</div>
+</div>
+
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+<div style="height:24px;"></div>
+
+</div>
+
+</div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
