@@ -134,6 +134,17 @@ body::-webkit-scrollbar {
 	padding-bottom: 10px;
 }
 
+.index-textrow {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	display: flex;
+	width: 64em;
+}
+
+.companies{
+	width: 68em;
+}
+
 .textrowb {
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -787,6 +798,12 @@ span.dark{
 	}
 	#blampediag{
 		width:80%;
+	}
+	.comp-index{
+		display:none;
+	}
+	.index-textrow{
+		width: 30em;
 	}
 }
 
