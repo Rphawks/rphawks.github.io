@@ -526,7 +526,7 @@ span.nowrap {
 
 .hamburger{
 	position: fixed;
-	top: 50px
+	top: 32px;
 	left: 85%;
 	background-color: rgba(0, 0, 0, 0.4);
 	cursor: pointer;
