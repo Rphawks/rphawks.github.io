@@ -168,6 +168,10 @@ body::-webkit-scrollbar {
 	padding-right:8px;
 }
 
+.portrow-sticky{
+	padding-left: 120px;
+}
+
 .divider {
 	width: 4px;
 	margin: 0;
@@ -760,6 +764,26 @@ span.dark{
 .headernav {
 	font-size:1.5em;
 	line-height:220%;
+}
+
+.stucknav{
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+	padding-top: 120px;
+	font-size: 20px;
+}
+
+.stucknav:hover {
+	text-shadow: 0px 0px 8px #FFA599;
+}
+
+.stuckanchor {
+    display: block;
+	padding-top: 54px;
+    height: 34px;
+    margin-top: -88px;
+    visibility: hidden;
 }
 
 

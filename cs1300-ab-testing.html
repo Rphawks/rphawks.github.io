@@ -16,7 +16,6 @@
 </head>
 <body>
 
-<div class="workbar"></div>
 <div class="navback-1"></div>
 <div class="navback-2"></div>
 <div class="workwrap">
@@ -110,19 +109,21 @@
 	<div class="porttext" style="margin:auto;">
 		<br>the additional chosen metric is mouse movement distance.<br><br>
 		<span class="headline">misclick rate:</span><br>
-			<b>null:</b> users will have a higher misclick rate if interface elements are high contrast.<br><br>
+			<b>null:</b> users will have no changes in misclick rate, regardless of the contrast of interface elements.<br><br>
 			<b>alternative:</b> users will have a lower misclick rate if interface elements are high contrast.<br><br>
-			<b>prediction:</b> users should have a lower misclick rate if interface elements are high contrast, though it may not be significant.<br>
+			<b>prediction:</b> the data will reject the null hypothesis, as users will have a lower misclick rate with higher contrast.
+			this is because the higher contrast will make the text more readable, leading to lower misclicking.<br>
 			<br><br>
 		<span class="headline">time on page:</span><br>
-			<b>null:</b> time on page is lower if the user interface elements are organized logically.<br><br>
-			<b>alternative:</b> time on page is unaffected if the user interface elements are organized logically.<br><br>
-			<b>prediction:</b> time on page should be lower if the user interface elements are organized logically.<br>
+			<b>null:</b> time on page is unaffected by the organization of the user interface elements.<br><br>
+			<b>alternative:</b> time on page is lower if the user interface elements are organized logically.<br><br>
+			<b>prediction:</b> the data will reject the null hypothesis, as a logical organization of elements should reduce cognitive workload and allow for faster decision making.
+			such organization including grouping by location and date using gestalt principles of proximity or continuity should facilitate these improvements.<br>
 			<br><br>
 		<span class="headline">mouse movement distance:</span><br>
-			<b>null:</b> misclicking leads to significantly increased mouse movement distance.<br><br>
-			<b>alternative:</b> misclicking does not significantly affect mouse movement distance.<br><br>
-			<b>prediction:</b> misclicking may not significantly affect mouse movement distance at all.<br>
+			<b>null:</b> mouse movement distance is unaffected by the organization of the user interface elements.<br><br>
+			<b>alternative:</b> mouse movement distance is lower if the user interface elements are organized logically.<br><br>
+			<b>prediction:</b> the data will reject the null hypothesis, as, again, a logical organization of elements should allow for faster decision making, as less searching will be needed, leaning to less mouse movement.<br>
 			<br><br>
 	</div>
 </div>
@@ -132,20 +133,41 @@
 <div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
 		<span class="headline"><br>misclick rate:</span><br>
-			<b>test used:</b> a two-tailed t-test was used, with group a having higher contrast than group b. this is because the two hypotheses are on both sides of a standard (higher and lower).<br><br>
-			<b>results:</b> avg(a) = .20, var(a) = .16, avg(b) = .10, var(b) = .09, dof = 60.17, t-score = -1.12, p-value = .26<br><br>
-			<b>conclusion:</b> the p-score is too high to indicate any conclusive result, even though the average misclick rate of group b was lower. it fails to reject the null hypothesis.<br>
+			<b>test used:</b> a chi-squared test was used, with group a having higher contrast than group b. the category tested for was misclick (or not).<br><br>
+			<b>results:</b> df = 1, chi^2 = 1.35, p-value = 0.24<br><br>
+			<b>conclusion:</b> the p-score is too high to indicate any conclusive result. it fails to reject the null hypothesis. this could likely be due to small sample size and familiarity with the interface, as in both groups, the vast majority of people did not misclick.<br>
 			<br><br>
 		<span class="headline">time on page:</span><br>
 			<b>test used:</b> a one-tailed t-test was used, with baseline group a having randomized order, relative group b having logical organization.<br><br>
-			<b>results:</b> avg(a) = 12860, avg(b) = 20230, dof = 31.30, t-score = -0.855, p-value = .19<br><br>
+			<b>results:</b> avg(a) = 12860, avg(b) = 20230, dof = 31.30, <br>t-score = -0.855, p-value = .19<br><br>
 			<b>conclusion:</b> the p-score is too high to indicate any conclusive result, even though the time with organization (group b) was higher. it fails to reject the null hypothesis.<br>
 			this could be due to the fact that the button was further down the page in the organized version.
 			<br><br>
 		<span class="headline">mouse movement distance:</span><br>
-			<b>test used:</b> a one-tailed t-test was used, with baseline group a being non-misclicking, relative group b misclicking.<br><br>
-			<b>results:</b> avg(a) = 5946, avg(b) = 3028, dof = 10.39, t-score = 2.76, p-value = 0.99<br><br>
-			<b>conclusion:</b> the p-score is far too high to indicate any conclusive result. it fails to reject the null hypothesis.<br>
+			<b>test used:</b> a one-tailed t-test was used, with baseline group a having randomized order, relative group b having logical organization.<br><br>
+			<b>results:</b> avg(a) = 4006, avg(b) = 2921, dof = 43.57, t-score = -2.31, <br>p-value = 0.01<br><br>
+			<b>conclusion:</b> with an acceptably low p-score &lt;=0.05, there is significant difference between the two groups.
+			because the average of b is lower, we know that the group with logical organization has a statistically significant lower mouse movement, which rejects the null hypothesis and gives us confident the alternative hypothesis is true.
+			more organization then does correlate with less mouse movement.<br>
+			<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="nstitle"> STATISTICS DISCUSSION</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+			<span class="headline">group a:</span><br>
+			on misclicks, group a performed worse anecdotally with more misclicks at seven misclicks, but not enough to be statistically significant, with a chi-squared test p-value of 0.24.
+			surprisingly, group a, which was not organized, had a lower average time on page at 12.8s compared to 20.2s, though it was not statistically significant either.
+			this could be due to the nature of the task and that, by coincidence, the button required to complete the task was higher on the random order version a.
+			what was statistically significant was that group a had substantially higher mouse movement distance (4006) than group b (2921).
+			<br><br>
+			<span class="headline">group b:</span><br>
+			group b had qualtiatively fewer misclicks but a longer time on page, but again both were not significant. group b did have much lower mouse movement.
+			given our one statistically significant metric, more testing would perhaps be required to make concrete decisions, but the one test we do have—mouse movement distance, which could be argued is related to cognitive workload—
+			is significantly in group b's favor. version b used gestalt organization to provide a better conceptual model by location and time, and used higher contrast for accessibility.
+			by design principles and this very light statistical testing, it is the preferred page.
 			<br><br>
 	</div>
 </div>
