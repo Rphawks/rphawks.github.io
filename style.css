@@ -168,10 +168,6 @@ body::-webkit-scrollbar {
 	padding-right:8px;
 }
 
-.portrow-sticky{
-	padding-left: 120px;
-}
-
 .divider {
 	width: 4px;
 	margin: 0;
@@ -250,6 +246,12 @@ body::-webkit-scrollbar {
 	justify-content: center;
 }
 
+.archstackflex-container-col {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
 .archflex {
 	display: flex;
 	justify-content: center;
@@ -314,6 +316,19 @@ html {
 
 .architem:hover{
 	border: 4px solid #FFA599;
+	box-shadow: 0 0 8px 2px #FFA599;
+}
+
+.architem-col{
+	height:auto;
+	width:70%;
+	border: 4px solid #33211f;
+	cursor:pointer;
+}
+
+.architem-col:hover{
+	border: 4px solid #FFA599;
+	box-shadow: 0 0 8px 2px #FFA599;
 }
 
 .approachitem{
@@ -767,23 +782,42 @@ span.dark{
 }
 
 .stucknav{
-	position: -webkit-sticky; /* Safari */
-	position: sticky;
-	top: 0;
-	padding-top: 120px;
 	font-size: 20px;
+	background-size: 8px 8px;
+	text-wrap: pretty;
+	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
+	display: inline-block;
+	max-width: 60%;
 }
 
-.stucknav:hover {
+.stucknav:hover{
 	text-shadow: 0px 0px 8px #FFA599;
 }
 
 .stuckanchor {
     display: block;
-	padding-top: 54px;
-    height: 34px;
+	padding-top: 44px;
+    height: 44px;
     margin-top: -88px;
     visibility: hidden;
+	padding-bottom:10px;
+}
+
+.stuckcontainer {
+	display:flex;
+	align-items: start;
+}
+
+.stucknav-container{
+	display:flex;
+	flex-direction:column;
+	margin-top: 36px;
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	flex-shrink: 0;
+	top: 120px;
+	gap: 8px;
+	min-width: 20vw;
 }
 
 
@@ -829,6 +863,9 @@ span.dark{
 	.index-textrow{
 		width: 30em;
 	}
+	.stuckcolumn{
+		max-width: 70%;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -864,6 +901,9 @@ span.dark{
 	}
 	#blampediag{
 		width:100%;
+	}
+	.stucknav{
+		display:none;
 	}
 }
 
