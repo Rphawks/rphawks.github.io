@@ -16,7 +16,6 @@
 </head>
 <body>
 
-<div class="workbar"></div>
 <div class="navback-1"></div>
 <div class="navback-2"></div>
 <div class="workwrap">
@@ -85,20 +84,39 @@
 
 <div class="textrow portrow">
 	<div class="porttext" style="margin:auto;">
-		<span class="headline" style="font-size:1.125em"><b>live project can be found at <br><a href="https://treereq.vercel.app" class="nav" style="text-decoration: underline">treereq.vercel.app</a></b></span><br>
+		<span class="headline" style="font-size:1.125em"><b>live project can be found at <br><a href="https://treereq.vercel.app" target="_blank" class="nav" style="text-decoration: underline">treereq.vercel.app</a></b></span><br>
 		(please allow time for servers to wake from inactivity)<br>
 	</div>
 </div>
 
 <div style="height:12px;"></div>
 
-<div class="nstitle"> PROJECT BRIEF</div>
+<div class="stuckcontainer">
+<div class="stucknav-container">
+<a href="#brief" class="nav"><div class="stucknav">> PROJECT BRIEF</div></a>
+<a href="#mockups" class="nav"><div class="stucknav">> MOCKUPS</div></a>
+<a href="#technical" class="nav"><div class="stucknav">> TECHNICAL INFO</div></a>
+<a href="#photos" class="nav"><div class="stucknav">> PRODUCT PHOTOS</div></a>
+</div>
+
+<div class="stuckcolumn">
+<div class="stuckanchor" id="brief"></div>
+
 <div class="textrow portrow">
+	<div class="nstitle"> WHAT IS HYPERTEXT?</div>
 	<div class="porttext" style="margin:auto;">
-		<br>Over the course of the semester, through assignments, various features of a fullstack hypertext system (nodes, anchors, links, editable nodes, etc.) were built out using the MERN stack.<br><br>
-		The final project builds on top of this developed architecture by <br><br>
-		<b>1.</b> adding functionality for at least one additional node type with a new user interface <br>
-		<b>2.</b> adding at least one global feature (trails, access rights, visualisations, etc.) that works across all nodes, anchors, and/or links which helps users navigate and/or visualize the structure of the hypermedia system.<br><br>
+		<br> you might be familiar with a <span class="headline"><i>hyperlink</i></span>, a clickable element that takes a user to its targeted content.
+		<span class="headline"><i>hypertext</i></span> is text that contains these hyperlinks. multiple hypertext pages make up a hypertext system.<br><br>
+		<span class="headline"><i>hypermedia</i></span> is an extension of hypertext which allows not just text, but all forms of media (such as graphics, video or audio) to serve as nodes of a system and owners of hyperlinks. <br><br>
+		
+		over the course of the semester, we developed various features of a fullstack hypertext system including editable multimedia nodes, multimedia anchors, and links, built out using the MERN stack.<br><br>
+	</div>
+</div>
+
+<div class="textrow portrow">
+	<div class="nstitle"> PROJECT BRIEF</div>
+	<div class="porttext" style="margin:auto;">
+		<br>this final project transforms the developed, skeleton architecture by adding an additional specialized node type, the course, and a global feature—a course tree—across nodes, anchors, and/or links which helps users navigate and visualize the structure of the hypermedia system.<br><br>
 		<span class="headline" style="font-size:18px"><i>TreeReq is a structured<b> course planner and prerequisite/postrequisite visualizer</b> that enables high-level planning not directly accessible through single-course visualization.</i></span>
 		<br><br>
 		<span class="headline" style="font-size:18px"><i>TreeReq combines API-retrieved and authorized scraped data from course databases <br>(Banner, Courses @ Brown, The Critical Review) to generate <b>trees of course interaction</b> and populate user-modifiable <b>course nodes with existing descriptions and review information.</b></i></span>
@@ -107,22 +125,24 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> MOCKUPS</div>
+<div class="stuckanchor" id="mockups"></div>
+
 <div class="textrow portrow">
+	<div class="nstitle"> MOCKUPS</div>
 	<div class="porttext" style="margin:auto;text-align:center;">
 		<span class="headline">> mockups by sherry zhang</span>
 	</div>
 		<div style="height:18px;"></div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/initmockup1.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-		<img src="treereq/initmockup3.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
+		<img src="treereq/initmockup1.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/initmockup3.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/initmockup2.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-		<img src="treereq/initmockup4.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
+		<img src="treereq/initmockup2.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/initmockup4.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div style="height:24px;"></div>
@@ -132,14 +152,14 @@
 	</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/figma4.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-		<img src="treereq/figma1.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
+		<img src="treereq/figma4.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/figma1.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/figma3.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-		<img src="treereq/figma2.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
+		<img src="treereq/figma3.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/figma2.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div style="height:24px;"></div>
@@ -147,8 +167,9 @@
 
 
 <div style="height:12px;"></div>
-<div class="nstitle"> TECHNICAL INFO</div>
+<div class="stuckanchor" id="technical"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> TECHNICAL INFO</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
 		<div class="porttext" style="padding-right:24px;">
@@ -167,21 +188,24 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> PRODUCT PHOTOS</div>
+<div class="stuckanchor" id="photos"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> PRODUCT PHOTOS</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/final2.png" class="imgborder" style="max-width:min(800px,100%);height:auto;">
-		<img src="treereq/final1.png" class="imgborder" style="max-width:min(800px,100%);height:auto;">
+		<img src="treereq/final2.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/final1.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 	<div class="flex-container" style="align-items:center;">
 		<div class="flex-child" style="height:70px"></div>
-		<img src="treereq/final3.png" class="imgborder" style="max-width:min(800px,100%);height:auto;">
-		<img src="treereq/final4.png" class="imgborder" style="max-width:min(800px,100%);height:auto;">
+		<img src="treereq/final3.png" class="imgborder sideimg" style="height:auto;">
+		<img src="treereq/final4.png" class="imgborder sideimg" style="height:auto;">
 		<div class="flex-child" style="height:70px"></div>
 	</div>
 <div>
+</div>
+</div>
 
 <div style="height:48px;"></div>
 

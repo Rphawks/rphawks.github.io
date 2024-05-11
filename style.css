@@ -189,6 +189,10 @@ body::-webkit-scrollbar {
 	display: flex;
 }
 
+.img-flex-container {
+	display: flex;
+}
+
 .stackflex-container {
 	display: flex;
 	justify-content: center;
@@ -604,6 +608,10 @@ span.nowrap {
 	display:none;
 }
 
+.desktop{
+	display:block;
+}
+
 .date{
 	color:#69BADD;
 	font-size:1.125em;
@@ -873,6 +881,9 @@ span.dark{
 	.stackflex-container{
 		flex-direction: column;
 	}
+	.img-flex-container {
+		flex-direction:column;
+	}
 	.archstackflex-container{
 		flex-direction: column;
 	}
@@ -907,6 +918,9 @@ span.dark{
 	.mobile{
 		display: block;
 	}
+	.desktop{
+		display:none;
+	}
 	.barnav{
 		display: none;
 	}
@@ -940,6 +954,15 @@ span.dark{
 	.sideimg{
 	max-width:500px;
 	}
+	.stuckcontainer {
+		gap:0;
+	}
+	.stucknav-container{
+		display:none;
+	}
+	.stuckcolumn{
+		max-width:100%;
+	}
 }
 
 @media screen and (max-width: 850px),
@@ -951,6 +974,9 @@ span.dark{
 	}
 	.mobile{
 		display: block;
+	}
+	.desktop{
+		display:none;
 	}
 	.barnav{
 		display: none;
@@ -978,5 +1004,14 @@ span.dark{
 	}
 	body{
 		font-size: 2.5vw;
+	}
+	.stuckcontainer {
+		gap:0;
+	}
+	.stucknav-container{
+		display:none;
+	}
+	.stuckcolumn{
+		max-width:100%;
 	}
 }

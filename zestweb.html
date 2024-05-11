@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>zest redesign | ryan peng</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT7J4N3722');
+</script>
+</head>
+<body>
+
+<div class="navback-1"></div>
+<div class="navback-2"></div>
+<div class="workwrap">
+
+<button class="hamburger" id="hamburger"></button>
+<div class="barnav" style="height: 30px"></div>
+
+<div class="titlerow barnav fixed-top">
+	<div class="flex-container" style="width: calc(100vw - 60px)">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+		<div class="spacer" style="width: 6vw"></div>
+		<div class="flex-child"></div>
+		<div class="headernav"><a href="/#work" class="nav">work</a></div>
+		<div class="spacer" style="width:6vw"></div>
+		<div class="headernav"><a href="/about" class="nav">about</a></div>
+		<div style="width:2em" class="spacer"></div>
+		<div class="spacer"></div>
+	</div>
+</div>
+	
+<div class="barnav" style="height:60px;"></div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">SPRING 2024</div>
+		<div class="title"><b>ZEST ITERATIVE REDESIGN</b></div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrow" style="padding-top:0px;">
+	<img src="zest/recording.gif" style="max-width:100%;display:block;margin-left:auto;margin-right:auto;">
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="nowrap"><span class="info">WORK TYPE</span>&nbsp;<button id="thbutton" onclick="teamfunction()"><span class="uhov">team</span><div id="teamhide" style="display: none;float:right;">:</span> tiffany huang, cynthia wang, sherry zhang</div></button></div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> csci1300, brown university</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 3 weeks, ~8 hours/week</div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div style="height:12px;"></div>
+
+<div class="stuckcontainer">
+<div class="stucknav-container">
+<a href="#brief" class="nav"><div class="stucknav">> PROJECT BRIEF</div></a>
+<a href="#ideation" class="nav"><div class="stucknav">> IDEATION</div></a>
+<a href="#wireframe" class="nav"><div class="stucknav">> WIREFRAME</div></a>
+<a href="#critique" class="nav"><div class="stucknav">> CLIENT & PEER CRITIQUE</div></a>
+<a href="#styleguide" class="nav"><div class="stucknav">> STYLE GUIDE</div></a>
+<a href="#hifi" class="nav"><div class="stucknav">> HI-FI PROTOTYPE</div></a>
+<a href="#feedback" class="nav"><div class="stucknav">> CLIENT PRESENTATION & FEEDBACK</div></a>
+<a href="#revision" class="nav"><div class="stucknav">> CLIENT FEEDBACK REVISION</div></a>
+</div>
+
+<div class="stuckcolumn">
+<div class="stuckanchor" id="brief"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> PROJECT BRIEF</div>
+	<div class="porttext" style="margin:auto;">
+		<span class="headline" style="font-size:18px"><i>our team of designers worked with <b>Zest</b>, a corporate gifting platform, to develop interface changes to accomodate a new shipping option for bulk ordering.</i></span>
+		<br><br>
+	</div>
+</div>
+
+<div style="height:12px;"></div>
+<div class="stuckcolumn">
+<div class="stuckanchor" id="ideation"></div>
+
+<div class="textrow portrow">
+	<div class="nstitle"> IDEATION</div>
+	<div class="porttext" style="margin:auto;">
+		<span class="headline">BRAINSTORMING</span><br><br>
+		we began addressing our prompt with divergent brainstorming.
+		each team member brainstormed two end-to-end flows for possible implementations of a bulk shipping process.
+		in our discussion, some elements were relatively consistent, like the new shipping method belonging to the delivery method section or having a form of per-recipient total.
+		other items, like how one would select the bulk shipping option, varied greatly from checkboxes to radio buttons to dropdowns.
+		<br><br>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<img src="zest/sketch1.png" class="imgborder" style="height: 320px;">
+		<img src="zest/sketch2.png" class="imgborder" style="height: 320px;">
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+	<img src="zest/sketch3.png" class="imgborder" style="max-width:min(525px,100%);height:auto;margin-left:auto;margin-right:auto;">
+	</div>
+	<div class="flex-container" style="align-items:center;">
+	<img src="zest/sketch4.png" class="imgborder" style="max-width:min(525px,100%);height:auto;margin-left:auto;margin-right:auto;">
+	</div>
+	<div style="height:24px;"></div>
+	<div class="porttext" style="margin:auto;">
+		<span class="headline">CONSIDERATIONS</span><br><br>in our process, many questions arose.<br><br>
+		<span class="headline">-</span> since users who choose to ship to one address are likely bulk ordering (e.g. for 100+ people) and likely won’t want to personalize gifts for each recipient, are per-recipient UI elements necessary at all?<br><br>
+		<span class="headline">-</span> how do we want to enable bulk shipping? Some ideas from our sketches included a drop-down menu, a simple checkbox, and a third box in the delivery method section.<br><br>
+		<span class="headline">-</span> is a shopping cart necessary? How will it interact with the rest of the user flow?
+	</div>
+</div>
+
+<div style="height:24px;"></div>
+
+<div class="stuckcolumn">
+<div class="stuckanchor" id="wireframe"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> WIREFRAME</div>
+	<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin:auto;display:block;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRZivxawnwTihZxl7cAqxur%2FZest-Shipping-For-Christine%3Ftype%3Ddesign%26node-id%3D0%3A1%26mode%3Ddesign%26t%3DGGlXqD1jHqJOGhuG-1" allowfullscreen></iframe>
+	<div style="height:24px;"></div>
+	<div class="porttext" style="margin:auto;">
+		<span class="headline">INITIAL DESIGN DECISIONS (SKETCHES & WIREFRAME)</span><br><br>
+		
+		we tackled these questions by doing an initial wireframe and making some design decisions for feedback.<br><br>
+		<span class="headline">-</span> decided to add our delivery method under “ship to recipients’ addresses” option<br>
+		<span class="headline">-</span> chose between a drop-down, a checkbox, or a third option in delivery methods. we felt that it should be of equal importance to ship to individual addresses, so we chose dropdown and third option over checkbox <br>
+		<span class="headline">-</span> added an order summary with total per recipient or bulk shipping, to clearly communicate totals after shipping<br>
+		<span class="headline">-</span> summary had added effect of less clicking back and forth between checkout and main page, which was required to view total details<br>
+		<span class="headline">-</span>	removed addresses from recipients list, as bulk shipping uses a single address<br>
+		<span class="headline">-</span> users can now ship to one address without emailing customer service 🙂<br>
+	</div>
+</div>
+
+<div style="height:24px;"></div>
+<div class="stuckcolumn">
+<div class="stuckanchor" id="critique"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> CLIENT & PEER CRITIQUE</div>
+	<div class="porttext" style="margin:auto;">
+	we then participated in a critique with around 20 other students in our studio to get unbiased feedback (since none of them were familiar with Zest prior).
+	we created a Loom video to walk through our wireframe.<br><br>
+		<span class="headline">-</span> From the critique, we learned that we should talk about and analyze competitors in our process and include sketches in the beginning to show our entire design process from start to finish.<br>
+		<span class="headline">-</span> Some specific feedback we received included making the boxes the same size for each delivery method and making it more intuitive to switch between pages of the gift options. <br>
+	</div>
+	<div style="height:24px;"></div>	
+	<div class="porttext" style="margin:auto;">
+	after creating a wireframe, we met up with our instructor, Vanessa Cho, for a check-in. we gained the following insights:<br><br>
+		<span class="headline">-</span> talk about and analyze competitors in our process<br>
+		<span class="headline">-</span> include sketches in our check-in to show our entire design process from start to finish<br>
+		<span class="headline">-</span> the specific language we choose is important. for example, does the phrasing “ship all to one address” make sense?<br>
+		<span class="headline">-</span> minimize extra clicks as much as possible<br>
+		<span class="headline">-</span> some specific feedback we received included making the boxes the same size for each delivery method and making it more intuitive to switch between pages of the gift options. <br>
+	</div>
+	<div style="height:24px;"></div>	
+	<div class="porttext" style="margin:auto;">
+	finally, we received feedback from our client, Christine Pun, Founding Designer at Zest, who gave us the following feedback:<br><br>
+		<span class="headline">-</span> she was curious about why we broke our shipping methods into two instead of three. we realized that we chose this primarily for aesthetic reasons and ultimately decided to switch back to our original solution of one box for each shipping method since it was more intuitive–users would likely be confused about why there are two options under one shipping method. <br>
+		<span class="headline">-</span> additionally, christine was curious about how the cart would look like on mobile, so we decided to prototype the primary page for mobile as well.
+	</div>
+	<div class="porttext" style="margin:auto;">
+		<br><span class="headline">because there were no major design changes to the wireframe, we chose to move quickly to the high-fidelity prototype, as zest requested a mobile prototype as well.<br>
+		we integrated our minor design changes, including changes in language and two to three delivery options, directly in our high-fidelity prototype.</span>
+	
+	</div>
+</div>
+
+
+<div style="height:24px;"></div>
+<div class="nstitle"> STYLE GUIDE</div>
+<div class="textrow portrow">
+	<div style="height:12px;"></div>
+	<img src="zest/styleguide.png" class="imgborder" style="max-width:min(825px,100%);height:auto;margin-left:auto;margin-right:auto;display:block;">
+	<div style="height:24px;"></div>
+	<div class="porttext" style="margin:auto;">
+	since we were given hi-fi Figma screens to iterate on, we at least had something  to work off of, and it was just a matter of consolidating the information.
+	we used Milk Bar as an example brand and based our style guide around that.
+	we noted that Zest used the colors of the brand they’re working with, which we believe is to allow for more personalization and brand identification from the perspective of the brand they’re working with.
+	<br><br>we believe that they chose a sans serif typeface with no styling like Centra2 for readability.
+	additionally, the text size is the same across mobile and desktop to allow for responsiveness to be implemented easier.
+	in terms of what we added to the style guide, we added a few more icons as we saw fit, created the option to remove a cart item on hover, and a custom calendar when selecting a delivery date.
+	</div>
+</div>
+
+<div style="height:24px;"></div>
+<div class="nstitle"> HI-FI PROTOTYPE</div>
+<div style="height:12px;"></div>
+<img src="zest/recording.gif" style="max-width:100%;display:block;margin-left:auto;margin-right:auto;">
+<div style="height:12px;"></div>
+<div class="flex-container" style="align-items:center;">
+	<div class="flex-child" style="height:70px"></div>
+	<img src="zest/mobile.png" class="imgborder" style="height: 485px;">
+	<img src="zest/mobile2.png" class="imgborder" style="height: 485px;">
+	<img src="zest/mobile3.png" class="imgborder" style="height: 485px;">
+	<div class="flex-child" style="height:70px"></div>
+</div>
+<div style="height:12px;"></div>
+<iframe style="border: 1px solid rgba(0, 0, 0, 0.1);margin:auto;display:block;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FRZivxawnwTihZxl7cAqxur%2FZest-Shipping-For-Christine%3Ftype%3Ddesign%26node-id%3D50%3A179%26mode%3Ddesign%26t%3DGGlXqD1jHqJOGhuG-1" allowfullscreen></iframe>
+
+<div style="height:24px;"></div>
+<div class="nstitle">  CLIENT PRESENTATION & FEEDBACK</div>
+<div class="textrow portrow">
+	<div class="porttext" style="margin:auto;">
+	finally, we presented our hi-fi prototype to Christine and Jeremy, a co-founder of Zest, and they gave us some pointers for our design:<br><br>
+	<span class="headline">-</span> doing user tests could help with confidence in our design choices. for example, trying a version with a cart versus without a cart could help us get a sense of how users interact with the interface.<br>
+	<span class="headline">-</span> having the option to change the number of recipients within the cart interface could be explored.<br>
+	<span class="headline">-</span> the order of sections on the page is important and something they have to consider deeply! for example, some companies want the ability to customize the catalog depending on shipping method, but it may be jarring if an earlier section changes based on the user’s selection in a later section.
+	</div>
+</div>
+
+<div style="height:24px;"></div>
+<div class="nstitle"> CLIENT FEEDBACK REVISION</div>
+<div class="textrow portrow">
+	<img src="zest/cart_demo.gif" style="max-width:100%; width: 800px;display:block;margin-left:auto;margin-right:auto;">
+	<div style="height:12px;"></div>
+	<div class="porttext" style="margin:auto;">
+	during our meeting with the founder, the main point of improvement we discussed was having the number of recipients be an editable field in the order summary, rather than something only accessible via one of the larger page sections.
+	this would allow the users to edit the number of recipients as they were ordering, which might make more sense for the entire flow as a buyer navigates the ordering process.<br><br>
+	as such, we added an input field in the order summary so that users can increase or decrease the number of recipients, but set the default number of recipients to 1 so that the default total computation would be easier to understand at first glance.
+	this would also update as users change the number of recipients in the “Recipients” page section during the main page flow to stay consistent with the general flow.
+
+	</div>
+</div>
+</div>
+</div>
+
+<div style="height:48px;"></div>
+
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+<div style="height:24px;"></div>
+
+</div>
+
+</div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
