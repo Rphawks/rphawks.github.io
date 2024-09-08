@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="style.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<title>pointillist quad | ryan peng</title>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-HT7J4N3722');
+</script>
+</head>
+<body>
+
+<div class="navback-1"></div>
+<div class="navback-2"></div>
+<div class="workwrap">
+
+<button class="hamburger" id="hamburger"></button>
+<div class="barnav" style="height: 30px"></div>
+
+<div class="titlerow barnav fixed-top">
+	<div class="flex-container" style="width: calc(100vw - 60px)">
+		<div class="spacer"></div>
+		<div class="spacer"></div>
+		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+		<div class="spacer" style="width: 6vw"></div>
+		<div class="flex-child"></div>
+		<div class="headernav"><a href="/#work" class="nav">work</a></div>
+		<div class="spacer" style="width:6vw"></div>
+		<div class="headernav"><a href="/about" class="nav">about</a></div>
+		<div style="width:2em" class="spacer"></div>
+		<div class="spacer"></div>
+	</div>
+</div>
+	
+<div class="barnav" style="height:60px;"></div>
+
+<div class="modal" id ="modal-content" style="display:none;">
+	<div class="titlerow">
+		<div class="flex-container">
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
+			<div class="spacer"></div>
+			<div class="spacer"></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
+			<div class="flex-child"></div>
+			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
+			<div class="flex-child"></div>
+		</div>
+	</div>
+</div>
+
+<div class="textrow barnav">
+	<div style="height:10px"></div>
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+		<div class="date">SPRING 2024</div>
+		<div class="title"><b>POINTILLIST QUAD</b></div>
+</div>
+
+<div style="height:12px;"></div>
+
+<div class="textrow" style="padding-top:0px;">
+	<img src="pointillist/wave.jpeg" style="width:50%;display:block;margin-left:auto;margin-right:auto;">
+</div>
+
+<div class="textrowb" style="padding-left:8px">
+	<div class="summary"><span class="info">WORK TYPE</span>&nbsp;<button id="thbutton" onclick="teamfunction()"><span class="uhov">team</span><div id="teamhide" style="display: none;float:right;">: lucian sharpe, thalia bonas</div></button></div>
+	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> csci1952z, brown</div>
+	<div class="summary"><span class="info">TIME &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 4 months, ~8 hours/week</div>
+</div>
+<div class="flex-child"></div>	
+
+<div style="height:12px;"></div>
+
+<div class="stuckcontainer">
+<div class="stucknav-container">
+<a href="#project" class="nav"><div class="stucknav">> PROJECT STATEMENT</div></a>
+<a href="#software" class="nav"><div class="stucknav">> SOFTWARE</div></a>
+<a href="#hardware" class="nav"><div class="stucknav">> HARDWARE</div></a>
+<a href="#setup" class="nav"><div class="stucknav">> SETUP & TROUBLE-<br>SHOOTING</div></a>
+<a href="#final" class="nav"><div class="stucknav">> FINAL WORKS</div></a>
+</div>
+
+<div class="stuckcolumn">
+<div class="stuckanchor" id="project"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> PROJECT STATEMENT</div>
+	<div class="porttext" style="margin:auto;">utilize drones to paint in the pointillism style allowing for art in hard to reach places and complex styles on a massive scale.
+
+	</div>
+</div>
+<div class="stuckanchor" id="software"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> SOFTWARE</div>
+	<div class="porttext" style="margin:auto;">
+	we used a dithering algorithm in a custom MATLAB app to create a point-based version of any image,
+	resulting in a table of points and their RGB values.
+	for initial testing, we used a small quadcopter crazyflie and long exposure photography to test "painting" parts of the image using an onboard LED.
+	<br><br>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/smileapp.png" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">DITHERING APP</span>
+			</div>
+		</div>
+		<div>
+			<img src="pointillist/smile.png" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">LONG EXPOSURE TEST FLIGHT</span>
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:32px;"></div>
+</div>
+
+<div class="stuckanchor" id="hardware"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> HARDWARE</div>
+	<div class="porttext" style="margin:auto;">
+	our drone consisted of a crazyflie board with a large quadcopter frame.
+	a bottle containing paint was mounted directly below the center of gravity, with a front spray nozzle.
+	the front spray nozzle was actuated using a string and servo rig. we also considered using a tether for paint and power, which did not pan out.
+	<br><br>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/drone.jpg" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">V1 DRONE</span>
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:32px;"></div>
+</div>
+
+<div class="stuckanchor" id="setup"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> SETUP & TROUBLESHOOTING</div>
+
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/setup.jpg" class="imgborder" style="height:40vw;max-height:800px;width:auto;">
+		</div>
+		<div>
+			<div class="porttext" style="margin:auto;padding-left:6em;">
+			our painting rig used a canvas suspended from the ceiling and supported on the ground.
+			the drone was placed in a takeoff box supported by prop guards.
+			<br><br>
+			</div>
+			<div class="porttext" style="margin:auto;padding-left:6em;">
+			<span class="headline">TRACKING ERROR</span>
+			<br>
+			during painting tests, we found that the cameras around the space would often lose track of the drone object for split-second intervals, causing the drone to receive erroneous flight instructions.
+			this is partially because the large canvas prevented the subset of cameras behind it from tracking the drone.
+			
+			<br><br>
+			after various tests with many changes in reflector positioning, we found that the drone actually flew most smoothly using a single raised reflector, as camera loss of all reflectors (in this case, one) meant that no instructions, correct or incorrect, would be sent.
+			<br><br>
+			</div>
+			<div class="porttext" style="margin:auto;padding-left:6em;">
+			<span class="headline">PAINT CHOICE</span>
+			<br>
+			we tested various types and viscosities of paint mixtures, including spray chalk, spray paint, and acrylic paint.
+			ultimately, we used thinned acrylic paint, as the paint would need droplets when being sprayed; aerosolized particles would be affected by the drone's propellers and downwash.
+			<br><br>
+			we decided on a thinned mixture which would retain the proper color and opacity that would flow and avoid clogging the spray mechanism.
+			<br><br>
+			</div>
+			<div class="porttext" style="margin:auto;padding-left:6em;">
+			<span class="headline">SERVO POWER</span>
+			<br>
+			initial tests found that, despite using thinned paint, the servo would not always receive enough power to fully actuate. we solved this by mounting a second, smaller battery to the frame solely for the servo.
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:32px;"></div>
+</div>
+
+<div class="stuckanchor" id="final"></div>
+<div class="textrow portrow">
+	<div class="nstitle"> FINAL WORKS</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/wave_original.jpg" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline"><i>The Great Wave off Kanagawa</i>, Hokusai</span>
+			</div>
+		</div>
+		<div>
+			<img src="pointillist/wave.jpeg" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">...adapted by drone</span>
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/starry_original.jpg" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline"><i>The Starry Night</i>, Vincent van Gogh</span>
+			</div>
+		</div>
+		<div>
+			<img src="pointillist/starry.png" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">...adapted by drone</span>
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div class="flex-container" style="align-items:center;">
+		<div class="flex-child" style="height:70px"></div>
+		<div>
+			<img src="pointillist/krasner_original.jpg" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline"><i>Listen</i>, Lee Krasner</span>
+			</div>
+		</div>
+		<div>
+			<img src="pointillist/krasner.png" class="imgborder" style="height:20vw;max-height:300px;width:auto;">
+			<div class="porttext" style="text-align:center;">
+			<span class="headline">...adapted by drone</span>
+			</div>
+		</div>
+		<div class="flex-child" style="height:70px"></div>
+	</div>
+	<div style="height:32px;"></div>
+</div>
+
+</div>
+</div>
+
+<div style="height:24px;"></div>
+<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+<div style="height:24px;"></div>
+
+</div>
+
+<script>
+//topbtn
+mybutton = document.getElementById("topbtn");
+
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+//collapsible
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+  coll[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var content = this.nextElementSibling;
+    if (content.style.display === "block") {
+      content.style.display = "none";
+    } else {
+      content.style.display = "block";
+    }
+  });
+}
+
+//hamburger
+var hcoll = document.getElementsByClassName("hamburger");
+var ii;
+
+for (ii = 0; ii < hcoll.length; ii++) {
+  hcoll[ii].addEventListener("click", function() {
+    this.classList.toggle("hamactive");
+  })};
+
+var hmodal = document.getElementById("modal-content");
+var hbtn = document.getElementById("hamburger");
+
+hbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+var hworkbtn = document.getElementById("hamwork");
+hworkbtn.onclick = function() {
+  if (hmodal.style.display === "flex") {
+      hmodal.style.display = "none";
+	  hbtn.classList.toggle("hamactive");
+    } else {
+      hmodal.style.display = "flex";
+    }
+}
+
+//teamhide
+function teamfunction() {
+	var teamhide = document.getElementById("teamhide")
+	if (teamhide.style.display === "none") {
+	teamhide.style.display = "block";
+	} else {
+	teamhide.style.display = "none";
+	}
+}
+</script>
+</body>
+</html>
