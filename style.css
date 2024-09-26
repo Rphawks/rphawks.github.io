@@ -154,6 +154,15 @@ body::-webkit-scrollbar {
 	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
 }
 
+.textrowb-top {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	background-color: #000000;
+	opacity: 1;
+	background-size: 8px 8px;
+	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
+}
+
 .titlerow {
 	padding:0px;
 }

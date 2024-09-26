@@ -71,10 +71,12 @@
 
 <div style="height:12px;"></div>
 
+<div class="flex-container" style="align-items:center;">
 <div class="textrow" style="padding-top:0px;">
-	<img src="flyover/flyovervideo.gif" style="width:100%;display:block;margin-left:auto;margin-right:auto;">
+	<img src="flyover/flyovervideo.gif" style="width:46vw;display:block;margin-left:auto;margin-right:auto;">
 </div>
 
+<div style="width:48%;margin-left:2em;">
 <div class="textrowb" style="padding-left:8px">
 	<div class="summary"><span class="info">WORK TYPE</span>&nbsp; solo</div>
 	<div class="summary"><span class="info">CONTEXT &nbsp;&nbsp;</span> passion project</div>
@@ -82,17 +84,31 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="textrow portrow">
+<div class="textrow portrow" style="padding-left:2.5em;">
 	<div class="porttext" style="margin:auto;">
 	<span class="headline" style="font-size:1.125em"><b>stuck at home, I wanted to stay connected with the ever-active world around me.</b></span><br><br>
 		 Flyover v2 is an LED matrix display inspired by <a href="http://jeremybmerrill.com/blog/2016/01/flyover.html"style="color: #FFA599;">Jeremy Merrill's Flyover</a> that tells you where planes that fly overhead are going. <br><br>
 		<span class="headline" style="font-size:1.125em">v2 uses more powerful hardware and displays <i>more</i> data with <i>nearly 100%</i> accuracy.</span>
 	</div>
 </div>
+</div>
+</div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> CONCEPT</div>
+
+<div class="stuckcontainer">
+<div class="stucknav-container">
+<a href="#concept" class="nav"><div class="stucknav">> CONCEPT</div></a>
+<a href="#planes" class="nav"><div class="stucknav">> LISTENING TO PLANES</div></a>
+<a href="#data" class="nav"><div class="stucknav">> TRANSLATING DATA</div></a>
+<a href="#accuracy" class="nav"><div class="stucknav">> IMPROVING ACCURACY</div></a>
+<a href="#time" class="nav"><div class="stucknav">> WITH MORE TIME</div></a>
+</div>
+
+<div class="stuckcolumn">
+<div class="stuckanchor" id="concept"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> CONCEPT</div>
 	<div class="porttext" style="margin:auto;">
 		 my home sits under <span class="peach">four air traffic patterns for Memphis International Aiport (MEM), the busiest cargo airport in the western hemisphere</span>. 
 		 planespotting from my window became escapist for me during the pandemic, 
@@ -101,8 +117,9 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> LISTENING TO PLANES</div>
+<div class="stuckanchor" id="planes"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> LISTENING TO PLANES</div>
 	<div class="flex-container" style="align-items:center;">
 			<div class="flex-child" style="height:70px"></div>	
 			<img src="flyover/hardware.png" class="imgborder" style="width:50%;max-width:350px;height:auto;">
@@ -115,8 +132,9 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> TRANSLATING DATA</div>
+<div class="stuckanchor" id="data"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> TRANSLATING DATA</div>
 	<div class="porttext" style="margin:auto;">
 		I originally intended to run everything independently on the Raspberry Pi, but it did not have the processing power.
 	</div>
@@ -142,8 +160,9 @@
 </div>
 
 <div style="height:12px;"></div>
-<div class="nstitle"> IMPROVING ACCURACY (ADDED 2021)</div>
+<div class="stuckanchor" id="accuracy"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> IMPROVING ACCURACY (ADDED 2021)</div>
 	<div class="porttext" style="margin:auto;">
 		the original open source excel database only had <span class="peach">roughly 70% accuracy on regular routes, missing irregular routes entirely</span>.
 		the database also required frequent updates to stay up to date. in 2021, v2 shifted to a Google Search API-based route checking system with <span class="peach">over 95% accuracy</span>.<br><br>
@@ -152,13 +171,17 @@
 </div>	
 
 <div style="height:12px;"></div>
-<div class="nstitle"> WITH MORE TIME...</div>
+<div class="stuckanchor" id="time"></div>
 <div class="textrow portrow">
+	<div class="nstitle"> WITH MORE TIME...</div>
 	<div class="porttext" style="margin:auto;">
 		I revisited this project to improve the data accuracy.
 		if I were to again, I'd look at designing and making a solid housing for the displays (and hide those wires).
 	</div>
 </div>	
+
+</div>
+</div>
 
 <div style="height:24px;"></div>
 <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
