@@ -510,6 +510,10 @@ span.peach {
 	color:#FFA599;
 }
 
+span.white {
+	color:#FFFFFF;
+}
+
 span.nowrap {
 	display:inline-block;
 }
@@ -619,6 +623,10 @@ span.nowrap {
 
 .desktop{
 	display:block;
+}
+
+.desktop-flex{
+	display:flex;
 }
 
 .date{
@@ -869,6 +877,23 @@ span.dark{
 	width: 90vw;
 }
 
+.portblip{
+	width:48%;
+	margin-left:2em;
+}
+
+.portblip-img{
+	width:46vw;
+	display:block;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+.portblip-flex{
+	display:flex;
+	align-items:center;
+}
+
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -928,7 +953,10 @@ span.dark{
 		display: block;
 	}
 	.desktop{
-		display:none;
+		display: none;
+	}
+	.desktop-flex{
+		display: none;
 	}
 	.barnav{
 		display: none;
@@ -972,6 +1000,16 @@ span.dark{
 	.stuckcolumn{
 		max-width:100%;
 	}
+	.portblip{
+		width: auto;
+		margin-left: 0;
+	}
+	.portblip-img{
+		width:85vw;
+	}
+	.portblip-flex{
+		display:block;
+	}
 }
 
 @media screen and (max-width: 850px),
@@ -985,6 +1023,9 @@ span.dark{
 		display: block;
 	}
 	.desktop{
+		display:none;
+	}
+	.desktop-flex{
 		display:none;
 	}
 	.barnav{
@@ -1022,5 +1063,15 @@ span.dark{
 	}
 	.stuckcolumn{
 		max-width:100%;
+	}
+	.portblip{
+		width: auto;
+		margin-left: 0;
+	}
+	.portblip-img{
+		width:85vw;
+	}
+	.portblip-flex{
+		display:block;
 	}
 }
