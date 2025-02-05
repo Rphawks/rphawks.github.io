@@ -1014,8 +1014,7 @@ span.dark{
 
 @media screen and (max-width: 850px),
 	screen and (max-height: 500px),
-	(pointer:none),
-	(pointer:coarse){
+	(pointer:none){
 	.hamburger{
 		display: block;
 	}
