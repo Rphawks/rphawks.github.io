@@ -194,11 +194,7 @@ body::-webkit-scrollbar {
 	margin: 0;
 }
 
-.flex-container {
-	display: flex;
-}
-
-.img-flex-container {
+.flex-container, .img-flex-container, .rev-img-flex-container {
 	display: flex;
 }
 
@@ -320,7 +316,7 @@ a.link {
 	color: #FFA599;
 }
 
-a:visited, a:active {
+a:active {
   color: inherit;
 }
 
@@ -909,7 +905,7 @@ span.dark{
 
 ::-webkit-scrollbar-thumb:hover {
   background: #99635C;
-}
+}	
 
 @media screen and (max-width: 1200px){
 	.stackflex-container{
@@ -917,6 +913,9 @@ span.dark{
 	}
 	.img-flex-container {
 		flex-direction:column;
+	}
+	.rev-img-flex-container {
+		flex-direction:column-reverse;
 	}
 	.archstackflex-container{
 		flex-direction: column;
