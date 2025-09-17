@@ -457,11 +457,14 @@ span.white {
 
 span.info {
 	color:#69BADD;
+	width:8rem;
+	flex-shrink: 0;
 }
 
 .summary {
 	font-size:1.25em;
 	line-height:160%;
+	display: flex;
 }
 
 span.headline {
@@ -898,6 +901,14 @@ span.dark{
 .portblip-flex{
 	display:flex;
 	align-items:center;
+}
+
+.teamhide{
+	display: none;
+	float:right;
+	text-wrap: wrap;
+	text-align:left;
+	width:calc(100% - 3rem);
 }
 
 
