@@ -465,6 +465,7 @@ span.info {
 	font-size:1.25em;
 	line-height:160%;
 	display: flex;
+	gap: 1rem;
 }
 
 span.headline {
@@ -687,15 +688,15 @@ span.rotated{
 #thbutton {
 	cursor: pointer;
 	border: none;
-	text-align: center;
+	text-align: left;
 	outline: none;
 	background-color: rgba(0, 0, 0, 0);
 	font-family: 'DM Mono';
 	color: #FFA599;
 	font-size:1em;
 	line-height:140%;
-	margin-left:4px;
 	text-decoration: underline;
+	display:flex;
 }
 
 span.uhov:hover{
@@ -907,8 +908,9 @@ span.dark{
 	float:right;
 	text-wrap: wrap;
 	text-align:left;
-	width:calc(100% - 3rem);
+	flex-grow: 1;
 }
+
 
 
 ::-webkit-scrollbar {
