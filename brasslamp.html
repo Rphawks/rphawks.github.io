@@ -1,298 +1,483 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>brass lamp | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>brass lamp | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2022</div>
+        <div class="title"><b>BRASS LAMP</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2022</div>
-		<div class="title"><b>BRASS LAMP</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="blamp/IMG_9517crop2.jpg"
+            style="
+              width: 46vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="blamp/IMG_9517crop2.jpg" style="width:46vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>fiat lux studio, RISD
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>4 months, ~14 hours/week
+            </div>
+          </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>fiat lux studio, RISD</div>
-	<div class="summary"><span class="info">TIME</span>4 months, ~14 hours/week</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="textrow portrow" style="padding-left: 2.5em">
+            <div class="porttext" style="margin: auto">
+              <span class="headline" style="font-size: 1.125em"
+                ><b
+                  >in an industrial design studio, I sought to experiment with
+                  manufacturing techniques in making new forms</b
+                ></span
+              ><br /><br />
+              brainstorming for this project centered around form before to
+              create a truly minimal and seamless design—unlike
+              engineering-first work.<br /><br />
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>in an industrial design studio, I sought to experiment with manufacturing techniques in making new forms</b></span><br><br>
-		brainstorming for this project centered around form before to create a truly minimal and seamless design—unlike engineering-first work.<br><br>
-	</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="blamp/IMG_9517crop2.jpg"
+            style="
+              width: 85vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="blamp/IMG_9517crop2.jpg" style="width:85vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>fiat lux studio, RISD
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>4 months, ~14 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>fiat lux studio, RISD</div>
-	<div class="summary"><span class="info">TIME</span>4 months, ~14 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+        <div class="textrow portrow" style="padding-left: 2.5em">
+          <div class="porttext" style="margin: auto">
+            <span class="headline" style="font-size: 1.125em"
+              ><b
+                >in an industrial design studio, I sought to experiment with
+                manufacturing techniques in making new forms</b
+              ></span
+            ><br /><br />
+            brainstorming for this project centered around form before to create
+            a truly minimal and seamless design—unlike engineering-first
+            work.<br /><br />
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>in an industrial design studio, I sought to experiment with manufacturing techniques in making new forms</b></span><br><br>
-		brainstorming for this project centered around form before to create a truly minimal and seamless design—unlike engineering-first work.<br><br>
-	</div>
-</div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="stuckcontainer">
+        <div class="stucknav-container">
+          <a href="#concept" class="nav"
+            ><div class="stucknav">> CONCEPT</div></a
+          >
+          <a href="#test" class="nav"><div class="stucknav">> TEST RUN</div></a>
+          <a href="#prototype" class="nav"
+            ><div class="stucknav">> FULL PROTOTYPE</div></a
+          >
+          <a href="#electronics" class="nav"
+            ><div class="stucknav">> ELECTRONICS</div></a
+          >
+          <a href="#photos" class="nav"
+            ><div class="stucknav">> PRODUCT PHOTOS</div></a
+          >
+        </div>
 
-<div class="stuckcontainer">
-<div class="stucknav-container">
-<a href="#concept" class="nav"><div class="stucknav">> CONCEPT</div></a>
-<a href="#test" class="nav"><div class="stucknav">> TEST RUN</div></a>
-<a href="#prototype" class="nav"><div class="stucknav">> FULL PROTOTYPE</div></a>
-<a href="#electronics" class="nav"><div class="stucknav">> ELECTRONICS</div></a>
-<a href="#photos" class="nav"><div class="stucknav">> PRODUCT PHOTOS</div></a>
-</div>
+        <div class="stuckcolumn">
+          <div class="stuckanchor" id="concept"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">CONCEPT</div>
+            <img
+              src="blamp/IMG_9515crop.jpg"
+              style="
+                height: 36vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 12px"></div>
+            <div class="porttext" style="margin: auto">
+              I decided on a symmetrical curved design that uses the weight of
+              the brass itself as the counterweight. all electronics and wiring
+              would be hidden within the thin frame of the lamp itself—or
+              separately on the power line.
+            </div>
+          </div>
 
-<div class="stuckcolumn">
-<div class="stuckanchor" id="concept"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> CONCEPT</div>
-	<img src="blamp/IMG_9515crop.jpg" style="height:36vh;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:12px;"></div>
-	<div class="porttext" style="margin:auto;">I decided on a symmetrical curved design that uses the weight of the brass itself as the counterweight.
-	all electronics and wiring would be hidden within the thin frame of the lamp itself—or separately on the power line.
-	</div>
-</div>
+          <div class="stuckanchor" id="test"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">TEST RUN</div>
+            <div class="porttext" style="margin: auto">
+              after test bends with various metal stocks, the first prototype
+              was made using 1/8" brass tube stock. the three-part brass was
+              held with friction at the base joints.
+            </div>
+            <div style="height: 32px"></div>
+            <img
+              src="blamp/protofull.jpg"
+              style="
+                width: 80vw;
+                max-width: 500px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 32px"></div>
+            <div class="porttext" style="margin: auto">
+              acrylic-welded acrylic pins acting as tubes held an flush acrylic
+              tube at the top.
+            </div>
+            <div style="height: 32px"></div>
+            <img
+              src="blamp/protoacrylic.jpg"
+              style="
+                width: 80vw;
+                max-width: 500px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 32px"></div>
+            <div class="porttext" style="margin: auto">
+              a rigid test filament was directly pulled from an bulb. the
+              filament was too short and required too much power to run, but a
+              sense of the final product was there.
+            </div>
+            <div style="height: 32px"></div>
+            <img
+              src="blamp/protoclose.jpg"
+              style="
+                width: 80vw;
+                max-width: 500px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 32px"></div>
+          </div>
 
-<div class="stuckanchor" id="test"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> TEST RUN</div>
-	<div class="porttext" style="margin:auto;">
-	after test bends with various metal stocks, the first prototype was made using 1/8" brass tube stock. the three-part brass was held with friction at the base joints.
-	</div>
-	<div style="height:32px;"></div>
-	<img src="blamp/protofull.jpg" style="width:80vw;max-width:500px;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:32px;"></div>
-	<div class="porttext" style="margin:auto;">acrylic-welded acrylic pins acting as tubes held an flush acrylic tube at the top.
-	</div>
-	<div style="height:32px;"></div>
-	<img src="blamp/protoacrylic.jpg" style="width:80vw;max-width:500px;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:32px;"></div>
-	<div class="porttext" style="margin:auto;">a rigid test filament was directly pulled from an bulb.
-	the filament was too short and required too much power to run, but a sense of the final product was there.
-	</div>
-	<div style="height:32px;"></div>
-	<img src="blamp/protoclose.jpg" style="width:80vw;max-width:500px;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:32px;"></div>
-</div>
+          <div class="stuckanchor" id="prototype"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">FULL PROTOTYPE</div>
+            <div class="porttext" style="margin: auto">
+              with some test bends under my belt, I went to work perfecting a
+              better set of brass parts. acrylic was changed to glass as
+              acrylic-weld proved unreliable.
+            </div>
+            <div style="height: 32px"></div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="blamp/finalarms.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <img
+                src="blamp/finalbase.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 32px"></div>
+            <div class="porttext" style="margin: auto">
+              in addition to the arms and base, two of each style of pin was
+              lathed from tube stock. one stepped for fitting the brass to the
+              glass and one flush for fitting brass to brass.
+            </div>
+            <div style="height: 32px"></div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="blamp/joints.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <img
+                src="blamp/glasstestfit.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 32px"></div>
+            <div class="porttext" style="margin: auto">
+              the parts were soldered together with the joints.
+            </div>
+            <div style="height: 32px"></div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="blamp/solderfit.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <img
+                src="blamp/solderfit2.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 32px"></div>
+            <div class="porttext" style="margin: auto">
+              finally, crossbar (shown below), which was used to link the
+              electronic connections and act as a capacitive switch, was added
+              via soldering.
+            </div>
+            <div style="height: 32px"></div>
+            <img
+              src="blamp/crossbar.jpg"
+              style="
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
 
-<div class="stuckanchor" id="prototype"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> FULL PROTOTYPE</div>
-	<div class="porttext" style="margin:auto;">with some test bends under my belt, I went to work perfecting a better set of brass parts.
-	acrylic was changed to glass as acrylic-weld proved unreliable.
-	</div>
-	<div style="height:32px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>	
-		<img src="blamp/finalarms.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<img src="blamp/finalbase.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>	
-	</div>
-	<div style="height:32px;"></div>
-	<div class="porttext" style="margin:auto;">in addition to the arms and base, two of each style of pin was lathed from tube stock.
-	one stepped for fitting the brass to the glass and one flush for fitting brass to brass.
-	</div>
-	<div style="height:32px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>	
-		<img src="blamp/joints.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<img src="blamp/glasstestfit.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>	
-	</div>
-	<div style="height:32px;"></div>
-	<div class="porttext" style="margin:auto;">the parts were soldered together with the joints.
-	</div>
-	<div style="height:32px;"></div>	
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>	
-		<img src="blamp/solderfit.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<img src="blamp/solderfit2.jpg" class="imgborder" style="width:40vw;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>	
-	</div>
-	<div style="height:32px;"></div>
-	<div class="porttext" style="margin:auto;">finally, crossbar (shown below), which was used to link the electronic connections and act as a capacitive switch, was added via soldering. 
-	</div>
-	<div style="height:32px;"></div>
-	<img src="blamp/crossbar.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
-</div>
+          <div class="stuckanchor" id="electronics"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">ELECTRONICS</div>
+            <div class="porttext" style="margin: auto">
+              a schema was drawn for the electronics, which were housed in a
+              small, custom box inline with the power. the electronics allow for
+              the touch-based operation of the lamp.
+            </div>
+            <div style="height: 16px"></div>
+            <img
+              src="blamp/electronicsdiag.png"
+              id="blampediag"
+              style="
+                height: 60vh;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 32px"></div>
+            <img
+              src="blamp/electronics.jpg"
+              style="
+                width: 80vw;
+                max-width: 500px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
 
-<div class="stuckanchor" id="electronics"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> ELECTRONICS</div>
-	<div class="porttext" style="margin:auto;">a schema was drawn for the electronics, which were housed in a small, custom box inline with the power.
-	the electronics allow for the touch-based operation of the lamp.
-	</div>
-	<div style="height:16px;"></div>
-	<img src="blamp/electronicsdiag.png" id="blampediag" style="height:60vh;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:32px;"></div>
-	<img src="blamp/electronics.jpg" style="width:80vw;max-width:500px;display:block;margin-left:auto;margin-right:auto;">
-</div>
+          <div class="stuckanchor" id="photos"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">PRODUCT PHOTOS</div>
+            <div style="height: 16px"></div>
+            <img
+              src="blamp/IMG_9532crop.jpg"
+              style="
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 12px"></div>
+            <img
+              src="blamp/IMG_9533crop.jpg"
+              style="
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 12px"></div>
+            <img
+              src="blamp/IMG_9530crop.jpg"
+              style="
+                width: 60%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
+        </div>
+      </div>
 
-<div class="stuckanchor" id="photos"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> PRODUCT PHOTOS</div>
-	<div style="height:16px;"></div>
-	<img src="blamp/IMG_9532crop.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:12px;"></div>
-	<img src="blamp/IMG_9533crop.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
-	<div style="height:12px;"></div>
-	<img src="blamp/IMG_9530crop.jpg" style="width:60%;display:block;margin-left:auto;margin-right:auto;">
-</div>
-</div>
-</div>
+      <div style="height: 24px"></div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-<div style="height:24px;"></div>
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-</div>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-<script>
-//topbtn
-mybutton = document.getElementById("topbtn");
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-//teamhide
-function teamfunction() {
-	var teamhide = document.getElementById("teamhide")
-	if (teamhide.style.display === "none") {
-	teamhide.style.display = "block";
-	} else {
-	teamhide.style.display = "none";
-	}
-}
-</script>
-</body>
+      //teamhide
+      function teamfunction() {
+        var teamhide = document.getElementById("teamhide");
+        if (teamhide.style.display === "none") {
+          teamhide.style.display = "block";
+        } else {
+          teamhide.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>

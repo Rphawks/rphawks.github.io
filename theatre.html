@@ -1,527 +1,781 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>theatre | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>theatre | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">SPRING 2017 - SPRING 2021</div>
+        <div class="title"><b>THEATRE & STAGECRAFT</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">SPRING 2017 - SPRING 2021</div>
-		<div class="title"><b>THEATRE & STAGECRAFT</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="midsummercrop.jpg"
+            style="
+              width: 46vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="midsummercrop.jpg" style="width:46vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary">
+              <span class="info">WORK TYPE</span>solo in large team
+            </div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>memphis university school theatre
+              company
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>5 years, ~10 hours/week
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo in large team</div>
-	<div class="summary"><span class="info">CONTEXT</span>memphis university school theatre company</div>
-	<div class="summary"><span class="info">TIME</span>5 years, ~10 hours/week</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="midsummercrop.jpg"
+            style="
+              width: 85vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="midsummercrop.jpg" style="width:85vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary">
+            <span class="info">WORK TYPE</span>solo in large team
+          </div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>memphis university school theatre
+            company
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>5 years, ~10 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo in large team</div>
-	<div class="summary"><span class="info">CONTEXT</span>memphis university school theatre company</div>
-	<div class="summary"><span class="info">TIME</span>5 years, ~10 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+      </div>
 
-<div style="height:12px;"></div>
-</div>
+      <div class="textrow" style="padding-left: 8px; padding-right: 8px">
+        <div style="font-size: 2.25em; line-height: 160%; padding-bottom: 8px">
+          <b>> OVERVIEW</b>
+        </div>
+        <div class="summary">SELECTED WORKS (LINKS!):</div>
+        <div style="height: 12px"></div>
+        <div class="summary">
+          <span class="info">SOUND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
+          ><a href="#acl" class="nav"><i>A Chorus Line</i></a
+          >, <a href="#gnd" class="nav"><i>Guys and Dolls</i></a
+          >, <a href="#nf" class="nav"><i>Noises Off</i></a>
+        </div>
+        <div class="summary">
+          <span class="info">LIGHTING &nbsp;&nbsp;</span>
+          <a href="#amnd" class="nav"><i>A Midsummer Night's Dream</i></a
+          >, <a href="#1776" class="nav"><i>1776</i></a>
+        </div>
+        <div class="summary">
+          <span class="info">PROJECTION&nbsp;</span>
+          <a href="#gnd" class="nav"><i>Guys and Dolls</i></a
+          >, <a href="#fortune" class="nav"><i>The Fortune</i></a>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-left:8px;padding-right:8px">
-	<div style="font-size:2.25em; line-height:160%;padding-bottom:8px"><b>> OVERVIEW</b></div>
-	<div class="summary">SELECTED WORKS (LINKS!):</div>
-	<div style="height:12px;"></div>
-	<div class="summary"><span class="info">SOUND &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><a href="#acl" class="nav"><i>A Chorus Line</i></a>, <a href="#gnd" class="nav"><i>Guys and Dolls</i></a>, <a href="#nf" class="nav"><i>Noises Off</i></a></div>
-	<div class="summary"><span class="info">LIGHTING &nbsp;&nbsp;</span> <a href="#amnd" class="nav"><i>A Midsummer Night's Dream</i></a>, <a href="#1776" class="nav"><i>1776</i></a></div>
-	<div class="summary"><span class="info">PROJECTION&nbsp;</span> <a href="#gnd" class="nav"><i>Guys and Dolls</i></a>, <a href="#fortune" class="nav"><i>The Fortune</i></a></div>
-</div>
-	
-<button type="button" class="collapsible stitle"> ALL ROLES</button>
-<div class="textrow portrow content">	
-	<table style = "border: 4px solid #006494;">
-	  <tr>
-		<th></th>
-		<th>sound designer</ths>
-		<th>sound engineer (A1)</th>
-		<th>mic wrangler (A2)</th>
-		<th>house manager</th>
-		<th>projection designer</th>
-		<th>lighting tech/programmer</th>
-		<th>electrician</th>
-		<th>carpenter</th>
-	  </tr>
-	  <tr>
-		<th><i>A Chorus Line</i><br><span class="blue">SPRING 2021</span></th>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>Guys and Dolls</i><br><span class="blue">SPRING 2020</span></th>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>Noises Off</i><br><span class="blue">FALL 2019</span></th>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>The Fortune (student-produced)</i><br><span class="blue">SPRING 2019</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>A Midsummer Night's Dream</i><br><span class="blue">SPRING 2019</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>1776</i><br><span class="blue">FALL 2018</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>Little Shop of Horrors</i><br><span class="blue">SPRING 2018</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-		<td></td>
-	  </tr>
-	  <tr>
-		<th><i>Witness for the Prosecution</i><br><span class="blue">FALL 2017</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-	  </tr>
-	  <tr>
-		<th><i>Man of La Mancha</i><br><span class="blue">SPRING 2017</span></th>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td></td>
-		<td class="tablechecks">&#10004;</td>
-		<td class="tablechecks">&#10004;</td>
-	  </tr>
-	</table>
-</div>
+      <button type="button" class="collapsible stitle">ALL ROLES</button>
+      <div class="textrow portrow content">
+        <table style="border: 4px solid #006494">
+          <tr>
+            <th></th>
+            <th>sound designer</th>
+            <th>sound engineer (A1)</th>
+            <th>mic wrangler (A2)</th>
+            <th>house manager</th>
+            <th>projection designer</th>
+            <th>lighting tech/programmer</th>
+            <th>electrician</th>
+            <th>carpenter</th>
+          </tr>
+          <tr>
+            <th>
+              <i>A Chorus Line</i><br /><span class="blue">SPRING 2021</span>
+            </th>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <i>Guys and Dolls</i><br /><span class="blue">SPRING 2020</span>
+            </th>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><i>Noises Off</i><br /><span class="blue">FALL 2019</span></th>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <i>The Fortune (student-produced)</i><br /><span class="blue"
+                >SPRING 2019</span
+              >
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <i>A Midsummer Night's Dream</i><br /><span class="blue"
+                >SPRING 2019</span
+              >
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th><i>1776</i><br /><span class="blue">FALL 2018</span></th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <i>Little Shop of Horrors</i><br /><span class="blue"
+                >SPRING 2018</span
+              >
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>
+              <i>Witness for the Prosecution</i><br /><span class="blue"
+                >FALL 2017</span
+              >
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+          </tr>
+          <tr>
+            <th>
+              <i>Man of La Mancha</i><br /><span class="blue">SPRING 2017</span>
+            </th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td class="tablechecks">&#10004;</td>
+            <td class="tablechecks">&#10004;</td>
+          </tr>
+        </table>
+      </div>
 
+      <div class="anchor" id="acl"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>A Chorus Line</i> - SPRING 2021
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          sound engineer/board operator (A1)
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">A POST-COVID SHOW</span><br /><br />
+            <i>A Chorus Line</i> was held <b>outside</b> in the Memphis
+            University School amphitheatre. the amphitheatre itself had no
+            systems -
+            <b>load-in and load-out for all tech was a daily operation.</b>
+          </div>
+          <img
+            src="acl/main.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="acl/diagram.jpg"
+            class="imgborder"
+            style="width: 60%; max-width: 500px; height: auto"
+          />
+          <div
+            class="flex-container"
+            style="padding-left: 4px; flex-direction: column; height: 41.5625em"
+          >
+            <div class="flex-child"></div>
+            <div
+              class="porttext"
+              style="padding-left: 24px; padding-right: 4px"
+            >
+              <span class="headline">ADAPTING TO THE OUTDOORS</span><br /><br />
+              the booth was placed in a bay window area of the building behind
+              the amphitheatre. to hear audience audio, the sound table was
+              placed in the grass behind seating.
+            </div>
+            <div class="flex-child"></div>
+            <div
+              class="porttext"
+              style="padding-left: 24px; padding-right: 4px"
+            >
+              <span class="headline">INVISIBLE BAND</span><br /><br />
+              <b>the musicians performed live in a music studio</b> on the
+              second floor of the building behind the stage. to achieve this, a
+              permanent audio over ethernet (aoe) cable was run through the
+              window of the studio to the sound table <b>through the trees</b>.
+            </div>
+            <div class="flex-child"></div>
+            <div
+              class="porttext"
+              style="padding-left: 24px; padding-right: 4px"
+            >
+              <span class="headline">SPEAKER LOADOUT</span><br /><br />
+              speakers and monitors were connected by a permanent run under the
+              stage with a temporary xlr link from the amp & board to the
+              monitors & speakers.
+            </div>
+            <div class="flex-child"></div>
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">DAILY CHECKLIST</span><br /><br />
+            load-in and load-out everyday was carefully detailed, as
+            <b>any missed link would render the entire system useless.</b>
+          </div>
+          <img
+            src="acl/checklist.png"
+            class="imgborder"
+            style="width: 55%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div class="anchor" id="acl"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>A Chorus Line</i> - SPRING 2021</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">sound engineer/board operator (A1)</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px">
-			<span class="headline">A POST-COVID SHOW</span><br><br> <i>A Chorus Line</i> was held <b>outside</b> in the Memphis University School amphitheatre.
-			the amphitheatre itself had no systems - <b>load-in and load-out for all tech was a daily operation.</b>
-		</div>
-		<img src="acl/main.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="acl/diagram.jpg" class="imgborder" style="width:60%;max-width:500px;height:auto;">
-		<div class="flex-container" style="padding-left:4px;flex-direction:column;height:41.5625em">
-			<div class="flex-child"></div>
-			<div class="porttext" style="padding-left:24px;padding-right:4px;">
-				<span class="headline">ADAPTING TO THE OUTDOORS</span><br><br> the booth was placed in a bay window area of the building behind the amphitheatre.  
-				to hear audience audio, the sound table was placed in the grass behind seating.
-			</div>
-			<div class="flex-child"></div>
-			<div  class="porttext" style="padding-left:24px;padding-right:4px;">
-			<span class="headline">INVISIBLE BAND</span><br><br> <b>the musicians performed live in a music studio</b> on the second floor of the building behind the stage.
-			to achieve this, a permanent audio over ethernet (aoe) cable was run through the window of the studio to the sound table <b>through the trees</b>.
-			</div>
-			<div class="flex-child"></div>
-			<div  class="porttext" style="padding-left:24px;padding-right:4px;">
-			<span class="headline">SPEAKER LOADOUT</span><br><br> speakers and monitors were connected by a permanent run under the stage with a temporary xlr link from the amp & board to the monitors & speakers.
-			</div>
-			<div class="flex-child"></div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px">
-		<span class="headline">DAILY CHECKLIST</span><br><br> load-in and load-out everyday was carefully detailed, as <b>any missed link would render the entire system useless.</b>
-		</div>
-		<img src="acl/checklist.png" class="imgborder" style="width:55%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div class="anchor" id="gnd"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>Guys and Dolls</i> - SPRING 2020
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          sound and projection designer, mic wrangler (A2), house manager
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="gnd/broadway.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
+            <span class="headline">MAPPED PROJECTION</span><br /><br />
+            a major ambient set element for <i>Guys and Dolls</i> was
+            <b>a set of four hanging projection frames</b>, inspired by Peter
+            McKintosh's design at Savoy Theatre.<br /><br />
+            the projection was controlled through images in QLab using a mask
+            from MadMapper and tweaked every show to account for slight position
+            changes.
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">MOOD SYNC</span><br /><br />
+            the projection cues were often
+            <b>carefully meshed with lighting cues</b> by designer Silas Coleman
+            to maintain a sense of uniformity in each scene.
+          </div>
+          <img
+            src="gnd/hotbox.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <img
+          src="gnd/cues.png"
+          class="imgborder"
+          style="
+            width: 90%;
+            max-width: 996px;
+            height: auto;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+          "
+        />
+        <div style="height: 12px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">COMPLEX CUEING</span><br /><br />
+          in just one transition, three cues,
+          <b>projection and sound work together</b> to indicate the passage of
+          time on a flight. the cues are set up to account for a variable set
+          change length as smoothly as possible, with the stage manager
+          signaling to lighting, sound, and orchestra once the set change is
+          complete. view video of the transition
+          <a href="#gndvideo" id="vmodalb" style="color: #ffa599">here</a>.
+        </div>
+      </div>
 
-<div class="anchor" id="gnd"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>Guys and Dolls</i> - SPRING 2020</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">sound and projection designer, mic wrangler (A2), house manager</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="gnd/broadway.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">MAPPED PROJECTION</span><br><br> a major ambient set element for <i>Guys and Dolls</i> was <b>a set of four hanging projection frames</b>, inspired by Peter McKintosh's design at Savoy Theatre.<br><br>
-		the projection was controlled through images in QLab using a mask from MadMapper and tweaked every show to account for slight position changes. 
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px">
-			<span class="headline">MOOD SYNC</span><br><br> the projection cues were often <b>carefully meshed with lighting cues</b> by designer Silas Coleman to maintain a sense of uniformity in each scene.
-		</div>
-		<img src="gnd/hotbox.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<img src="gnd/cues.png" class="imgborder" style="width:90%;max-width:996px;height:auto;display: block;margin-left: auto;margin-right: auto;">
-	<div style="height:12px;"></div>
-	<div class="porttext" style="margin:auto;">
-		<span class="headline">COMPLEX CUEING</span><br><br> in just one transition, three cues, <b>projection and sound work together</b> to indicate the passage of time on a flight.
-		the cues are set up to account for a variable set change length as smoothly as possible, with the stage manager signaling to lighting, sound, and orchestra once the set change is complete.
-		view video of the transition <a href="#gndvideo" id="vmodalb" style="color: #FFA599;">here</a>.
-		</div>
-</div>
+      <div class="anchor" id="nf"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>Noises Off</i> - FALL 2019
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">sound designer</div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">COMEDIC TIMING</span><br /><br />
+            in <i>Noises Off</i>, <b>comedic timing is of the essence.</b> sound
+            cues were often involved in advancing the plot, so
+            <b
+              >effects like *glass shattering* were modified and rehearsed with
+              the director and individual actors.</b
+            >
+          </div>
+          <img
+            src="nf/front.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="nf/back.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
+            <span class="headline">...NOISES OFF</span><br /><br /><b
+              >soundscapes were made for "nothing on" (acts I and III) and
+              backstage (act II).</b
+            >
+            while "backstage," audience ambience and live annoucements were
+            played through speakers behind the set to convey the sense of an
+            audience on the other side.
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div class="anchor" id="nf"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>Noises Off</i> - FALL 2019</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">sound designer</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px">
-			<span class="headline">COMEDIC TIMING</span><br><br> in <i>Noises Off</i>, <b>comedic timing is of the essence.</b>
-			sound cues were often involved in advancing the plot, so <b>effects like *glass shattering* were modified and rehearsed with the director and individual actors.</b>
-		</div>
-		<img src="nf/front.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="nf/back.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">...NOISES OFF</span><br><br><b>soundscapes were made for "nothing on" (acts I and III) and backstage (act II).</b>
-		while "backstage," audience ambience and live annoucements were played through speakers behind the set to convey the sense of an audience on the other side.
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div class="anchor" id="fortune"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>The Fortune</i> - SPRING 2019
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          (student-produced)<br /><br />projection designer
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container">
+          <div class="flex-child" style="height: 70px"></div>
+          <div
+            class="flex-container fortuneswap"
+            style="flex-direction: column"
+          >
+            <div class="flex-child"></div>
+            <div class="porttext" style="padding-right: 24px">
+              <span class="headline">SWAPPED PLACES</span><br /><br />audience
+              members sat against the backstage wall facing a unique
+              <b>onstage rear projection rig.</b>
+              the rig was divided into six segments, which were used to display
+              a single image or collage photos to create a certain atmosphere.
+            </div>
+            <div class="flex-child"></div>
+          </div>
+          <div
+            class="flex-container"
+            style="
+              padding-left: 4px;
+              flex-direction: column;
+              height: 808px;
+              min-width: 0;
+            "
+          >
+            <div class="flex-child"></div>
+            <img
+              src="fortune/crimescene.jpg"
+              class="imgborder"
+              style="width: 96%; max-width: 500px; height: auto"
+            />
+            <div class="flex-child"></div>
+            <img
+              src="fortune/diagram.png"
+              class="imgborder"
+              style="width: 96%; max-width: 500px; height: auto"
+            />
+            <div class="flex-child"></div>
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div class="anchor" id="fortune"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>The Fortune</i> - SPRING 2019</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">(student-produced)<br><br>projection designer</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="flex-container fortuneswap" style="flex-direction:column;">
-			<div class="flex-child"></div>
-			<div class="porttext" style="padding-right:24px">
-			<span class="headline">SWAPPED PLACES</span><br><br>audience members sat against the backstage wall facing a unique <b>onstage rear projection rig.</b>
-			the rig was divided into six segments, which were used to display a single image or collage photos to create a certain atmosphere.
-			</div>
-			<div class="flex-child"></div>
-		</div>
-		<div class="flex-container" style="padding-left:4px;flex-direction:column;height:808px;min-width:0;">
-			<div class="flex-child"></div>
-			<img src="fortune/crimescene.jpg" class="imgborder" style="width:96%;max-width:500px;height:auto;">
-			<div class="flex-child"></div>
-			<img src="fortune/diagram.png" class="imgborder" style="width:96%;max-width:500px;height:auto;">
-			<div class="flex-child"></div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div class="anchor" id="amnd"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>A Midsummer Night's Dream</i> - SPRING 2019
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          lighting tech/programmer
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="midsummerstage.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
+            <span class="headline">FOREST OF LIGHTS</span><br /><br />a simple
+            set layered with lights created the illusion of a large stage. three
+            depths of bar sidelights illuminated the acting area (visible on the
+            rock piece). above the stage, colored tulle fabric was draped from
+            rgb led bars to create a dream-like canopy. in the background, stars
+            and a moon indicated nighttime through a black scrim.
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div class="anchor" id="amnd"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>A Midsummer Night's Dream</b></i> - SPRING 2019</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">lighting tech/programmer</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="midsummerstage.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">FOREST OF LIGHTS</span><br><br>a simple set layered with lights created the illusion of a large stage.
-		three depths of bar sidelights illuminated the acting area (visible on the rock piece).
-		above the stage, colored tulle fabric was draped from rgb led bars to create a dream-like canopy.
-		in the background, stars and a moon indicated nighttime through a black scrim.
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div class="anchor" id="1776"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>1776</i> - FALL 2018
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          lighting tech/programmer
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">INDOORS AND OUTDOORS</span
+            ><br /><br />lighting for <i>1776</i> used a traditional 6-zone (2
+            by 3) warm/cool for the indoors and 3-zone (1 by 3)
+            moonlight/foliage for the outdoors. many songs used specials with
+            intense gels and gobos to break the standard visual identity. here
+            in "momma look sharp," 6 cool zones contrast the single warm
+            followspot. the chandelier was an additional lighting element
+            integrated into cues.
+          </div>
+          <img
+            src="1776/mama.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div class="anchor" id="1776"></div>
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>1776</i> - FALL 2018</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">lighting tech/programmer</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px">
-			<span class="headline">INDOORS AND OUTDOORS</span><br><br>lighting for <i>1776</i> used a traditional 6-zone (2 by 3) warm/cool for the indoors and 3-zone (1 by 3) moonlight/foliage for the outdoors.
-			many songs used specials with intense gels and gobos to break the standard visual identity. here in "momma look sharp," 6 cool zones contrast the single warm followspot.
-			the chandelier was an additional lighting element integrated into cues.
-		</div>
-		<img src="1776/mama.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>Little Shop of Horrors</i> - SPRING 2018
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">
+          lighting tech/programmer
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="lsh/lsh.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
+            <span class="headline">PASSAGE OF TIME</span><br /><br />to properly
+            convey the passage of time, particular attention was paid to the
+            direction of light. here in the "interior" of the rotating set, cyc
+            lights indicate nighttime outside, while neutral front lighting
+            simulates fluorescent lights.
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>Little Shop of Horrors</i> - SPRING 2018</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">lighting tech/programmer</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="lsh/lsh.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">PASSAGE OF TIME</span><br><br>to properly convey the passage of time, particular attention was paid to the direction of light.
-		here in the "interior" of the rotating set, cyc lights indicate nighttime outside, while neutral front lighting simulates fluorescent lights.
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">
+        <i>Witness for the Prosecution</i> - SPRING 2017
+      </button>
+      <div class="textrow portrow content">
+        <div style="font-size: 1.25em; line-height: 100%">carpenter</div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 4px">
+            <span class="headline">BUILDING A COURTROOM</span><br /><br />the
+            three-piece set for <i>Witness for the Prosecution</i> was
+            completely constructed from wood and placed on casters. when
+            reversed, the courtroom would turn into an office.
+          </div>
+          <img
+            src="wfp/wfp.jpg"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> <i>Witness for the Prosecution</i> - SPRING 2017</button>
-<div class="textrow portrow content">
-	<div style="font-size:1.25em; line-height:100%;">carpenter</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:4px">
-			<span class="headline">BUILDING A COURTROOM</span><br><br>the three-piece set for <i>Witness for the Prosecution</i> was completely constructed from wood and placed on casters.
-			when reversed, the courtroom would turn into an office.
-		</div>
-		<img src="wfp/wfp.jpg" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+      <div style="height: 12px"></div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-<div style="height:12px;"></div>
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
-</div>
+    <div id="vmodal" class="vmodal">
+      <div class="vmodal-content">
+        <span class="vmodalclose">&times;</span>
+        <iframe
+          id="vmodalv"
+          frameborder="0"
+          style="
+            width: 80%;
+            aspect-ratio: 16/9;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            padding: 4px;
+          "
+          src="https://www.youtube.com/embed/4Uav--0U_dg?controls=0&rel=0"
+        >
+        </iframe>
+      </div>
+    </div>
 
-<div id="vmodal" class="vmodal">
-  <div class="vmodal-content">
-    <span class="vmodalclose">&times;</span>
-    <iframe id="vmodalv" frameBorder="0" style="width:80%;aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.youtube.com/embed/4Uav--0U_dg?controls=0&rel=0">
-	</iframe>
-  </div>
-</div>
+    <script>
+      //modal
+      var vmodal = document.getElementById("vmodal");
+      var btn = document.getElementById("vmodalb");
+      var span = document.getElementsByClassName("vmodalclose")[0];
 
-<script>
-//modal
-var vmodal = document.getElementById("vmodal");
-var btn = document.getElementById("vmodalb");
-var span = document.getElementsByClassName("vmodalclose")[0];
+      btn.onclick = function () {
+        vmodal.style.display = "block";
+      };
 
-btn.onclick = function() {
-  vmodal.style.display = "block";
-}
+      span.onclick = function () {
+        vmodal.style.display = "none";
+      };
 
-span.onclick = function() {
-  vmodal.style.display = "none";
-}
+      window.onclick = function (event) {
+        if (event.target == vmodal) {
+          vmodal.style.display = "none";
+          var iframe = document.getElementById("vmodalv");
+          var url = iframe.getAttribute("src");
+          iframe.setAttribute("src", "");
+          iframe.setAttribute("src", url);
+        }
+      };
 
-window.onclick = function(event) {
-  if (event.target == vmodal) {
-    vmodal.style.display = "none";
-	var iframe = document.getElementById("vmodalv");
-	var url = iframe.getAttribute('src');
-      iframe.setAttribute('src', '');
-      iframe.setAttribute('src', url);
-  }
-}
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-//topbtn
-mybutton = document.getElementById("topbtn");
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

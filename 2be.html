@@ -1,327 +1,512 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>2be | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>2be | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2021</div>
+        <div class="title"><b>2BE</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2021</div>
-		<div class="title"><b>2BE</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="2be/2bethumb.png"
+            style="
+              max-width: 46vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="2be/2bethumb.png" style="max-width:46vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>engn32, brown university
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>4 weeks, ~8 hours/week
+            </div>
+          </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>engn32, brown university</div>
-	<div class="summary"><span class="info">TIME</span>4 weeks, ~8 hours/week</div>
-</div>
+          <div style="height: 12px"></div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="2be/2bethumb.png"
+            style="
+              max-width: 85vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="2be/2bethumb.png" style="max-width:85vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>engn32, brown university
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>4 weeks, ~8 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>engn32, brown university</div>
-	<div class="summary"><span class="info">TIME</span>4 weeks, ~8 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+      </div>
 
-<div style="height:12px;"></div>
-</div>
+      <div style="height: 12px"></div>
+      <div class="nstitle">DESIGN BRIEF</div>
+      <div class="textrow portrow">
+        <div class="porttext" style="margin: auto">
+          <br />industries from food to beauty use various types of liquid tube
+          packaging.<br /><br />
+          <span class="headline" style="font-size: 18px"
+            ><i
+              >2be should <b>reduce the packaging waste</b> generated, while
+              <b>maximizing the output/input ratio</b> of liquid.</i
+            ></span
+          >
+          <br /><br />
+          <span class="headline" style="font-size: 18px"
+            ><i
+              >2be should maintain the current <b>low cost of production</b> and
+              capture the market with an
+              <b
+                >innovative, efficient design with better user experience.</b
+              ></i
+            ></span
+          >
+          <br /><br />The product will first targeting core brands and usage
+          areas to drive up customer preference. If the multi-use product is
+          successful, a single-use version could be pursued.
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="nstitle"> DESIGN BRIEF</div>
-<div class="textrow portrow">
-	<div class="porttext" style="margin:auto;">
-		<br>industries from food to beauty use various types of liquid tube packaging.<br><br>
-		<span class="headline" style="font-size:18px"><i>2be should <b>reduce the packaging waste</b> generated, while <b>maximizing the output/input ratio</b> of liquid.</i></span>
-		<br><br>
-		<span class="headline" style="font-size:18px"><i>2be should maintain the current <b>low cost of production</b> and capture the market with an <b>innovative, efficient design with better user experience.</b></i></span>
-		<br><br>The product will first targeting core brands and usage areas to drive up customer preference.
-		If the multi-use product is successful, a single-use version could be pursued.
-	</div>
-</div>
+      <div style="height: 12px"></div>
+      <div class="nstitle">IDEATION</div>
+      <div class="textrow portrow">
+        <div style="height: 18px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">IDEATION SESSIONS</span><br /><br />three
+          brainstorming sessions were conducted using the best fit, individual
+          brainwriting, and worst idea methods. these were the main takeaways:
+          <br /><br /><span class="headline" style="font-size: 1.125em"
+            >flexible<br />durable<br />light<br />cheap<br />easily sourced
+            <br />simple shape<br />easy to manufacture<br />easy to extrude<br />easy
+            to open<br />folding segments <br />clean, modern aesthetic<br />clear
+            visual language<br />tactile markings<br
+          /></span>
+        </div>
+        <div style="height: 24px"></div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="nstitle"> IDEATION</div>
-<div class="textrow portrow">
-	<div style="height:18px;"></div>
-	<div class="porttext" style="margin:auto;">
-		<span class="headline">IDEATION SESSIONS</span><br><br>three brainstorming sessions were conducted using the best fit, individual brainwriting, and worst idea methods. these were the main takeaways:
-		<br><br><span class="headline" style="font-size:1.125em">flexible<br>durable<br>light<br>cheap<br>easily sourced
-		<br>simple shape<br>easy to manufacture<br>easy to extrude<br>easy to open<br>folding segments
-		<br>clean, modern aesthetic<br>clear visual language<br>tactile markings<br></span>
-	</div>
-	<div style="height:24px;"></div>
-</div>	
+      <div style="height: 12px"></div>
+      <div class="nstitle">PROTOTYPE</div>
+      <div class="textrow portrow">
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <img
+            src="2be/2beprototypes.png"
+            class="imgborder"
+            style="width: 50%; max-width: 500px; height: auto"
+          />
+          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
+            <span class="headline">FEELS-LIKE PROTOTYPE</span><br /><br />this
+            feels-prototype uses foam and artist's tape to simulate a
+            compressible material.
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+        <div class="flex-container" style="align-items: center">
+          <div class="flex-child" style="height: 70px"></div>
+          <div class="porttext" style="padding-right: 24px">
+            <span class="headline">FINAL CAD</span><br /><br />the final version
+            of 2be makes several optimizations compared to current tubes.<br /><br />
+            <span class="headline" style="font-size: 1.125em"
+              >a “flattenable” model with straight edges<br /><br />
+              minimizes “neck” joint below the cap to reduce uneven crimping<br /><br />
+              smooth tapered body from flat crimp (for manufacturing sealing)<br /><br />
+              ridged cap for grip</span
+            >
+          </div>
+          <div
+            class="flex-container"
+            style="align-items: center; flex-direction: column; max-width: 100%"
+          >
+            <img
+              src="2be/side.png"
+              class="imgborder"
+              style="max-width: min(500px, 100%); height: auto"
+            />
+            <img
+              src="2be/crimp.png"
+              class="imgborder"
+              style="max-width: min(500px, 100%); height: auto"
+            />
+            <img
+              src="2be/cap.png"
+              class="imgborder"
+              style="max-width: min(500px, 100%); height: auto"
+            />
+          </div>
+          <div class="flex-child" style="height: 70px"></div>
+        </div>
+        <div style="height: 12px"></div>
+      </div>
 
+      <div style="height: 48px"></div>
 
-<div style="height:12px;"></div>
-<div class="nstitle"> PROTOTYPE</div>
-<div class="textrow portrow">
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>	
-		<img src="2be/2beprototypes.png" class="imgborder" style="width:50%;max-width:500px;height:auto;">
-		<div class="porttext" style="padding-left:24px;padding-right:4px;">
-		<span class="headline">FEELS-LIKE PROTOTYPE</span><br><br>this feels-prototype uses foam and artist's tape to simulate a compressible material.
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div class="porttext" style="padding-right:24px;">
-			<span class="headline">FINAL CAD</span><br><br>the final version of 2be makes several optimizations compared to current tubes.<br><br>
-			<span class="headline" style="font-size:1.125em">a “flattenable” model with straight edges<br><br>
-			minimizes “neck” joint below the cap to reduce uneven crimping<br><br>
-			smooth tapered body from flat crimp (for manufacturing sealing)<br><br>
-			ridged cap for grip</span>
-		</div>
-		<div class="flex-container" style="align-items:center;flex-direction:column;max-width:100%;">
-			<img src="2be/side.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-			<img src="2be/crimp.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
-			<img src="2be/cap.png" class="imgborder" style="max-width:min(500px,100%);height:auto;">
+      <div class="stitle">ADDITIONAL INFO</div>
 
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-</div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">USER RESEARCH</button>
+      <div class="textrow portrow content">
+        <div class="porttext" style="margin: auto">
+          <br /><span class="headline"
+            >insights were collected using a class survey</span
+          >
+        </div>
+        <div style="height: 12px"></div>
+        <table
+          style="
+            border: 4px solid #006494;
+            font-size: 1.125em;
+            line-height: 90%;
+          "
+        >
+          <tr>
+            <th>questions</th>
+            <th>insights</th>
+          </tr>
+          <tr>
+            <td>
+              before you throw away a tube, how much effort is put into
+              maximizing the product extruded?
+            </td>
+            <td>significant effort!</td>
+          </tr>
+          <tr>
+            <td>
+              when you throw away a tube, how much product remains in the tube?
+            </td>
+            <td>a little amount on average</td>
+          </tr>
+          <tr>
+            <td>
+              when using a tube, what is most important to you (e.g. ease of
+              use, speed of extrusion, volume extruded)?
+            </td>
+            <td>
+              ease of use is extremely important, followed by control over
+              volume then speed of extrusion
+            </td>
+          </tr>
+          <tr>
+            <td>
+              does the material (e.g. thin plastic, hard plastic, thin foil,
+              aluminum) of the tube affect your perception of the quality of the
+              product?
+            </td>
+            <td>
+              thick plastic is cheaper, artificial, though maybe better than
+              thin plastic. metal is fancier, higher quality, though one found
+              it not visually pleasing
+            </td>
+          </tr>
+          <tr>
+            <td>
+              are there any physical components of tubes you find extremely
+              important (e.g. a flat tube cap to place on the table)?
+            </td>
+            <td>
+              flat caps are important, followed by small physical footprint
+            </td>
+          </tr>
+        </table>
+        <div style="height: 12px"></div>
+      </div>
 
-<div style="height:48px;"></div>
+      <div style="height: 12px"></div>
+      <button type="button" class="collapsible stitle">PERSONAE</button>
+      <div class="textrow portrow content">
+        <div class="porttext" style="margin: auto">
+          <span class="headline">PERSONA MAP</span>
+        </div>
+        <div style="height: 18px"></div>
+        <table style="border: 4px solid #006494">
+          <tr>
+            <th colspan="4" style="background-color: #824c71">more effort</th>
+          </tr>
+          <tr>
+            <th rowspan="2" style="background-color: #824c71">
+              no preferences
+            </th>
+            <td style="height: 96px">product maximizer</td>
+            <td>detail-oriented user</td>
+            <th rowspan="2" style="background-color: #824c71">particular</th>
+          </tr>
+          <tr>
+            <td style="height: 96px; margin: auto">just need product</td>
+            <td>feature fanatic</td>
+          </tr>
+          <tr>
+            <th colspan="4" style="background-color: #824c71">less effort</th>
+          </tr>
+        </table>
+        <div style="height: 36px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">OUTDOORSMAN: JONAS</span><br /><br /><span
+            class="peach"
+            >65 retired male who lives in Boulder, CO</span
+          >
+          and enjoys backpacking frequently. an outdoorsman through and through,
+          he prefers the basics and packs light. his favorite meal is rainbow
+          trout grilled over a fire.<br /><br />
+          <span class="peach"
+            >needs compact and high volume multi-use hygiene and food
+            product.</span
+          >
+          tubes should be the best way to carry large volume paste in a
+          backpack.<br /><br />
+          <span class="peach">used for food and hygiene products </span>in the
+          morning and night, all in the wilderness. for use, jonas simply takes
+          out a tube and unscrews or uncaps it, extrudes the products, and
+          replaces the top of the tube. sometimes in the dark, use comes from
+          tactile feel. purchasing decisions mainly come from the product sold
+          in the tube, compact design, and price.<br /><br />
+          <span class="peach">gains: </span>current tubes are excellent at
+          carrying liquids and pastes to be used multiple times.<br /><br />
+          <span class="peach">pains: </span>sometimes tubes come in too large
+          volume at once. tubes can be a lot of waste to pack back out because
+          the design cannot be compacted.
+        </div>
+        <div style="height: 24px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">ARTIST: SAM</span><br /><br /><span
+            class="peach"
+            >32 female software engineer who lives in Seattle, WA.</span
+          >
+          she creates art in her free time and has a small studio corner in her
+          apartment. sam’s favorite time of day is the late afternoon, when the
+          light strikes a prism on her desk, flooding the room with a golden
+          rainbow.<br /><br />
+          <span class="peach"
+            >needs high volume and durable multi-use arts supplies storage, as
+            well as normal hygiene use.</span
+          ><br /><br />
+          <span class="peach"
+            >tubes are used primarily for art and are frequently opened and
+            closed.</span
+          >
+          art supplies are one of the longest-duration uses of a single tube.
+          purchase decision is often made on the durability of tube and
+          price.<br /><br />
+          <span class="peach">gains: </span>current metal tubes are great ways
+          of carrying liquids like paint and the stiffer material makes control
+          of the amount extruded easy. tactile caps help to open tubes when
+          hands are dirty.<br /><br />
+          <span class="peach">pains: </span>aluminum tubes crinkle, leaving a
+          lot of product left in the tube. poor sealing means often wasted
+          product and dried, unusable product.
+        </div>
+        <div style="height: 24px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">STUDENT: AZIM</span><br /><br /><span
+            class="peach"
+            >21 male college student who lives in Baton Rouge, LA.</span
+          >
+          he is extremely busy day to day and speeds through his morning and
+          evening routines. his defining characteristic is not watching football
+          (because he’s too busy, obviously).<br /><br />
+          <span class="peach"
+            >needs a working tube with product. end of story.</span
+          >
+          extrusion is fast and easy to control, taking the least amount of time
+          for just the right amount of product. speed is important for a busy
+          schedule.<br /><br />
+          <span class="peach">used for hygiene products like toothpaste</span>
+          and the occasional lotion in his apartment early in the morning and
+          late at night. the routines are instinctive and he can identify the
+          tubes immediately by color. for azim, the first time nothing comes out
+          of the tube, it goes in the trash.<br /><br />
+          <span class="peach">gains: </span>it can be easy to control and
+          extrude a lot of product for flexible, larger tubes, saving azim time.
+          <br /><br />
+          <span class="peach">pains: </span>when it comes to smaller tubes,
+          especially ones made of harder plastic, azim doesn’t have the patience
+          to force everything out.
+        </div>
+        <div style="height: 24px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="headline">SHOPPER: JODIE</span><br /><br /><span
+            class="peach"
+            >38 female dentist’s secretary who lives in Burlington, VT.</span
+          >
+          recently settled down, she loves to go shopping on the weekends. she
+          is obsessed with dogs and owns two - bud, a golden retriever, and
+          trish, a labradoodle.<br /><br />
+          <span class="peach">needs control - a smooth extrusion</span> for
+          jodie, it’s all about the experience. any extra features that give the
+          experience a bit more glamour or class are pluses.<br /><br />
+          <span class="peach">used for makeup, hygiene, lotions.</span> not only
+          does she want them to work well, she wants them to look good. they’re
+          part of the display. when she purchases a new product, she looks at
+          the new features and the general aesthetics of the tube, then the
+          product within and how well the tube works.<br /><br />
+          <span class="peach">gains: </span>some current tubes look great on her
+          vanity as they look great and have fancy aesthetics. a lot of tubes
+          are very elegant and great to use. <br /><br />
+          <span class="peach">pains: </span>a lot of tubes are inconsistent -
+          some can stand on the cap, some can’t - and not all the tubes look
+          good. sometimes hard tubes are difficult to get product out of, making
+          the experience frustrating.
+        </div>
+      </div>
 
-<div class="stitle">ADDITIONAL INFO</div>
+      <div style="height: 24px"></div>
 
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> USER RESEARCH</button>
-<div class="textrow portrow content">
-	<div class="porttext" style="margin:auto;">
-		<br><span class="headline">insights were collected using a class survey</span>
-	</div>
-	<div style="height:12px;"></div>
-	<table style = "border: 4px solid #006494;font-size:1.1250em;line-height:90%;">
-	  <tr>
-		<th>questions</th>
-		<th>insights</th>
-	  </tr>
-	  <tr>
-		<td>before you throw away a tube, how much effort is put into maximizing the product extruded?</td>
-		<td>significant effort!</td>
-	  </tr>
-	  <tr>
-		<td>when you throw away a tube, how much product remains in the tube?</td>
-		<td>a little amount on average</td>
-	  </tr>
-	  <tr>
-		<td>when using a tube, what is most important to you (e.g. ease of use, speed of extrusion, volume extruded)?</td>
-		<td>ease of use is extremely important, followed by control over volume then speed of extrusion</td>
-	  </tr>
-	  <tr>
-		<td>does the material (e.g. thin plastic, hard plastic, thin foil, aluminum) of the tube affect your perception of the quality of the product?</td>
-		<td>thick plastic is cheaper, artificial, though maybe better than thin plastic. metal is fancier, higher quality, though one found it not visually pleasing</td>
-	  </tr>
-	  <tr>
-		<td>are there any physical components of tubes you find extremely important (e.g. a flat tube cap to place on the table)?</td>
-		<td>flat caps are important, followed by small physical footprint</td>
-	  </tr>
-	</table>
-	<div style="height:12px;"></div>
-</div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-<div style="height:12px;"></div>
-<button type="button" class="collapsible stitle"> PERSONAE</button>
-<div class="textrow portrow content">
-	<div class="porttext" style="margin:auto;">
-			<span class="headline">PERSONA MAP</span>
-	</div>
-	<div style="height:18px;"></div>
-	<table style = "border: 4px solid #006494;">
-	  <tr>
-		<th colspan="4" style = "background-color:#824C71">more effort</th>
-	  </tr>
-	  <tr>
-		<th rowspan="2" style = "background-color:#824C71">no preferences</th>
-		<td style="height:96px">product maximizer</td>
-		<td>detail-oriented user</td>
-		<th rowspan="2" style = "background-color:#824C71">particular</th>
-	  </tr>
-	  <tr>
-		<td style="height:96px;margin:auto">just need product</td>
-		<td>feature fanatic</td>
-	  </tr>
-	  <tr>
-		<th colspan="4" style = "background-color:#824C71">less effort</th>
-	  </tr>
-	</table>
-	<div style="height:36px;"></div>
-	<div class="porttext" style="margin:auto;">
-			<span class="headline">OUTDOORSMAN: JONAS</span><br><br><span class="peach">65 retired male who lives in Boulder, CO</span> and enjoys backpacking frequently. an outdoorsman through and through, he prefers the basics and packs light. his favorite meal is rainbow trout grilled over a fire.<br><br>
-	<span class="peach">needs compact and high volume multi-use hygiene and food product.</span> tubes should be the best way to carry large volume paste in a backpack.<br><br>
-	<span class="peach">used for food and hygiene products </span>in the morning and night, all in the wilderness. for use, jonas simply takes out a tube and unscrews or uncaps it, extrudes the products, and replaces the top of the tube. sometimes in the dark, use comes from tactile feel. purchasing decisions mainly come from the product sold in the tube, compact design, and price.<br><br>
-	<span class="peach">gains: </span>current tubes are excellent at carrying liquids and pastes to be used multiple times.<br><br>
-	<span class="peach">pains: </span>sometimes tubes come in too large volume at once. tubes can be a lot of waste to pack back out because the design cannot be compacted.
-	</div>
-	<div style="height:24px;"></div>
-	<div class="porttext" style="margin:auto;">
-			<span class="headline">ARTIST: SAM</span><br><br><span class="peach">32 female software engineer who lives in Seattle, WA.</span> she creates art in her free time and has a small studio corner in her apartment. sam’s favorite time of day is the late afternoon, when the light strikes a prism on her desk, flooding the room with a golden rainbow.<br><br>
-	<span class="peach">needs high volume and durable multi-use arts supplies storage, as well as normal hygiene use.</span><br><br>
-	<span class="peach">tubes are used primarily for art and are frequently opened and closed.</span> art supplies are one of the longest-duration uses of a single tube. purchase decision is often made on the durability of tube and price.<br><br>
-	<span class="peach">gains: </span>current metal tubes are great ways of carrying liquids like paint and the stiffer material makes control of the amount extruded easy. tactile caps help to open tubes when hands are dirty.<br><br>
-	<span class="peach">pains: </span>aluminum tubes crinkle, leaving a lot of product left in the tube. poor sealing means often wasted product and dried, unusable product.
-	</div>
-	<div style="height:24px;"></div>
-	<div class="porttext" style="margin:auto;">
-			<span class="headline">STUDENT: AZIM</span><br><br><span class="peach">21 male college student who lives in Baton Rouge, LA.</span> he is extremely busy day to day and speeds through his morning and evening routines. his defining characteristic is not watching football (because he’s too busy, obviously).<br><br>
-	<span class="peach">needs a working tube with product. end of story.</span> extrusion is fast and easy to control, taking the least amount of time for just the right amount of product. speed is important for a busy schedule.<br><br>
-	<span class="peach">used for hygiene products like toothpaste</span> and the occasional lotion in his apartment early in the morning and late at night. the routines are instinctive and he can identify the tubes immediately by color. for azim, the first time nothing comes out of the tube, it goes in the trash.<br><br>
-	<span class="peach">gains: </span>it can be  easy to control and extrude a lot of product for flexible, larger tubes, saving azim time. <br><br>
-	<span class="peach">pains: </span>when it comes to smaller tubes, especially ones made of harder plastic, azim doesn’t have the patience to force everything out.
-	</div>
-	<div style="height:24px;"></div>
-	<div class="porttext" style="margin:auto;">
-			<span class="headline">SHOPPER: JODIE</span><br><br><span class="peach">38 female dentist’s secretary who lives in Burlington, VT.</span> recently settled down, she loves to go shopping on the weekends. she is obsessed with dogs and owns two - bud, a golden retriever, and trish, a labradoodle.<br><br>
-	<span class="peach">needs control - a smooth extrusion</span> for jodie, it’s all about the experience. any extra features that give the experience a bit more glamour or class are pluses.<br><br>
-	<span class="peach">used for makeup, hygiene, lotions.</span> not only does she want them to work well, she wants them to look good. they’re part of the display. when she purchases a new product, she looks at the new features and the general aesthetics of the tube, then the product within and how well the tube works.<br><br>
-	<span class="peach">gains: </span>some current tubes look great on her vanity as they look great and have fancy aesthetics. a lot of tubes are very elegant and great to use. <br><br>
-	<span class="peach">pains: </span>a lot of tubes are inconsistent - some can stand on the cap, some can’t - and not all the tubes look good. sometimes hard tubes are difficult to get product out of, making the experience frustrating.
-	</div>
-</div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-<div style="height:24px;"></div>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-</div>
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-</div>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-<script>
-//topbtn
-mybutton = document.getElementById("topbtn");
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
-
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
-
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
-
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

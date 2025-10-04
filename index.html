@@ -1,117 +1,228 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-<title>ryan peng</title>
-<meta name="description" content="designing delightful and intriguing experiences">
-<meta name="keywords" content="ryan, peng, design, experiential, industrial, engineering, brown, university, providence, memphis, atlanta">
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>ryan peng</title>
+    <meta
+      name="description"
+      content="designing delightful and intriguing experiences"
+    />
+    <meta
+      name="keywords"
+      content="ryan, peng, design, experiential, industrial, engineering, brown, university, providence, memphis, atlanta"
+    />
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <!--<div class="indexbar"></div>-->
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="indexwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<!--<div class="indexbar"></div>-->
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="indexwrap">
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div
+        class="flex-container"
+        style="flex-direction: column; height: calc(100vh - 3.5em)"
+      >
+        <div class="titlerow barnav fixed-top">
+          <div class="flex-container" style="width: calc(100vw - 60px)">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="loadfade lfdelay headername">RYAN PENG</div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="flex-child"></div>
+            <div class="loadfade lfdelay headernav">
+              <a href="/#work" class="nav">work</a>
+            </div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="loadfade lfdelay headernav">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div style="width: 2em" class="spacer"></div>
+            <div class="spacer"></div>
+          </div>
+        </div>
+        <div class="barnav" style="height: 66px"></div>
+        <div class="flex-child"></div>
+        <div
+          class="index-textrow"
+          style="padding-top: 0.5em; margin-left: auto; margin-right: auto"
+        >
+          <div class="comp-index" style="width: 4em"></div>
+          <div class="statement">
+            <img
+              src="logomark.png"
+              class="loadfade"
+              style="
+                height: 1.5625em;
+                display: block;
+                margin-top: 10px;
+                margin-right: auto;
+              "
+            />
+            <div style="height: 2.5em"></div>
+            <div
+              class="loadfade"
+              style="font-size: 2.5em; line-height: 160%; text-align: left"
+            >
+              hi, i'm ryan
+            </div>
+            <div style="height: 2.5em"></div>
+            <div
+              class="loadfade"
+              style="font-size: 1.25em; line-height: 160%; text-align: left"
+            >
+              a design engineer reframing how we interact with our everyday
+              world
+            </div>
+          </div>
+          <div class="comp-index" style="width: 30em"></div>
+          <div class="companies comp-index">
+            <div style="height: 14em"></div>
+            <div
+              class="loadfade lfdelay"
+              style="font-size: 1em; line-height: 160%; text-align: left"
+            >
+              <span style="font-size: 0.8em">CURRENTLY</span><br />
+              <div style="display: flex; gap: 70px">
+                <div style="width: 200px">
+                  &nbsp;&nbsp;integrated <br />&nbsp;&nbsp;product design
+                </div>
+                <div style="width: 200px">
+                  <span style="color: #00a6d6"
+                    >@
+                    <a
+                      href="https://www.tudelft.nl/en/ide"
+                      target="_blank"
+                      class="tu_delft"
+                      >tu delft<br />io/ide &#8599;</a
+                    ></span
+                  >
+                </div>
+              </div>
+            </div>
+            <div style="height: 1em"></div>
+            <div
+              class="loadfade lfdelay"
+              style="font-size: 1em; line-height: 160%; text-align: left"
+            >
+              <span style="font-size: 0.8em">FORMERLY</span><br />
+              <div style="display: flex; gap: 70px">
+                <div style="width: 200px">
+                  &nbsp;&nbsp;design engineering<br />&nbsp;&nbsp;& computer
+                  science
+                </div>
+                <div style="width: 200px">
+                  <span style="color: #ed1c24"
+                    >@
+                    <a
+                      href="https://www.brown.edu/"
+                      target="_blank"
+                      class="brown_edu"
+                      >brown<br />university &#8599;</a
+                    ></span
+                  >
+                </div>
+              </div>
+              <div style="height: 1.25em"></div>
+              <div style="display: flex; gap: 0px">
+                &nbsp;&nbsp;new product development &nbsp;&nbsp;<span
+                  style="color: #81d8d0"
+                  >@
+                  <a
+                    href="https://www.tiffany.com/"
+                    target="_blank"
+                    class="tiffany"
+                    >tiffany & co. &#8599;</a
+                  ></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flex-child"></div>
+        <div class="barnav" style="height: 10%"></div>
+        <div class="textrow">
+          <!--<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;z-index:3;"><a href="#approach" class="nav"><div class="dark" style="width:2.5em;height:1em;"><span class="dark">more</span></div></a></div>-->
+          <div class="anchor" id="approach"></div>
+          <div class="anchor" id="work"></div>
+          <div style="height: 6px"></div>
+          <div
+            class="loadfade lfdelay"
+            style="font-size: 0.3em; line-height: 160%; text-align: center"
+          >
+            <div
+              style="
+                font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0,
+                  'opsz' 48;
+              "
+            >
+              <a href="#approach" class="nav">
+                <div class="dark" style="width: 5em; height: 5em">
+                  <span
+                    class="dark"
+                    style="border-top: 4em solid #000000; top: 0%"
+                    ><span
+                      class="material-symbols-outlined"
+                      style="font-size: 5em"
+                      >south</span
+                    ></span
+                  >
+                </div>
+              </a>
+            </div>
+          </div>
+          <div style="height: 10px"></div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
-
-<div class="flex-container" style="flex-direction:column;height:calc(100vh - 3.5em);">
-	<div class="titlerow barnav fixed-top">
-		<div class="flex-container" style="width: calc(100vw - 60px)">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="loadfade lfdelay headername">RYAN PENG</div>
-			<div class="spacer" style="width: 6vw"></div>
-			<div class="flex-child"></div>
-			<div class="loadfade lfdelay headernav"><a href="/#work" class="nav">work</a></div>
-			<div class="spacer" style="width:6vw"></div>
-			<div class="loadfade lfdelay headernav"><a href="/about" class="nav">about</a></div>
-			<div style="width:2em" class="spacer"></div>
-			<div class="spacer"></div>
-		</div>
-	</div>
-	<div class="barnav" style="height: 66px"></div>
-	<div class="flex-child"></div>
-	<div class="index-textrow" style="padding-top: .5em; margin-left: auto;margin-right: auto;">
-			<div class="comp-index" style="width: 4em;"></div>
-			<div class="statement">
-				<img src="logomark.png" class="loadfade" style="height:1.5625em; display: block;margin-top:10px;margin-right: auto;">
-				<div style="height: 2.5em"></div>
-				<div class="loadfade" style="font-size:2.5em; line-height:160%; text-align: left;">hi, i'm ryan</div>
-				<div style="height: 2.5em"></div>
-				<div class="loadfade" style="font-size: 1.25em; line-height:160%; text-align: left;">a design engineer reframing how we interact with our everyday world</div>
-			</div>
-			<div class="comp-index" style="width: 30em;"></div>
-			<div class="companies comp-index">
-				<div style="height: 14em"></div>
-				<div class="loadfade lfdelay" style="font-size: 1em; line-height:160%; text-align: left;">
-					<span style="font-size: .8em;">CURRENTLY</span><br>
-					<div style="display:flex;gap:70px;">
-					<div style="width: 200px">&nbsp;&nbsp;integrated <br>&nbsp;&nbsp;product design</div>
-					<div style="width: 200px"><span style="color: #00A6D6">@ <a href="https://www.tudelft.nl/en/ide" target="_blank" class="tu_delft">tu delft<br>io/ide &#8599;</a></span></div>
-					</div>
-				</div>
-				<div style="height: 1em"></div>
-				<div class="loadfade lfdelay" style="font-size: 1em; line-height:160%; text-align: left;"><span style="font-size: .8em;">FORMERLY</span><br>
-					<div style="display:flex;gap:70px;">
-					<div style="width: 200px">&nbsp;&nbsp;design engineering<br>&nbsp;&nbsp;& computer science</div>
-					<div style="width: 200px"><span style="color: #ED1C24">@ <a href="https://www.brown.edu/" target="_blank" class="brown_edu">brown<br>university &#8599;</a></span></div>
-					</div>
-					<div style="height: 1.25em"></div>
-					<div style="display:flex;gap:0px;">&nbsp;&nbsp;new product development &nbsp;&nbsp;<span style="color: #81D8D0">@ <a href="https://www.tiffany.com/" target="_blank" class="tiffany">tiffany & co. &#8599;</a></span></div>
-				</div>
-			</div>
-	</div>
-	<div class="flex-child"></div>
-	<div class="barnav" style="height:10%"></div>
-	<div class="textrow">
-			<!--<div class="loadfade lfdelay" style="font-size:1.25em; line-height:160%; text-align: center;z-index:3;"><a href="#approach" class="nav"><div class="dark" style="width:2.5em;height:1em;"><span class="dark">more</span></div></a></div>-->
-			<div class="anchor" id="approach"></div>
-			<div class="anchor" id="work"></div>
-			<div style="height: 6px"></div>
-			<div class="loadfade lfdelay" style="font-size:0.3em; line-height:160%; text-align: center;">
-				<div style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;">
-					<a href="#approach" class="nav">
-					<div class="dark" style="width:5em;height:5em;"><span class="dark" style="border-top:4em solid #000000;top: 0%;"><span class="material-symbols-outlined" style="font-size: 5em;">south</span></span></div>
-					</a>
-				</div>
-			</div>
-			<div style="height: 10px"></div>
-	</div>
-</div>
-
-<!--
+      <!--
 <div style="height: 1.5em"></div>
 <div class="anchor" id="approach"></div>
 <div class="textrow" style="color:#69BADD;">
@@ -161,148 +272,211 @@
 </div>
 -->
 
-<div style="height: 1.5em"></div>
-<div class="textrow" style="padding-bottom:0px;margin-left:2vw;margin-right:2vw;">
-	<div class="fadeanchor"></div>
-	<div class="flex-container scrollfade">
-			<div class="approachitemport">
-			<div class="fadeanchor"></div>
-			<div class="stackflex-container scrollfade" onclick="document.location.href='pilldispenser'" style="height:32em; flex-direction: column;">
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="pilldisph" style="position:relative;text-align:center;">
-					<img src="pilldisp/still.jpg" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;">PILL DISPENSER</div>
-					<div style="margin-left:4px;">prototyping | eng. analysis | solidworks</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">a reliable, compact everyday pill dispenser</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
-		<div class="approachitemport">
-			<div class="fadeanchor"></div>
-			<div class="stackflex-container scrollfade" onclick="document.location.href='mnemo'" style="height:32em; flex-direction: column;">
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="mnemoh" style="position:relative;text-align:center;">
-					<img src="mnemo/dp2_close.jpg" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;">MNEMO</div>
-					<div style="margin-left:4px;">prototyping | electronics | frontend | ai</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">capturing dimensions of memory</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
-		<div class="approachitemport">
-			<div class="fadeanchor"></div>
-			<div class="stackflex-container scrollfade" onclick="document.location.href='brasslamp'" style="height:32em; flex-direction: column;">
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="blamph" style="position:relative;text-align:center;">
-					<img src="blamp/IMG_9517crop2.jpg" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;">BRASS LAMP</div>
-					<div style="margin-left:4px;">metalwork | electronics</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">fabricating a seamless light form</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
-	</div>
-</div>
+      <div style="height: 1.5em"></div>
+      <div
+        class="textrow"
+        style="padding-bottom: 0px; margin-left: 2vw; margin-right: 2vw"
+      >
+        <div class="fadeanchor"></div>
+        <div class="flex-container scrollfade">
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='pilldispenser'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div
+                  id="pilldisph"
+                  style="position: relative; text-align: center"
+                >
+                  <img src="pilldisp/still.jpg" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div style="font-size: 2.5em">PILL DISPENSER</div>
+                <div style="margin-left: 4px">
+                  prototyping | eng. analysis | solidworks
+                </div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  a reliable, compact everyday pill dispenser
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='mnemo'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div id="mnemoh" style="position: relative; text-align: center">
+                  <img src="mnemo/dp2_close.jpg" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div style="font-size: 2.5em">MNEMO</div>
+                <div style="margin-left: 4px">
+                  prototyping | electronics | frontend | ai
+                </div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  capturing dimensions of memory
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='brasslamp'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div id="blamph" style="position: relative; text-align: center">
+                  <img src="blamp/IMG_9517crop2.jpg" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div style="font-size: 2.5em">BRASS LAMP</div>
+                <div style="margin-left: 4px">metalwork | electronics</div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  fabricating a seamless light form
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-top:0px;margin-left:2vw;margin-right:2vw;">
-	<div class="fadeanchor"></div>
-	<div class="flex-container scrollfade">
-		<div class="approachitemport">
-			<div class="fadeanchor"></div>
-			<div class="stackflex-container scrollfade" onclick="document.location.href='fireflie'" style="height:32em; flex-direction: column;">
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="fireflieh" style="position:relative;text-align:center;">
-					<img src="fireflie/vangogh.png" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;">FIREFLIE</div>
-					<div style="margin-left:4px;">robotics</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">generalized multi-agent light painting</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
+      <div
+        class="textrow"
+        style="padding-top: 0px; margin-left: 2vw; margin-right: 2vw"
+      >
+        <div class="fadeanchor"></div>
+        <div class="flex-container scrollfade">
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='fireflie'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div
+                  id="fireflieh"
+                  style="position: relative; text-align: center"
+                >
+                  <img src="fireflie/vangogh.png" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div style="font-size: 2.5em">FIREFLIE</div>
+                <div style="margin-left: 4px">robotics</div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  generalized multi-agent light painting
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
 
-		<div class="approachitemport">
-			<div class="fadeanchor"></div> 
-			<div class="stackflex-container scrollfade" onclick="document.location.href='pointillist'" style="height:32em; flex-direction: column;">
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="pointillisth" style="position:relative;text-align:center;">
-					<img src="pointillist/wave.jpeg" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;text-wrap: wrap;word-break: break-word;hyphens: auto;">POINT&shy;ILLIST QUAD</div>
-					<div style="margin-left:4px;">robotics | fine arts</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">recreating art using a drone (spraying paint)</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
-		<div class="approachitemport">
-			<div class="fadeanchor"></div>
-			<div class="stackflex-container scrollfade" onclick="document.location.href='flyover'" style="height:32em; flex-direction: column;">
-				
-				<div class="flex-child"></div>
-				<div class="portitem">
-					<div id="flyh" style="position:relative;text-align:center;">
-					<img src="flyover/flyoverthumb.jpg" class="tripleportimg">
-					</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-				<div class="portitem">
-					<div style="font-size:2.5em;">FLYOVERv2</div>
-					<div style="margin-left:4px;">python | raspberry pi</div>
-					<div style="height: 20px"></div>
-					<div style="margin-left:4px;">tracking planes flying above our heads</div>
-				</div>
-				<div class="flex-child"></div>
-				<div class="hspacer"></div>
-			</div>
-		</div>
-	</div>
-</div>
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='pointillist'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div
+                  id="pointillisth"
+                  style="position: relative; text-align: center"
+                >
+                  <img src="pointillist/wave.jpeg" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div
+                  style="
+                    font-size: 2.5em;
+                    text-wrap: wrap;
+                    word-break: break-word;
+                    hyphens: auto;
+                  "
+                >
+                  POINT&shy;ILLIST QUAD
+                </div>
+                <div style="margin-left: 4px">robotics | fine arts</div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  recreating art using a drone (spraying paint)
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
+          <div class="approachitemport">
+            <div class="fadeanchor"></div>
+            <div
+              class="stackflex-container scrollfade"
+              onclick="document.location.href='flyover'"
+              style="height: 32em; flex-direction: column"
+            >
+              <div class="flex-child"></div>
+              <div class="portitem">
+                <div id="flyh" style="position: relative; text-align: center">
+                  <img src="flyover/flyoverthumb.jpg" class="tripleportimg" />
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+              <div class="portitem">
+                <div style="font-size: 2.5em">FLYOVERv2</div>
+                <div style="margin-left: 4px">python | raspberry pi</div>
+                <div style="height: 20px"></div>
+                <div style="margin-left: 4px">
+                  tracking planes flying above our heads
+                </div>
+              </div>
+              <div class="flex-child"></div>
+              <div class="hspacer"></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<!--
+      <!--
 <div class="textrow" style="padding-left:8px;padding-right:16px;padding-top:0px;">
 	<div class="fadeanchor"></div>
 	<div class="stackflex-container scrollfade" onclick="document.location.href='thestars'">
@@ -366,129 +540,159 @@
 </div>
 -->
 
-<div class="fadeanchor"></div>
-<div class="textrow scrollfade">
-	<div style="height: 1.5em"></div>
-	<div style="font-size:0.3em;">
-		<div style="font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;text-align:center;">
-			<span class="material-symbols-outlined" style="font-size: 5em;color:#69BADD;">south</span>
-		</div>
-	</div>
-	<div style="height: 1.5em"></div>
-	<div style="font-size:1.25em; line-height:160%; text-align: center;color:#69BADD;">see more in</div>
-	<div style="height: .25em"></div>
-	<div style="font-size:1.5em;text-align: center;"><a href="archive" class="nav"><u>archive</u></a></div>
-	<div style="height: 10px"></div>
-</div>
+      <div class="fadeanchor"></div>
+      <div class="textrow scrollfade">
+        <div style="height: 1.5em"></div>
+        <div style="font-size: 0.3em">
+          <div
+            style="
+              font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+              text-align: center;
+            "
+          >
+            <span
+              class="material-symbols-outlined"
+              style="font-size: 5em; color: #69badd"
+              >south</span
+            >
+          </div>
+        </div>
+        <div style="height: 1.5em"></div>
+        <div
+          style="
+            font-size: 1.25em;
+            line-height: 160%;
+            text-align: center;
+            color: #69badd;
+          "
+        >
+          see more in
+        </div>
+        <div style="height: 0.25em"></div>
+        <div style="font-size: 1.5em; text-align: center">
+          <a href="archive" class="nav"><u>archive</u></a>
+        </div>
+        <div style="height: 10px"></div>
+      </div>
+    </div>
 
-</div>
+    <script>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-<script>
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
+      //imagefade
+      function isInViewport(element) {
+        const rect = element.getBoundingClientRect();
+        return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <=
+            (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <=
+            (window.innerWidth || document.documentElement.clientWidth)
+        );
+      }
 
-//imagefade
-function isInViewport(element) {
-    const rect = element.getBoundingClientRect();
-    return (
-        rect.top >= 0 &&
-        rect.left >= 0 &&
-        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-    );
-}
+      const fadebox = document.getElementsByClassName("scrollfade");
+      const fadeanchors = document.getElementsByClassName("fadeanchor");
 
-const fadebox = document.getElementsByClassName("scrollfade");
-const fadeanchors = document.getElementsByClassName("fadeanchor");
+      document.addEventListener("scroll", function () {
+        for (i = 0; i < fadeanchors.length; i++) {
+          if (isInViewport(fadeanchors[i])) {
+            fadebox[i].classList.add("loadfade2");
+          }
+        }
+      });
 
-document.addEventListener("scroll", function() {
-	for (i = 0; i < fadeanchors.length; i++) {
-	if (isInViewport(fadeanchors[i])) {
-        fadebox[i].classList.add("loadfade2")
-		}
-  }});
+      //fadecookie
+      function getCookie(cname) {
+        let name = cname + "=";
+        let decodedCookie = decodeURIComponent(document.cookie);
+        let ca = decodedCookie.split(";");
+        for (let jj = 0; jj < ca.length; jj++) {
+          let c = ca[jj];
+          while (c.charAt(0) == " ") {
+            c = c.substring(1);
+          }
+          if (c.indexOf(name) == 0) {
+            return c.substring(name.length, c.length);
+          }
+        }
+        return "";
+      }
 
-//fadecookie
-function getCookie(cname) {
-  let name = cname + "=";
-  let decodedCookie = decodeURIComponent(document.cookie);
-  let ca = decodedCookie.split(';');
-  for(let jj = 0; jj <ca.length; jj++) {
-    let c = ca[jj];
-    while (c.charAt(0) == ' ') {
-      c = c.substring(1);
-    }
-    if (c.indexOf(name) == 0) {
-      return c.substring(name.length, c.length);
-    }
-  }
-  return "";
-}
+      let indexvisit = document.cookie;
+      var loadfades = document.getElementsByClassName("loadfade");
+      var lfdelays = document.getElementsByClassName("lfdelay");
+      var j;
+      var ij;
+      if (getCookie("indexvisit") === "true") {
+        for (j = loadfades.length - 1; j < loadfades.length && j >= 0; j--) {
+          loadfades[j].classList.remove("loadfade");
+        }
+        for (ij = lfdelays.length - 1; ij < lfdelays.length && ij >= 0; ij--) {
+          lfdelays[ij].classList.remove("lfdelay");
+        }
+      }
+      document.cookie = "indexvisit=true; SameSite=Lax; Secure";
 
-let indexvisit = document.cookie;
-var loadfades = document.getElementsByClassName("loadfade");
-var lfdelays = document.getElementsByClassName("lfdelay");
-var j;
-var ij;
-if (getCookie("indexvisit") === "true") {
-	for (j = loadfades.length-1; j < loadfades.length && j >= 0; j--) {
-	 loadfades[j].classList.remove("loadfade")
-	 };
-	 for (ij = lfdelays.length-1; ij < lfdelays.length && ij >= 0; ij--) {
-	 lfdelays[ij].classList.remove("lfdelay")
-	 }};
-document.cookie = "indexvisit=true; SameSite=Lax; Secure";
+      //scrollcolor
+      const debounce = (fn) => {
+        let frame;
+        return (...params) => {
+          if (frame) {
+            cancelAnimationFrame(frame);
+          }
+          frame = requestAnimationFrame(() => {
+            fn(...params);
+          });
+        };
+      };
 
-//scrollcolor
-const debounce = (fn) => {
-  let frame;
-  return (...params) => {
-    if (frame) { 
-      cancelAnimationFrame(frame);
-    }
-    frame = requestAnimationFrame(() => {
-      fn(...params);
-    });
-  } 
-};
+      const storeScroll = () => {
+        let perc =
+          (window.scrollY / (document.body.clientHeight - window.innerHeight)) *
+          100;
+        document.documentElement.setAttribute("style", `--scrollpos: ${perc}`);
+      };
 
-const storeScroll = () => {
-  let perc = window.scrollY / (document.body.clientHeight - window.innerHeight) * 100;
-  document.documentElement.setAttribute('style', `--scrollpos: ${perc}`);
-}
+      document.addEventListener("scroll", debounce(storeScroll), {
+        passive: true,
+      });
 
-document.addEventListener('scroll', debounce(storeScroll), { passive: true });
+      storeScroll();
 
-storeScroll();
-
-var jsscrollpos = getComputedStyle(document.documentElement).getPropertyValue('--scrollpos');
-</script>
-</body>
+      var jsscrollpos = getComputedStyle(
+        document.documentElement
+      ).getPropertyValue("--scrollpos");
+    </script>
+  </body>
 </html>

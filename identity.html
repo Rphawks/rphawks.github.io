@@ -1,151 +1,186 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>style & identity | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>style & identity | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="miscbar"></div>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="miscwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="miscbar"></div>
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="miscwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="title"><b>WEBSITE & IDENTITY</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="title"><b>WEBSITE & IDENTITY</b></div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div class="blip">what's up with these colors?</div>
+      </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div class="blip">what's up with these colors?</div>
-</div>
+      <div class="textrow portrow">
+        <div class="stitle">> WEBSITE</div>
+        <div class="porttext" style="margin: auto">
+          <br /><span class="mono"
+            >this website was built ground-up as a learning project in HTML/CSS
+            and is hosted on Github Pages.</span
+          >
+        </div>
+      </div>
 
-<div class="textrow portrow">
-	<div class="stitle">> WEBSITE</div>
-	<div class="porttext" style="margin:auto;">
-		<br><span class="mono">this website was built ground-up as a learning project in HTML/CSS and is hosted on Github Pages.</span>
-	</div>
-</div>
+      <div class="textrow portrow">
+        <div style="font-size: 35px; line-height: 160%; font-weight: bold">
+          > FONTS
+        </div>
+        <div class="porttext" style="margin: auto">
+          <br />
+          <span class="headline" style="font-size: 18px">DM Mono</span>
+          <br /><span class="mono">heading font</span> <br /><br />
+          <span class="peach" style="font-size: 18px">DM Sans</span>
+          <br />body font<br /><br />
+        </div>
+      </div>
 
-<div class="textrow portrow">
-	<div style="font-size:35px; line-height:160%; font-weight: bold;">> FONTS</div>
-	<div class="porttext" style="margin:auto;">
-		<br>
-		<span class="headline" style="font-size:18px">DM Mono</span>
-		<br><span class="mono">heading font</span>
-		<br><br>
-		<span class="peach" style="font-size:18px">DM Sans</span>
-		<br>body font<br><br></span>
-	</div>
-</div>
+      <div style="height: 12px"></div>
+      <div class="textrow portrow">
+        <div style="font-size: 35px; line-height: 160%; font-weight: bold">
+          > COLORS
+        </div>
+        <div class="porttext" style="margin: auto">
+          <br />
+          <div
+            style="height: 36px; width: 36px; background-color: #ffa599"
+          ></div>
+          <div style="height: 4px"></div>
+          <span class="headline" style="font-size: 18px">#FFA599</span>
+          <span class="white"
+            ><br />heading color<br />peach, of my home state of georgia</span
+          >
+          <br /><br />
+          <div
+            style="height: 36px; width: 36px; background-color: #69badd"
+          ></div>
+          <div style="height: 4px"></div>
+          <span class="headline" style="font-size: 18px; color: #69badd"
+            >#69BADD</span
+          >
+          <span class="white"
+            ><br />body color<br />a nice blue, of the sea and sky</span
+          >
+          <br /><br />
+          <div
+            style="height: 36px; width: 36px; background-color: #824c71"
+          ></div>
+          <div style="height: 4px"></div>
+          <span class="headline" style="font-size: 18px; color: #824c71"
+            >#824C71</span
+          >
+          <span class="white"
+            ><br />interaction color<br />purple, between those of tyre and
+            lavender</span
+          >
+        </div>
+      </div>
+      <div style="height: 36px"></div>
+    </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow">
-	<div style="font-size:35px; line-height:160%; font-weight: bold;">> COLORS</div>
-	<div class="porttext" style="margin:auto;">
-		<br>
-		<div style="height:36px;width:36px;background-color:#FFA599"></div>
-		<div style="height:4px;"></div>
-		<span class="headline" style="font-size:18px">#FFA599</span>
-		<span class="white"><br>heading color<br>peach, of my home state of georgia</span>
-		<br><br>
-		<div style="height:36px;width:36px;background-color:#69BADD"></div>
-		<div style="height:4px;"></div>
-		<span class="headline" style="font-size:18px;color:#69BADD">#69BADD</span>
-		<span class="white"><br>body color<br>a nice blue, of the sea and sky</span>
-		<br><br>
-		<div style="height:36px;width:36px;background-color:#824C71"></div>
-		<div style="height:4px;"></div>
-		<span class="headline" style="font-size:18px;color:#824C71">#824C71</span>
-		<span class="white"><br>interaction color<br>purple, between those of tyre and lavender</span>
-	</div>
-</div>
-<div style="height:36px;"></div>
+    <script>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-<script>
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

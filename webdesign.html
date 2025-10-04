@@ -1,74 +1,90 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>web design | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>web design | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div
+          class="title"
+          style="color: #000000; -webkit-text-stroke: 0.01em #ffa599"
+        >
+          <b>WEB DESIGN</b>
+        </div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="title" style="color: #000000;-webkit-text-stroke: 0.01em #FFA599;"><b>WEB DESIGN</b></div>
-</div>
-
-<!--
+      <!--
 <div class="textrow" style="padding-left:8px">
 	<div style="font-size:2.25em; line-height:160%;"><b>> 2023</b></div>
 	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
@@ -96,105 +112,129 @@
 </div>
 -->
 
-<div class="textrow" style="padding-left:8px">
-	<div class="archstackflex-container-col" style="width:100%;padding-bottom:8px;align-items: center;">
-		<div class="architem-col archflex" onclick="document.location.href='zest'">
-			<div class="portitem">
-				<div id="zesth" style="position:relative;text-align:center;">
-				<img src="zest/dualmockup.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">ZEST SHIPPING</div>
-				<div style="margin-left:4px;">iteration | user flows | hi-fi mockups</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">expanding options for a corporate gifting e-commerce startup</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-			<div class="hspacer"></div>
-		<div class="architem-col archflex" onclick="document.location.href='treereq'">
-			<div class="portitem">
-				<div id="treereqh" style="position:relative;text-align:center;">
-				<img src="treereq/treereqthumb.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">TREEREQ</div>
-				<div style="margin-left:4px;">typescript | mern | python</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">rethinking course planning using hypertext and full-stack development</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem-col archflex" onclick="document.location.href='fragrantica-redesign'">
-			<div class="portitem">
-				<div id="fragranticah" style="position:relative;text-align:center;">
-				<img src="fragrantica/macmockup.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">FRAGRANTICA REDESIGN</div>
-				<div style="margin-left:4px;">wireframing | accessibility</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">reimagining a dated website for fragrance enthusiasts</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-	</div>
-</div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div
+          class="archstackflex-container-col"
+          style="width: 100%; padding-bottom: 8px; align-items: center"
+        >
+          <div
+            class="architem-col archflex"
+            onclick="document.location.href='zest'"
+          >
+            <div class="portitem">
+              <div id="zesth" style="position: relative; text-align: center">
+                <img src="zest/dualmockup.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem2">
+              <div style="font-size: 2.5em">ZEST SHIPPING</div>
+              <div style="margin-left: 4px">
+                iteration | user flows | hi-fi mockups
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                expanding options for a corporate gifting e-commerce startup
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem-col archflex"
+            onclick="document.location.href='treereq'"
+          >
+            <div class="portitem">
+              <div id="treereqh" style="position: relative; text-align: center">
+                <img src="treereq/treereqthumb.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem2">
+              <div style="font-size: 2.5em">TREEREQ</div>
+              <div style="margin-left: 4px">typescript | mern | python</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                rethinking course planning using hypertext and full-stack
+                development
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem-col archflex"
+            onclick="document.location.href='fragrantica-redesign'"
+          >
+            <div class="portitem">
+              <div
+                id="fragranticah"
+                style="position: relative; text-align: center"
+              >
+                <img src="fragrantica/macmockup.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem2">
+              <div style="font-size: 2.5em">FRAGRANTICA REDESIGN</div>
+              <div style="margin-left: 4px">wireframing | accessibility</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                reimagining a dated website for fragrance enthusiasts
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-<script>
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+    <script>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

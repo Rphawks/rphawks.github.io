@@ -1,453 +1,932 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>mnemo | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>mnemo | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2024/SPRING 2025</div>
+        <div class="title"><b>MNEMO</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2024/SPRING 2025</div>
-		<div class="title"><b>MNEMO</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="mnemo/dp2_close.jpg"
+            style="
+              width: 46vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="mnemo/dp2_close.jpg" style="width:46vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>engineering capstone
+            </div>
+            <div class="summary"><span class="info">TIME</span>~160 hours</div>
+          </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>engineering capstone</div>
-	<div class="summary"><span class="info">TIME</span>~160 hours</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="textrow portrow" style="padding-left: 2.5em">
+            <div class="porttext" style="margin: auto">
+              <b
+                ><span class="headline" style="font-size: 1.125em"
+                  >mnemo is a wearable multisensory snapshot device that allows
+                  the user to capture experiences and utilizes design friction
+                  to enable both memory offloading and encourage memory
+                  recall.</span
+                ><br /><br />
+                in a 3-piece pendant assembly, mnemo uses various low-level
+                sensor data, synthesized with APIs and machine learning models,
+                to create “sensory snapshots.” such snapshots store visual and
+                auditory data and are able to identify significance in location,
+                weather, nearby monuments, and, using an artificial nose, even
+                scents like fresh bread.</b
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>mnemo is a wearable multisensory snapshot device that allows the user to capture experiences and utilizes design friction to enable both memory offloading and encourage memory recall.</span><br><br>
-		 in a 3-piece pendant assembly, mnemo uses various low-level sensor data, synthesized with APIs and machine learning models, to create “sensory snapshots.” such snapshots store visual and auditory data and are able to identify significance in location, weather, nearby monuments, and, using an artificial nose, even scents like fresh bread.<b>
-	</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="mnemo/dp2_close.jpg"
+            style="
+              width: 85vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="mnemo/dp2_close.jpg" style="width:85vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+          <div class="summary">
+            <span class="info">CONTEXT</span> engineering capstone
+          </div>
+          <div class="summary"><span class="info">TIME</span> ~160 hours</div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span> engineering capstone</div>
-	<div class="summary"><span class="info">TIME</span> ~160 hours</div>
-</div>
+        <div style="height: 12px"></div>
+        <div class="textrow portrow" style="padding-left: 2.5em">
+          <div class="porttext" style="margin: auto">
+            <b
+              ><span class="headline" style="font-size: 1.125em"
+                >mnemo is a wearable multisensory snapshot device that allows
+                the user to capture experiences and utilizes design friction to
+                enable both memory offloading and encourage memory recall.</span
+              ><br /><br />
+              in a 3-piece pendant assembly, mnemo uses various low-level sensor
+              data, synthesized with APIs and machine learning models, to create
+              “sensory snapshots.” such snapshots store visual and auditory data
+              and are able to identify significance in location, weather, nearby
+              monuments, and, using an artificial nose, even scents like fresh
+              bread.</b
+            >
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>mnemo is a wearable multisensory snapshot device that allows the user to capture experiences and utilizes design friction to enable both memory offloading and encourage memory recall.</span><br><br>
-		 in a 3-piece pendant assembly, mnemo uses various low-level sensor data, synthesized with APIs and machine learning models, to create “sensory snapshots.” such snapshots store visual and auditory data and are able to identify significance in location, weather, nearby monuments, and, using an artificial nose, even scents like fresh bread.<b>
-	</div>
-</div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="stuckcontainer">
+        <div class="stucknav-container">
+          <a href="#inspiration" class="nav"
+            ><div class="stucknav">> INSPIRATION</div></a
+          >
+          <a href="#snapshot" class="nav"
+            ><div class="stucknav">> EXAMPLE SNAPSHOT</div></a
+          >
+          <a href="#form" class="nav"><div class="stucknav">> FORM</div></a>
+          <a href="#electronics" class="nav"
+            ><div class="stucknav">> ELECTRONICS</div></a
+          >
+          <a href="#software" class="nav"
+            ><div class="stucknav">> SOFTWARE</div></a
+          >
+          <a href="#challenges" class="nav"
+            ><div class="stucknav">> CHALLENGES</div></a
+          >
+          <a href="#photos" class="nav"><div class="stucknav">> PHOTOS</div></a>
+          <a href="#acknowledgements" class="nav"
+            ><div class="stucknav">> ACKNOWLEDGE-<br />MENTS</div></a
+          >
+        </div>
 
-<div class="stuckcontainer">
-<div class="stucknav-container">
-<a href="#inspiration" class="nav"><div class="stucknav">> INSPIRATION</div></a>
-<a href="#snapshot" class="nav"><div class="stucknav">> EXAMPLE SNAPSHOT</div></a>
-<a href="#form" class="nav"><div class="stucknav">> FORM</div></a>
-<a href="#electronics" class="nav"><div class="stucknav">> ELECTRONICS</div></a>
-<a href="#software" class="nav"><div class="stucknav">> SOFTWARE</div></a>
-<a href="#challenges" class="nav"><div class="stucknav">> CHALLENGES</div></a>
-<a href="#photos" class="nav"><div class="stucknav">> PHOTOS</div></a>
-<a href="#acknowledgements" class="nav"><div class="stucknav">> ACKNOWLEDGE-<br>MENTS</div></a>
-</div>
+        <div class="stuckcolumn">
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="inspiration"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">INSPIRATION</div>
+            <div class="porttext" style="margin: auto">
+              <span class="peach"
+                >in all the <span class="white"><i>noise</i></span
+                >, how do we remember?</span
+              ><br />
+              we might take photos or videos on our smartphones, engaging in a
+              form of memory offloading.<br />but these tools also remove the
+              user from the present.<br /><br />
+              mnemo uses a clever sensor array to capture more dimensions of a
+              memory as a seamless yet privacy-conscious companion to everyday
+              memories.
+            </div>
+          </div>
 
-<div class="stuckcolumn">
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="inspiration"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> INSPIRATION</div>
-	<div class="porttext" style="margin:auto;">
-		<span class="peach">in all the <span class="white"><i>noise</i></span>, how do we remember?</span><br>
-		we might take photos or videos on our smartphones, engaging in a form of memory offloading.<br>but these tools also remove the user from the present.<br><br>
-		mnemo uses a clever sensor array to capture more dimensions of a memory as a seamless yet privacy-conscious companion to everyday memories.
-	</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="snapshot"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">EXAMPLE SNAPSHOT</div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="mnemo/geese.jpg"
+                class="imgborder"
+                style="width: 50%; max-width: 350px; height: auto"
+              />
+              <div>
+                <div
+                  class="porttext"
+                  style="padding-left: 24px; padding-right: 4px"
+                >
+                  data:<br />
+                  12/2/24 20:00:43 UTC<br />
+                  41.827, -71.412<br />
+                  3.33°C<br />
+                  45% RH<br />
+                  smell: ambient outdoors<br /><br /><span class="peach"
+                    >&#8595;</span
+                  >
+                  <br /><br />
+                </div>
+                <div
+                  class="porttext"
+                  style="padding-left: 24px; padding-right: 4px"
+                >
+                  mnemo snapshot with
+                  <span class="peach">AI-assisted data conversion</span>:<span
+                    class="white"
+                    ><br />"<br />
+                    dec 2 2024, 3PM<br />
+                    providence, ri, usa<br /><br />
+                    a group of Canada geese swim through the calm waters of the
+                    Woonasquatucket River at Waterplace Park, on a chilly
+                    evening with clear skies.<br />"</span
+                  >
+                  <br /><br />
+                </div>
+                <div
+                  class="porttext"
+                  style="padding-left: 24px; padding-right: 4px"
+                >
+                  (explained):
+                  <br />"<br />
+                  <u>dec 2 2024, 3PM</u> (clock)<br />
+                  <u>providence, ri, usa</u> (GPS<span class="peach">*</span
+                  >)<br /><br />
+                  <u>a group of Canada geese swim through the calm waters</u>
+                  (photo<span class="peach">*</span>) of the
+                  <u>Woonasquatucket River at Waterplace Park</u> (GPS<span
+                    class="peach"
+                    >*</span
+                  >), on a <u>chilly</u> (temperature) evening with
+                  <u>clear skies</u> (photo<span class="peach">*</span>).<br />"
 
+                  <br /><span class="peach">* data used as AI input</span>
+                </div>
+              </div>
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+          </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="snapshot"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> EXAMPLE SNAPSHOT</div>
-	<div class="flex-container" style="align-items:center;">
-			<div class="flex-child" style="height:70px"></div>	
-			<img src="mnemo/geese.jpg" class="imgborder" style="width:50%;max-width:350px;height:auto;">
-			<div>
-				<div class="porttext" style="padding-left:24px;padding-right:4px;">
-				data:<br>
-				12/2/24 20:00:43 UTC<br>
-				41.827, -71.412<br>
-				3.33°C<br>
-				45% RH<br>
-				smell: ambient outdoors<br><br><span class="peach">&#8595;</span>
-				<br><br>
-				</div>
-				<div class="porttext" style="padding-left:24px;padding-right:4px;">
-				mnemo snapshot with <span class="peach">AI-assisted data conversion</span>:<span class="white"><br>"<br>
-				dec 2 2024, 3PM<br>
-				providence, ri, usa<br><br>
-				a group of Canada geese swim through the calm waters of the Woonasquatucket River at Waterplace Park, on a chilly evening with clear skies.<br>"</span>
-				<br><br>
-				</div>
-				<div class="porttext" style="padding-left:24px;padding-right:4px;">
-				(explained):
-				<br>"<br>
-				<u>dec 2 2024, 3PM</u> (clock)<br>
-				<u>providence, ri, usa</u> (GPS<span class="peach">*</span>)<br><br>
-				<u>a group of Canada geese swim through the calm waters</u> (photo<span class="peach">*</span>) of the <u>Woonasquatucket River at Waterplace Park</u> (GPS<span class="peach">*</span>), on a <u>chilly</u> (temperature) evening with <u>clear skies</u> (photo<span class="peach">*</span>).<br>"
-				
-				<br><span class="peach">* data used as AI input</span>
-				</div>
-			</div>
-			<div class="flex-child" style="height:70px"></div>
-		</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="form"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">FORM</div>
+            <img
+              src="mnemo/form.jpg"
+              style="
+                width: 100%;
+                max-width: 60vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div class="porttext" style="margin: auto">
+              <br />starting with the concept of a wearable capture device,
+              <span class="peach"
+                >how does one arrive at a form seamless both in function and
+                interaction?</span
+              >
+              after considering other types of wearables such as watches, rings,
+              and glasses, ultimately a pendant gives convenient and practical
+              sensor placement and size, with one size for everyone.<br /><br />
+              design inspiration originated from ancient Islamic and 19th to
+              21st century pendants, especially pendant watches. some examples:
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                width: 520px;
+                margin: 0 auto;
+              "
+            >
+              <div style="width: 240px; margin: 10px">
+                <img
+                  src="mnemo/met.jpg"
+                  class="imgborder"
+                  style="width: 200px; height: 200px; object-fit: cover"
+                />
+                <div
+                  class="porttext"
+                  style="margin-top: 10px; text-indent: 0; margin-left: 10px"
+                >
+                  <span class="peach">islamic silver pendant</span
+                  ><br />attributed to Iran or Turkey<br />12th-13th century<br />metropolitan
+                  museum of art 1971.28
+                </div>
+              </div>
+              <div style="width: 240px; margin: 10px">
+                <img
+                  src="mnemo/cartier.jpg"
+                  class="imgborder"
+                  style="width: 200px; height: 200px; object-fit: cover"
+                />
+                <div
+                  class="porttext"
+                  style="margin-top: 10px; text-indent: 0; margin-left: 10px"
+                >
+                  <span class="peach">belle époque pendant-watch</span
+                  ><br />cartier<br />circa 1910<br />christie's, 2022
+                </div>
+              </div>
+              <div style="width: 240px; margin: 10px">
+                <img
+                  src="mnemo/wempe.jpg"
+                  class="imgborder"
+                  style="width: 200px; height: 200px; object-fit: cover"
+                />
+                <div
+                  class="porttext"
+                  style="margin-top: 10px; text-indent: 0; margin-left: 10px"
+                >
+                  <span class="peach"
+                    >lacquer and diamond <br />demi-parure</span
+                  ><br />wempe<br />no date<br />sotheby's, 2022
+                </div>
+              </div>
+              <div style="width: 240px; margin: 10px">
+                <img
+                  src="mnemo/omega.jpg"
+                  class="imgborder"
+                  style="width: 200px; height: 200px; object-fit: cover"
+                />
+                <div
+                  class="porttext"
+                  style="margin-top: 10px; text-indent: 0; margin-left: 10px"
+                >
+                  <span class="peach"
+                    >pear-shaped pendant watch with sautoir</span
+                  ><br />omega<br />circa 1975<br />sotheby's, 2019
+                </div>
+              </div>
+            </div>
+            <div style="height: 24px"></div>
+            <img
+              src="mnemo/prototypes_new.png"
+              class="imgborder"
+              style="
+                width: 100%;
+                max-width: 55vw;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div class="porttext" style="margin: auto">
+              <span class="peach"
+                >beginning with the minimum envelope of the individual parts,
+                prototypes built up to meet the concept inspiration.</span
+              >
+              critical prototype iterations focused on various aspects of design
+              including:
+            </div>
+            <div style="height: 12px"></div>
+            <div class="porttext" style="margin: auto">
+              <span class="headline">ASSEMBLY</span><br />
+              built to be securely assembled, mnemo is assembled without glue or
+              fasteners. the three parts are slotted into each other and secured
+              with a pin across the pendant.
+            </div>
+            <div class="porttext" style="margin: auto">
+              <span class="headline">WIRING</span><br />
+              all components are layered to allow for ease and most compact
+              wiring while allowing the gas sensors, LEDs, and camera to be
+              front facing.
+            </div>
+            <div class="porttext" style="margin: auto">
+              <span class="headline">MANUFACTURING</span><br />
+              instead of fdm or sla printing, the choice of metal sls printing
+              in powder allows for the complex channels through the part to be
+              manufactured as-is without supports and risk of collapse.
+              traditionally, these might be added subtractively via machining,
+              restricting the type of geometry allowed.
+            </div>
+            <div class="porttext" style="margin: auto">
+              <span class="headline">MATERIALS</span><br />
+              compared to plastics like PLA or resin, aluminum is still
+              lightweight while being more durable, less brittle, and machinable
+              if needed, and finishes nicely. the front window is kept clear for
+              the camera, using a two-part epoxy which binds to the aluminum.
+            </div>
+            <div style="height: 24px"></div>
+            <div
+              class="flex-container"
+              style="align-items: center; height: 20vw"
+            >
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="mnemo/drw1.jpg"
+                class="imgborder sideimg"
+                style="height: 100%; width: auto; object-fit: contain"
+              />
+              <img
+                src="mnemo/drw2.jpg"
+                class="imgborder sideimg"
+                style="height: 100%; width: auto; object-fit: contain"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 12px"></div>
+            <div
+              class="flex-container"
+              style="align-items: center; height: 20vw"
+            >
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="mnemo/drw3.jpg"
+                class="imgborder sideimg"
+                style="height: 100%; width: auto; object-fit: contain"
+              />
+              <img
+                src="mnemo/drw4.jpg"
+                class="imgborder sideimg"
+                style="height: 100%; width: auto; object-fit: contain"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div
+              class="porttext"
+              style="
+                margin-top: 10px;
+                text-indent: 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              "
+            >
+              engineering drawings
+            </div>
+            <div style="height: 12px"></div>
+            <div class="porttext" style="margin: auto">
+              all engineering CAD done in <span class="peach">solidworks</span>.
+              drawings strongly reference CAD, given complex geometry and
+              intended SLS manufacturing. master model can be found
+              <a
+                href="https://ryanzpeng.com/mnemo/final-master.SLDPRT"
+                class="nav"
+                style="text-decoration: underline"
+                >here</a
+              >.
+            </div>
+          </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="form"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> FORM</div>
-	<img src="mnemo/form.jpg" style="width:100%;max-width:60vw;display:block;margin-left:auto;margin-right:auto;">
-	<div class="porttext" style="margin:auto;">
-		<br>starting with the concept of a wearable capture device, <span class="peach">how does one arrive at a form seamless both in function and interaction?</span>
-		after considering other types of wearables such as watches, rings, and glasses, ultimately a pendant gives convenient and practical sensor placement and size, with one size for everyone.<br><br>
-		design inspiration originated from ancient Islamic and 19th to 21st century pendants, especially pendant watches. some examples:
-	</div>
-	<div style="display: flex; flex-wrap: wrap; justify-content: center; width: 520px; margin: 0 auto;">
-	  <div style="width: 240px; margin: 10px;">
-		<img src="mnemo/met.jpg" class="imgborder" style="width: 200px; height: 200px; object-fit: cover;">
-		<div class="porttext" style="margin-top: 10px;text-indent:0;margin-left:10px;">
-		  <span class="peach">islamic silver pendant</span><br>attributed to Iran or Turkey<br>12th-13th century<br>metropolitan museum of art 1971.28
-		</div>
-	  </div>
-	  <div style="width: 240px; margin: 10px;">
-		<img src="mnemo/cartier.jpg" class="imgborder" style="width: 200px; height: 200px; object-fit: cover;">
-		<div class="porttext" style="margin-top: 10px;text-indent:0;margin-left:10px;">
-		  <span class="peach">belle époque pendant-watch</span><br>cartier<br>circa 1910<br>christie's, 2022
-		</div>
-	  </div>
-	  <div style="width: 240px; margin: 10px;">
-		<img src="mnemo/wempe.jpg" class="imgborder" style="width: 200px; height: 200px; object-fit: cover;">
-		<div class="porttext" style="margin-top: 10px;text-indent:0;margin-left:10px;">
-		  <span class="peach">lacquer and diamond <br>demi-parure</span><br>wempe<br>no date<br>sotheby's, 2022
-		</div>
-	  </div>
-	  <div style="width: 240px; margin: 10px;">
-		<img src="mnemo/omega.jpg" class="imgborder" style="width: 200px; height: 200px; object-fit: cover;">
-		<div class="porttext" style="margin-top: 10px;text-indent:0;margin-left:10px;">
-		  <span class="peach">pear-shaped pendant watch with sautoir</span><br>omega<br>circa 1975<br>sotheby's, 2019
-		</div>
-	  </div>
-	</div>
-	<div style="height:24px;"></div>
-	<img src="mnemo/prototypes_new.png" class="imgborder" style="width:100%;max-width:55vw;height:auto;display:block;margin-left:auto;margin-right:auto;">
-	<div class="porttext" style="margin:auto;">
-		<span class="peach">beginning with the minimum envelope of the individual parts, prototypes built up to meet the concept inspiration.</span> critical prototype iterations focused on various aspects of design including:
-	</div>
-	<div style="height:12px;"></div>	
-	<div class="porttext" style="margin:auto;">
-		<span class="headline">ASSEMBLY</span><br> built to be securely assembled, mnemo is assembled without glue or fasteners. the three parts are slotted into each other and secured with a pin across the pendant.
-	</div>
-	<div class="porttext" style="margin:auto;">
-		<span class="headline">WIRING</span><br> all components are layered to allow for ease and most compact wiring while allowing the gas sensors, LEDs, and camera to be front facing.
-	</div>
-		<div class="porttext" style="margin:auto;">
-		<span class="headline">MANUFACTURING</span><br> instead of fdm or sla printing, the choice of metal sls printing in powder allows for the complex channels through the part to be manufactured as-is without supports and risk of collapse. traditionally, these might be added subtractively via machining, restricting the type of geometry allowed.
-	</div>
-	<div class="porttext" style="margin:auto;">
-		<span class="headline">MATERIALS</span><br> compared to plastics like PLA or resin, aluminum is still lightweight while being more durable, less brittle, and machinable if needed, and finishes nicely. the front window is kept clear for the camera, using a two-part epoxy which binds to the aluminum.
-	</div>
-	<div style="height:24px;"></div>
-	<div class="flex-container" style="align-items:center;height:20vw;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="mnemo/drw1.jpg" class="imgborder sideimg" style="height:100%;width:auto;object-fit: contain;">
-		<img src="mnemo/drw2.jpg" class="imgborder sideimg" style="height:100%;width:auto;object-fit: contain;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="flex-container" style="align-items:center;height:20vw;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="mnemo/drw3.jpg" class="imgborder sideimg" style="height:100%;width:auto;object-fit: contain;">
-		<img src="mnemo/drw4.jpg" class="imgborder sideimg" style="height:100%;width:auto;object-fit: contain;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">engineering drawings</div>
-	<div style="height:12px;"></div>
-	<div class="porttext" style="margin:auto;">
-		all engineering CAD done in <span class="peach">solidworks</span>. drawings strongly reference CAD, given complex geometry and intended SLS manufacturing. master model can be found <a href="https://ryanzpeng.com/mnemo/final-master.SLDPRT" class="nav" style="text-decoration: underline">here</a>.
-	</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="electronics"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">ELECTRONICS</div>
+            <img
+              src="mnemo/components.jpg"
+              class="imgborder"
+              style="
+                width: 70vw;
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div class="porttext" style="margin: auto">
+              in-pendant sensors are centralized around an
+              <span class="peach">arduino nano 22 ble sense r2</span> with
+              onboard temperature and humidity. a
+              <span class="peach">grove multichannel v2 gas sensor</span>
+              collects 4-axis gas data. a "spy"
+              <span class="peach">camera</span> provides image data.
+              <span class="peach"> adafruit neopixel LED ring</span> serves as
+              user feedback of snapshot state.<br />
+            </div>
+            <div style="height: 12px"></div>
+            <div class="porttext" style="margin: auto">
+              pendant sensor data is sent via bluetooth low energy to a
+              <span class="peach">raspberry pi 5</span> with a
+              <span class="peach">PA1616S GPS</span> and
+              <span class="peach">DS3231 real-time clock</span>. depending on
+              interference and timing, the arduino and raspberry pi may not
+              always be able to find each other. in this case, the LED ring
+              wipes red. when a successful connection is made, the ring will
+              wipe blue until the data transmission and photo capture is
+              finished.
+            </div>
+            <div style="height: 24px"></div>
+            <div
+              class="flex-container"
+              style="align-items: center; justify-content: center; gap: 2rem"
+            >
+              <div style="width: 40%">
+                <img src="mnemo/success.gif" style="width: 100%" />
+                <div
+                  class="porttext"
+                  style="
+                    margin-top: 10px;
+                    text-indent: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                  "
+                >
+                  bluetooth success
+                </div>
+              </div>
+              <div style="width: 40%">
+                <img src="mnemo/fail.gif" style="width: 100%" />
+                <div
+                  class="porttext"
+                  style="
+                    margin-top: 10px;
+                    text-indent: 0;
+                    margin-left: auto;
+                    margin-right: auto;
+                    text-align: center;
+                  "
+                >
+                  bluetooth fail
+                </div>
+              </div>
+            </div>
+          </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="electronics"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> ELECTRONICS</div>
-	<img src="mnemo/components.jpg" class="imgborder" style="width:70vw;height:auto;display:block;margin-left:auto;margin-right:auto;">
-	<div class="porttext" style="margin:auto;">
-		in-pendant sensors are centralized around an <span class="peach">arduino nano 22 ble sense r2</span> with onboard temperature and humidity. a <span class="peach">grove multichannel v2 gas sensor</span> collects 4-axis gas data. a "spy" <span class="peach">camera</span> provides image data. <span class="peach"> adafruit neopixel LED ring</span> serves as user feedback of snapshot state.<br>
-	</div>
-	<div style="height:12px;"></div>
-	<div class="porttext" style="margin:auto;">
-		pendant sensor data is sent via bluetooth low energy to a <span class="peach">raspberry pi 5</span> with a <span class="peach">PA1616S GPS</span> and <span class="peach">DS3231 real-time clock</span>. depending on interference and timing, the arduino and raspberry pi may not always be able to find each other. in this case, the LED ring wipes red. when a successful connection is made, the ring will wipe blue until the data transmission and photo capture is finished.
-	</div>
-	<div style="height:24px;"></div>
-	<div class="flex-container" style="align-items:center;justify-content:center;gap:2rem;">
-		<div style="width:40%;">
-			<img src="mnemo/success.gif" style="width:100%;">
-			<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">bluetooth success</div>
-		</div>
-		<div style="width:40%;">
-			<img src="mnemo/fail.gif" style="width:100%;">
-			<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">bluetooth fail</div>
-		</div>
-	</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="software"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">SOFTWARE</div>
+            <div class="porttext" style="margin: auto">
+              the corresponding software package is a desktop app which provides
+              a user interface, including a grid view and timeline scrollbar to
+              view mnemo snapshots. the application also generates one-line
+              summaries using <span class="peach">OpenAI's GPT-4o</span>,
+              synthesizing the data to provide a memorable recap of the
+              snapshot.
+              <span class="peach"
+                >the design philosophy was to create the simplest possible
+                interface, while having all information presented.</span
+              ><br /><br />
+            </div>
+            <div class="flex-container" style="align-items: center">
+              <img
+                src="mnemo/figma1.png"
+                style="
+                  width: 32%;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              />
+              <img
+                src="mnemo/figma2.png"
+                style="
+                  width: 32%;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              />
+              <img
+                src="mnemo/figma3.png"
+                style="
+                  width: 32%;
+                  display: block;
+                  margin-left: auto;
+                  margin-right: auto;
+                "
+              />
+            </div>
+            <div
+              class="porttext"
+              style="
+                margin-top: 10px;
+                text-indent: 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              "
+            >
+              figma prototype
+            </div>
+            <div style="height: 24px"></div>
+            <div class="porttext" style="margin: auto">
+              software built using <span class="peach">electron</span> and
+              <span class="peach">react</span>, allowing for compatibility with
+              macOS and Linux after repackaging.
+            </div>
+            <div style="height: 24px"></div>
+            <img
+              src="mnemo/fileflow.jpg"
+              style="
+                width: 100%;
+                max-width: 60vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div
+              class="porttext"
+              style="
+                margin-top: 10px;
+                text-indent: 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              "
+            >
+              flow for image retrieval after initial transfer
+            </div>
+            <div style="height: 24px"></div>
+            <div class="porttext" style="margin: auto">
+              unlike a pure react application, the electron app interacts with
+              the local file system and OpenAI's chat completion API. this
+              requires custom electron protocols, both for file retrieval and
+              storage. this also allows for a distinct frontend and backend,
+              which communicate with each other securely.<br /><br />
+              code can be found
+              <a
+                href="https://github.com/Rphawks/mnemo-app/"
+                class="nav"
+                style="text-decoration: underline"
+                >here</a
+              >
+              and .exe downloaded for windows
+              <a
+                href="https://github.com/Rphawks/mnemo-app/releases/tag/v1.0.0"
+                class="nav"
+                style="text-decoration: underline"
+                >here</a
+              >.<br /><br />
+            </div>
+          </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="software"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> SOFTWARE</div>
-	<div class="porttext" style="margin:auto;">
-		the corresponding software package is a desktop app which provides a user interface, including a grid view and timeline scrollbar to view mnemo snapshots. the application also generates one-line summaries using <span class="peach">OpenAI's GPT-4o</span>, synthesizing the data to provide a memorable recap of the snapshot. <span class="peach">the design philosophy was to create the simplest possible interface, while having all information presented.</span><br><br>
-	</div>
-	<div class="flex-container" style="align-items:center;">
-		<img src="mnemo/figma1.png" style="width:32%;display:block;margin-left:auto;margin-right:auto;">
-		<img src="mnemo/figma2.png" style="width:32%;display:block;margin-left:auto;margin-right:auto;">
-		<img src="mnemo/figma3.png" style="width:32%;display:block;margin-left:auto;margin-right:auto;">
-	</div>
-	<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">figma prototype</div>
-	<div style="height:24px;"></div>
-	<div class="porttext" style="margin:auto;">		
-		software built using <span class="peach">electron</span> and <span class="peach">react</span>, allowing for compatibility with macOS and Linux after repackaging.
-	</div>
-	<div style="height:24px;"></div>
-	<img src="mnemo/fileflow.jpg" style="width:100%;max-width:60vw;display:block;margin-left:auto;margin-right:auto;">
-	<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">flow for image retrieval after initial transfer</div>
-	<div style="height:24px;"></div>
-	<div class="porttext" style="margin:auto;">
-		unlike a pure react application, the electron app interacts with the local file system and OpenAI's chat completion API. this requires custom electron protocols, both for file retrieval and storage. this also allows for a distinct frontend and backend, which communicate with each other securely.<br><br>
-		code can be found <a href="https://github.com/Rphawks/mnemo-app/" class="nav" style="text-decoration: underline">here</a>
-		and .exe downloaded for windows <a href="https://github.com/Rphawks/mnemo-app/releases/tag/v1.0.0" class="nav" style="text-decoration: underline">here</a>.<br><br>
-	</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="challenges"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">CHALLENGES</div>
+            <div
+              class="rev-img-flex-container"
+              style="justify-content: center; align-items: center; gap: 1rem"
+            >
+              <div class="porttext">
+                <span class="headline">HOUSING</span><br />
+                the housing must open to allow the electronics to be inserted,
+                then closed and secured. different manufacturing techniques and
+                suppliers resulted in different tolerances, and with such small
+                parts more attention must be paid to how they fit together. in
+                this case, the parts are designed for manufacturing by aluminum
+                SLS, which allows for more complex geometry. however, at large
+                scale, they could be cast.<br /><br />
+              </div>
+              <img
+                src="mnemo/housing_top.jpg"
+                style="width: 100%; max-width: 54vh; height: auto"
+              />
+            </div>
+            <div style="height: 12px"></div>
+            <div
+              class="rev-img-flex-container"
+              style="justify-content: center; align-items: center; gap: 1rem"
+            >
+              <div class="porttext">
+                <span class="headline">HARDWARE</span><br />
+                sometimes, not everything is plug-and-play. CAP1188 and
+                AT42QT1010 touch breakouts were used before settling on the
+                AT42QT1070, which has the least accidental capacitive triggers
+                from EMI. even still, a debounce was added in the sensor code to
+                prevent re-triggering from the same touch. with additional time,
+                a housing would be designed for the raspberry pi and GPS module,
+                which performs best with line of sight of the sky.<br /><br />
+              </div>
+              <img
+                src="mnemo/touch_sensors.jpg"
+                style="width: 100%; max-width: 54vh; height: auto"
+              />
+            </div>
+            <div style="height: 12px"></div>
+            <div
+              class="rev-img-flex-container"
+              style="justify-content: center; align-items: center; gap: 1rem"
+            >
+              <div class="porttext">
+                <span class="headline">SOFTWARE</span><br />
+                manual transfer, typically via ssh over wifi, is required to
+                transfer files from the raspberry pi to the machine with the
+                desktop application. with more time, a web server could be
+                created to allow the data to be uploaded from the pi directly
+                over wifi. the desktop software would then retrieve the data,
+                with user authentication for multiple users.<br /><br />
+              </div>
+              <img
+                src="mnemo/file_selection.jpg"
+                style="width: 100%; max-width: 54vh; height: auto"
+              />
+            </div>
+            <div style="height: 12px"></div>
+            <img
+              src="mnemo/new_fileflow.jpg"
+              style="
+                width: 100%;
+                max-width: 60vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+            <div
+              class="porttext"
+              style="
+                margin-top: 10px;
+                text-indent: 0;
+                margin-left: auto;
+                margin-right: auto;
+                text-align: center;
+              "
+            >
+              current file flow vs. theoretical flow with web server (blue)
+            </div>
+            <div style="height: 48px"></div>
+            <div class="porttext" style="margin: auto">
+              <span class="headline"
+                >mnemo was a challenge not only in hardware and software
+                development, but integration.</span
+              ><br /><br />if done again, perhaps a different approach would be
+              taken with the housing design to avoid the front seam, or
+              different software infrastructure design. various levels of
+              translation are needed between different data sources, platforms,
+              and languages. of course, the ability to develop more and more
+              hardware in house could reduce the amount of translation needed
+              compared to off-the-shelf components.
+            </div>
+          </div>
 
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="photos"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">PRODUCT PHOTOS</div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="mnemo/dp2_angle.jpg"
+                class="imgborder sideimg"
+                style="height: auto"
+              />
+              <img
+                src="mnemo/dp2_far.jpg"
+                class="imgborder sideimg"
+                style="height: auto"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <img
+                src="mnemo/dp2_mid.jpg"
+                class="imgborder sideimg"
+                style="height: auto"
+              />
+              <img
+                src="mnemo/dp2_side.jpg"
+                class="imgborder sideimg"
+                style="height: auto"
+              />
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+          </div>
 
+          <div style="height: 12px"></div>
+          <div class="stuckanchor" id="acknowledgements"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">ACKNOWLEDGEMENTS</div>
+            <div class="porttext" style="margin: auto; max-width: 800px">
+              mnemo is inspired by the work of
+              <span class="peach">sophia brueckner</span>, particularly
+              <a
+                href="https://www.sophiabrueckner.com/embodisuit.html"
+                class="nav"
+                style="text-decoration: underline"
+                >embodisuit</a
+              >
+              and
+              <a
+                href="https://www.sophiabrueckner.com/amulet.html"
+                class="nav"
+                style="text-decoration: underline"
+                >empathy amulet</a
+              >, <br /><span class="peach">benjamin cabé</span>'s
+              <a
+                href="https://blog.benjamin-cabe.com/2021/08/03/how-i-built-a-connected-artificial-nose"
+                class="nav"
+                style="text-decoration: underline"
+                >artificial nose</a
+              >, and <span class="peach">supersense</span>'s
+              <a
+                href="https://supersense.com/smell-memory-kit/"
+                class="nav"
+                style="text-decoration: underline"
+                >smell memory kit</a
+              >, among others.<br /><br />
+            </div>
+            <div class="porttext" style="margin: auto; max-width: 800px">
+              thanks to:<br />
+              <span class="peach">Mike Donohue</span>, capstone advisor<br />
+              <span class="peach">Jamie Carroll</span> and the Brown Joint
+              Engineering and Physics Instrument Shop,<br /><span class="peach"
+                >Daniel Stupar</span
+              >
+              for fabrication tips<br />
+              <span class="peach">Brown Design Workshop</span>,
+              <span class="peach">School of Engineering</span>,
+              <span class="peach">Visual Arts Department</span>,<br /><span
+                class="peach"
+                >Creative Arts and Technology Spaces</span
+              >
+              for fabrication facilities<br />
+              <span class="peach">Eric Ewing</span>,
+              <span class="peach">Louise Manfredi</span> for brainstorming
+              help<br /><br />
+            </div>
+            <div class="porttext" style="margin: auto; max-width: 800px">
+              funded by:<br />
+              <span class="peach"
+                >Brown School of Engineering Hazeltine Grant</span
+              >, with special thanks to
+              <span class="peach">Barrett Hazeltine</span><br />
+              <span class="peach">Brown Arts Institute Student Grant</span>
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="challenges"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> CHALLENGES</div>
-	<div class="rev-img-flex-container" style="justify-content: center; align-items: center; gap: 1rem; height:">
-		<div class="porttext">
-			<span class="headline">HOUSING</span><br>
-			the housing must open to allow the electronics to be inserted, then closed and secured. different manufacturing techniques and suppliers resulted in different tolerances, and with such small parts more attention must be paid to how they fit together. in this case, the parts are designed for manufacturing by aluminum SLS, which allows for more complex geometry. however, at large scale, they could be cast.<br><br>
-		</div>
-		<img src="mnemo/housing_top.jpg" style="width:100%;max-width:54vh;height:auto;">
-	</div>
-	<div style="height:12px;"></div>
-	<div class="rev-img-flex-container" style="justify-content: center; align-items: center; gap: 1rem;">
-		<div class="porttext">
-			<span class="headline">HARDWARE</span><br>
-			sometimes, not everything is plug-and-play. CAP1188 and AT42QT1010 touch breakouts were used before settling on the AT42QT1070, which has the least accidental capacitive triggers from EMI. even still, a debounce was added in the sensor code to prevent re-triggering from the same touch. with additional time, a housing would be designed for the raspberry pi and GPS module, which performs best with line of sight of the sky.<br><br>
-		</div>
-		<img src="mnemo/touch_sensors.jpg" style="width:100%;max-width:54vh;height: auto;">
-	</div>
-	<div style="height:12px;"></div>
-	<div class="rev-img-flex-container" style="justify-content: center; align-items: center; gap: 1rem;">
-		<div class="porttext">	
-			<span class="headline">SOFTWARE</span><br>
-			manual transfer, typically via ssh over wifi, is required to transfer files from the raspberry pi to the machine with the desktop application. with more time, a web server could be created to allow the data to be uploaded from the pi directly over wifi. the desktop software would then retrieve the data, with user authentication for multiple users.<br><br>
-		</div>
-		<img src="mnemo/file_selection.jpg" style="width:100%;max-width:54vh;height: auto;">
-	</div>
-	<div style="height:12px;"></div>	
-	<img src="mnemo/new_fileflow.jpg" style="width:100%;max-width:60vw;display:block;margin-left:auto;margin-right:auto;">
-	<div class="porttext" style="margin-top:10px;text-indent:0;margin-left:auto;margin-right:auto;text-align:center;">current file flow vs. theoretical flow with web server (blue)</div>
-	<div style="height:48px;"></div>
-	<div class="porttext" style="margin:auto;">	
-		<span class="headline">mnemo was a challenge not only in hardware and software development, but integration.</span><br><br>if done again, perhaps a different approach would be taken with the housing design to avoid the front seam, or different software infrastructure design. various levels of translation are needed between different data sources, platforms, and languages. of course, the ability to develop more and more hardware in house could reduce the amount of translation needed compared to off-the-shelf components. 
-	</div>
-</div>
+      <div style="height: 24px"></div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="photos"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> PRODUCT PHOTOS</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="mnemo/dp2_angle.jpg" class="imgborder sideimg" style="height:auto;">
-		<img src="mnemo/dp2_far.jpg" class="imgborder sideimg" style="height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<img src="mnemo/dp2_mid.jpg" class="imgborder sideimg" style="height:auto;">
-		<img src="mnemo/dp2_side.jpg" class="imgborder sideimg" style="height:auto;">
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-</div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-<div style="height:12px;"></div>
-<div class="stuckanchor" id="acknowledgements"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> ACKNOWLEDGEMENTS</div>
-	<div class="porttext" style="margin:auto;max-width: 800px;">
-		mnemo is inspired by the work of <span class="peach">sophia brueckner</span>, particularly <a href="https://www.sophiabrueckner.com/embodisuit.html" class="nav" style="text-decoration: underline">embodisuit</a> and <a href="https://www.sophiabrueckner.com/amulet.html" class="nav" style="text-decoration: underline">empathy amulet</a>, <br><span class="peach">benjamin cabé</span>'s <a href="https://blog.benjamin-cabe.com/2021/08/03/how-i-built-a-connected-artificial-nose" class="nav" style="text-decoration: underline">artificial nose</a>, and <span class="peach">supersense</span>'s <a href="https://supersense.com/smell-memory-kit/" class="nav" style="text-decoration: underline">smell memory kit</a>, among others.<br><br>
-	</div>
-	<div class="porttext" style="margin:auto;max-width: 800px;">
-		 thanks to:<br>
-		 <span class="peach">Mike Donohue</span>, capstone advisor<br>
-		 <span class="peach">Jamie Carroll</span> and the Brown Joint Engineering and Physics Instrument Shop,<br><span class="peach">Daniel Stupar</span> for fabrication tips<br>
-		 <span class="peach">Brown Design Workshop</span>, <span class="peach">School of Engineering</span>, <span class="peach">Visual Arts Department</span>,<br><span class="peach">Creative Arts and Technology Spaces</span> for fabrication facilities<br>		 
-		 <span class="peach">Eric Ewing</span>, <span class="peach">Louise Manfredi</span> for brainstorming help<br><br>
-	</div>
-	<div class="porttext" style="margin:auto;max-width: 800px;">
-		funded by:<br>
-		 <span class="peach">Brown School of Engineering Hazeltine Grant</span>, with special thanks to <span class="peach">Barrett Hazeltine</span><br>
-		 <span class="peach">Brown Arts Institute Student Grant</span>
-	</div>
-</div>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-</div>
-</div>
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-<div style="height:24px;"></div>
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-</div>
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-<script>
-//topbtn
-mybutton = document.getElementById("topbtn");
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
-
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
-
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
-
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
-
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
-
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

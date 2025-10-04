@@ -1,184 +1,264 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>hidden threads | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>hidden threads | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2021 - SPRING 2022</div>
+        <div class="title"><b>HIDDEN THREADS</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2021 - SPRING 2022</div>
-		<div class="title"><b>HIDDEN THREADS</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <iframe
+            frameborder="0"
+            style="
+              width: 46vw;
+              aspect-ratio: 16/9;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 4px;
+            "
+            src="https://www.instagram.com/p/CdBWSD4jvw6/embed"
+          ></iframe>
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-    <iframe frameBorder="0" style="width:46vw;aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.instagram.com/p/CdBWSD4jvw6/embed"></iframe>
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary">
+              <span class="info">WORK TYPE</span
+              ><button
+                id="thbutton"
+                onclick="teamfunction()"
+                style="padding: 0; margin: 0"
+              >
+                <span class="uhov">team</span>
+                <div id="teamhide" class="teamhide" style="display: none">
+                  : mary bibbey, madison szittai, eugene rhee, sun joo park,
+                  junyan du, jake sheykhet, vivian li
+                </div>
+              </button>
+            </div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>design for america risd | brown
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>30 weeks, ~4 hours/week
+            </div>
+          </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span><button id="thbutton" onclick="teamfunction()" style="padding:0;margin:0;"><span class="uhov">team</span><div id="teamhide" class="teamhide" style="display: none;">: mary bibbey, madison szittai, eugene rhee, sun joo park, junyan du, jake sheykhet, vivian li</div></button></div>
-	<div class="summary"><span class="info">CONTEXT</span>design for america risd | brown</div>
-	<div class="summary"><span class="info">TIME</span>30 weeks, ~4 hours/week</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="textrow portrow" style="padding-left: 2.5em">
+            <div class="porttext" style="margin: auto">
+              <span class="headline" style="font-size: 1.125em"
+                ><b
+                  >our team theorized and constructed an immersive exhibit using
+                  reused and rescued materials to highlight our problematic
+                  relationship with clothes.</b
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-		<span class="headline" style="font-size:1.125em"><b>our team theorized and constructed an immersive exhibit using reused and rescued materials to highlight our problematic relationship with clothes.</b></span>
-	</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <iframe
+            frameborder="0"
+            style="
+              width: 85vw;
+              aspect-ratio: 16/9;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 4px;
+            "
+            src="https://www.instagram.com/p/CdBWSD4jvw6/embed"
+          ></iframe>
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-    <iframe frameBorder="0" style="width:85vw;aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.instagram.com/p/CdBWSD4jvw6/embed"></iframe>
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary">
+            <span class="info">WORK TYPE</span
+            ><button
+              id="thbutton"
+              onclick="teamfunction()"
+              style="padding: 0; margin: 0"
+            >
+              <span class="uhov">team</span>
+              <div id="teamhide" class="teamhide" style="display: none">
+                : mary bibbey, madison szittai, eugene rhee, sun joo park,
+                junyan du, jake sheykhet, vivian li
+              </div>
+            </button>
+          </div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>design for america risd | brown
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>30 weeks, ~4 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span><button id="thbutton" onclick="teamfunction()" style="padding:0;margin:0;"><span class="uhov">team</span><div id="teamhide" class="teamhide" style="display: none;">: mary bibbey, madison szittai, eugene rhee, sun joo park, junyan du, jake sheykhet, vivian li</div></button></div>
-	<div class="summary"><span class="info">CONTEXT</span>design for america risd | brown</div>
-	<div class="summary"><span class="info">TIME</span>30 weeks, ~4 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+        <div class="textrow portrow" style="padding-left: 2.5em">
+          <div class="porttext" style="margin: auto">
+            <span class="headline" style="font-size: 1.125em"
+              ><b
+                >our team theorized and constructed an immersive exhibit using
+                reused and rescued materials to highlight our problematic
+                relationship with clothes.</b
+              ></span
+            >
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-		<span class="headline" style="font-size:1.125em"><b>our team theorized and constructed an immersive exhibit using reused and rescued materials to highlight our problematic relationship with clothes.</b></span>
-	</div>
-</div>
-</div>
+      <div style="height: 24px"></div>
+      <div class="flex-child"></div>
+    </div>
 
-<div style="height:24px;"></div>
-<div class="flex-child"></div>
-</div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-<script>
-//topbtn
-mybutton = document.getElementById("topbtn");
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-//teamhide
-function teamfunction() {
-	var teamhide = document.getElementById("teamhide")
-	if (teamhide.style.display === "none") {
-	teamhide.style.display = "block";
-	} else {
-	teamhide.style.display = "none";
-	}
-}
-</script>
-</body>
+      //teamhide
+      function teamfunction() {
+        var teamhide = document.getElementById("teamhide");
+        if (teamhide.style.display === "none") {
+          teamhide.style.display = "block";
+        } else {
+          teamhide.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>

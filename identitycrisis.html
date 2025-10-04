@@ -1,173 +1,230 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>identity crisis | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>identity crisis | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2019 - SPRING 2020</div>
+        <div class="title"><b>IDENTITY CRISIS</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2019 - SPRING 2020</div>
-		<div class="title"><b>IDENTITY CRISIS</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div
+        class="flex-container desktop-flex"
+        style="align-items: center; justify-content: center"
+      >
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="ic/identitycrisis.png"
+            style="
+              width: 24vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;justify-content:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="ic/identitycrisis.png" style="width:24vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>independent study, memphis
+              university school
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>30 weeks, ~6 hours/week
+            </div>
+          </div>
+          <div style="height: 12px"></div>
+          <div class="textrow portrow" style="padding-left: 2.5em">
+            <div class="porttext" style="margin: auto">
+              <span class="headline" style="font-size: 1.125em"
+                ><b
+                  >a podcast episode on the architectural identity of memphis</b
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>independent study, memphis university school</div>
-	<div class="summary"><span class="info">TIME</span>30 weeks, ~6 hours/week</div>
-</div>
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;"><span class="headline" style="font-size:1.125em"><b>a podcast episode on the architectural identity of memphis</b></span>
-	</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <img
+            src="ic/identitycrisis.png"
+            style="
+              width: 60vw;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+            "
+          />
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	<img src="ic/identitycrisis.png" style="width:60vw;display:block;margin-left:auto;margin-right:auto;">
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>independent study, memphis
+            university school
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>30 weeks, ~6 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>independent study, memphis university school</div>
-	<div class="summary"><span class="info">TIME</span>30 weeks, ~6 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+        <div class="textrow portrow" style="padding-left: 2.5em">
+          <div class="porttext" style="margin: auto">
+            <span class="headline" style="font-size: 1.125em"
+              ><b
+                >a podcast episode on the architectural identity of memphis</b
+              ></span
+            >
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;"><span class="headline" style="font-size:1.125em"><b>a podcast episode on the architectural identity of memphis</b></span>
-	</div>
-</div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="textrow portrow">
+        <div style="height: 12px"></div>
+        <div class="porttext" style="margin: auto">
+          <span class="peach">Identity Crisis</span> is about the heyday and now
+          decline of Memphis’s <b>mid-century architecture</b>. writing and
+          research included referencing archives, adding and scrapping topics,
+          and revising the script for recording.
+        </div>
+      </div>
 
-<div class="textrow portrow">
-	<div style="height:12px;"></div>
-	<div class="porttext" style="margin:auto;"> 
-		<span class="peach">Identity Crisis</span> is about the heyday and now decline of Memphis’s <b>mid-century architecture</b>.
-		writing and research included referencing archives, adding and scrapping topics, and revising the script for recording.
-	</div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div style="font-size: 1.25em; line-height: 160%; text-align: center">
+        <a
+          href="https://www.tinyurl.com/IdCrisisPodcast"
+          class="nav"
+          style="text-decoration: underline"
+          >DOWNLOAD LINK</a
+        >
+      </div>
 
-<div style="font-size:1.25em; line-height:160%; text-align: center;"><a href="https://www.tinyurl.com/IdCrisisPodcast" class="nav" style="text-decoration: underline">DOWNLOAD LINK</a></div>
+      <div style="height: 24px"></div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-<div style="height:24px;"></div>
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-</div>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-<script>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-//topbtn
-mybutton = document.getElementById("topbtn");
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
-
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
-
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>

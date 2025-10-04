@@ -1,285 +1,416 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>fireflie | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>fireflie | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="titlerow barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="titlerow">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div class="date">FALL 2024</div>
+        <div class="title"><b>FIREFLIE</b></div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="date">FALL 2024</div>
-		<div class="title"><b>FIREFLIE</b></div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="flex-container desktop-flex" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <iframe
+            frameborder="0"
+            style="
+              aspect-ratio: 16/9;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 4px;
+            "
+            src="https://www.youtube.com/embed/ldethCrlq-k?autoplay=1&loop=1&playlist=ldethCrlq-k&controls=0&mute=1&modestbranding=1&showinfo=0&rel=0"
+            allow="autoplay"
+            class="portblip-img"
+          ></iframe>
+        </div>
 
-<div class="flex-container desktop-flex" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	    <iframe frameBorder="0" style="aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.youtube.com/embed/ldethCrlq-k?autoplay=1&loop=1&playlist=ldethCrlq-k&controls=0&mute=1&modestbranding=1&showinfo=0&rel=0" allow="autoplay" class="portblip-img"></iframe>
-</div>
+        <div style="width: 48%; margin-left: 2em">
+          <div class="textrowb" style="padding-left: 8px">
+            <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+            <div class="summary">
+              <span class="info">CONTEXT</span>engn2912u, brown university
+            </div>
+            <div class="summary">
+              <span class="info">TIME</span>3 months, ~14 hours/week
+            </div>
+          </div>
 
-<div style="width:48%;margin-left:2em;">
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>engn2912u, brown university</div>
-	<div class="summary"><span class="info">TIME</span>3 months, ~14 hours/week</div>
-</div>
+          <div style="height: 12px"></div>
+          <div class="textrow portrow" style="padding-left: 2.5em">
+            <div class="porttext" style="margin: auto">
+              <span class="headline" style="font-size: 1.125em"
+                ><b
+                  >a spiritual successor to the
+                  <a href="/pointillist" style="color: #ffa599"
+                    ><u>pointillist quad</u></a
+                  >, fireflie uses a virtual canvas in 3D space to light paint
+                  recreations of famous art.</b
+                ></span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>a spiritual successor to the <a href="/pointillist" style="color: #FFA599;"><u>pointillist quad</u></a>, fireflie uses a virtual canvas in 3D space to light paint recreations of famous art.</b></span>
-	</div>
-</div>
-</div>
-</div>
+      <div class="mobile" style="align-items: center">
+        <div class="textrow" style="padding-top: 0px">
+          <iframe
+            frameborder="0"
+            style="
+              aspect-ratio: 16/9;
+              display: block;
+              margin-left: auto;
+              margin-right: auto;
+              padding: 4px;
+            "
+            src="https://www.youtube.com/embed/ldethCrlq-k?autoplay=1&loop=1&playlist=ldethCrlq-k&controls=0&mute=1&modestbranding=1&showinfo=0&rel=0"
+            allow="autoplay"
+            class="portblip-img"
+          ></iframe>
+        </div>
 
-<div class="mobile" style="align-items:center;">
-<div class="textrow" style="padding-top:0px;">
-	    <iframe frameBorder="0" style="aspect-ratio:16/9;display:block;margin-left:auto;margin-right:auto;padding:4px;" src="https://www.youtube.com/embed/ldethCrlq-k?autoplay=1&loop=1&playlist=ldethCrlq-k&controls=0&mute=1&modestbranding=1&showinfo=0&rel=0" allow="autoplay" class="portblip-img"></iframe>
-</div>
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="summary"><span class="info">WORK TYPE</span>solo</div>
+          <div class="summary">
+            <span class="info">CONTEXT</span>engn2912u, brown university
+          </div>
+          <div class="summary">
+            <span class="info">TIME</span>3 months, ~14 hours/week
+          </div>
+        </div>
 
-<div class="textrowb" style="padding-left:8px">
-	<div class="summary"><span class="info">WORK TYPE</span>solo</div>
-	<div class="summary"><span class="info">CONTEXT</span>engn2912u, brown university</div>
-	<div class="summary"><span class="info">TIME</span>3 months, ~14 hours/week</div>
-</div>
+        <div style="height: 12px"></div>
+        <div class="textrow portrow" style="padding-left: 2.5em">
+          <div class="porttext" style="margin: auto">
+            <span class="headline" style="font-size: 1.125em"
+              ><b
+                >a spiritual successor to the
+                <a href="/pointillist" style="color: #ffa599"
+                  ><u>pointillist quad</u></a
+                >, fireflie uses a virtual canvas in 3D space to light paint
+                recreations of famous art.</b
+              ></span
+            >
+          </div>
+        </div>
+      </div>
 
-<div style="height:12px;"></div>
-<div class="textrow portrow" style="padding-left:2.5em;">
-	<div class="porttext" style="margin:auto;">
-	<span class="headline" style="font-size:1.125em"><b>a spiritual successor to the <a href="/pointillist" style="color: #FFA599;"><u>pointillist quad</u></a>, fireflie uses a virtual canvas in 3D space to light paint recreations of famous art.</b></span>
-	</div>
-</div>
-</div>
+      <div style="height: 12px"></div>
 
-<div style="height:12px;"></div>
+      <div class="stuckcontainer">
+        <div class="stucknav-container">
+          <a href="#report" class="nav"><div class="stucknav">> REPORT</div></a>
+          <a href="#tests" class="nav"
+            ><div class="stucknav">> EXAMPLE TESTS</div></a
+          >
+          <a href="#final" class="nav"
+            ><div class="stucknav">> FINAL RESULTS</div></a
+          >
+        </div>
 
-<div class="stuckcontainer">
-<div class="stucknav-container">
-<a href="#report" class="nav"><div class="stucknav">> REPORT</div></a>
-<a href="#tests" class="nav"><div class="stucknav">> EXAMPLE TESTS</div></a>
-<a href="#final" class="nav"><div class="stucknav">> FINAL RESULTS</div></a>
-</div>
+        <div class="stuckcolumn">
+          <div class="stuckanchor" id="report"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">REPORT</div>
+            <div class="porttext" style="margin: auto">
+              a comprehensive detailing of the project is provided in the
+              following report.<br /><br />additional test documentation and
+              final results can be found further below on this page.
+              <br /><br />
+            </div>
+            <embed
+              src="fireflie.pdf"
+              style="
+                display: block;
+                width: 100%;
+                max-width: 50em;
+                margin: auto;
+                aspect-ratio: 8.5/11;
+              "
+            />
+            <div style="height: 32px"></div>
+          </div>
 
-<div class="stuckcolumn">
-<div class="stuckanchor" id="report"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> REPORT</div>
-	<div class="porttext" style="margin:auto;">
-	a comprehensive detailing of the project is provided in the following report.<br><br>additional test documentation and final results can be found further below on this page.
-	<br><br>
-	</div>
-	<embed src="fireflie.pdf" style="display:block;width:100%;max-width:50em;margin:auto;aspect-ratio:8.5/11;"/>
-	<div style="height:32px;"></div>
-</div>
+          <div class="stuckanchor" id="tests"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">EXAMPLE TESTS</div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <div>
+                <img
+                  src="fireflie/test1.png"
+                  class="imgborder"
+                  style="height: 280px; width: auto"
+                />
+              </div>
+              <div>
+                <div class="porttext" style="margin: auto; padding-left: 6em">
+                  <span class="headline">INDIVIDUAL PLANES</span>
+                  <br />
+                  with drones in individual planes, the most stable flight is
+                  observed. in this test, every trajectory was flown to start
+                  and end at the same times. as observed in the red trajectory,
+                  a certain set velocity provides more stable flight. slower
+                  velocities in the shorter paths cause instability.
+                  <br /><br />
+                </div>
+              </div>
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <div>
+                <img
+                  src="fireflie/test2.png"
+                  class="imgborder"
+                  style="height: 300px; width: auto"
+                />
+              </div>
+              <div>
+                <div class="porttext" style="margin: auto; padding-left: 6em">
+                  <span class="headline">TWO DRONES PER PLANE</span>
+                  <br />
+                  with two drones per plane, trajectories can be preserved
+                  without losing any drones. however, significant downwash
+                  effects are observed, causing wavy lines.
+                  <br /><br />
+                </div>
+              </div>
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 32px"></div>
+          </div>
 
-<div class="stuckanchor" id="tests"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> EXAMPLE TESTS</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div>
-			<img src="fireflie/test1.png" class="imgborder" style="height:280px;width:auto;">
-		</div>
-		<div>
-			<div class="porttext" style="margin:auto;padding-left:6em;">
-			<span class="headline">INDIVIDUAL PLANES</span>
-			<br>
-			with drones in individual planes, the most stable flight is observed. in this test, every trajectory was flown to start and end at the same times.
-			as observed in the red trajectory, a certain set velocity provides more stable flight. slower velocities in the shorter paths cause instability.
-			<br><br>
-			</div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div>
-			<img src="fireflie/test2.png" class="imgborder" style="height:300px;width:auto;">
-		</div>
-		<div>
-			<div class="porttext" style="margin:auto;padding-left:6em;">
-			<span class="headline">TWO DRONES PER PLANE</span>
-			<br>
-			with two drones per plane, trajectories can be preserved without losing any drones. however, significant downwash effects are observed, causing wavy lines.
-			<br><br>
-			</div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:32px;"></div>
-</div>
+          <div class="stuckanchor" id="final"></div>
+          <div class="textrow portrow">
+            <div class="nstitle">FINAL WORKS</div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <div>
+                <img
+                  src="fireflie/composition.jpg"
+                  class="imgborder"
+                  style="
+                    display: block;
+                    height: 20vw;
+                    max-height: 300px;
+                    width: auto;
+                    margin: auto;
+                  "
+                />
+                <div class="porttext" style="text-align: center">
+                  <span class="headline"
+                    ><i>Composition II in Red, Blue, and Yellow</i>, Piet
+                    Mondrian</span
+                  >
+                </div>
+              </div>
+              <div>
+                <img
+                  src="fireflie/mondrian.png"
+                  class="imgborder"
+                  style="
+                    display: block;
+                    height: 20vw;
+                    max-height: 300px;
+                    width: auto;
+                    margin: auto;
+                  "
+                />
+                <div class="porttext" style="text-align: center">
+                  <span class="headline">...adapted using fireflie</span>
+                </div>
+              </div>
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div class="flex-container" style="align-items: center">
+              <div class="flex-child" style="height: 70px"></div>
+              <div>
+                <img
+                  src="pointillist/starry_original.jpg"
+                  class="imgborder"
+                  style="
+                    display: block;
+                    height: 20vw;
+                    max-height: 300px;
+                    width: auto;
+                    margin: auto;
+                  "
+                />
+                <div class="porttext" style="text-align: center">
+                  <span class="headline"
+                    ><i>The Starry Night</i>, Vincent van Gogh</span
+                  >
+                </div>
+              </div>
+              <div>
+                <img
+                  src="fireflie/vangogh.png"
+                  class="imgborder"
+                  style="
+                    display: block;
+                    height: 20vw;
+                    max-height: 300px;
+                    width: auto;
+                    margin: auto;
+                  "
+                />
+                <div class="porttext" style="text-align: center">
+                  <span class="headline">...adapted using fireflie</span>
+                </div>
+              </div>
+              <div class="flex-child" style="height: 70px"></div>
+            </div>
+            <div style="height: 32px"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="stuckanchor" id="final"></div>
-<div class="textrow portrow">
-	<div class="nstitle"> FINAL WORKS</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div>
-			<img src="fireflie/composition.jpg" class="imgborder" style="display:block;height:20vw;max-height:300px;width:auto;margin:auto;">
-			<div class="porttext" style="text-align:center;">
-			<span class="headline"><i>Composition II in Red, Blue, and Yellow</i>, Piet Mondrian</span>
-			</div>
-		</div>
-		<div>
-			<img src="fireflie/mondrian.png" class="imgborder" style="display:block;height:20vw;max-height:300px;width:auto;margin:auto;">
-			<div class="porttext" style="text-align:center;">
-			<span class="headline">...adapted using fireflie</span>
-			</div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div class="flex-container" style="align-items:center;">
-		<div class="flex-child" style="height:70px"></div>
-		<div>
-			<img src="pointillist/starry_original.jpg" class="imgborder" style="display:block;height:20vw;max-height:300px;width:auto;margin:auto;">
-			<div class="porttext" style="text-align:center;">
-			<span class="headline"><i>The Starry Night</i>, Vincent van Gogh</span>
-			</div>
-		</div>
-		<div>
-			<img src="fireflie/vangogh.png" class="imgborder" style="display:block;height:20vw;max-height:300px;width:auto;margin:auto;">
-			<div class="porttext" style="text-align:center;">
-			<span class="headline">...adapted using fireflie</span>
-			</div>
-		</div>
-		<div class="flex-child" style="height:70px"></div>
-	</div>
-	<div style="height:32px;"></div>
-</div>
+      <div style="height: 24px"></div>
+      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+      <div style="height: 24px"></div>
+    </div>
 
-</div>
-</div>
+    <script>
+      //topbtn
+      mybutton = document.getElementById("topbtn");
 
-<div style="height:24px;"></div>
-<button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-<div style="height:24px;"></div>
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
 
-</div>
+      //collapsible
+      var coll = document.getElementsByClassName("collapsible");
+      var i;
 
-<script>
-//topbtn
-mybutton = document.getElementById("topbtn");
+      for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          var content = this.nextElementSibling;
+          if (content.style.display === "block") {
+            content.style.display = "none";
+          } else {
+            content.style.display = "block";
+          }
+        });
+      }
 
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-//collapsible
-var coll = document.getElementsByClassName("collapsible");
-var i;
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-for (i = 0; i < coll.length; i++) {
-  coll[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    var content = this.nextElementSibling;
-    if (content.style.display === "block") {
-      content.style.display = "none";
-    } else {
-      content.style.display = "block";
-    }
-  });
-}
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
-
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-//teamhide
-function teamfunction() {
-	var teamhide = document.getElementById("teamhide")
-	if (teamhide.style.display === "none") {
-	teamhide.style.display = "block";
-	} else {
-	teamhide.style.display = "none";
-	}
-}
-</script>
-</body>
+      //teamhide
+      function teamfunction() {
+        var teamhide = document.getElementById("teamhide");
+        if (teamhide.style.display === "none") {
+          teamhide.style.display = "block";
+        } else {
+          teamhide.style.display = "none";
+        }
+      }
+    </script>
+  </body>
 </html>
