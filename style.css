@@ -55,38 +55,6 @@ body::-webkit-scrollbar {
 	background-clip: content-box;
 }
 
-.indexbar {
-	width:100vw;
-	height: .5em;
-	background-color: var(--scrollcolor);
-	position: fixed;
-	z-index: 3;
-}
-
-.workbar {
-	width:100vw;
-	height: .5em;
-	background-color: #69BADD;
-	position: fixed;
-	z-index: 3;
-}
-
-.aboutbar {
-	width:100vw;
-	height: .5em;
-	background-color: #FFA599;
-	position: fixed;
-	z-index: 3;
-}
-
-.miscbar {
-	width:100vw;
-	height: .5em;
-	background-color: #824C71;
-	position: fixed;
-	z-index: 3;
-}
-
 .navback-1 {
 	width:100vw;
 	height: 6em;
@@ -103,7 +71,6 @@ body::-webkit-scrollbar {
 	position: fixed;
 	z-index: 2;
 }
-
 
 .aboutwrap {
 	padding-left:30px;
@@ -154,44 +121,18 @@ body::-webkit-scrollbar {
 	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
 }
 
-.textrowb-top {
-	padding-top: 10px;
-	padding-bottom: 10px;
-	background-color: #000000;
-	opacity: 1;
-	background-size: 8px 8px;
-	background-image: repeating-linear-gradient(135deg, #33211f 0, #33211f 0.8px, #000000 0, #000000 50%);
-}
-
-.titlerow {
-	padding:0px;
-}
-
-.spacerrow {
-	padding:0px;
-	background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%2378c0e0' fill-opacity='0.48' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
-}
-
 .portrow{
-	padding-left:8px;
-	padding-right:8px;
-}
-
-.divider {
-	width: 4px;
-	margin: 0;
-	background-color: #006494;
+	padding-left:0.5rem;
+	padding-right:0.5rem;
 }
 
 .spacer {
-	width: 8px;
-	margin: 0;
+	width: 0.5rem;
 }
 
 .hspacer {
-	width: 8px;
-	height: 8px;
-	margin: 0;
+	width: 0.5rem;
+	height: 0.5rem;
 }
 
 .flex-container, .img-flex-container, .rev-img-flex-container {
@@ -211,25 +152,6 @@ body::-webkit-scrollbar {
 	opacity:0;
 	cursor:pointer;
 	--all:0px;
-	/*
-	--b:#33211f;
-	background:
-     linear-gradient(  45deg, var(--b) 0 calc(var(--bottom-left,var(--all))) ,transparent 0) bottom left /50% 50%,
-     linear-gradient( -45deg, var(--b) 0 calc(var(--bottom-right,var(--all)) + 4px),transparent 0) bottom right/50% 50%,
-     linear-gradient( 135deg, var(--b) 0 calc(var(--top-left,var(--all)) + 4px)    ,transparent 0) top left    /50% 50%,
-     linear-gradient(-135deg, var(--b) 0 calc(var(--top-right,var(--all)))   ,transparent 0) top right   /50% 50%;
-	background-origin:border-box;
-	background-repeat:no-repeat;
-	-webkit-mask:
-     linear-gradient(  45deg, transparent 0 var(--bottom-left,var(--all)) ,#fff 0) bottom left,
-     linear-gradient( -45deg, transparent 0 var(--bottom-right,var(--all)),#fff 0) bottom right,
-     linear-gradient( 135deg, transparent 0 var(--top-left,var(--all))    ,#fff 0) top left,
-     linear-gradient(-135deg, transparent 0 var(--top-right,var(--all))   ,#fff 0) top right;
-	-webkit-mask-size:50.5% 50.5%;
-	-webkit-mask-repeat:no-repeat;
-	--top-left:20px;
-	--bottom-right:20px;
-	*/
 }
 
 .stackflex-container:hover {
@@ -237,18 +159,6 @@ body::-webkit-scrollbar {
 	--b: #FFA599;
 	box-shadow: 0 0 8px 2px #FFA599;
 	transition: 0.15s;
-}
-
-.stackflex-approach-text {
-	display: flex;
-	justify-content: center;
-	flex-wrap: wrap;
-	position: relative;
-	width:100%;
-	padding-top:8px;
-	padding-bottom:8px;
-	align-items: center;
-	opacity:0;
 }
 
 .archstackflex-container {
@@ -321,7 +231,6 @@ a.archnav:hover {
 	color: #99635d;
 }
 
-
 a.link {
 	color: #FFA599;
 }
@@ -341,11 +250,6 @@ html {
 .portitem{
 	max-height:auto;
 	max-width:33.25em;
-}
-
-.portitem2{
-	max-height:auto;
-	width:33.25em;
 }
 
 .architem{
@@ -372,19 +276,6 @@ html {
 	box-shadow: 0 0 8px 2px #FFA599;
 }
 
-.approachitem{
-	display: block;
-	text-align:center;
-	flex-wrap: wrap;
-	position: relative;
-	width:100%;
-	padding-top:8px;
-	padding-bottom:8px;
-	padding-left:12px;
-	padding-right:12px;
-	align-items: center;
-}
-
 .approachitemport{
 	display: block;
 	text-align:center;
@@ -396,18 +287,6 @@ html {
 	padding-left:8px;
 	padding-right:16px;
 	align-items: center;
-}
-
-.portimg{
-	position: relative;
-	z-index:0;
-	aspect-ratio:4/3;
-	width:100%;
-	max-width:31.25em;
-	max-height:23.75em;
-	padding:4px;
-	object-fit: cover;
-	cursor:pointer;
 }
 
 .tripleportimg{
@@ -430,29 +309,6 @@ html {
 	max-width:31.25em;
 	padding:4px;
 	object-fit: cover;
-}
-
-.porttitle{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	font-size:2.5em;
-	background-color: rgba(0,0,0,0.5);
-	cursor:pointer;
-}
-
-.vignette {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  box-shadow: 0 0 200px rgba(0,0,0,0.9) inset;
-}
-
-span.white {
-	color:#FFFFFF;
 }
 
 span.info {
@@ -478,7 +334,7 @@ span.mono {
 }
 
 .imgborder {
-  padding:8px;
+  padding:0.5rem;
 }
 
 .sideimg{
@@ -494,6 +350,7 @@ span.mono {
 	margin-left: 40px;
     text-indent: -40px;
 }
+
 .anchor {
     display: block;
     height: 34px;
@@ -638,6 +495,8 @@ span.nowrap {
 
 .desktop-flex{
 	display:flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .date{

@@ -1,463 +1,566 @@
 <!DOCTYPE html>
 <html>
-<head>
-<link rel="stylesheet" href="reset.css">
-<link rel="stylesheet" href="style.css">
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<title>archive | ryan peng</title>
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+  <head>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>archive | ryan peng</title>
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-HT7J4N3722"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-  gtag('config', 'G-HT7J4N3722');
-</script>
-</head>
-<body>
+      gtag("config", "G-HT7J4N3722");
+    </script>
+  </head>
+  <body>
+    <div class="navback-1"></div>
+    <div class="navback-2"></div>
+    <div class="workwrap">
+      <button class="hamburger" id="hamburger"></button>
+      <div class="barnav" style="height: 30px"></div>
 
-<div class="navback-1"></div>
-<div class="navback-2"></div>
-<div class="workwrap">
+      <div class="barnav fixed-top">
+        <div class="flex-container" style="width: calc(100vw - 60px)">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="flex-child"></div>
+          <div class="headernav"><a href="/#work" class="nav">work</a></div>
+          <div class="spacer" style="width: 6vw"></div>
+          <div class="headernav"><a href="/about" class="nav">about</a></div>
+          <div style="width: 2em" class="spacer"></div>
+          <div class="spacer"></div>
+        </div>
+      </div>
 
-<button class="hamburger" id="hamburger"></button>
-<div class="barnav" style="height: 30px"></div>
+      <div class="barnav" style="height: 60px"></div>
 
-<div class="titlerow barnav fixed-top">
-	<div class="flex-container" style="width: calc(100vw - 60px)">
-		<div class="spacer"></div>
-		<div class="spacer"></div>
-		<div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-		<div class="spacer" style="width: 6vw"></div>
-		<div class="flex-child"></div>
-		<div class="headernav"><a href="/#work" class="nav">work</a></div>
-		<div class="spacer" style="width:6vw"></div>
-		<div class="headernav"><a href="/about" class="nav">about</a></div>
-		<div style="width:2em" class="spacer"></div>
-		<div class="spacer"></div>
-	</div>
-</div>
-	
-<div class="barnav" style="height:60px;"></div>
+      <div class="modal" id="modal-content" style="display: none">
+        <div class="flex-container">
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+            <a href="/" class="nav">RYAN PENG</a>
+          </div>
+          <div class="spacer"></div>
+          <div class="spacer"></div>
+          <div class="flex-child"></div>
+          <div style="font-size: 2.875em; line-height: 220%">
+            <a href="/about" class="nav">about</a>
+          </div>
+          <div class="flex-child"></div>
+          <div style="font-size: 2.875em; line-height: 220%">
+            <a id="hamwork" href="/#work" class="nav">work</a>
+          </div>
+          <div class="flex-child"></div>
+          <div style="font-size: 2.875em; line-height: 220%">
+            <a href="/archive" class="nav">archive</a>
+          </div>
+          <div class="flex-child"></div>
+        </div>
+      </div>
 
-<div class="modal" id ="modal-content" style="display:none;">
-	<div class="titlerow">
-		<div class="flex-container">
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div style="font-size:3.5em; line-height:150%; padding-top:4px"><a href="/" class="nav">RYAN PENG</a></div>
-			<div class="spacer"></div>
-			<div class="spacer"></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%;"><a href="/about" class="nav">about</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a id="hamwork" href="/#work" class="nav">work</a></div>
-			<div class="flex-child"></div>
-			<div style="font-size:2.875em; line-height:220%"><a href="/archive" class="nav">archive</a></div>
-			<div class="flex-child"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow barnav">
+        <div style="height: 10px"></div>
+      </div>
+      <div class="textrow mobile" style="height: 5.5em"></div>
 
-<div class="textrow barnav">
-	<div style="height:10px"></div>
-</div>
-<div class="textrow mobile" style="height:5.5em"></div>
+      <div class="textrowb" style="padding-left: 8px">
+        <div
+          class="title"
+          style="color: #000000; -webkit-text-stroke: 0.01em #ffa599"
+        >
+          <b>THE ARCHIVE</b>
+        </div>
+      </div>
 
-<div class="textrowb" style="padding-left:8px">
-		<div class="title" style="color: #000000;-webkit-text-stroke: 0.01em #FFA599;"><b>THE ARCHIVE</b></div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%"><b>> 2024</b></div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='zestweb'"
+          >
+            <div class="portitem">
+              <div id="zesth" style="position: relative; text-align: center">
+                <img src="zest/dualmockup.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">ZEST SHIPPING</div>
+              <div style="margin-left: 4px">
+                iteration | user flows | hi-fi mockups
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                expanding options for a corporate gifting e-commerce startup
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem archflex"
+            onclick="document.location.href='fragrantica-redesign'"
+          >
+            <div class="portitem">
+              <div
+                id="fragranticah"
+                style="position: relative; text-align: center"
+              >
+                <img src="fragrantica/macmockup.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">FRAGRANTICA REDESIGN</div>
+              <div style="margin-left: 4px">wireframing | accessibility</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                reimagining a dated website for fragrance enthusiasts
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+      </div>
 
-<!--
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2023</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='clearcare'">
-			<div class="portitem">
-				<div id="ccch" style="position:relative;text-align:center;">
-					<img src="ccc/snapshot.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">CLEAR CARE CASE</div>
-				<div style="margin-left:4px;">solidworks</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">recreating an everyday object</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-	</div>
-</div>
--->
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%"><b>> 2023</b></div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='treereq'"
+          >
+            <div class="portitem">
+              <div id="treereqh" style="position: relative; text-align: center">
+                <img src="treereq/treereqthumb.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">TREEREQ</div>
+              <div style="margin-left: 4px">typescript | mern | python</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                rethinking course planning using hypertext and full-stack
+                development
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem archflex"
+            onclick="document.location.href='clearcare'"
+          >
+            <div class="portitem">
+              <div id="ccch" style="position: relative; text-align: center">
+                <img src="ccc/snapshot.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">CLEAR CARE CASE</div>
+              <div style="margin-left: 4px">solidworks</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                recreating a part of my routine
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2024</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='zestweb'">
-			<div class="portitem">
-				<div id="zesth" style="position:relative;text-align:center;">
-				<img src="zest/dualmockup.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">ZEST SHIPPING</div>
-				<div style="margin-left:4px;">iteration | user flows | hi-fi mockups</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">expanding options for a corporate gifting e-commerce startup</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem archflex" onclick="document.location.href='fragrantica-redesign'">
-			<div class="portitem">
-				<div id="fragranticah" style="position:relative;text-align:center;">
-				<img src="fragrantica/macmockup.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">FRAGRANTICA REDESIGN</div>
-				<div style="margin-left:4px;">wireframing | accessibility</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">reimagining a dated website for fragrance enthusiasts</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%"><b>> 2022</b></div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div class="architem archflex" onclick="document.location.href='twa'">
+            <div class="portitem">
+              <img src="twa/twathumb.jpg" class="archimg" />
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">TWA MODEL</div>
+              <div style="margin-left: 4px">rhino | architecture research</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">mapping an iconic terminal</div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem archflex"
+            onclick="document.location.href='steamrave2'"
+          >
+            <div class="portitem">
+              <div id="sraveh" style="position: relative; text-align: center">
+                <img src="srave/thumb.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">STEAMrave 2.0</div>
+              <div style="margin-left: 4px">projection design | rigging</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                an interactive multimedia installation
+                <span class="nowrap">(with a ghost!)</span>
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+        <div
+          class="archstackflex-container"
+          style="width: 100%; padding-bottom: 8px; align-items: center"
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='hiddenthreads'"
+          >
+            <div class="portitem">
+              <div id="sraveh" style="position: relative; text-align: center">
+                <img
+                  src="hthreads/hthreadsthumb.png"
+                  class="archimg"
+                  style="object-fit: scale-down"
+                />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">HIDDEN THREADS</div>
+              <div style="margin-left: 4px">
+                exhibition design & fabrication |
+                <span class="nowrap">industry research</span>
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                immersive exhibition exploring the impact of our wardrobes on
+                the environment <span class="nowrap">& our health</span>
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2023</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='treereq'">
-			<div class="portitem">
-				<div id="treereqh" style="position:relative;text-align:center;">
-				<img src="treereq/treereqthumb.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">TREEREQ</div>
-				<div style="margin-left:4px;">typescript | mern | python</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">rethinking course planning using hypertext and full-stack development</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem archflex" onclick="document.location.href='clearcare'">
-			<div class="portitem">
-				<div id="ccch" style="position:relative;text-align:center;">
-				<img src="ccc/snapshot.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">CLEAR CARE CASE</div>
-				<div style="margin-left:4px;">solidworks</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">recreating a part of my routine</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-	</div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%"><b>> 2021</b></div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='thestars'"
+          >
+            <div class="portitem">
+              <div id="starh" style="position: relative; text-align: center">
+                <img src="stars/thumb.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">THE STARS</div>
+              <div style="margin-left: 4px">electronics | rigging</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                a time-based light, sound, and choral music installation
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div class="architem archflex" onclick="document.location.href='2be'">
+            <div class="portitem">
+              <div id="tubeh" style="position: relative; text-align: center">
+                <img src="2be/2bethumb.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">2BE</div>
+              <div style="margin-left: 4px">design research | fusion 360</div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                reinventing using design thinking and research
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+        <div
+          class="archstackflex-container"
+          style="width: 100%; padding-bottom: 8px; align-items: center"
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='archair'"
+          >
+            <div class="portitem">
+              <div id="arh" style="position: relative; text-align: center">
+                <img
+                  src="archair.png"
+                  class="archimg"
+                  style="object-fit: scale-down"
+                />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">
+                AR<sup style="font-size: 25px">2</sup> CHAIR
+              </div>
+              <div style="margin-left: 4px">
+                ideation | prototyping | fusion 360
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                design challenge to prototype a compact chair for a minimalist
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+          <div
+            class="architem archflex"
+            onclick="document.location.href='dailights'"
+          >
+            <div class="portitem">
+              <div id="daih" style="position: relative; text-align: center">
+                <img src="dlights/dailights.jpeg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">DAILIGHTS</div>
+              <div style="margin-left: 4px">
+                electronics | laser cutting | fusion 360
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                working proof of concept for a customizable habit calendar
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2022</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<!--
-		<div class="architem archflex" onclick="document.location.href='brasslamp'">
-			<div class="portitem">
-				<div id="blamph" style="position:relative;text-align:center;">
-					<img src="blamp/IMG_9517crop2.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">BRASS LAMP</div>
-				<div style="margin-left:4px;">metalwork | electronics</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">a seamless light form</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		-->
-		<div class="architem archflex" onclick="document.location.href='twa'">
-			<div class="portitem">
-				<img src="twa/twathumb.jpg" class="archimg">
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">TWA MODEL</div>
-				<div style="margin-left:4px;">rhino | architecture research</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">mapping an iconic terminal</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem archflex" onclick="document.location.href='steamrave2'">
-			<div class="portitem">
-			<div id="sraveh" style="position:relative;text-align:center;">
-			<img src="srave/thumb.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">STEAMrave 2.0</div>
-				<div style="margin-left:4px;">projection design | rigging</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">an interactive multimedia installation <span class="nowrap">(with a ghost!)</span></div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-	</div>
-	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='hiddenthreads'">
-			<div class="portitem">
-			<div id="sraveh" style="position:relative;text-align:center;">
-			<img src="hthreads/hthreadsthumb.png" class="archimg" style="object-fit: scale-down;">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">HIDDEN THREADS</div>
-				<div style="margin-left:4px;">exhibition design & fabrication | <span class="nowrap">industry research</span></div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">immersive exhibition exploring the impact of our wardrobes on the environment <span class="nowrap">& our health</span></div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>		
-	</div>
-</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%"><b>> 2020</b></div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='identitycrisis'"
+          >
+            <div class="portitem">
+              <div id="ich" style="position: relative; text-align: center">
+                <img src="ic/icnotext.png" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">IDENTITY CRISIS</div>
+              <div style="margin-left: 4px">
+                podcast writing | recording | editing
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                a podcast episode on the architectural identity of memphis
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+        </div>
+      </div>
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2021</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='thestars'">
-			<div class="portitem">
-				<div id="starh" style="position:relative;text-align:center;">
-				<img src="stars/thumb.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">THE STARS</div>
-				<div style="margin-left:4px;">electronics | rigging</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">a time-based light, sound, and choral music installation</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem archflex" onclick="document.location.href='2be'">
-			<div class="portitem">
-				<div id="tubeh" style="position:relative;text-align:center;">
-				<img src="2be/2bethumb.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">2BE</div>
-				<div style="margin-left:4px;">design research | fusion 360</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">reinventing using design thinking and research</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
+      <div class="textrow" style="padding-left: 8px">
+        <div style="font-size: 2.25em; line-height: 160%">
+          <b>> THEATRE (2017-2021)</b>
+        </div>
+        <div
+          class="archstackflex-container"
+          style="
+            width: 100%;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            align-items: center;
+          "
+        >
+          <div
+            class="architem archflex"
+            onclick="document.location.href='theatre'"
+          >
+            <div class="portitem">
+              <div style="position: relative; text-align: center">
+                <img src="midsummerstage.jpg" class="archimg" />
+              </div>
+            </div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="hspacer barnav"></div>
+            <div class="portitem">
+              <div style="font-size: 2.5em">THEATRE</div>
+              <div style="margin-left: 4px">
+                lighting design | sound design | carpentry
+              </div>
+              <div style="height: 20px"></div>
+              <div style="margin-left: 4px">
+                semesterly shows that translate scripts into complete worlds
+              </div>
+              <div class="mobile" style="height: 20px"></div>
+            </div>
+            <div class="hspacer barnav"></div>
+          </div>
+          <div class="hspacer"></div>
+        </div>
+      </div>
+    </div>
 
-	</div>
-	<div class="archstackflex-container" style="width:100%;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='archair'">
-			<div class="portitem">
-			<div id="arh" style="position:relative;text-align:center;">
-			<img src="archair.png" class="archimg" style="object-fit: scale-down;">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">AR<sup style="font-size:25px;">2</sup> CHAIR</div>
-				<div style="margin-left:4px;">ideation | prototyping | fusion 360</span></div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">design challenge to prototype a compact chair for a minimalist</span></div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-		<div class="architem archflex" onclick="document.location.href='dailights'">
-			<div class="portitem">
-				<div id="daih" style="position:relative;text-align:center;">
-				<img src="dlights/dailights.jpeg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">DAILIGHTS</div>
-				<div style="margin-left:4px;">electronics | laser cutting | fusion 360</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">working proof of concept for a customizable habit calendar</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>		
-	</div>
-</div>
+    <script>
+      //hamburger
+      var hcoll = document.getElementsByClassName("hamburger");
+      var ii;
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> 2020</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='identitycrisis'">
-			<div class="portitem">
-				<div id="ich" style="position:relative;text-align:center;">
-				<img src="ic/icnotext.png" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">IDENTITY CRISIS</div>
-				<div style="margin-left:4px;">podcast writing | recording | editing</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">a podcast episode on the architectural identity of memphis</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-	</div>
-</div>
+      for (ii = 0; ii < hcoll.length; ii++) {
+        hcoll[ii].addEventListener("click", function () {
+          this.classList.toggle("hamactive");
+        });
+      }
 
-<div class="textrow" style="padding-left:8px">
-	<div style="font-size:2.25em; line-height:160%;"><b>> THEATRE (2017-2021)</b></div>
-	<div class="archstackflex-container" style="width:100%;padding-top:8px;padding-bottom:8px;align-items: center;">
-		<div class="architem archflex" onclick="document.location.href='theatre'">
-			<div class="portitem">
-				<div style="position:relative;text-align:center;">
-				<img src="midsummerstage.jpg" class="archimg">
-				</div>
-			</div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="hspacer barnav"></div>
-			<div class="portitem2">
-				<div style="font-size:2.5em;">THEATRE</div>
-				<div style="margin-left:4px;">lighting design | sound design | carpentry</div>
-				<div style="height: 20px"></div>
-				<div style="margin-left:4px;">semesterly shows that translate scripts into complete worlds</div>
-				<div class="mobile" style="height:20px;"></div>
-			</div>
-			<div class="hspacer barnav"></div>
-		</div>
-		<div class="hspacer"></div>
-	</div>
-</div>
+      var hmodal = document.getElementById("modal-content");
+      var hbtn = document.getElementById("hamburger");
 
-</div>
+      hbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
 
-<script>
-//hamburger
-var hcoll = document.getElementsByClassName("hamburger");
-var ii;
-
-for (ii = 0; ii < hcoll.length; ii++) {
-  hcoll[ii].addEventListener("click", function() {
-    this.classList.toggle("hamactive");
-  })};
-
-var hmodal = document.getElementById("modal-content");
-var hbtn = document.getElementById("hamburger");
-
-hbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-var hworkbtn = document.getElementById("hamwork");
-hworkbtn.onclick = function() {
-  if (hmodal.style.display === "flex") {
-      hmodal.style.display = "none";
-	  hbtn.classList.toggle("hamactive");
-    } else {
-      hmodal.style.display = "flex";
-    }
-}
-
-</script>
-</body>
+      var hworkbtn = document.getElementById("hamwork");
+      hworkbtn.onclick = function () {
+        if (hmodal.style.display === "flex") {
+          hmodal.style.display = "none";
+          hbtn.classList.toggle("hamactive");
+        } else {
+          hmodal.style.display = "flex";
+        }
+      };
+    </script>
+  </body>
 </html>
