@@ -97,7 +97,7 @@
           <div class="textrowb" style="padding-left: 8px">
             <div class="summary"><span class="info">WORK TYPE</span>solo</div>
             <div class="summary">
-              <span class="info">CONTEXT</span>fiat lux studio, RISD
+              <span class="info">CONTEXT</span>fiat lux studio, risd
             </div>
             <div class="summary">
               <span class="info">TIME</span>4 months, ~14 hours/week
@@ -137,7 +137,7 @@
         <div class="textrowb" style="padding-left: 8px">
           <div class="summary"><span class="info">WORK TYPE</span>solo</div>
           <div class="summary">
-            <span class="info">CONTEXT</span>fiat lux studio, RISD
+            <span class="info">CONTEXT</span>fiat lux studio, risd
           </div>
           <div class="summary">
             <span class="info">TIME</span>4 months, ~14 hours/week
@@ -470,6 +470,14 @@
       //teamhide
       function teamfunction() {
         var teamhide = document.getElementById("teamhide");
+        if (teamhide.style.display === "none") {
+          teamhide.style.display = "block";
+        } else {
+          teamhide.style.display = "none";
+        }
+      }
+      function teamfunctionM() {
+        var teamhide = document.getElementById("teamhideM");
         if (teamhide.style.display === "none") {
           teamhide.style.display = "block";
         } else {

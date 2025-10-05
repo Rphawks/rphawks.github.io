@@ -154,11 +154,11 @@
             <span class="info">WORK TYPE</span
             ><button
               id="thbutton"
-              onclick="teamfunction()"
+              onclick="teamfunctionM()"
               style="padding: 0; margin: 0"
             >
               <span class="uhov">team</span>
-              <div id="teamhide" class="teamhide" style="display: none">
+              <div id="teamhideM" class="teamhide" style="display: none">
                 : tiffany huang, cynthia wang, sherry zhang
               </div>
             </button>
@@ -595,6 +595,14 @@
       //teamhide
       function teamfunction() {
         var teamhide = document.getElementById("teamhide");
+        if (teamhide.style.display === "none") {
+          teamhide.style.display = "block";
+        } else {
+          teamhide.style.display = "none";
+        }
+      }
+      function teamfunctionM() {
+        var teamhide = document.getElementById("teamhideM");
         if (teamhide.style.display === "none") {
           teamhide.style.display = "block";
         } else {
