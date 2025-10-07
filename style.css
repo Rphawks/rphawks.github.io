@@ -277,6 +277,11 @@ html.is-animating .transition-fade {
 .portitem{
 	max-height:auto;
 	max-width:33.25em;
+	color: #FFA599; 
+}
+
+.portlink{
+	text-decoration: none;
 }
 
 .architem{
