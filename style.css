@@ -150,7 +150,7 @@ body::-webkit-scrollbar {
 	align-items: center;
 	border: 4px solid #33211f;
 	opacity:0;
-	cursor:pointer;
+	/* cursor:pointer; */
 	--all:0px;
 }
 
@@ -245,7 +245,25 @@ a.link:hover {
 
 html {
 	scroll-behavior: smooth;
+	cursor: none;
 }
+
+a, button {
+	cursor: none;
+}
+
+.ballcursor {
+    pointer-events: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	mix-blend-mode: difference;
+	z-index: 1000;
+    fill: #FFA599; 
+	width: "24px";
+	height: "24px";
+	opacity: 0;
+} 
 
 .portitem{
 	max-height:auto;
@@ -298,7 +316,7 @@ html {
 	max-height:23.75em;
 	padding:4px;
 	object-fit: cover;
-	cursor:pointer;
+	/* cursor:pointer; */
 }
 
 .archimg{
@@ -401,7 +419,6 @@ span.nowrap {
 	font-family: 'DM Mono';
 	background-color: #000000;
 	color: #FFA599;
-	cursor: pointer;
 	padding-top: 15px;
 	padding-bottom: 40px;
 	font-size: 1.5em;
@@ -423,8 +440,6 @@ span.nowrap {
  
 .collapsible {
 	background-color: #000000;
-	cursor: pointer;
-	width: 100%;
 	border: none;
 	text-align: left;
 	outline: none;
@@ -459,7 +474,6 @@ span.nowrap {
 	top: 32px;
 	left: 85%;
 	background-color: rgba(0, 0, 0, 0.4);
-	cursor: pointer;
 	width: 60px;
 	border: none;
 	text-align: center;
@@ -546,7 +560,6 @@ span.rotated{
 }
 
 #thbutton {
-	cursor: pointer;
 	border: none;
 	text-align: left;
 	outline: none;
@@ -631,7 +644,6 @@ display: none;
 .vmodalclose:focus {
   color: #33211f;
   text-decoration: none;
-  cursor: pointer;
 }
 
 table, th, td {

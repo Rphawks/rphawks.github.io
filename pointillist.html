@@ -421,6 +421,9 @@
       <div style="height: 24px"></div>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="scripts/cursor.js"></script>
+    <script src="scripts/hamburger.js"></script>
     <script>
       //topbtn
       mybutton = document.getElementById("topbtn");
@@ -445,37 +448,6 @@
           }
         });
       }
-
-      //hamburger
-      var hcoll = document.getElementsByClassName("hamburger");
-      var ii;
-
-      for (ii = 0; ii < hcoll.length; ii++) {
-        hcoll[ii].addEventListener("click", function () {
-          this.classList.toggle("hamactive");
-        });
-      }
-
-      var hmodal = document.getElementById("modal-content");
-      var hbtn = document.getElementById("hamburger");
-
-      hbtn.onclick = function () {
-        if (hmodal.style.display === "flex") {
-          hmodal.style.display = "none";
-        } else {
-          hmodal.style.display = "flex";
-        }
-      };
-
-      var hworkbtn = document.getElementById("hamwork");
-      hworkbtn.onclick = function () {
-        if (hmodal.style.display === "flex") {
-          hmodal.style.display = "none";
-          hbtn.classList.toggle("hamactive");
-        } else {
-          hmodal.style.display = "flex";
-        }
-      };
 
       //teamhide
       function teamfunction() {
