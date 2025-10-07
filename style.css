@@ -245,11 +245,11 @@ a.link:hover {
 
 html {
 	scroll-behavior: smooth;
-	cursor: none;
+	cursor: none !important;
 }
 
 a, button {
-	cursor: none;
+	cursor: none !important;
 }
 
 .ballcursor {
