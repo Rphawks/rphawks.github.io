@@ -20,89 +20,142 @@
     </script>
   </head>
   <body>
-    <div class="navback-1"></div>
-    <div class="navback-2"></div>
-    <div class="workwrap">
-      <button class="hamburger" id="hamburger"></button>
-      <div class="barnav" style="height: 30px"></div>
+    <main id="swup" class="transition-fade">
+      <div class="navback-1"></div>
+      <div class="navback-2"></div>
+      <div class="workwrap">
+        <button class="hamburger" id="hamburger"></button>
+        <div class="barnav" style="height: 30px"></div>
 
-      <div class="barnav fixed-top">
-        <div class="flex-container" style="width: calc(100vw - 60px)">
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-          <div class="spacer" style="width: 6vw"></div>
-          <div class="flex-child"></div>
-          <div class="headernav"><a href="/#work" class="nav">work</a></div>
-          <div class="spacer" style="width: 6vw"></div>
-          <div class="headernav"><a href="/about" class="nav">about</a></div>
-          <div style="width: 2em" class="spacer"></div>
-          <div class="spacer"></div>
+        <div class="barnav fixed-top">
+          <div class="flex-container" style="width: calc(100vw - 60px)">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="flex-child"></div>
+            <div class="headernav"><a href="/#work" class="nav">work</a></div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="headernav"><a href="/about" class="nav">about</a></div>
+            <div style="width: 2em" class="spacer"></div>
+            <div class="spacer"></div>
+          </div>
         </div>
-      </div>
 
-      <div class="barnav" style="height: 60px"></div>
+        <div class="barnav" style="height: 60px"></div>
 
-      <div class="modal" id="modal-content" style="display: none">
-        <div class="flex-container">
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
-            <a href="/" class="nav">RYAN PENG</a>
+        <div class="modal" id="modal-content" style="display: none">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
           </div>
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a href="/about" class="nav">about</a>
-          </div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a id="hamwork" href="/#work" class="nav">work</a>
-          </div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a href="/archive" class="nav">archive</a>
-          </div>
-          <div class="flex-child"></div>
         </div>
-      </div>
 
-      <div class="textrow barnav">
-        <div style="height: 10px"></div>
-      </div>
-      <div class="textrow mobile" style="height: 5.5em"></div>
-
-      <div class="textrowb" style="padding-left: 8px">
-        <div class="date">FALL 2021 - SPRING 2022</div>
-        <div class="title"><b>STEAMrave 2.0</b></div>
-      </div>
-
-      <div style="height: 12px"></div>
-
-      <div class="flex-container desktop-flex">
-        <div class="textrow" style="padding-top: 0px">
-          <img
-            src="srave/ghostwave.gif"
-            style="
-              width: 20vw;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          />
+        <div class="textrow barnav">
+          <div style="height: 10px"></div>
         </div>
-        <div style="width: 48%; margin-left: 2em">
+        <div class="textrow mobile" style="height: 5.5em"></div>
+
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="date">FALL 2021 - SPRING 2022</div>
+          <div class="title"><b>STEAMrave 2.0</b></div>
+        </div>
+
+        <div style="height: 12px"></div>
+
+        <div class="flex-container desktop-flex">
+          <div class="textrow" style="padding-top: 0px">
+            <img
+              src="srave/ghostwave.gif"
+              style="
+                width: 20vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
+          <div style="width: 48%; margin-left: 2em">
+            <div class="textrowb" style="padding-left: 8px">
+              <div class="summary">
+                <span class="info">WORK TYPE</span
+                ><button
+                  id="thbutton"
+                  onclick="teamfunction()"
+                  style="padding: 0; margin: 0"
+                >
+                  <span class="uhov">team</span>
+                  <div id="teamhide" class="teamhide" style="display: none">
+                    : david han, erica song
+                  </div>
+                </button>
+              </div>
+              <div class="summary"><span class="info">ROLE</span> hardware</div>
+              <div class="summary">
+                <span class="info">CONTEXT</span> brown/risd STEAM
+              </div>
+              <div class="summary">
+                <span class="info">TIME</span> 6 months, ~3 hours/week
+              </div>
+            </div>
+
+            <div style="height: 12px"></div>
+            <div class="textrow portrow" style="padding-left: 2.5em">
+              <div class="porttext" style="margin: auto">
+                <span class="headline" style="font-size: 1.125em"
+                  ><b
+                    >STEAMrave 2.0 was an interactive multimedia
+                    installation.</b
+                  ></span
+                ><br /><br />
+                our "self"-themed piece utilizes a classical pepper's ghost
+                trick to product a to-scale reflection.<br /><br />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile" style="align-items: center">
+          <div class="textrow" style="padding-top: 0px">
+            <img
+              src="srave/ghostwave.gif"
+              style="
+                width: 50vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
+
           <div class="textrowb" style="padding-left: 8px">
             <div class="summary">
               <span class="info">WORK TYPE</span
               ><button
                 id="thbutton"
-                onclick="teamfunction()"
+                onclick="teamfunctionM()"
                 style="padding: 0; margin: 0"
               >
                 <span class="uhov">team</span>
-                <div id="teamhide" class="teamhide" style="display: none">
+                <div id="teamhideM" class="teamhide" style="display: none">
                   : david han, erica song
                 </div>
               </button>
@@ -129,118 +182,74 @@
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="mobile" style="align-items: center">
-        <div class="textrow" style="padding-top: 0px">
-          <img
-            src="srave/ghostwave.gif"
-            style="
-              width: 50vw;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          />
-        </div>
+        <div style="height: 12px"></div>
 
-        <div class="textrowb" style="padding-left: 8px">
-          <div class="summary">
-            <span class="info">WORK TYPE</span
-            ><button
-              id="thbutton"
-              onclick="teamfunctionM()"
-              style="padding: 0; margin: 0"
+        <div class="textrow portrow">
+          <div class="flex-container" style="align-items: center">
+            <div class="flex-child" style="height: 70px"></div>
+            <div
+              class="flex-container"
+              style="align-items: center; flex-direction: column"
             >
-              <span class="uhov">team</span>
-              <div id="teamhideM" class="teamhide" style="display: none">
-                : david han, erica song
+              <img
+                src="srave/davidscale.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <div class="porttext" style="margin: auto">
+                ghost next to actual human
               </div>
-            </button>
-          </div>
-          <div class="summary"><span class="info">ROLE</span> hardware</div>
-          <div class="summary">
-            <span class="info">CONTEXT</span> brown/risd STEAM
-          </div>
-          <div class="summary">
-            <span class="info">TIME</span> 6 months, ~3 hours/week
+            </div>
+            <div
+              class="flex-container"
+              style="align-items: center; flex-direction: column"
+            >
+              <img
+                src="srave/edgedet.jpg"
+                class="imgborder"
+                style="width: 40vw; max-width: 500px; height: auto"
+              />
+              <div class="porttext" style="margin: auto">
+                edge detection mode
+              </div>
+            </div>
+            <div class="flex-child" style="height: 70px"></div>
           </div>
         </div>
 
         <div style="height: 12px"></div>
-        <div class="textrow portrow" style="padding-left: 2.5em">
-          <div class="porttext" style="margin: auto">
-            <span class="headline" style="font-size: 1.125em"
-              ><b
-                >STEAMrave 2.0 was an interactive multimedia installation.</b
-              ></span
-            ><br /><br />
-            our "self"-themed piece utilizes a classical pepper's ghost trick to
-            product a to-scale reflection.<br /><br />
-          </div>
-        </div>
-      </div>
-
-      <div style="height: 12px"></div>
-
-      <div class="textrow portrow">
-        <div class="flex-container" style="align-items: center">
-          <div class="flex-child" style="height: 70px"></div>
-          <div
-            class="flex-container"
-            style="align-items: center; flex-direction: column"
-          >
+        <div class="nstitle">HARDWARE</div>
+        <div class="textrow portrow">
+          <div class="flex-container" style="align-items: center">
+            <div class="flex-child" style="height: 70px"></div>
             <img
-              src="srave/davidscale.jpg"
+              src="srave/frame.jpg"
               class="imgborder"
-              style="width: 40vw; max-width: 500px; height: auto"
+              style="width: 50%; max-width: 350px; height: auto"
             />
-            <div class="porttext" style="margin: auto">
-              ghost next to actual human
+            <div
+              class="porttext"
+              style="padding-left: 24px; padding-right: 4px"
+            >
+              <br />a 4x8ft polycarbonate panel rigged at roughly 60&deg; from
+              the ground reflects a keystone-corrected and color-corrected live
+              camera feed.
             </div>
+            <div class="flex-child" style="height: 70px"></div>
           </div>
-          <div
-            class="flex-container"
-            style="align-items: center; flex-direction: column"
-          >
-            <img
-              src="srave/edgedet.jpg"
-              class="imgborder"
-              style="width: 40vw; max-width: 500px; height: auto"
-            />
-            <div class="porttext" style="margin: auto">edge detection mode</div>
-          </div>
-          <div class="flex-child" style="height: 70px"></div>
         </div>
-      </div>
 
-      <div style="height: 12px"></div>
-      <div class="nstitle">HARDWARE</div>
-      <div class="textrow portrow">
-        <div class="flex-container" style="align-items: center">
-          <div class="flex-child" style="height: 70px"></div>
-          <img
-            src="srave/frame.jpg"
-            class="imgborder"
-            style="width: 50%; max-width: 350px; height: auto"
-          />
-          <div class="porttext" style="padding-left: 24px; padding-right: 4px">
-            <br />a 4x8ft polycarbonate panel rigged at roughly 60&deg; from the
-            ground reflects a keystone-corrected and color-corrected live camera
-            feed.
-          </div>
-          <div class="flex-child" style="height: 70px"></div>
-        </div>
+        <div style="height: 24px"></div>
+        <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+        <div style="height: 24px"></div>
       </div>
-
-      <div style="height: 24px"></div>
-      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-      <div style="height: 24px"></div>
-    </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="scripts/cursor.js" defer></script>
     <script src="scripts/hamburger.js"></script>
+    <script type="module" src="scripts/swup.js"></script>
     <script>
       //topbtn
       mybutton = document.getElementById("topbtn");

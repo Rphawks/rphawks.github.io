@@ -20,90 +20,157 @@
     </script>
   </head>
   <body>
-    <div class="navback-1"></div>
-    <div class="navback-2"></div>
-    <div class="workwrap">
-      <button class="hamburger" id="hamburger"></button>
-      <div class="barnav" style="height: 30px"></div>
+    <main id="swup" class="transition-fade">
+      <div class="navback-1"></div>
+      <div class="navback-2"></div>
+      <div class="workwrap">
+        <button class="hamburger" id="hamburger"></button>
+        <div class="barnav" style="height: 30px"></div>
 
-      <div class="barnav fixed-top">
-        <div class="flex-container" style="width: calc(100vw - 60px)">
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
-          <div class="spacer" style="width: 6vw"></div>
-          <div class="flex-child"></div>
-          <div class="headernav"><a href="/#work" class="nav">work</a></div>
-          <div class="spacer" style="width: 6vw"></div>
-          <div class="headernav"><a href="/about" class="nav">about</a></div>
-          <div style="width: 2em" class="spacer"></div>
-          <div class="spacer"></div>
-        </div>
-      </div>
-
-      <div class="barnav" style="height: 60px"></div>
-
-      <div class="modal" id="modal-content" style="display: none">
-        <div class="flex-container">
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
-            <a href="/" class="nav">RYAN PENG</a>
+        <div class="barnav fixed-top">
+          <div class="flex-container" style="width: calc(100vw - 60px)">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="headername"><a href="/" class="nav">RYAN PENG</a></div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="flex-child"></div>
+            <div class="headernav"><a href="/#work" class="nav">work</a></div>
+            <div class="spacer" style="width: 6vw"></div>
+            <div class="headernav"><a href="/about" class="nav">about</a></div>
+            <div style="width: 2em" class="spacer"></div>
+            <div class="spacer"></div>
           </div>
-          <div class="spacer"></div>
-          <div class="spacer"></div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a href="/about" class="nav">about</a>
-          </div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a id="hamwork" href="/#work" class="nav">work</a>
-          </div>
-          <div class="flex-child"></div>
-          <div style="font-size: 2.875em; line-height: 220%">
-            <a href="/archive" class="nav">archive</a>
-          </div>
-          <div class="flex-child"></div>
-        </div>
-      </div>
-
-      <div class="textrow barnav">
-        <div style="height: 10px"></div>
-      </div>
-      <div class="textrow mobile" style="height: 5.5em"></div>
-
-      <div class="textrowb" style="padding-left: 8px">
-        <div class="date">FALL 2023</div>
-        <div class="title"><b>EVERYDAY PILL DISPENSER</b></div>
-      </div>
-
-      <div style="height: 12px"></div>
-
-      <div class="flex-container desktop-flex">
-        <div class="textrow" style="padding-top: 0px">
-          <img
-            src="pilldisp/animation.gif"
-            style="
-              width: 46vw;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          />
         </div>
 
-        <div style="width: 48%; margin-left: 2em">
+        <div class="barnav" style="height: 60px"></div>
+
+        <div class="modal" id="modal-content" style="display: none">
+          <div class="flex-container">
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div style="font-size: 3.5em; line-height: 150%; padding-top: 4px">
+              <a href="/" class="nav">RYAN PENG</a>
+            </div>
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/about" class="nav">about</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a id="hamwork" href="/#work" class="nav">work</a>
+            </div>
+            <div class="flex-child"></div>
+            <div style="font-size: 2.875em; line-height: 220%">
+              <a href="/archive" class="nav">archive</a>
+            </div>
+            <div class="flex-child"></div>
+          </div>
+        </div>
+
+        <div class="textrow barnav">
+          <div style="height: 10px"></div>
+        </div>
+        <div class="textrow mobile" style="height: 5.5em"></div>
+
+        <div class="textrowb" style="padding-left: 8px">
+          <div class="date">FALL 2023</div>
+          <div class="title"><b>EVERYDAY PILL DISPENSER</b></div>
+        </div>
+
+        <div style="height: 12px"></div>
+
+        <div class="flex-container desktop-flex">
+          <div class="textrow" style="padding-top: 0px">
+            <img
+              src="pilldisp/animation.gif"
+              style="
+                width: 46vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
+
+          <div style="width: 48%; margin-left: 2em">
+            <div class="textrowb" style="padding-left: 8px">
+              <div class="summary">
+                <span class="info">WORK TYPE</span
+                ><button
+                  id="thbutton"
+                  onclick="teamfunction()"
+                  style="padding: 0; margin: 0"
+                >
+                  <span class="uhov">team</span>
+                  <div id="teamhide" class="teamhide" style="display: none">
+                    : taehoon park, katie lynch, amy vu, anderson todd
+                  </div>
+                </button>
+              </div>
+              <div class="summary">
+                <span class="info">CONTEXT</span> engn1931d, brown
+              </div>
+              <div class="summary">
+                <span class="info">TIME</span> 4 months, ~8 hours/week
+              </div>
+            </div>
+
+            <div style="height: 12px"></div>
+            <div class="textrow portrow" style="padding-left: 2.5em">
+              <div class="porttext" style="margin: auto">
+                <span class="headline" style="font-size: 1.125em"
+                  ><b
+                    >according to the
+                    <a
+                      href="https://www.cdc.gov/nchs/fastats/drug-use-therapeutic.htm"
+                      class="nav"
+                      style="text-decoration: underline; color: #ffa599"
+                      >CDC</a
+                    >, almost half of all Americans use at least one
+                    prescription drug per day.</b
+                  ></span
+                >
+                <br /><br />the form factor, distribution, and overall user
+                experience associated with managing and dispensing medication in
+                a seamless and consistent matter leaves something to be
+                desired.<br /><br />
+                <span class="headline" style="font-size: 1.125em"
+                  >individuals taking these medications realize the need for a
+                  better way to manage, store, and dispense their medication in
+                  a way that is
+                  <i>reliable, effortless, and worry-free.</i></span
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mobile" style="align-items: center">
+          <div class="textrow" style="padding-top: 0px">
+            <img
+              src="pilldisp/animation.gif"
+              style="
+                width: 85vw;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+              "
+            />
+          </div>
+
           <div class="textrowb" style="padding-left: 8px">
             <div class="summary">
               <span class="info">WORK TYPE</span
               ><button
                 id="thbutton"
-                onclick="teamfunction()"
+                class="nav"
+                onclick="teamfunctionM()"
                 style="padding: 0; margin: 0"
               >
                 <span class="uhov">team</span>
-                <div id="teamhide" class="teamhide" style="display: none">
+                <div id="teamhideM" class="teamhide" style="display: none">
                   : taehoon park, katie lynch, amy vu, anderson todd
                 </div>
               </button>
@@ -142,434 +209,385 @@
             </div>
           </div>
         </div>
-      </div>
-
-      <div class="mobile" style="align-items: center">
-        <div class="textrow" style="padding-top: 0px">
-          <img
-            src="pilldisp/animation.gif"
-            style="
-              width: 85vw;
-              display: block;
-              margin-left: auto;
-              margin-right: auto;
-            "
-          />
-        </div>
-
-        <div class="textrowb" style="padding-left: 8px">
-          <div class="summary">
-            <span class="info">WORK TYPE</span
-            ><button
-              id="thbutton"
-              class="nav"
-              onclick="teamfunctionM()"
-              style="padding: 0; margin: 0"
-            >
-              <span class="uhov">team</span>
-              <div id="teamhideM" class="teamhide" style="display: none">
-                : taehoon park, katie lynch, amy vu, anderson todd
-              </div>
-            </button>
-          </div>
-          <div class="summary">
-            <span class="info">CONTEXT</span> engn1931d, brown
-          </div>
-          <div class="summary">
-            <span class="info">TIME</span> 4 months, ~8 hours/week
-          </div>
-        </div>
 
         <div style="height: 12px"></div>
-        <div class="textrow portrow" style="padding-left: 2.5em">
-          <div class="porttext" style="margin: auto">
-            <span class="headline" style="font-size: 1.125em"
-              ><b
-                >according to the
-                <a
-                  href="https://www.cdc.gov/nchs/fastats/drug-use-therapeutic.htm"
-                  class="nav"
-                  style="text-decoration: underline; color: #ffa599"
-                  >CDC</a
-                >, almost half of all Americans use at least one prescription
-                drug per day.</b
-              ></span
+
+        <div class="stuckcontainer">
+          <div class="stucknav-container">
+            <a href="#reqs" class="nav"
+              ><div class="stucknav">> DESIGN REQUIREMENTS</div></a
             >
-            <br /><br />the form factor, distribution, and overall user
-            experience associated with managing and dispensing medication in a
-            seamless and consistent matter leaves something to be desired.<br /><br />
-            <span class="headline" style="font-size: 1.125em"
-              >individuals taking these medications realize the need for a
-              better way to manage, store, and dispense their medication in a
-              way that is <i>reliable, effortless, and worry-free.</i></span
+            <a href="#concept" class="nav"
+              ><div class="stucknav">> CONCEPT STATEMENT & VARIANTS</div></a
+            >
+            <a href="#variants" class="nav"
+              ><div class="stucknav">> VARIANT SKETCHING</div></a
+            >
+            <a href="#prototyping" class="nav"
+              ><div class="stucknav">> ITERATIVE PROTOTYPING</div></a
+            >
+            <a href="#final" class="nav"
+              ><div class="stucknav">> FINAL DESIGN OVERVIEW</div></a
+            >
+            <a href="#analysis" class="nav"
+              ><div class="stucknav">> ENGINEERING ANALYSES</div></a
             >
           </div>
-        </div>
-      </div>
 
-      <div style="height: 12px"></div>
-
-      <div class="stuckcontainer">
-        <div class="stucknav-container">
-          <a href="#reqs" class="nav"
-            ><div class="stucknav">> DESIGN REQUIREMENTS</div></a
-          >
-          <a href="#concept" class="nav"
-            ><div class="stucknav">> CONCEPT STATEMENT & VARIANTS</div></a
-          >
-          <a href="#variants" class="nav"
-            ><div class="stucknav">> VARIANT SKETCHING</div></a
-          >
-          <a href="#prototyping" class="nav"
-            ><div class="stucknav">> ITERATIVE PROTOTYPING</div></a
-          >
-          <a href="#final" class="nav"
-            ><div class="stucknav">> FINAL DESIGN OVERVIEW</div></a
-          >
-          <a href="#analysis" class="nav"
-            ><div class="stucknav">> ENGINEERING ANALYSES</div></a
-          >
-        </div>
-
-        <div class="stuckcolumn">
-          <div style="height: 12px"></div>
-          <div class="stuckanchor" id="reqs"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">DESIGN REQUIREMENTS</div>
-            <div class="porttext" style="margin: auto">
-              given the problem statement, we outlined two categories of design
-              requirements.<br /><br />
-            </div>
-            <div class="porttext" style="margin: auto">
-              <span class="headline">USER-CENTRIC</span><br />
-              <span class="headline">-</span> prevent shaking of pills with
-              movement<br />
-              <span class="headline">-</span> secure pill dispensing (no pills
-              on the floor!)<br />
-              <span class="headline">-</span> tactile or audible feedback<br />
-              <span class="headline">-</span> pill tracking<br />
-              <span class="headline">-</span> easy to slip in and out of
-              pockets<br />
-              <span class="headline">-</span> type of pill dispensed
-              indicator<br /><br />
-            </div>
-            <div class="porttext" style="margin: auto">
-              <span class="headline">HARDWARE</span><br />
-              <span class="headline">-</span> dispense a single pill at a
-              time<br />
-              <span class="headline">-</span> pocketable form factor (ideally
-              lwh 4x2x1 in)<br />
-              <span class="headline">-</span> reminders - vibrate, chime,
-              light<br />
-              <span class="headline">-</span> quantity of pills - store up to 7
-              days, 5 types, 35 total<br />
-              <span class="headline">-</span> weight - 8oz maxmimum<br />
-            </div>
+          <div class="stuckcolumn">
             <div style="height: 12px"></div>
-          </div>
+            <div class="stuckanchor" id="reqs"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">DESIGN REQUIREMENTS</div>
+              <div class="porttext" style="margin: auto">
+                given the problem statement, we outlined two categories of
+                design requirements.<br /><br />
+              </div>
+              <div class="porttext" style="margin: auto">
+                <span class="headline">USER-CENTRIC</span><br />
+                <span class="headline">-</span> prevent shaking of pills with
+                movement<br />
+                <span class="headline">-</span> secure pill dispensing (no pills
+                on the floor!)<br />
+                <span class="headline">-</span> tactile or audible feedback<br />
+                <span class="headline">-</span> pill tracking<br />
+                <span class="headline">-</span> easy to slip in and out of
+                pockets<br />
+                <span class="headline">-</span> type of pill dispensed
+                indicator<br /><br />
+              </div>
+              <div class="porttext" style="margin: auto">
+                <span class="headline">HARDWARE</span><br />
+                <span class="headline">-</span> dispense a single pill at a
+                time<br />
+                <span class="headline">-</span> pocketable form factor (ideally
+                lwh 4x2x1 in)<br />
+                <span class="headline">-</span> reminders - vibrate, chime,
+                light<br />
+                <span class="headline">-</span> quantity of pills - store up to
+                7 days, 5 types, 35 total<br />
+                <span class="headline">-</span> weight - 8oz maxmimum<br />
+              </div>
+              <div style="height: 12px"></div>
+            </div>
 
-          <div class="stuckanchor" id="concept"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">CONCEPT STATEMENT & VARIANTS</div>
-            <div class="porttext" style="margin: auto">
-              we seek to design: <br />a pocketable, lightweight device that can
-              store up to (7) 0-size capsules and dispenses (1) pill at a time.
-              the dispensing mechanism uses a physical mechanism, not a motor,
-              and has a button unlock feature to secure the device when
-              pocketed. the device has small electronics that provide intake
-              reminders to users and an indication light that indicates the
-              remaining supply of pills.<br /><br />
-              given this statement, we narrowed our search down to three
-              different mechanisms.
-            </div>
-            <div class="flex-container" style="align-items: center">
-              <div class="flex-child" style="height: 70px"></div>
-              <div>
-                <img
-                  src="pilldisp/archimedes.gif"
-                  class="imgborder"
-                  style="width: 20vw; max-width: 300px; height: auto"
-                />
-                <div class="headline" style="margin: auto; text-align: center">
-                  <span class="headline">ARCHIMEDES' SCREW</span><br />
-                </div>
+            <div class="stuckanchor" id="concept"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">CONCEPT STATEMENT & VARIANTS</div>
+              <div class="porttext" style="margin: auto">
+                we seek to design: <br />a pocketable, lightweight device that
+                can store up to (7) 0-size capsules and dispenses (1) pill at a
+                time. the dispensing mechanism uses a physical mechanism, not a
+                motor, and has a button unlock feature to secure the device when
+                pocketed. the device has small electronics that provide intake
+                reminders to users and an indication light that indicates the
+                remaining supply of pills.<br /><br />
+                given this statement, we narrowed our search down to three
+                different mechanisms.
               </div>
-              <div class="flex-child" style="height: 70px"></div>
-              <div>
-                <img
-                  src="pilldisp/pez.jpg"
-                  class="imgborder"
-                  style="width: 20vw; max-width: 300px; height: auto"
-                />
-                <div class="headline" style="margin: auto; text-align: center">
-                  <span class="headline">CANDY DISPENSER</span><br />
+              <div class="flex-container" style="align-items: center">
+                <div class="flex-child" style="height: 70px"></div>
+                <div>
+                  <img
+                    src="pilldisp/archimedes.gif"
+                    class="imgborder"
+                    style="width: 20vw; max-width: 300px; height: auto"
+                  />
+                  <div
+                    class="headline"
+                    style="margin: auto; text-align: center"
+                  >
+                    <span class="headline">ARCHIMEDES' SCREW</span><br />
+                  </div>
                 </div>
-              </div>
-              <div class="flex-child" style="height: 70px"></div>
-              <div>
-                <img
-                  src="pilldisp/stamp.jpg"
-                  class="imgborder"
-                  style="width: 20vw; max-width: 300px; height: auto"
-                />
-                <div class="headline" style="margin: auto; text-align: center">
-                  <span class="headline">SELF-INKING STAMP</span><br />
+                <div class="flex-child" style="height: 70px"></div>
+                <div>
+                  <img
+                    src="pilldisp/pez.jpg"
+                    class="imgborder"
+                    style="width: 20vw; max-width: 300px; height: auto"
+                  />
+                  <div
+                    class="headline"
+                    style="margin: auto; text-align: center"
+                  >
+                    <span class="headline">CANDY DISPENSER</span><br />
+                  </div>
                 </div>
+                <div class="flex-child" style="height: 70px"></div>
+                <div>
+                  <img
+                    src="pilldisp/stamp.jpg"
+                    class="imgborder"
+                    style="width: 20vw; max-width: 300px; height: auto"
+                  />
+                  <div
+                    class="headline"
+                    style="margin: auto; text-align: center"
+                  >
+                    <span class="headline">SELF-INKING STAMP</span><br />
+                  </div>
+                </div>
+                <div class="flex-child" style="height: 70px"></div>
               </div>
-              <div class="flex-child" style="height: 70px"></div>
             </div>
-          </div>
-          <div class="stuckanchor" id="variants"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">VARIANT SKETCHING</div>
-            <div class="flex-container" style="flex-wrap: wrap">
-              <img
-                src="pilldisp/sketch1.jpg"
-                class="imgborder"
-                style="
-                  max-width: 18%;
-                  min-width: 160px;
-                  max-height: 80vh;
-                  height: auto;
-                  display: block;
-                  margin: auto;
-                "
-              />
-              <img
-                src="pilldisp/sketch2.jpg"
-                class="imgborder"
-                style="
-                  max-width: 18%;
-                  min-width: 160px;
-                  max-height: 80vh;
-                  height: auto;
-                  display: block;
-                  margin: auto;
-                "
-              />
-              <img
-                src="pilldisp/sketch3.jpg"
-                class="imgborder"
-                style="
-                  max-width: 18%;
-                  min-width: 160px;
-                  max-height: 80vh;
-                  height: auto;
-                  display: block;
-                  margin: auto;
-                "
-              />
-              <img
-                src="pilldisp/sketch4.jpg"
-                class="imgborder"
-                style="
-                  max-width: 18%;
-                  min-width: 160px;
-                  max-height: 80vh;
-                  height: auto;
-                  display: block;
-                  margin: auto;
-                "
-              />
-              <img
-                src="pilldisp/sketch5.jpg"
-                class="imgborder"
-                style="
-                  max-width: 18%;
-                  min-width: 160px;
-                  max-height: 80vh;
-                  height: auto;
-                  display: block;
-                  margin: auto;
-                "
-              />
+            <div class="stuckanchor" id="variants"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">VARIANT SKETCHING</div>
+              <div class="flex-container" style="flex-wrap: wrap">
+                <img
+                  src="pilldisp/sketch1.jpg"
+                  class="imgborder"
+                  style="
+                    max-width: 18%;
+                    min-width: 160px;
+                    max-height: 80vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+                <img
+                  src="pilldisp/sketch2.jpg"
+                  class="imgborder"
+                  style="
+                    max-width: 18%;
+                    min-width: 160px;
+                    max-height: 80vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+                <img
+                  src="pilldisp/sketch3.jpg"
+                  class="imgborder"
+                  style="
+                    max-width: 18%;
+                    min-width: 160px;
+                    max-height: 80vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+                <img
+                  src="pilldisp/sketch4.jpg"
+                  class="imgborder"
+                  style="
+                    max-width: 18%;
+                    min-width: 160px;
+                    max-height: 80vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+                <img
+                  src="pilldisp/sketch5.jpg"
+                  class="imgborder"
+                  style="
+                    max-width: 18%;
+                    min-width: 160px;
+                    max-height: 80vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+              </div>
+              <div class="porttext" style="margin: auto">
+                with the variants in mind, we began diverse sketching and
+                exploration of form factors and mechanisms. ultimately, we
+                decided on the self-inking stamp mechanism to be driven by a
+                rack and pinion, with a cartridge and form factor closer to the
+                candy dispenser (tall, rather than wide).
+              </div>
             </div>
-            <div class="porttext" style="margin: auto">
-              with the variants in mind, we began diverse sketching and
-              exploration of form factors and mechanisms. ultimately, we decided
-              on the self-inking stamp mechanism to be driven by a rack and
-              pinion, with a cartridge and form factor closer to the candy
-              dispenser (tall, rather than wide).
-            </div>
-          </div>
-          <div class="stuckanchor" id="prototyping"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">ITERATIVE PROTOTYPING</div>
-            <img
-              src="pilldisp/lineup.jpg"
-              class="imgborder"
-              style="
-                max-width: 90%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <div class="porttext" style="margin: auto">
-              using an iterative design process assisted by FDM 3D printing, we
-              designed five prototypes. <br /><br />
-              <span class="peach">prototype 1</span> focused on the
-              <span class="peach"
-                >sizing of the chamber and barrel for a 0-size capsule</span
-              >.<br /><br />
-              <span class="peach">prototype 2</span> focused on the
-              <span class="peach"
-                >minimum size of the total housing required</span
-              >
-              and how parts should be printed to allow for snug, press-fit
-              assembly.<br /><br />
-              <span class="peach">prototype 3</span> focused on a
-              <span class="peach">spring-loaded rack and pinion mechanism</span>
-              to turn the barrel inside.<br /><br />
-              <span class="peach">prototype 4</span> experimented with
-              <span class="peach">a more pocketable form</span>, as well as side
-              locking buttons for the rack and pinion mechanism.<br /><br />
-              the <span class="peach">final prototype</span> added
-              <span class="peach"
-                >structural guides for the "pusher" of the mechanism</span
-              >, which double as the mechanism for the locking buttons, now
-              moved to the front and back. the side buttons now serve as the
-              locking mechanism for the cap, which has a refill door.
-            </div>
-          </div>
-          <div class="stuckanchor" id="final"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">FINAL DESIGN OVERVIEW</div>
-            <div class="flex-container" style="align-items: center">
-              <div class="flex-child" style="height: 70px"></div>
+            <div class="stuckanchor" id="prototyping"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">ITERATIVE PROTOTYPING</div>
               <img
-                src="pilldisp/demo.gif"
+                src="pilldisp/lineup.jpg"
+                class="imgborder"
+                style="
+                  max-width: 90%;
+                  max-height: 80vh;
+                  height: auto;
+                  display: block;
+                  margin: auto;
+                "
+              />
+              <div class="porttext" style="margin: auto">
+                using an iterative design process assisted by FDM 3D printing,
+                we designed five prototypes. <br /><br />
+                <span class="peach">prototype 1</span> focused on the
+                <span class="peach"
+                  >sizing of the chamber and barrel for a 0-size capsule</span
+                >.<br /><br />
+                <span class="peach">prototype 2</span> focused on the
+                <span class="peach"
+                  >minimum size of the total housing required</span
+                >
+                and how parts should be printed to allow for snug, press-fit
+                assembly.<br /><br />
+                <span class="peach">prototype 3</span> focused on a
+                <span class="peach"
+                  >spring-loaded rack and pinion mechanism</span
+                >
+                to turn the barrel inside.<br /><br />
+                <span class="peach">prototype 4</span> experimented with
+                <span class="peach">a more pocketable form</span>, as well as
+                side locking buttons for the rack and pinion mechanism.<br /><br />
+                the <span class="peach">final prototype</span> added
+                <span class="peach"
+                  >structural guides for the "pusher" of the mechanism</span
+                >, which double as the mechanism for the locking buttons, now
+                moved to the front and back. the side buttons now serve as the
+                locking mechanism for the cap, which has a refill door.
+              </div>
+            </div>
+            <div class="stuckanchor" id="final"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">FINAL DESIGN OVERVIEW</div>
+              <div class="flex-container" style="align-items: center">
+                <div class="flex-child" style="height: 70px"></div>
+                <img
+                  src="pilldisp/demo.gif"
+                  class="imgborder"
+                  style="
+                    max-width: 80%;
+                    max-height: 60vh;
+                    height: auto;
+                    display: block;
+                    margin: auto;
+                  "
+                />
+                <div
+                  class="porttext"
+                  style="padding-left: 24px; padding-right: 4px"
+                >
+                  a demo of the final prototype:<br />
+                  the pusher is released by the front and back buttons.<br />
+                  pressing down on the pusher then dispenses a pill onto the
+                  pressed surface.
+                </div>
+                <div class="flex-child" style="height: 70px"></div>
+              </div>
+
+              <img
+                src="pilldisp/final1.jpg"
                 class="imgborder"
                 style="
                   max-width: 80%;
-                  max-height: 60vh;
+                  max-height: 80vh;
                   height: auto;
                   display: block;
                   margin: auto;
                 "
               />
-              <div
-                class="porttext"
-                style="padding-left: 24px; padding-right: 4px"
-              >
-                a demo of the final prototype:<br />
-                the pusher is released by the front and back buttons.<br />
-                pressing down on the pusher then dispenses a pill onto the
-                pressed surface.
+              <img
+                src="pilldisp/final2.jpg"
+                class="imgborder"
+                style="
+                  max-width: 80%;
+                  max-height: 80vh;
+                  height: auto;
+                  display: block;
+                  margin: auto;
+                "
+              />
+              <img
+                src="pilldisp/final3.jpg"
+                class="imgborder"
+                style="
+                  max-width: 80%;
+                  max-height: 80vh;
+                  height: auto;
+                  display: block;
+                  margin: auto;
+                "
+              />
+              <div class="porttext" style="margin: auto">
+                our design totals 9 manufactured parts with two off-the-shelf
+                springs to be placed on opposite stilts (only one is rendered
+                above).<br /><br />
               </div>
-              <div class="flex-child" style="height: 70px"></div>
             </div>
-
-            <img
-              src="pilldisp/final1.jpg"
-              class="imgborder"
-              style="
-                max-width: 80%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <img
-              src="pilldisp/final2.jpg"
-              class="imgborder"
-              style="
-                max-width: 80%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <img
-              src="pilldisp/final3.jpg"
-              class="imgborder"
-              style="
-                max-width: 80%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <div class="porttext" style="margin: auto">
-              our design totals 9 manufactured parts with two off-the-shelf
-              springs to be placed on opposite stilts (only one is rendered
-              above).<br /><br />
-            </div>
-          </div>
-          <div class="stuckanchor" id="analysis"></div>
-          <div class="textrow portrow">
-            <div class="nstitle">ENGINEERING ANALYSES</div>
-            <img
-              src="pilldisp/abaqus.png"
-              class="imgborder"
-              style="
-                max-width: 80%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <div class="porttext" style="margin: auto">
-              <br />a finite element analysis was performed using ABAQUS. using
-              a measured displacement of <span class="peach">0.935 in</span> in
-              SolidWorks, combined with McMaster-Carr's manufacturer spring rate
-              (k) of <span class="peach">3.3 lbs/in</span>, we calculated a load
-              of <span class="peach">3.0855 lbs</span>. <br /><br />the analysis
-              assumes a freeform part composed of an isotropic PLA-like plastic
-              with Young's modulus (E) of
-              <span class="peach">595669 psi</span> and a Poisson's ratio (&nu;)
-              of <span class="peach">0.38</span>.<br /><br />
-              the part experiences highest stresses at the base of the stilts
-              and the the face opposite the rack. in usage, these stresses are
-              acceptable, as the stilts are guided by the enclosing shell, which
-              forces only linear up and down movement.<br /><br />
-            </div>
-            <img
-              src="pilldisp/stackup.png"
-              class="imgborder"
-              style="
-                max-width: 80%;
-                max-height: 80vh;
-                height: auto;
-                display: block;
-                margin: auto;
-              "
-            />
-            <div class="porttext" style="margin: auto">
-              <br />
-              a tolerance stackup was performed in SolidWorks, with the barrel
-              slot length (the length of a 0-size capsule) being the driving
-              dimension, and parts ordered from barrel to outer shell. overall,
-              the tolerance analyst showed very tight overall tolerances.
-              <br /><br />
-              <span class="peach">nominal value</span><br />
-              0.9 in<br /><br />
-              <span class="peach">minimum value</span><br />
-              0.89 in<br />
-              <span class="peach">maximum value</span><br />
-              0.91 in<br /><br />
-              <span class="peach">RSS minimum</span><br />
-              0.893 in<br />
-              <span class="peach">RSS maximum</span><br />
-              0.907 in<br />
+            <div class="stuckanchor" id="analysis"></div>
+            <div class="textrow portrow">
+              <div class="nstitle">ENGINEERING ANALYSES</div>
+              <img
+                src="pilldisp/abaqus.png"
+                class="imgborder"
+                style="
+                  max-width: 80%;
+                  max-height: 80vh;
+                  height: auto;
+                  display: block;
+                  margin: auto;
+                "
+              />
+              <div class="porttext" style="margin: auto">
+                <br />a finite element analysis was performed using ABAQUS.
+                using a measured displacement of
+                <span class="peach">0.935 in</span> in SolidWorks, combined with
+                McMaster-Carr's manufacturer spring rate (k) of
+                <span class="peach">3.3 lbs/in</span>, we calculated a load of
+                <span class="peach">3.0855 lbs</span>. <br /><br />the analysis
+                assumes a freeform part composed of an isotropic PLA-like
+                plastic with Young's modulus (E) of
+                <span class="peach">595669 psi</span> and a Poisson's ratio
+                (&nu;) of <span class="peach">0.38</span>.<br /><br />
+                the part experiences highest stresses at the base of the stilts
+                and the the face opposite the rack. in usage, these stresses are
+                acceptable, as the stilts are guided by the enclosing shell,
+                which forces only linear up and down movement.<br /><br />
+              </div>
+              <img
+                src="pilldisp/stackup.png"
+                class="imgborder"
+                style="
+                  max-width: 80%;
+                  max-height: 80vh;
+                  height: auto;
+                  display: block;
+                  margin: auto;
+                "
+              />
+              <div class="porttext" style="margin: auto">
+                <br />
+                a tolerance stackup was performed in SolidWorks, with the barrel
+                slot length (the length of a 0-size capsule) being the driving
+                dimension, and parts ordered from barrel to outer shell.
+                overall, the tolerance analyst showed very tight overall
+                tolerances.
+                <br /><br />
+                <span class="peach">nominal value</span><br />
+                0.9 in<br /><br />
+                <span class="peach">minimum value</span><br />
+                0.89 in<br />
+                <span class="peach">maximum value</span><br />
+                0.91 in<br /><br />
+                <span class="peach">RSS minimum</span><br />
+                0.893 in<br />
+                <span class="peach">RSS maximum</span><br />
+                0.907 in<br />
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div style="height: 24px"></div>
-      <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
-      <div style="height: 24px"></div>
-    </div>
+        <div style="height: 24px"></div>
+        <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
+        <div style="height: 24px"></div>
+      </div>
+    </main>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
     <script src="scripts/cursor.js" defer></script>
     <script src="scripts/hamburger.js"></script>
+    <script type="module" src="scripts/swup.js"></script>
     <script>
       //topbtn
       mybutton = document.getElementById("topbtn");
