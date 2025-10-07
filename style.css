@@ -370,7 +370,11 @@ span.mono {
 }
 
 .sideimg{
-	max-width:50%;
+	max-width: 50%;
+}
+
+.sideimghrestrict{
+	height: 20vw;
 }
 
 .porttext {
@@ -514,6 +518,10 @@ span.nowrap {
 }
 
 .mobile{
+	display:none;
+}
+
+.midsize{
 	display:none;
 }
 
@@ -851,6 +859,9 @@ span.dark{
 	.stuckcolumn{
 		max-width: 70%;
 	}
+	.midsize{
+		display: block;
+	}
 }
 
 @media screen and (max-width: 850px){
@@ -897,7 +908,7 @@ span.dark{
 		display:none;
 	}
 	.sideimg{
-	max-width:500px;
+	max-width:60vw;
 	}
 	.stuckcontainer {
 		gap:0;
