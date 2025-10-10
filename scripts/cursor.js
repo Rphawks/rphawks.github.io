@@ -24,7 +24,7 @@ const svgData = `
 cursor.innerHTML = svgData;
 }
 
-const hoverables = document.querySelectorAll("a, button, .stackflex-container, .collapsible, .vmodalclose");
+const hoverables = document.querySelectorAll("a, button, .stackflex-container, .collapsible, .vmodalclose, .architem, .architem-col");
 
 let hasMoved = false;
 
