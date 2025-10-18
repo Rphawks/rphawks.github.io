@@ -486,98 +486,106 @@
           <div style="height: 10px"></div>
         </div>
       </div>
+      <script>
+        //imagefade
+        function isInViewport(element) {
+          const rect = element.getBoundingClientRect();
+          return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <=
+              (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <=
+              (window.innerWidth || document.documentElement.clientWidth)
+          );
+        }
+
+        const fadebox = document.getElementsByClassName("scrollfade");
+        const fadeanchors = document.getElementsByClassName("fadeanchor");
+
+        document.addEventListener("scroll", function () {
+          for (i = 0; i < fadeanchors.length; i++) {
+            if (isInViewport(fadeanchors[i])) {
+              fadebox[i].classList.add("loadfade2");
+            }
+          }
+        });
+
+        //fadecookie
+        function getCookie(cname) {
+          let name = cname + "=";
+          let decodedCookie = decodeURIComponent(document.cookie);
+          let ca = decodedCookie.split(";");
+          for (let jj = 0; jj < ca.length; jj++) {
+            let c = ca[jj];
+            while (c.charAt(0) == " ") {
+              c = c.substring(1);
+            }
+            if (c.indexOf(name) == 0) {
+              return c.substring(name.length, c.length);
+            }
+          }
+          return "";
+        }
+
+        let indexvisit = document.cookie;
+        var loadfades = document.getElementsByClassName("loadfade");
+        var lfdelays = document.getElementsByClassName("lfdelay");
+        var j;
+        var ij;
+        if (getCookie("indexvisit") === "true") {
+          for (j = loadfades.length - 1; j < loadfades.length && j >= 0; j--) {
+            loadfades[j].classList.remove("loadfade");
+          }
+          for (
+            ij = lfdelays.length - 1;
+            ij < lfdelays.length && ij >= 0;
+            ij--
+          ) {
+            lfdelays[ij].classList.remove("lfdelay");
+          }
+        }
+        document.cookie = "indexvisit=true; SameSite=Lax; Secure";
+
+        //scrollcolor
+        const debounce = (fn) => {
+          let frame;
+          return (...params) => {
+            if (frame) {
+              cancelAnimationFrame(frame);
+            }
+            frame = requestAnimationFrame(() => {
+              fn(...params);
+            });
+          };
+        };
+
+        const storeScroll = () => {
+          let perc =
+            (window.scrollY /
+              (document.body.clientHeight - window.innerHeight)) *
+            100;
+          document.documentElement.setAttribute(
+            "style",
+            `--scrollpos: ${perc}`
+          );
+        };
+
+        document.addEventListener("scroll", debounce(storeScroll), {
+          passive: true,
+        });
+
+        storeScroll();
+
+        var jsscrollpos = getComputedStyle(
+          document.documentElement
+        ).getPropertyValue("--scrollpos");
+      </script>
     </main>
 
     <script src="https://unpkg.com/gsap@3"></script>
     <script src="scripts/cursor.js" defer></script>
     <script src="scripts/hamburger.js"></script>
     <script type="module" src="scripts/swup.js"></script>
-    <script>
-      //imagefade
-      function isInViewport(element) {
-        const rect = element.getBoundingClientRect();
-        return (
-          rect.top >= 0 &&
-          rect.left >= 0 &&
-          rect.bottom <=
-            (window.innerHeight || document.documentElement.clientHeight) &&
-          rect.right <=
-            (window.innerWidth || document.documentElement.clientWidth)
-        );
-      }
-
-      const fadebox = document.getElementsByClassName("scrollfade");
-      const fadeanchors = document.getElementsByClassName("fadeanchor");
-
-      document.addEventListener("scroll", function () {
-        for (i = 0; i < fadeanchors.length; i++) {
-          if (isInViewport(fadeanchors[i])) {
-            fadebox[i].classList.add("loadfade2");
-          }
-        }
-      });
-
-      //fadecookie
-      function getCookie(cname) {
-        let name = cname + "=";
-        let decodedCookie = decodeURIComponent(document.cookie);
-        let ca = decodedCookie.split(";");
-        for (let jj = 0; jj < ca.length; jj++) {
-          let c = ca[jj];
-          while (c.charAt(0) == " ") {
-            c = c.substring(1);
-          }
-          if (c.indexOf(name) == 0) {
-            return c.substring(name.length, c.length);
-          }
-        }
-        return "";
-      }
-
-      let indexvisit = document.cookie;
-      var loadfades = document.getElementsByClassName("loadfade");
-      var lfdelays = document.getElementsByClassName("lfdelay");
-      var j;
-      var ij;
-      if (getCookie("indexvisit") === "true") {
-        for (j = loadfades.length - 1; j < loadfades.length && j >= 0; j--) {
-          loadfades[j].classList.remove("loadfade");
-        }
-        for (ij = lfdelays.length - 1; ij < lfdelays.length && ij >= 0; ij--) {
-          lfdelays[ij].classList.remove("lfdelay");
-        }
-      }
-      document.cookie = "indexvisit=true; SameSite=Lax; Secure";
-
-      //scrollcolor
-      const debounce = (fn) => {
-        let frame;
-        return (...params) => {
-          if (frame) {
-            cancelAnimationFrame(frame);
-          }
-          frame = requestAnimationFrame(() => {
-            fn(...params);
-          });
-        };
-      };
-
-      const storeScroll = () => {
-        let perc =
-          (window.scrollY / (document.body.clientHeight - window.innerHeight)) *
-          100;
-        document.documentElement.setAttribute("style", `--scrollpos: ${perc}`);
-      };
-
-      document.addEventListener("scroll", debounce(storeScroll), {
-        passive: true,
-      });
-
-      storeScroll();
-
-      var jsscrollpos = getComputedStyle(
-        document.documentElement
-      ).getPropertyValue("--scrollpos");
-    </script>
   </body>
 </html>

@@ -348,54 +348,54 @@
         <button onclick="topFunction()" id="topbtn"><b>BACK TO TOP</b></button>
         <div style="height: 24px"></div>
       </div>
+      <script>
+        //topbtn
+        mybutton = document.getElementById("topbtn");
+
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+
+        //collapsible
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function () {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+
+        //teamhide
+        function teamfunction() {
+          var teamhide = document.getElementById("teamhide");
+          if (teamhide.style.display === "none") {
+            teamhide.style.display = "block";
+          } else {
+            teamhide.style.display = "none";
+          }
+        }
+        function teamfunctionM() {
+          var teamhide = document.getElementById("teamhideM");
+          if (teamhide.style.display === "none") {
+            teamhide.style.display = "block";
+          } else {
+            teamhide.style.display = "none";
+          }
+        }
+      </script>
     </main>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3"></script>
     <script src="scripts/cursor.js" defer></script>
     <script src="scripts/hamburger.js"></script>
     <script type="module" src="scripts/swup.js"></script>
-    <script>
-      //topbtn
-      mybutton = document.getElementById("topbtn");
-
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
-
-      //collapsible
-      var coll = document.getElementsByClassName("collapsible");
-      var i;
-
-      for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function () {
-          this.classList.toggle("active");
-          var content = this.nextElementSibling;
-          if (content.style.display === "block") {
-            content.style.display = "none";
-          } else {
-            content.style.display = "block";
-          }
-        });
-      }
-
-      //teamhide
-      function teamfunction() {
-        var teamhide = document.getElementById("teamhide");
-        if (teamhide.style.display === "none") {
-          teamhide.style.display = "block";
-        } else {
-          teamhide.style.display = "none";
-        }
-      }
-      function teamfunctionM() {
-        var teamhide = document.getElementById("teamhideM");
-        if (teamhide.style.display === "none") {
-          teamhide.style.display = "block";
-        } else {
-          teamhide.style.display = "none";
-        }
-      }
-    </script>
   </body>
 </html>
