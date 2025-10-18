@@ -1,4 +1,4 @@
-let cursor = document.querySelector(".ballcursor");
+var cursor = document.querySelector(".ballcursor");
 
 if (!cursor) {
 cursor = document.createElement("div");
@@ -27,7 +27,7 @@ cursor.innerHTML = svgData;
 function initCursor() {
     const hoverables = document.querySelectorAll("a, button, .stackflex-container, .collapsible, .vmodalclose, .architem, .architem-col");
 
-    let hasMoved = false;
+    var hasMoved = false;
 
     document.body.addEventListener("mousemove", (e) => {
     if (!hasMoved) {
