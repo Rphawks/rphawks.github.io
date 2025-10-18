@@ -150,7 +150,6 @@ body::-webkit-scrollbar {
 	align-items: center;
 	border: 4px solid #33211f;
 	opacity:0;
-	/* cursor:pointer; */
 	--all:0px;
 }
 
@@ -288,7 +287,6 @@ html.is-animating .transition-fade {
 	height:auto;
 	width:48.975%;
 	border: 4px solid #33211f;
-	cursor:pointer;
 }
 
 .architem:hover{
@@ -300,7 +298,6 @@ html.is-animating .transition-fade {
 	height:auto;
 	width:70%;
 	border: 4px solid #33211f;
-	cursor:pointer;
 }
 
 .architem-col:hover{
@@ -330,7 +327,6 @@ html.is-animating .transition-fade {
 	max-height:23.75em;
 	padding:4px;
 	object-fit: cover;
-	/* cursor:pointer; */
 }
 
 .archimg{
