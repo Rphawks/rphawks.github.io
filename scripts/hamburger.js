@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
+function initHamburger() {
   const hcoll = document.getElementsByClassName("hamburger");
   const hmodal = document.getElementById("modal-content");
   const hbtn = document.getElementById("hamburger");
@@ -26,4 +26,8 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     };
   }
-});
+}
+
+document.addEventListener("DOMContentLoaded", initHamburger);
+
+document.addEventListener("swup:contentReplaced", initHamburger);

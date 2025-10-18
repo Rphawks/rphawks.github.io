@@ -24,40 +24,46 @@ const svgData = `
 cursor.innerHTML = svgData;
 }
 
-const hoverables = document.querySelectorAll("a, button, .stackflex-container, .collapsible, .vmodalclose, .architem, .architem-col");
+function initCursor() {
+    const hoverables = document.querySelectorAll("a, button, .stackflex-container, .collapsible, .vmodalclose, .architem, .architem-col");
 
-let hasMoved = false;
+    let hasMoved = false;
 
-document.body.addEventListener("mousemove", (e) => {
-if (!hasMoved) {
-    hasMoved = true;
+    document.body.addEventListener("mousemove", (e) => {
+    if (!hasMoved) {
+        hasMoved = true;
+        gsap.to(cursor, {
+        x: e.clientX - 10,
+        y: e.clientY - 10,
+        duration: 0,
+    });
     gsap.to(cursor, {
-    x: e.clientX - 10,
-    y: e.clientY - 10,
-    duration: 0,
-});
-gsap.to(cursor, {
-    opacity: 1,
-    duration: 0.4,
-    ease: "power2.out"
-});
-} else {
-    gsap.to(cursor, {
-    x: e.clientX - 10,
-    y: e.clientY - 10,
-    duration: 0.2,
+        opacity: 1,
+        duration: 0.4,
+        ease: "power2.out"
+    });
+    } else {
+        gsap.to(cursor, {
+        x: e.clientX - 10,
+        y: e.clientY - 10,
+        duration: 0.2,
+        });
+    }
+    });
+
+    hoverables.forEach((el) => {
+        el.addEventListener("mouseenter", () =>
+            gsap.to(cursor, { scale: 1.25, duration: 0.3 })
+        );
+        el.addEventListener("mouseleave", () =>
+            gsap.to(cursor, { scale: 1, duration: 0.3 })
+        );
+        el.addEventListener("mouseup", () => 
+            gsap.to(cursor, { scale: 1, duration: 0.3 })
+        );
     });
 }
-});
 
-hoverables.forEach((el) => {
-    el.addEventListener("mouseenter", () =>
-        gsap.to(cursor, { scale: 1.25, duration: 0.3 })
-    );
-    el.addEventListener("mouseleave", () =>
-        gsap.to(cursor, { scale: 1, duration: 0.3 })
-    );
-    el.addEventListener("mouseup", () => 
-        gsap.to(cursor, { scale: 1, duration: 0.3 })
-    );
-});
+initCursor();
+
+document.addEventListener("swup:contentReplaced", initCursor);
