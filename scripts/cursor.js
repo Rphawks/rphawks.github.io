@@ -51,10 +51,13 @@ gsap.to(cursor, {
 });
 
 hoverables.forEach((el) => {
-el.addEventListener("mouseenter", () =>
-    gsap.to(cursor, { scale: 1.25, duration: 0.3 })
-);
-el.addEventListener("mouseleave", () =>
-    gsap.to(cursor, { scale: 1, duration: 0.3 })
-);
+    el.addEventListener("mouseenter", () =>
+        gsap.to(cursor, { scale: 1.25, duration: 0.3 })
+    );
+    el.addEventListener("mouseleave", () =>
+        gsap.to(cursor, { scale: 1, duration: 0.3 })
+    );
+    el.addEventListener("mouseup", () => 
+        gsap.to(cursor, { scale: 1, duration: 0.3 })
+    );
 });
