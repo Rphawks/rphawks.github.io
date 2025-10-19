@@ -1,8 +1,12 @@
 function initHamburger() {
-  var hcoll = document.getElementsByClassName("hamburger");
-  var hmodal = document.getElementById("modal-content");
-  var hbtn = document.getElementById("hamburger");
-  var hworkbtn = document.getElementById("hamwork");
+  var hcoll = null;
+  var hmodal = null;
+  var hbtn = null;
+  var hworkbtn = null;
+  hcoll = document.getElementsByClassName("hamburger");
+  hmodal = document.getElementById("modal-content");
+  hbtn = document.getElementById("hamburger");
+  hworkbtn = document.getElementById("hamwork");
 
   for (var i = 0; i < hcoll.length; i++) {
     hcoll[i].removeEventListener("click", function () {
