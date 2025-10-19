@@ -4,27 +4,41 @@ function initHamburger() {
   var hbtn = document.getElementById("hamburger");
   var hworkbtn = document.getElementById("hamwork");
 
-  for (let i = 0; i < hcoll.length; i++) {
+  for (var i = 0; i < hcoll.length; i++) {
+    hcoll[i].removeEventListener("click", function () {
+      this.classList.toggle("hamactive");
+    });
     hcoll[i].addEventListener("click", function () {
       this.classList.toggle("hamactive");
     });
   }
 
   if (hbtn && hmodal) {
-    hbtn.onclick = function () {
+    hbtn.removeEventListener("click", function () {
       hmodal.style.display = hmodal.style.display === "flex" ? "none" : "flex";
-    };
+    });
+    hbtn.addEventListener("click", function () {
+      hmodal.style.display = hmodal.style.display === "flex" ? "none" : "flex";
+    });
   }
 
   if (hworkbtn && hmodal && hbtn) {
-    hworkbtn.onclick = function () {
+    hworkbtn.removeEventListener("click", function () {
       if (hmodal.style.display === "flex") {
         hmodal.style.display = "none";
         hbtn.classList.toggle("hamactive");
       } else {
         hmodal.style.display = "flex";
       }
-    };
+    });
+    hworkbtn.addEventListener("click", function () {
+      if (hmodal.style.display === "flex") {
+        hmodal.style.display = "none";
+        hbtn.classList.toggle("hamactive");
+      } else {
+        hmodal.style.display = "flex";
+      }
+    });
   }
 }
 
