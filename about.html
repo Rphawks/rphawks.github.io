@@ -162,9 +162,9 @@
       <script>
         //fadecookie
         function getCookie(cname) {
-          let name = cname + "=";
-          let decodedCookie = decodeURIComponent(document.cookie);
-          let ca = decodedCookie.split(";");
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(";");
           for (let jj = 0; jj < ca.length; jj++) {
             let c = ca[jj];
             while (c.charAt(0) == " ") {
@@ -177,7 +177,7 @@
           return "";
         }
 
-        let aboutvisit = document.cookie;
+        var aboutvisit = document.cookie;
         var loadfades = document.getElementsByClassName("loadfade");
         var lfdelays = document.getElementsByClassName("lfdelay");
         var j;
