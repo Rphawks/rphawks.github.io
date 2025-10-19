@@ -513,11 +513,11 @@
 
         //fadecookie
         function getCookie(cname) {
-          let name = cname + "=";
-          let decodedCookie = decodeURIComponent(document.cookie);
-          let ca = decodedCookie.split(";");
-          for (let jj = 0; jj < ca.length; jj++) {
-            let c = ca[jj];
+          var name = cname + "=";
+          var decodedCookie = decodeURIComponent(document.cookie);
+          var ca = decodedCookie.split(";");
+          for (var jj = 0; jj < ca.length; jj++) {
+            var c = ca[jj];
             while (c.charAt(0) == " ") {
               c = c.substring(1);
             }
@@ -528,7 +528,7 @@
           return "";
         }
 
-        let indexvisit = document.cookie;
+        var indexvisit = document.cookie;
         var loadfades = document.getElementsByClassName("loadfade");
         var lfdelays = document.getElementsByClassName("lfdelay");
         var j;
@@ -548,8 +548,8 @@
         document.cookie = "indexvisit=true; SameSite=Lax; Secure";
 
         //scrollcolor
-        const debounce = (fn) => {
-          let frame;
+        var debounce = (fn) => {
+          var frame;
           return (...params) => {
             if (frame) {
               cancelAnimationFrame(frame);
@@ -560,8 +560,8 @@
           };
         };
 
-        const storeScroll = () => {
-          let perc =
+        var storeScroll = () => {
+          var perc =
             (window.scrollY /
               (document.body.clientHeight - window.innerHeight)) *
             100;
