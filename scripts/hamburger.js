@@ -1,8 +1,8 @@
 function initHamburger() {
-  const hcoll = document.getElementsByClassName("hamburger");
-  const hmodal = document.getElementById("modal-content");
-  const hbtn = document.getElementById("hamburger");
-  const hworkbtn = document.getElementById("hamwork");
+  var hcoll = document.getElementsByClassName("hamburger");
+  var hmodal = document.getElementById("modal-content");
+  var hbtn = document.getElementById("hamburger");
+  var hworkbtn = document.getElementById("hamwork");
 
   for (let i = 0; i < hcoll.length; i++) {
     hcoll[i].addEventListener("click", function () {

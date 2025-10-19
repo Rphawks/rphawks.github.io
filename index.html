@@ -489,7 +489,7 @@
       <script>
         //imagefade
         function isInViewport(element) {
-          const rect = element.getBoundingClientRect();
+          var rect = element.getBoundingClientRect();
           return (
             rect.top >= 0 &&
             rect.left >= 0 &&
@@ -500,8 +500,8 @@
           );
         }
 
-        const fadebox = document.getElementsByClassName("scrollfade");
-        const fadeanchors = document.getElementsByClassName("fadeanchor");
+        var fadebox = document.getElementsByClassName("scrollfade");
+        var fadeanchors = document.getElementsByClassName("fadeanchor");
 
         document.addEventListener("scroll", function () {
           for (i = 0; i < fadeanchors.length; i++) {
