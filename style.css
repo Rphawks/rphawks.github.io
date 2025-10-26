@@ -251,8 +251,8 @@ html.is-animating .transition-fade {
 	mix-blend-mode: difference;
 	z-index: 1000;
     fill: #FFA599; 
-	width: "24px";
-	height: "24px";
+	width: 24px;
+	height: 24px;
 	opacity: 0;
 } 
 
@@ -973,4 +973,10 @@ span.dark{
 	.portblip-flex{
 		display:block;
 	}
+
+@media (hover: none), (pointer: coarse) {
+  .ballcursor {
+    display: none !important;
+  }
+}
 }
